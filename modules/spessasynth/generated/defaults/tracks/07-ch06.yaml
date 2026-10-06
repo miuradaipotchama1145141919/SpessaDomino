@@ -1,0 +1,16 @@
+name: CH06
+ch: 6
+events:
+- tag: Comment
+  attrs:
+    Tick: 0
+    Step: 0
+    Text: '---- CH Setup ------------------------------------------------'
+- tag: Template
+  attrs:
+    ID: 0
+    Step: 1
+- tag: Comment
+  attrs:
+    Step: 0
+    Text: '---- End of CH Setup ---------------------------------------------'

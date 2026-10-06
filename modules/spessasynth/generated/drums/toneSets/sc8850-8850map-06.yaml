@@ -1,0 +1,358 @@
+sc8850_8850Map_30_0_4:
+  0: Elec.K2
+  1: Elec.K1
+  2: CR-78K1
+  3: CR-78K2
+  4: 606 K1
+  5: 707 K1
+  6: 808 BD
+  7: 808 BD
+  8: 808 K2
+  9: 909 BD
+  10: Dance K
+  11: HipHopK2
+  12: 909 K1
+  13: HipHopK3
+  14: JungleK1
+  15: TechnoK1
+  16: Bounce K
+  17: Voice 1
+  18: Voice 2
+  19: Voice 3
+  22: MC Beep1
+  23: MC Beep2
+  24: CncrtSnr
+  25: Snr.Roll
+  26: FingSnp2
+  27: High Q
+  28: Slap
+  29: Sc.Push2
+  30: Sc.Pull2
+  31: Sticks
+  32: Sq.Click
+  33: Mt.Click
+  34: Mt. Bell
+  35: 707 K2
+  36: 707 K1
+  37: 707 Rim
+  38: 707 S1
+  39: 707 Clap
+  40: 707 S2
+  41: 707 Low2
+  42: 707 CHH
+  43: 707 Low1
+  44: 707 CHH
+  45: 707 Mid2
+  46: 707 OHH
+  47: 707 Mid1
+  48: 707 Hi 2
+  49: 909 Crsh
+  50: 707 Hi 1
+  51: 909 Ride
+  52: Chin.Cym
+  53: RideBell
+  54: Tamb. 2
+  55: SplshCym
+  56: 808 Cow
+  57: CrshCym2
+  58: Vib-slap
+  59: RideEdge
+  60: Hi.Bongo
+  61: LowBongo
+  62: MH Conga
+  63: OH Conga
+  64: LowConga
+  65: Hi.Timbl
+  66: LowTimbl
+  67: Hi.Agogo
+  68: LowAgogo
+  69: Cabasa
+  70: 808 Marc
+  71: SH.Whisl
+  72: LL.Whisl
+  73: S.Guiro
+  74: L.Guiro
+  75: Claves
+  76: Hi.W.Blk
+  77: LowW.Blk
+  78: High Hoo
+  79: Low  Hoo
+  80: E.M.Tri
+  81: E.O.Tri
+  82: 626 Shkr
+  83: Jng.Bell
+  84: BellTree
+  85: Castanet
+  86: Mt.Surdo
+  87: Op.Surdo
+  88: SmlClub1
+  97: Tkno Hit
+  98: Pily Hit
+  99: ImpctHit
+  100: LoFiRave
+  101: Bam Hit
+  102: Bim Hit
+  103: Tape Rew
+  104: Phono Nz
+  105: Power S1
+  106: Dance S1
+  107: Dance S2
+  108: Disco S
+  109: Elec.S2
+  110: Elec SD
+  111: Elec.S3
+  112: 606 S2
+  113: 707 S1
+  114: 808 S2
+  115: 808 S1
+  116: 808 S2
+  117: 909 S1
+  118: 909 S2
+  119: 909 S1
+  120: 909 S2
+  121: RapSnare
+  122: JungleSD
+  123: House S1
+  124: House S
+  125: House S2
+  126: VoiceTah
+  127: Slappy
+sc8850_8850Map_31_0_4:
+  0: Elec.K2
+  1: Elec.K1
+  2: CR-78K1
+  3: CR-78K2
+  4: 606 K1
+  5: 707 K1
+  6: 808 BD
+  7: 808 BD
+  8: 808 K2
+  9: 909 BD
+  10: Dance K
+  11: HipHopK2
+  12: 909 K1
+  13: HipHopK3
+  14: JungleK1
+  15: TechnoK1
+  16: Bounce K
+  17: Voice 1
+  18: Voice 2
+  19: Voice 3
+  22: MC Beep1
+  23: MC Beep2
+  24: CncrtSnr
+  25: Snr.Roll
+  26: FingSnp2
+  27: High Q
+  28: Slap
+  29: Sc.Push2
+  30: Sc.Pull2
+  31: Sticks
+  32: Sq.Click
+  33: Mt.Click
+  34: Mt. Bell
+  35: 909 K2
+  36: 909 K1
+  37: 909 Rim
+  38: 909 S1
+  39: 909 Clap
+  40: 909 S2
+  41: 909 Low2
+  42: 707 CHH
+  43: 909 Low1
+  44: 707 CHH
+  45: 909 Mid2
+  46: Room OHH
+  47: 909 Mid1
+  48: 909 Hi 2
+  49: 909 Crsh
+  50: 909 Hi 1
+  51: 909 Ride
+  52: Chin.Cym
+  53: RideBell
+  54: Tamb. 2
+  55: SplshCym
+  56: 808 Cow
+  57: CrshCym2
+  58: Vib-slap
+  59: RideEdge
+  60: Hi.Bongo
+  61: LowBongo
+  62: MH Conga
+  63: OH Conga
+  64: LowConga
+  65: Hi.Timbl
+  66: LowTimbl
+  67: Hi.Agogo
+  68: LowAgogo
+  69: Cabasa
+  70: 808 Marc
+  71: SH.Whisl
+  72: LL.Whisl
+  73: S.Guiro
+  74: 78 Guiro
+  75: 808 Clvs
+  76: Hi.W.Blk
+  77: LowW.Blk
+  78: High Hoo
+  79: Low  Hoo
+  80: E.M.Tri
+  81: E.O.Tri
+  82: 626 Shkr
+  83: Jng.Bell
+  84: BellTree
+  85: Castanet
+  86: Mt.Surdo
+  87: Op.Surdo
+  88: Applaus2
+  97: Tkno Hit
+  98: Pily Hit
+  99: ImpctHit
+  100: LoFiRave
+  101: Bam Hit
+  102: Bim Hit
+  103: Tape Rew
+  104: Phono Nz
+  105: Power S1
+  106: Dance S1
+  107: Dance S2
+  108: Disco S
+  109: Elec.S2
+  110: Elec SD
+  111: Elec.S3
+  112: 606 S2
+  113: 707 S1
+  114: 808 S2
+  115: 808 S1
+  116: 808 S2
+  117: 909 S1
+  118: 909 S2
+  119: 909 S1
+  120: 909 S2
+  121: RapSnare
+  122: JungleSD
+  123: House S1
+  124: House S
+  125: House S2
+  126: VoiceTah
+  127: Slappy
+sc8850_8850Map_33_0_4:
+  0: Std.1 K1
+  1: Std.1 K2
+  2: Std.2 K1
+  3: Std.2 K2
+  4: Kick 1
+  5: Kick 2
+  6: Jazz K1
+  7: Jazz K2
+  8: Room K1
+  9: Room K2
+  10: Power K1
+  11: Power K2
+  12: Elec.K2
+  13: Elec.K1
+  14: 808 BD
+  15: 909 BD
+  16: Dance K
+  17: Voice 1
+  18: Voice 2
+  19: Voice 3
+  20: Brush K2
+  21: Brush K1
+  22: MC Beep1
+  23: MC Beep2
+  24: CncrtSnr
+  25: Snr.Roll
+  26: FingSnp2
+  27: High Q
+  28: Slap
+  29: Scr.Push
+  30: Scr.Pull
+  31: Sticks
+  32: Sq.Click
+  33: Mt.Click
+  34: Mt. Bell
+  35: Jazz K2
+  36: Jazz K1
+  37: Sd.Stick
+  38: Jazz S1
+  39: H.Clap2
+  40: Jazz S2
+  41: Jz LTom2
+  42: Jz CHHat
+  43: Jz LTom1
+  44: P.Hi-Hat
+  45: Jz MTom2
+  46: Jz OHHat
+  47: Jz MTom1
+  48: Jz HTom2
+  49: Jz CrCym
+  50: Jz HTom1
+  51: Jz RdCym
+  52: Chin.Cym
+  53: Jz RdBel
+  54: Tambourn
+  55: SplshCym
+  56: Cowbell
+  57: CrshCym2
+  58: Vib-slap
+  59: RideEdge
+  60: Hi.Bongo
+  61: LowBongo
+  62: MH Conga
+  63: OH Conga
+  64: LowConga
+  65: Hi.Timbl
+  66: LowTimbl
+  67: Hi.Agogo
+  68: LowAgogo
+  69: Cabasa
+  70: Maracas
+  71: SH.Whisl
+  72: LL.Whisl
+  73: S.Guiro
+  74: L.Guiro
+  75: Claves
+  76: Hi.W.Blk
+  77: LowW.Blk
+  78: Mt.Cuica
+  79: Op.Cuica
+  80: Mt.Trigl
+  81: Op.Trigl
+  82: Shaker
+  83: Jng.Bell
+  84: BellTree
+  85: Castanet
+  86: Mt.Surdo
+  87: Op.Surdo
+  88: Applause
+  98: BrshTap2
+  99: BrshSlp2
+  100: B.Tap 1
+  101: B.Tap 2
+  102: B.Slap 1
+  103: B.Slap 2
+  104: B.Slap 3
+  105: B.Swirl1
+  106: B.Swirl2
+  107: B.LngSwl
+  108: Jazz S1
+  109: Jazz S2
+  110: Std.1 S1
+  111: Std.1 S2
+  112: Std.2 S1
+  113: Std.2 S2
+  114: Snare 2
+  115: Std.1 S1
+  116: Std.1 S2
+  117: Std.1 S3
+  118: Room S1
+  119: Room S2
+  120: Power S1
+  121: Power S2
+  122: Gated SD
+  123: Dance S1
+  124: Dance S2
+  125: Disco S
+  126: Elec.S2
+  127: Elec.S3

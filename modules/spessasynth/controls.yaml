@@ -1,0 +1,4 @@
+tables:
+  - include: generated/controls/tables.yaml
+items:
+  - include: generated/controls/items/*.yaml

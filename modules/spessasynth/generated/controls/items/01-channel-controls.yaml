@@ -1,0 +1,239 @@
+type: folder
+name: Channel Controls
+items:
+- type: ccm
+  id: 1
+  name: Modulation Wheel
+  sync: Last
+  value:
+    default: 0
+    max: 127
+  data: '@CC 1 #VL'
+  color: C000C0
+- type: ccm
+  id: 20
+  name: Bank Select MSB
+  sync: Last
+  value:
+    default: 0
+    max: 127
+  memo: Takes effect on the next Program Change. XG drum banks 120, 126 and 127 make the part a drum part.
+  data: '@CC 0 #VL'
+  color: 0050D0
+- type: ccm
+  id: 21
+  name: Bank Select LSB
+  sync: Last
+  value:
+    default: 0
+    max: 127
+  memo: Takes effect on the next Program Change.
+  data: '@CC 32 #VL'
+  color: 0050D0
+- type: ccm
+  id: 5
+  name: Portamento Time
+  sync: Last
+  value:
+    default: 0
+    max: 127
+  memo: 7 bit only. Time scales with key distance.
+  data: '@CC 5 #VL'
+  color: '808000'
+- type: ccm
+  id: 7
+  name: Channel Volume
+  sync: Last
+  value:
+    default: 100
+    max: 127
+  data: '@CC 7 #VL'
+  color: 008000
+- type: ccm
+  id: 8
+  name: Balance
+  sync: Last
+  value:
+    default: 64
+    max: 127
+  data: '@CC 8 #VL'
+  color: 008000
+- type: ccm
+  id: 10
+  name: Pan
+  sync: Last
+  value:
+    default: 0
+    min: -64
+    max: 63
+    offset: 64
+    name: Position
+  memo: Center is 0. Wire value is 64 plus the position.
+  data: '@CC 10 #VL'
+  color: 008000
+- type: ccm
+  id: 11
+  name: Expression
+  sync: Last
+  value:
+    default: 127
+    max: 127
+  data: '@CC 11 #VL'
+  color: 008000
+- type: ccm
+  id: 64
+  name: Sustain Pedal
+  sync: Last
+  value:
+    default: 0
+    max: 127
+    tableId: 1
+  data: '@CC 64 #VL'
+  color: '808000'
+- type: ccm
+  id: 65
+  name: Portamento On/Off
+  sync: Last
+  value:
+    default: 0
+    max: 127
+    tableId: 1
+  memo: On at 64 or above.
+  data: '@CC 65 #VL'
+  color: '808000'
+- type: ccm
+  id: 67
+  name: Soft Pedal
+  sync: Last
+  value:
+    default: 0
+    max: 127
+  memo: Lowers the filter cutoff.
+  data: '@CC 67 #VL'
+  color: '808000'
+- type: ccm
+  id: 71
+  name: Filter Resonance
+  sync: Last
+  value:
+    default: 64
+    max: 127
+  data: '@CC 71 #VL'
+  color: 8040D0
+- type: ccm
+  id: 72
+  name: Release Time
+  sync: Last
+  value:
+    default: 64
+    max: 127
+  data: '@CC 72 #VL'
+  color: 8040D0
+- type: ccm
+  id: 73
+  name: Attack Time
+  sync: Last
+  value:
+    default: 64
+    max: 127
+  data: '@CC 73 #VL'
+  color: 8040D0
+- type: ccm
+  id: 74
+  name: Brightness
+  sync: Last
+  value:
+    default: 64
+    max: 127
+  data: '@CC 74 #VL'
+  color: 8040D0
+- type: ccm
+  id: 75
+  name: Decay Time
+  sync: Last
+  value:
+    default: 64
+    max: 127
+  data: '@CC 75 #VL'
+  color: 8040D0
+- type: ccm
+  id: 76
+  name: Vibrato Rate
+  sync: Last
+  value:
+    default: 64
+    max: 127
+  data: '@CC 76 #VL'
+  color: 8040D0
+- type: ccm
+  id: 77
+  name: Vibrato Depth
+  sync: Last
+  value:
+    default: 64
+    max: 127
+  data: '@CC 77 #VL'
+  color: 8040D0
+- type: ccm
+  id: 78
+  name: Vibrato Delay
+  sync: Last
+  value:
+    default: 64
+    max: 127
+  data: '@CC 78 #VL'
+  color: 8040D0
+- type: ccm
+  id: 84
+  name: Portamento Control
+  value:
+    default: 0
+    max: 127
+    name: From Key
+    type: Key
+  memo: Sets the key to glide from and forces portamento once, even if portamento is off. In 4.4.0 the value persists across channel reset.
+  data: '@CC 84 #VL'
+  color: '808000'
+- type: ccm
+  id: 91
+  name: Reverb Send
+  sync: Last
+  value:
+    default: 0
+    max: 127
+  memo: SpessaSynth defaults reverb to 0.
+  data: '@CC 91 #VL'
+  color: 00A0A0
+- type: ccm
+  id: 93
+  name: Chorus Send
+  sync: Last
+  value:
+    default: 0
+    max: 127
+  data: '@CC 93 #VL'
+  color: 00A0A0
+- type: ccm
+  id: 94
+  name: Variation Send
+  sync: Last
+  value:
+    default: 0
+    max: 127
+  memo: 'GS: delay send. XG: variation send, only in system connection (Experimental 4.4.0). Stable builds: GS only.'
+  data: '@CC 94 #VL'
+  color: 00A0A0
+- type: ccm
+  id: 110
+  name: Any Control Change
+  value:
+    default: 0
+    max: 127
+  gate:
+    default: 1
+    min: 0
+    max: 127
+    name: CC No.
+  memo: Any controller number. CC33 to 63 except 38 are LSB extensions of CC1 to 31.
+  data: '@CC #GL #VL'
+  color: '707070'

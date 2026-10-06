@@ -1,0 +1,37 @@
+name: release
+
+on:
+  push:
+    tags:
+      - "v[0-9]*"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - run: python scripts/genAll.py
+      - name: Rebuild with the tag as the module version
+        env:
+          TAG: ${{ github.ref_name }}
+        run: dominodef --modules modules build --version "${TAG#v}" spessasynth
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: gh release create "$TAG" dist/spessasynth.xml dist/manifest.json --title "$TAG" --generate-notes --verify-tag

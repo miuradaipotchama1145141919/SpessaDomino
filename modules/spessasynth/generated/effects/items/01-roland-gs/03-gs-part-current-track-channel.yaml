@@ -1,0 +1,4 @@
+type: folder
+name: GS Part (current track channel)
+items:
+- include: 03-gs-part-current-track-channel/*.yaml

@@ -1,0 +1,129 @@
+- pc: 113
+  name: TnklBell
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: TcklBell
+    msb: 0
+    lsb: 64
+  - name: Bonang
+    msb: 0
+    lsb: 96
+  - name: Altair
+    msb: 0
+    lsb: 97
+  - name: Gamelan
+    msb: 0
+    lsb: 98
+  - name: S.Gamlan
+    msb: 0
+    lsb: 99
+  - name: Rama Cym
+    msb: 0
+    lsb: 100
+  - name: AsianBel
+    msb: 0
+    lsb: 101
+- pc: 114
+  name: Agogo
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: Atrigane
+    msb: 0
+    lsb: 96
+- pc: 115
+  name: SteelDrm
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: Tablas
+    msb: 0
+    lsb: 96
+  - name: GlasPerc
+    msb: 0
+    lsb: 97
+  - name: ThaiBell
+    msb: 0
+    lsb: 98
+- pc: 116
+  name: Woodblok
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: Castanet
+    msb: 0
+    lsb: 96
+- pc: 117
+  name: TaikoDrm
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: Gr.Cassa
+    msb: 0
+    lsb: 96
+- pc: 118
+  name: MelodTom
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: Mel Tom2
+    msb: 0
+    lsb: 64
+  - name: Real Tom
+    msb: 0
+    lsb: 65
+  - name: Rock Tom
+    msb: 0
+    lsb: 66
+- pc: 119
+  name: Syn Drum
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: Ana Tom
+    msb: 0
+    lsb: 64
+  - name: ElecPerc
+    msb: 0
+    lsb: 65
+  - name: Syn Perc
+    msb: 0
+    lsb: 66
+- pc: 120
+  name: RevCymbl
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: Rev Cym2
+    msb: 0
+    lsb: 64
+  - name: Rev Cym3
+    msb: 0
+    lsb: 65
+  - name: RevSnar1
+    msb: 0
+    lsb: 96
+  - name: RevSnar2
+    msb: 0
+    lsb: 97
+  - name: RevKick1
+    msb: 0
+    lsb: 98
+  - name: RevConBD
+    msb: 0
+    lsb: 99
+  - name: Rev Tom1
+    msb: 0
+    lsb: 100
+  - name: Rev Tom2
+    msb: 0
+    lsb: 101

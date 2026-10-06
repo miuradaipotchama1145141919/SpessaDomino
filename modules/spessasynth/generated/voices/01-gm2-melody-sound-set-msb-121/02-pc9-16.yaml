@@ -1,0 +1,60 @@
+- pc: 9
+  name: Celesta
+  banks:
+  - name: Celesta
+    msb: 121
+    lsb: 0
+- pc: 10
+  name: Glockenspiel
+  banks:
+  - name: Glockenspiel
+    msb: 121
+    lsb: 0
+- pc: 11
+  name: Music Box
+  banks:
+  - name: Music Box
+    msb: 121
+    lsb: 0
+- pc: 12
+  name: Vibraphone
+  banks:
+  - name: Vibraphone
+    msb: 121
+    lsb: 0
+  - name: Vibraphone (wide)
+    msb: 121
+    lsb: 1
+- pc: 13
+  name: Marimba
+  banks:
+  - name: Marimba
+    msb: 121
+    lsb: 0
+  - name: Marimba (wide)
+    msb: 121
+    lsb: 1
+- pc: 14
+  name: Xylophone
+  banks:
+  - name: Xylophone
+    msb: 121
+    lsb: 0
+- pc: 15
+  name: Tubular Bells
+  banks:
+  - name: Tubular Bells
+    msb: 121
+    lsb: 0
+  - name: Church Bell
+    msb: 121
+    lsb: 1
+  - name: Carillon
+    msb: 121
+    lsb: 2
+- pc: 16
+  name: Dulcimer
+  banks:
+  - name: Dulcimer
+    msb: 121
+    lsb: 0

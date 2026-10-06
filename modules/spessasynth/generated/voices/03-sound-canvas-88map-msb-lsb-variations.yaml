@@ -1,0 +1,3 @@
+name: Sound Canvas 88Map (MSB/LSB variations)
+programs:
+- include: 03-sound-canvas-88map-msb-lsb-variations/*.yaml

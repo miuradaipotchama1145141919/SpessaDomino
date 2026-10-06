@@ -1,0 +1,14 @@
+type: ccm
+id: 720
+name: Insertion 4 Parameter 1
+sync: Last
+value:
+  default: 64
+  min: 0
+  max: 127
+memo: '[Experimental 4.4.0] Stored but unused. Types other than NO EFFECT and THRU have no DSP in SpessaSynth 4.4.0. Unknown reverb and chorus types are silent, unknown variation and insertion types pass dry.'
+sysex:
+  profile: xg
+  address: 03H 03H 02H
+  payload: '#VL'
+color: B00060

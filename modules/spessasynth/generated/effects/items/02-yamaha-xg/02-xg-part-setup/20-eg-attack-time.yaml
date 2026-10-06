@@ -1,0 +1,19 @@
+type: ccm
+id: 523
+name: EG Attack Time
+sync: Last
+value:
+  default: 64
+  max: 127
+gate:
+  default: 1
+  min: 1
+  max: 64
+  offset: -1
+  name: Part No.
+memo: Alias of CC73.
+sysex:
+  profile: xg
+  address: '08H #GL 1AH'
+  payload: '#VL'
+color: 8040D0

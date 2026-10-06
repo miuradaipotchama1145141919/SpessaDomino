@@ -1,0 +1,4 @@
+toneSets:
+  include: generated/drums/toneSets/*.yaml
+maps:
+  - include: generated/drums/maps/*.yaml

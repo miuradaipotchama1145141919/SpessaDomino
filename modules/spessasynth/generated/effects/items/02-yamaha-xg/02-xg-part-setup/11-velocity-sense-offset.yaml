@@ -1,0 +1,18 @@
+type: ccm
+id: 514
+name: Velocity Sense Offset
+sync: Last
+value:
+  default: 64
+  max: 127
+gate:
+  default: 1
+  min: 1
+  max: 64
+  offset: -1
+  name: Part No.
+sysex:
+  profile: xg
+  address: '08H #GL 0DH'
+  payload: '#VL'
+color: '707070'

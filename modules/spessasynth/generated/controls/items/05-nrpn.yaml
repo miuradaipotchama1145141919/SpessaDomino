@@ -1,0 +1,209 @@
+type: folder
+name: NRPN
+items:
+- type: ccm
+  id: 140
+  name: Vibrato Rate (NRPN 1,8)
+  value:
+    default: 64
+    max: 127
+  memo: '[Experimental 4.4.0] Custom vibrato mode (when enabled) uses these NRPNs directly. Any value other than 64 activates it. Ignored while CC1 is above 0. Stable builds alias CC76 to 78.'
+  data: '@NRPN 01H 08H #VL #NONE'
+  color: 8040D0
+- type: ccm
+  id: 141
+  name: Vibrato Depth (NRPN 1,9)
+  value:
+    default: 64
+    max: 127
+  memo: '[Experimental 4.4.0] Custom vibrato mode (when enabled) uses these NRPNs directly. Any value other than 64 activates it. Ignored while CC1 is above 0. Stable builds alias CC76 to 78.'
+  data: '@NRPN 01H 09H #VL #NONE'
+  color: 8040D0
+- type: ccm
+  id: 142
+  name: Vibrato Delay (NRPN 1,10)
+  value:
+    default: 64
+    max: 127
+  memo: '[Experimental 4.4.0] Custom vibrato mode (when enabled) uses these NRPNs directly. Any value other than 64 activates it. Ignored while CC1 is above 0. Stable builds alias CC76 to 78.'
+  data: '@NRPN 01H 0AH #VL #NONE'
+  color: 8040D0
+- type: ccm
+  id: 143
+  name: TVF Cutoff (NRPN 1,32)
+  value:
+    default: 64
+    max: 127
+  memo: Alias of CC74.
+  data: '@NRPN 01H 20H #VL #NONE'
+  color: 8040D0
+- type: ccm
+  id: 144
+  name: TVF Resonance (NRPN 1,33)
+  value:
+    default: 64
+    max: 127
+  memo: Alias of CC71.
+  data: '@NRPN 01H 21H #VL #NONE'
+  color: 8040D0
+- type: ccm
+  id: 145
+  name: EG Attack (NRPN 1,99)
+  value:
+    default: 64
+    max: 127
+  memo: Alias of CC73.
+  data: '@NRPN 01H 63H #VL #NONE'
+  color: 8040D0
+- type: ccm
+  id: 146
+  name: EG Decay (NRPN 1,100)
+  value:
+    default: 64
+    max: 127
+  memo: Alias of CC75.
+  data: '@NRPN 01H 64H #VL #NONE'
+  color: 8040D0
+- type: ccm
+  id: 147
+  name: EG Release (NRPN 1,102)
+  value:
+    default: 64
+    max: 127
+  memo: Alias of CC72.
+  data: '@NRPN 01H 66H #VL #NONE'
+  color: 8040D0
+- type: folder
+  name: Drum NRPN (per note)
+  items:
+  - type: ccm
+    id: 150
+    name: Drum Pitch Coarse
+    sync: LastEachGate
+    value:
+      default: 0
+      min: -64
+      max: 63
+      offset: 64
+      name: Semitones
+    gate:
+      default: 36
+      min: 0
+      max: 127
+      name: Drum Note
+      type: Key
+    memo: 'GS: 50 cent steps for SC-88 and later banks, 100 cent steps when bank LSB is 1. XG: 100 cent steps.'
+    data: '@NRPN 18H #GL #VL #NONE'
+    color: C06000
+  - type: ccm
+    id: 151
+    name: Drum Pitch Fine
+    sync: LastEachGate
+    value:
+      default: 0
+      min: -64
+      max: 63
+      offset: 64
+      name: Cents
+    gate:
+      default: 36
+      min: 0
+      max: 127
+      name: Drum Note
+      type: Key
+    memo: XG only.
+    data: '@NRPN 19H #GL #VL #NONE'
+    color: C06000
+  - type: ccm
+    id: 152
+    name: Drum Level
+    sync: LastEachGate
+    value:
+      default: 120
+      max: 127
+    gate:
+      default: 36
+      min: 0
+      max: 127
+      name: Drum Note
+      type: Key
+    memo: 120 is normal.
+    data: '@NRPN 1AH #GL #VL #NONE'
+    color: C06000
+  - type: ccm
+    id: 153
+    name: Drum Pan
+    sync: LastEachGate
+    value:
+      default: 64
+      max: 127
+    gate:
+      default: 36
+      min: 0
+      max: 127
+      name: Drum Note
+      type: Key
+    memo: 0 is random. 64 leaves the channel pan alone in 4.4.0 (Experimental 4.4.0). Stable builds treat it as absolute pan.
+    data: '@NRPN 1CH #GL #VL #NONE'
+    color: C06000
+  - type: ccm
+    id: 154
+    name: Drum Reverb Send
+    sync: LastEachGate
+    value:
+      default: 127
+      max: 127
+    gate:
+      default: 36
+      min: 0
+      max: 127
+      name: Drum Note
+      type: Key
+    memo: Default 0 for kick drums, otherwise 127.
+    data: '@NRPN 1DH #GL #VL #NONE'
+    color: C06000
+  - type: ccm
+    id: 155
+    name: Drum Chorus Send
+    sync: LastEachGate
+    value:
+      default: 0
+      max: 127
+    gate:
+      default: 36
+      min: 0
+      max: 127
+      name: Drum Note
+      type: Key
+    data: '@NRPN 1EH #GL #VL #NONE'
+    color: C06000
+  - type: ccm
+    id: 156
+    name: Drum Variation Send
+    sync: LastEachGate
+    value:
+      default: 0
+      max: 127
+    gate:
+      default: 36
+      min: 0
+      max: 127
+      name: Drum Note
+      type: Key
+    memo: 'GS and GM: delay send. XG: variation send, system connection only (Experimental 4.4.0).'
+    data: '@NRPN 1FH #GL #VL #NONE'
+    color: C06000
+- type: ccm
+  id: 157
+  name: Any NRPN
+  value:
+    default: 0
+    max: 127
+  gate:
+    default: 0
+    min: 0
+    max: 16383
+    name: NRPN (MSB*128+LSB)
+  memo: Reaches SF2 NRPN (MSB 120) and the AWE32 compatibility layer. Data MSB only.
+  data: '@NRPN #GH #GL #VL #NONE'
+  color: '707070'

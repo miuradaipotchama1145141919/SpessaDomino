@@ -1,0 +1,87 @@
+- pc: 89
+  name: Fantasia
+  banks:
+  - name: Fantasia
+    msb: 0
+    lsb: 2
+  - name: Fantasia 2
+    msb: 1
+    lsb: 2
+- pc: 90
+  name: Warm Pad
+  banks:
+  - name: Warm Pad
+    msb: 0
+    lsb: 2
+  - name: Thick Pad
+    msb: 1
+    lsb: 2
+  - name: Horn Pad
+    msb: 2
+    lsb: 2
+  - name: RotaryStrng
+    msb: 3
+    lsb: 2
+  - name: Soft Pad
+    msb: 4
+    lsb: 2
+- pc: 91
+  name: Polysynth
+  banks:
+  - name: Polysynth
+    msb: 0
+    lsb: 2
+  - name: 80'sPolySyn
+    msb: 1
+    lsb: 2
+- pc: 92
+  name: Space Voice
+  banks:
+  - name: Space Voice
+    msb: 0
+    lsb: 2
+  - name: Heaven II
+    msb: 1
+    lsb: 2
+- pc: 93
+  name: Bowed Glass
+  banks:
+  - name: Bowed Glass
+    msb: 0
+    lsb: 2
+- pc: 94
+  name: Metal Pad
+  banks:
+  - name: Metal Pad
+    msb: 0
+    lsb: 2
+  - name: Tine Pad
+    msb: 1
+    lsb: 2
+  - name: Panner Pad
+    msb: 2
+    lsb: 2
+- pc: 95
+  name: Halo Pad
+  banks:
+  - name: Halo Pad
+    msb: 0
+    lsb: 2
+- pc: 96
+  name: Sweep Pad
+  banks:
+  - name: Sweep Pad
+    msb: 0
+    lsb: 2
+  - name: Polar Pad
+    msb: 1
+    lsb: 2
+  - name: Converge
+    msb: 8
+    lsb: 2
+  - name: Shwimmer
+    msb: 9
+    lsb: 2
+  - name: CelestialPd
+    msb: 10
+    lsb: 2

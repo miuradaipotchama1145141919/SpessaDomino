@@ -1,0 +1,72 @@
+- pc: 65
+  name: Soprano Sax
+  banks:
+  - name: Soprano Sax
+    msb: 0
+    lsb: 1
+  - name: Acou Bass 1
+    msb: 127
+    lsb: 1
+- pc: 66
+  name: Alto Sax
+  banks:
+  - name: Alto Sax
+    msb: 0
+    lsb: 1
+  - name: Acou Bass 2
+    msb: 127
+    lsb: 1
+- pc: 67
+  name: Tenor Sax
+  banks:
+  - name: Tenor Sax
+    msb: 0
+    lsb: 1
+  - name: Elec Bass 1
+    msb: 127
+    lsb: 1
+- pc: 68
+  name: BaritoneSax
+  banks:
+  - name: BaritoneSax
+    msb: 0
+    lsb: 1
+  - name: Elec Bass 2
+    msb: 127
+    lsb: 1
+- pc: 69
+  name: Oboe
+  banks:
+  - name: Oboe
+    msb: 0
+    lsb: 1
+  - name: Slap Bass 1
+    msb: 127
+    lsb: 1
+- pc: 70
+  name: EnglishHorn
+  banks:
+  - name: EnglishHorn
+    msb: 0
+    lsb: 1
+  - name: Slap Bass 2
+    msb: 127
+    lsb: 1
+- pc: 71
+  name: Bassoon
+  banks:
+  - name: Bassoon
+    msb: 0
+    lsb: 1
+  - name: Fretless 1
+    msb: 127
+    lsb: 1
+- pc: 72
+  name: Clarinet
+  banks:
+  - name: Clarinet
+    msb: 0
+    lsb: 1
+  - name: Fretless 2
+    msb: 127
+    lsb: 1

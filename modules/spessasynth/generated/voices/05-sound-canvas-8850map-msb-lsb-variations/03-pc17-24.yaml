@@ -1,0 +1,237 @@
+- pc: 17
+  name: Organ 1
+  banks:
+  - name: Organ 1
+    msb: 0
+    lsb: 4
+  - name: Organ 101
+    msb: 1
+    lsb: 4
+  - name: Ful Organ 1
+    msb: 2
+    lsb: 4
+  - name: Ful Organ 2
+    msb: 3
+    lsb: 4
+  - name: Ful Organ 3
+    msb: 4
+    lsb: 4
+  - name: Ful Organ 4
+    msb: 5
+    lsb: 4
+  - name: Ful Organ 5
+    msb: 6
+    lsb: 4
+  - name: Ful Organ 6
+    msb: 7
+    lsb: 4
+  - name: Trem. Organ
+    msb: 8
+    lsb: 4
+  - name: Organ o
+    msb: 9
+    lsb: 4
+  - name: Ful Organ 7
+    msb: 10
+    lsb: 4
+  - name: Ful Organ 8
+    msb: 11
+    lsb: 4
+  - name: Ful Organ 9
+    msb: 12
+    lsb: 4
+  - name: 60's Organ 1
+    msb: 16
+    lsb: 4
+  - name: 60's Organ 2
+    msb: 17
+    lsb: 4
+  - name: 60's Organ 3
+    msb: 18
+    lsb: 4
+  - name: Farf Organ
+    msb: 19
+    lsb: 4
+  - name: Cheese Organ
+    msb: 24
+    lsb: 4
+  - name: D-50 Organ
+    msb: 25
+    lsb: 4
+  - name: JUNO Organ
+    msb: 26
+    lsb: 4
+  - name: Hybrid Organ
+    msb: 27
+    lsb: 4
+  - name: VS Organ
+    msb: 28
+    lsb: 4
+  - name: Digi Church
+    msb: 29
+    lsb: 4
+  - name: JX-8P Organ
+    msb: 30
+    lsb: 4
+  - name: FM Organ
+    msb: 31
+    lsb: 4
+  - name: 70's E.Organ
+    msb: 32
+    lsb: 4
+  - name: Even Bar
+    msb: 33
+    lsb: 4
+  - name: Organ Bass
+    msb: 40
+    lsb: 4
+  - name: 5th Organ
+    msb: 48
+    lsb: 4
+- pc: 18
+  name: Organ 2
+  banks:
+  - name: Organ 2
+    msb: 0
+    lsb: 4
+  - name: Jazz Organ
+    msb: 1
+    lsb: 4
+  - name: E.Organ 16+2
+    msb: 2
+    lsb: 4
+  - name: Jazz Organ 2
+    msb: 3
+    lsb: 4
+  - name: Jazz Organ 3
+    msb: 4
+    lsb: 4
+  - name: Jazz Organ 4
+    msb: 5
+    lsb: 4
+  - name: Jazz Organ 5
+    msb: 6
+    lsb: 4
+  - name: Jazz Organ 6
+    msb: 7
+    lsb: 4
+  - name: Chorus Or.2
+    msb: 8
+    lsb: 4
+  - name: Octave Organ
+    msb: 9
+    lsb: 4
+  - name: Perc. Organ
+    msb: 32
+    lsb: 4
+  - name: Perc.Organ 2
+    msb: 33
+    lsb: 4
+  - name: Perc.Organ 3
+    msb: 34
+    lsb: 4
+  - name: Perc.Organ 4
+    msb: 35
+    lsb: 4
+- pc: 19
+  name: Organ 3
+  banks:
+  - name: Organ 3
+    msb: 0
+    lsb: 4
+  - name: Rotary Org.
+    msb: 8
+    lsb: 4
+  - name: Rotary Org.S
+    msb: 16
+    lsb: 4
+  - name: Rock Organ 1
+    msb: 17
+    lsb: 4
+  - name: Rock Organ 2
+    msb: 18
+    lsb: 4
+  - name: Rotary Org.F
+    msb: 24
+    lsb: 4
+- pc: 20
+  name: Church Org.1
+  banks:
+  - name: Church Org.1
+    msb: 0
+    lsb: 4
+  - name: Church Org.2
+    msb: 8
+    lsb: 4
+  - name: Church Org.3
+    msb: 16
+    lsb: 4
+  - name: Organ Flute
+    msb: 24
+    lsb: 4
+  - name: Trem.Flute
+    msb: 32
+    lsb: 4
+  - name: Theater Org.
+    msb: 33
+    lsb: 4
+- pc: 21
+  name: Reed Organ
+  banks:
+  - name: Reed Organ
+    msb: 0
+    lsb: 4
+  - name: Wind Organ
+    msb: 8
+    lsb: 4
+  - name: Puff Organ
+    msb: 16
+    lsb: 4
+- pc: 22
+  name: Accordion Fr
+  banks:
+  - name: Accordion Fr
+    msb: 0
+    lsb: 4
+  - name: Accordion It
+    msb: 8
+    lsb: 4
+  - name: Dist. Accord
+    msb: 9
+    lsb: 4
+  - name: Cho. Accord
+    msb: 16
+    lsb: 4
+  - name: Hard Accord
+    msb: 24
+    lsb: 4
+  - name: Soft Accord
+    msb: 25
+    lsb: 4
+- pc: 23
+  name: Harmonica
+  banks:
+  - name: Harmonica
+    msb: 0
+    lsb: 4
+  - name: Harmonica 2
+    msb: 1
+    lsb: 4
+  - name: B.Harp Basic
+    msb: 8
+    lsb: 4
+  - name: B.Harp Suppl
+    msb: 9
+    lsb: 4
+- pc: 24
+  name: Bandoneon
+  banks:
+  - name: Bandoneon
+    msb: 0
+    lsb: 4
+  - name: Bandoneon 2
+    msb: 8
+    lsb: 4
+  - name: Bandoneon 3
+    msb: 16
+    lsb: 4

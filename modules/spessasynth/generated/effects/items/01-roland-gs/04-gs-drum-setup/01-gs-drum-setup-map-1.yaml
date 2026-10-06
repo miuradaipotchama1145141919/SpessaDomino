@@ -1,0 +1,178 @@
+type: folder
+name: GS Drum Setup Map 1
+items:
+- type: ccm
+  id: 380
+  name: Play Note Number (pitch coarse) (Map 1)
+  sync: LastEachGate
+  value:
+    default: 0
+    min: -64
+    max: 63
+    offset: 64
+    name: Semitones
+  gate:
+    default: 36
+    min: 0
+    max: 127
+    name: Drum Note
+    type: Key
+  memo: 50 cent resolution on SC-88 and later (bank LSB other than 1), 100 cents on SC-55 (LSB 1).
+  sysex:
+    profile: gs
+    address: '41H 01H #GL'
+    payload: '#VL'
+  color: C06000
+- type: ccm
+  id: 381
+  name: Level (Map 1)
+  sync: LastEachGate
+  value:
+    default: 120
+    max: 127
+  gate:
+    default: 36
+    min: 0
+    max: 127
+    name: Drum Note
+    type: Key
+  memo: Normalized to 120. Gain is (data/120) squared in 4.4.0 and data/120 in stable builds.
+  sysex:
+    profile: gs
+    address: '41H 02H #GL'
+    payload: '#VL'
+  color: C06000
+- type: ccm
+  id: 382
+  name: Assign Group Number (Map 1)
+  sync: LastEachGate
+  value:
+    default: 0
+    max: 127
+  gate:
+    default: 36
+    min: 0
+    max: 127
+    name: Drum Note
+    type: Key
+  memo: Overrides the exclusive class.
+  sysex:
+    profile: gs
+    address: '41H 03H #GL'
+    payload: '#VL'
+  color: C06000
+- type: ccm
+  id: 383
+  name: Panpot (Map 1)
+  sync: LastEachGate
+  value:
+    default: 64
+    max: 127
+  gate:
+    default: 36
+    min: 0
+    max: 127
+    name: Drum Note
+    type: Key
+  memo: 0 is random. In 4.4.0 a value of 64 leaves the channel pan unchanged.
+  sysex:
+    profile: gs
+    address: '41H 04H #GL'
+    payload: '#VL'
+  color: C06000
+- type: ccm
+  id: 384
+  name: Reverb Send Level (Map 1)
+  sync: LastEachGate
+  value:
+    default: 127
+    max: 127
+  gate:
+    default: 36
+    min: 0
+    max: 127
+    name: Drum Note
+    type: Key
+  sysex:
+    profile: gs
+    address: '41H 05H #GL'
+    payload: '#VL'
+  color: C06000
+- type: ccm
+  id: 385
+  name: Chorus Send Level (Map 1)
+  sync: LastEachGate
+  value:
+    default: 0
+    max: 127
+  gate:
+    default: 36
+    min: 0
+    max: 127
+    name: Drum Note
+    type: Key
+  sysex:
+    profile: gs
+    address: '41H 06H #GL'
+    payload: '#VL'
+  color: C06000
+- type: ccm
+  id: 386
+  name: Rx. Note Off (Map 1)
+  sync: LastEachGate
+  value:
+    default: 0
+    min: 0
+    max: 1
+    tableId: 16
+  gate:
+    default: 36
+    min: 0
+    max: 127
+    name: Drum Note
+    type: Key
+  memo: On forces the drum note to end at Note Off. Off by default.
+  sysex:
+    profile: gs
+    address: '41H 07H #GL'
+    payload: '#VL'
+  color: C06000
+- type: ccm
+  id: 387
+  name: Rx. Note On (Map 1)
+  sync: LastEachGate
+  value:
+    default: 1
+    min: 0
+    max: 1
+    tableId: 16
+  gate:
+    default: 36
+    min: 0
+    max: 127
+    name: Drum Note
+    type: Key
+  memo: Off disables the drum instrument.
+  sysex:
+    profile: gs
+    address: '41H 08H #GL'
+    payload: '#VL'
+  color: C06000
+- type: ccm
+  id: 388
+  name: Delay Send Level (Map 1)
+  sync: LastEachGate
+  value:
+    default: 0
+    max: 127
+  gate:
+    default: 36
+    min: 0
+    max: 127
+    name: Drum Note
+    type: Key
+  sysex:
+    profile: gs
+    address: '41H 09H #GL'
+    payload: '#VL'
+  color: C06000

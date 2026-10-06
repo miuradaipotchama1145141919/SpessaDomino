@@ -1,0 +1,14 @@
+type: ccm
+id: 593
+name: Chorus Parameter 1
+sync: Last
+value:
+  default: 64
+  min: 0
+  max: 127
+memo: '[Experimental 4.4.0] Stored but unused. Types other than NO EFFECT and THRU have no DSP in SpessaSynth 4.4.0. Unknown reverb and chorus types are silent, unknown variation and insertion types pass dry.'
+sysex:
+  profile: xg
+  address: 02H 01H 22H
+  payload: '#VL'
+color: 00B060

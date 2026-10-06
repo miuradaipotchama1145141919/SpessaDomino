@@ -1,0 +1,165 @@
+- pc: 89
+  name: NewAgePd
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: Fantasy
+    msb: 0
+    lsb: 64
+  - name: Libra
+    msb: 0
+    lsb: 65
+  - name: Bell Pad
+    msb: 0
+    lsb: 66
+- pc: 90
+  name: Warm Pad
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: ThickPad
+    msb: 0
+    lsb: 16
+  - name: Soft Pad
+    msb: 0
+    lsb: 17
+  - name: Sine Pad
+    msb: 0
+    lsb: 18
+  - name: Vishnu
+    msb: 0
+    lsb: 40
+  - name: Horn Pad
+    msb: 0
+    lsb: 64
+  - name: RotarStr
+    msb: 0
+    lsb: 65
+- pc: 91
+  name: PolySyPd
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: PolyPd80
+    msb: 0
+    lsb: 64
+  - name: ClickPad
+    msb: 0
+    lsb: 65
+  - name: Ana. Pad
+    msb: 0
+    lsb: 66
+  - name: SquarPad
+    msb: 0
+    lsb: 67
+  - name: Snow Pad
+    msb: 0
+    lsb: 68
+  - name: Pixie
+    msb: 0
+    lsb: 69
+  - name: Pisces
+    msb: 0
+    lsb: 70
+  - name: Spiral
+    msb: 0
+    lsb: 71
+  - name: PolySPd2
+    msb: 0
+    lsb: 72
+  - name: PolyPdKg
+    msb: 0
+    lsb: 73
+- pc: 92
+  name: ChoirPad
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: Heaven
+    msb: 0
+    lsb: 64
+  - name: Lite Pad
+    msb: 0
+    lsb: 65
+  - name: Itopia
+    msb: 0
+    lsb: 66
+  - name: CC Pad
+    msb: 0
+    lsb: 67
+  - name: CosmicPd
+    msb: 0
+    lsb: 68
+- pc: 93
+  name: BowedPad
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: GlassPad
+    msb: 0
+    lsb: 65
+  - name: SqrTwang
+    msb: 0
+    lsb: 66
+  - name: SquarPd8
+    msb: 0
+    lsb: 67
+- pc: 94
+  name: MetalPad
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: Pan Pad
+    msb: 0
+    lsb: 65
+  - name: Queever
+    msb: 0
+    lsb: 66
+- pc: 95
+  name: Halo Pad
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: Tiu
+    msb: 0
+    lsb: 40
+  - name: Aries
+    msb: 0
+    lsb: 64
+  - name: ChorusPd
+    msb: 0
+    lsb: 65
+- pc: 96
+  name: SweepPad
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: Shwimmer
+    msb: 0
+    lsb: 20
+  - name: Converge
+    msb: 0
+    lsb: 27
+  - name: PolarPad
+    msb: 0
+    lsb: 64
+  - name: Sweepy
+    msb: 0
+    lsb: 65
+  - name: Celstial
+    msb: 0
+    lsb: 66
+  - name: Monsoon
+    msb: 0
+    lsb: 67
+  - name: Io
+    msb: 0
+    lsb: 68

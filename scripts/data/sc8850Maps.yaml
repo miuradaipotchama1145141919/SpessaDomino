@@ -1,0 +1,10 @@
+instrumentMaps:
+- include: sc8850/instruments/55Map.yaml
+- include: sc8850/instruments/88Map.yaml
+- include: sc8850/instruments/88ProMap.yaml
+- include: sc8850/instruments/8850Map.yaml
+drumMaps:
+- include: sc8850/drums/55Map.yaml
+- include: sc8850/drums/88Map.yaml
+- include: sc8850/drums/88ProMap.yaml
+- include: sc8850/drums/8850Map.yaml

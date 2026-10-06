@@ -1,0 +1,16 @@
+type: ccm
+id: 364
+name: Pitch Fine Tune
+sync: Last
+value:
+  default: 0
+  min: -8192
+  max: 8191
+  offset: 8192
+  name: Fine
+memo: 14 bit, range of +/-100 cents.
+sysex:
+  profile: gs
+  address: '40H #1RCH 2AH'
+  payload: '#VL'
+color: C000C0

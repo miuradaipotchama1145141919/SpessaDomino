@@ -1,0 +1,48 @@
+- pc: 73
+  name: Piccolo
+  banks:
+  - name: Piccolo
+    msb: 121
+    lsb: 0
+- pc: 74
+  name: Flute
+  banks:
+  - name: Flute
+    msb: 121
+    lsb: 0
+- pc: 75
+  name: Recorder
+  banks:
+  - name: Recorder
+    msb: 121
+    lsb: 0
+- pc: 76
+  name: Pan Flute
+  banks:
+  - name: Pan Flute
+    msb: 121
+    lsb: 0
+- pc: 77
+  name: Blown Bottle
+  banks:
+  - name: Blown Bottle
+    msb: 121
+    lsb: 0
+- pc: 78
+  name: Shakuhachi
+  banks:
+  - name: Shakuhachi
+    msb: 121
+    lsb: 0
+- pc: 79
+  name: Whistle
+  banks:
+  - name: Whistle
+    msb: 121
+    lsb: 0
+- pc: 80
+  name: Ocarina
+  banks:
+  - name: Ocarina
+    msb: 121
+    lsb: 0

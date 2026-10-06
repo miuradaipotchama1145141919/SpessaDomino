@@ -1,0 +1,98 @@
+type: folder
+name: GS Reverb
+items:
+- type: ccm
+  id: 310
+  name: Reverb Macro
+  sync: Last
+  value:
+    default: 4
+    min: 0
+    max: 7
+    tableId: 10
+  memo: Sets every parameter of the processor to a preset. See SC-8850 Owner's Manual page 81. SpessaSynth resets to Hall 2, Chorus 3 and Delay 1.
+  sysex:
+    profile: gs
+    address: 40H 01H 30H
+    payload: '#VL'
+  color: 0080E0
+- type: ccm
+  id: 311
+  name: Reverb Character
+  sync: Last
+  value:
+    default: 4
+    min: 0
+    max: 7
+    tableId: 10
+  memo: Characters 0 to 5 use the Dattorro model. 6 is a delay line, 7 a ping-pong delay.
+  sysex:
+    profile: gs
+    address: 40H 01H 31H
+    payload: '#VL'
+  color: 0080E0
+- type: ccm
+  id: 312
+  name: Reverb Pre-LPF
+  sync: Last
+  value:
+    default: 0
+    min: 0
+    max: 7
+  sysex:
+    profile: gs
+    address: 40H 01H 32H
+    payload: '#VL'
+  color: 0080E0
+- type: ccm
+  id: 313
+  name: Reverb Level
+  sync: Last
+  value:
+    default: 64
+    min: 0
+    max: 127
+  sysex:
+    profile: gs
+    address: 40H 01H 33H
+    payload: '#VL'
+  color: 0080E0
+- type: ccm
+  id: 314
+  name: Reverb Time
+  sync: Last
+  value:
+    default: 64
+    min: 0
+    max: 127
+  sysex:
+    profile: gs
+    address: 40H 01H 34H
+    payload: '#VL'
+  color: 0080E0
+- type: ccm
+  id: 315
+  name: Reverb Delay Feedback
+  sync: Last
+  value:
+    default: 0
+    min: 0
+    max: 127
+  sysex:
+    profile: gs
+    address: 40H 01H 35H
+    payload: '#VL'
+  color: 0080E0
+- type: ccm
+  id: 316
+  name: Reverb Pre-Delay Time
+  sync: Last
+  value:
+    default: 0
+    min: 0
+    max: 127
+  sysex:
+    profile: gs
+    address: 40H 01H 37H
+    payload: '#VL'
+  color: 0080E0

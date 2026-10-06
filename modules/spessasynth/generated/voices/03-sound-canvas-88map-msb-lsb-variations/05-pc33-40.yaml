@@ -1,0 +1,117 @@
+- pc: 33
+  name: AcousticBs.
+  banks:
+  - name: AcousticBs.
+    msb: 0
+    lsb: 2
+- pc: 34
+  name: FingeredBs.
+  banks:
+  - name: FingeredBs.
+    msb: 0
+    lsb: 2
+  - name: FingeredBs2
+    msb: 1
+    lsb: 2
+  - name: Jazz Bass
+    msb: 2
+    lsb: 2
+- pc: 35
+  name: Picked Bass
+  banks:
+  - name: Picked Bass
+    msb: 0
+    lsb: 2
+  - name: MutePickBs.
+    msb: 8
+    lsb: 2
+- pc: 36
+  name: FretlessBs.
+  banks:
+  - name: FretlessBs.
+    msb: 0
+    lsb: 2
+  - name: FretlessBs2
+    msb: 1
+    lsb: 2
+  - name: FretlessBs3
+    msb: 2
+    lsb: 2
+  - name: FretlessBs4
+    msb: 3
+    lsb: 2
+  - name: SynFretless
+    msb: 4
+    lsb: 2
+  - name: Mr.Smooth
+    msb: 5
+    lsb: 2
+- pc: 37
+  name: Slap Bass 1
+  banks:
+  - name: Slap Bass 1
+    msb: 0
+    lsb: 2
+  - name: Reso Slap
+    msb: 8
+    lsb: 2
+- pc: 38
+  name: Slap Bass 2
+  banks:
+  - name: Slap Bass 2
+    msb: 0
+    lsb: 2
+- pc: 39
+  name: SynthBass 1
+  banks:
+  - name: SynthBass 1
+    msb: 0
+    lsb: 2
+  - name: Syn.Bass101
+    msb: 1
+    lsb: 2
+  - name: Acid Bass
+    msb: 8
+    lsb: 2
+  - name: TB303 Bass
+    msb: 9
+    lsb: 2
+  - name: Tekno Bass
+    msb: 10
+    lsb: 2
+  - name: Reso SHBass
+    msb: 16
+    lsb: 2
+- pc: 40
+  name: SynthBass 2
+  banks:
+  - name: SynthBass 2
+    msb: 0
+    lsb: 2
+  - name: Syn.Bass201
+    msb: 1
+    lsb: 2
+  - name: ModularBass
+    msb: 2
+    lsb: 2
+  - name: Seq Bass
+    msb: 3
+    lsb: 2
+  - name: Beef FMBass
+    msb: 8
+    lsb: 2
+  - name: X Wire Bass
+    msb: 9
+    lsb: 2
+  - name: Rubber Bass
+    msb: 16
+    lsb: 2
+  - name: SH101Bass 1
+    msb: 17
+    lsb: 2
+  - name: SH101Bass 2
+    msb: 18
+    lsb: 2
+  - name: Smooth Bass
+    msb: 19
+    lsb: 2

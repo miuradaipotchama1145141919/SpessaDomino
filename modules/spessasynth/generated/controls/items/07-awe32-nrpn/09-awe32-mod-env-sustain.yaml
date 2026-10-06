@@ -1,0 +1,10 @@
+type: ccm
+id: 238
+name: AWE32 Mod Env Sustain
+value:
+  default: 0
+  max: 127
+  name: LSB
+memo: SoundBlaster AWE32 NRPN emulation. Replaces the generator value on the channel.
+data: '@NRPN 7FH 08H 00H #VL'
+color: '904020'

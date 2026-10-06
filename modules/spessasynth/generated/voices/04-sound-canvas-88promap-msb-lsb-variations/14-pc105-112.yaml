@@ -1,0 +1,135 @@
+- pc: 105
+  name: Sitar
+  banks:
+  - name: Sitar
+    msb: 0
+    lsb: 3
+  - name: Sitar 2
+    msb: 1
+    lsb: 3
+  - name: Detune Sitar
+    msb: 2
+    lsb: 3
+  - name: Sitar 3
+    msb: 3
+    lsb: 3
+  - name: Tambra
+    msb: 8
+    lsb: 3
+  - name: Tamboura
+    msb: 16
+    lsb: 3
+- pc: 106
+  name: Banjo
+  banks:
+  - name: Banjo
+    msb: 0
+    lsb: 3
+  - name: Muted Banjo
+    msb: 1
+    lsb: 3
+  - name: Rabab
+    msb: 8
+    lsb: 3
+  - name: San Xian
+    msb: 9
+    lsb: 3
+  - name: Gopichant
+    msb: 16
+    lsb: 3
+  - name: Oud
+    msb: 24
+    lsb: 3
+  - name: Oud+Strings
+    msb: 28
+    lsb: 3
+  - name: Pi Pa
+    msb: 32
+    lsb: 3
+- pc: 107
+  name: Shamisen
+  banks:
+  - name: Shamisen
+    msb: 0
+    lsb: 3
+  - name: Tsugaru
+    msb: 1
+    lsb: 3
+  - name: Syn Shamisen
+    msb: 8
+    lsb: 3
+- pc: 108
+  name: Koto
+  banks:
+  - name: Koto
+    msb: 0
+    lsb: 3
+  - name: Gu Zheng
+    msb: 1
+    lsb: 3
+  - name: Taisho Koto
+    msb: 8
+    lsb: 3
+  - name: Kanoon
+    msb: 16
+    lsb: 3
+  - name: Kanoon+Choir
+    msb: 19
+    lsb: 3
+  - name: Oct Harp
+    msb: 24
+    lsb: 3
+- pc: 109
+  name: Kalimba
+  banks:
+  - name: Kalimba
+    msb: 0
+    lsb: 3
+  - name: Sanza
+    msb: 8
+    lsb: 3
+- pc: 110
+  name: Bagpipe
+  banks:
+  - name: Bagpipe
+    msb: 0
+    lsb: 3
+  - name: Didgeridoo
+    msb: 8
+    lsb: 3
+- pc: 111
+  name: Fiddle
+  banks:
+  - name: Fiddle
+    msb: 0
+    lsb: 3
+  - name: Er Hu
+    msb: 8
+    lsb: 3
+  - name: Gao Hu
+    msb: 9
+    lsb: 3
+- pc: 112
+  name: Shanai
+  banks:
+  - name: Shanai
+    msb: 0
+    lsb: 3
+  - name: Shanai 2
+    msb: 1
+    lsb: 3
+  - name: Pungi
+    msb: 8
+    lsb: 3
+  - name: Hichiriki
+    msb: 16
+    lsb: 3
+  - name: Mizmar
+    msb: 24
+    lsb: 3
+  - name: Suona 1
+    msb: 32
+    lsb: 3
+  - name: Suona 2
+    msb: 33
+    lsb: 3

@@ -1,0 +1,24 @@
+name: Drum Key-Based Controllers
+ch: 10
+mode: Rhythm
+events:
+- tag: Comment
+  attrs:
+    Tick: 0
+    Step: 0
+    Text: '---- Drum Parameter --------------------------------------------'
+- tag: PC
+  attrs:
+    PC: 1
+    Mode: Drumset
+    Step: 1
+- tag: CC
+  attrs:
+    ID: 152
+    Gate: 36
+    Value: 120
+    Step: 3
+- tag: Comment
+  attrs:
+    Step: 0
+    Text: '---- End of Drum Parameter ---------------------------------------'

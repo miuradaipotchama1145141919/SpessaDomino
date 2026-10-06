@@ -1,0 +1,147 @@
+- pc: 41
+  name: Violin
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: Slow Vln
+    msb: 0
+    lsb: 8
+  - name: Unison
+    msb: 0
+    lsb: 40
+  - name: Cadenza
+    msb: 0
+    lsb: 64
+  - name: CadenzDk
+    msb: 0
+    lsb: 65
+  - name: Vln Sec
+    msb: 0
+    lsb: 66
+  - name: Hrd Vlns
+    msb: 0
+    lsb: 67
+  - name: Slw Vlns
+    msb: 0
+    lsb: 68
+  - name: 'Violin #'
+    msb: 0
+    lsb: 126
+- pc: 42
+  name: Viola
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: VlaDoubl
+    msb: 0
+    lsb: 40
+  - name: Sonata
+    msb: 0
+    lsb: 64
+  - name: Vla Sec
+    msb: 0
+    lsb: 65
+  - name: Hrd Vlas
+    msb: 0
+    lsb: 66
+  - name: Slw Vlas
+    msb: 0
+    lsb: 67
+- pc: 43
+  name: Cello
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: CelloSec
+    msb: 0
+    lsb: 64
+  - name: Hrd Vcs
+    msb: 0
+    lsb: 65
+  - name: Slw Vcs
+    msb: 0
+    lsb: 66
+- pc: 44
+  name: Contrabs
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: CB Sec
+    msb: 0
+    lsb: 64
+  - name: Hrd CBs
+    msb: 0
+    lsb: 65
+  - name: Slw CBs
+    msb: 0
+    lsb: 66
+- pc: 45
+  name: Trem.Str
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: SlwTrStr
+    msb: 0
+    lsb: 8
+  - name: Susp.Str
+    msb: 0
+    lsb: 40
+  - name: Fear
+    msb: 0
+    lsb: 64
+  - name: Fear Dtd
+    msb: 0
+    lsb: 65
+  - name: Apoclyps
+    msb: 0
+    lsb: 66
+  - name: TremStr#
+    msb: 0
+    lsb: 126
+- pc: 46
+  name: Pizz.Str
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: Pizz Oct
+    msb: 0
+    lsb: 35
+  - name: Sleep
+    msb: 0
+    lsb: 40
+  - name: Collegno
+    msb: 0
+    lsb: 64
+- pc: 47
+  name: Harp
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: YangChin
+    msb: 0
+    lsb: 40
+  - name: El.Harp
+    msb: 0
+    lsb: 64
+  - name: Vln Harp
+    msb: 0
+    lsb: 96
+  - name: VlnHrpDt
+    msb: 0
+    lsb: 97
+- pc: 48
+  name: Timpani
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: Roll&Hit
+    msb: 0
+    lsb: 43

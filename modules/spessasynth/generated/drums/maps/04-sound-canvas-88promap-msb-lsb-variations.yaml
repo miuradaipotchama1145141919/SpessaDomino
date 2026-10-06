@@ -1,0 +1,184 @@
+name: Sound Canvas 88ProMap (MSB/LSB variations)
+programs:
+- pc: 1
+  name: STANDARD 1
+  banks:
+  - name: STANDARD 1
+    msb: 0
+    lsb: 3
+    toneSet: sc8850_88ProMap_1_0_3
+- pc: 2
+  name: STANDARD 2
+  banks:
+  - name: STANDARD 2
+    msb: 0
+    lsb: 3
+    toneSet: sc8850_88ProMap_2_0_3
+- pc: 3
+  name: STANDARD 3
+  banks:
+  - name: STANDARD 3
+    msb: 0
+    lsb: 3
+    toneSet: sc8850_88ProMap_3_0_3
+- pc: 9
+  name: ROOM
+  banks:
+  - name: ROOM
+    msb: 0
+    lsb: 3
+    toneSet: sc8850_88ProMap_9_0_3
+- pc: 10
+  name: HIPHOP
+  banks:
+  - name: HIPHOP
+    msb: 0
+    lsb: 3
+    toneSet: sc8850_88ProMap_10_0_3
+- pc: 11
+  name: JUNGLE
+  banks:
+  - name: JUNGLE
+    msb: 0
+    lsb: 3
+    toneSet: sc8850_88ProMap_11_0_3
+- pc: 12
+  name: TECHNO
+  banks:
+  - name: TECHNO
+    msb: 0
+    lsb: 3
+    toneSet: sc8850_88ProMap_12_0_3
+- pc: 17
+  name: POWER
+  banks:
+  - name: POWER
+    msb: 0
+    lsb: 3
+    toneSet: sc8850_88ProMap_17_0_3
+- pc: 25
+  name: ELECTRONIC
+  banks:
+  - name: ELECTRONIC
+    msb: 0
+    lsb: 3
+    toneSet: sc8850_88ProMap_25_0_3
+- pc: 26
+  name: TR-808
+  banks:
+  - name: TR-808
+    msb: 0
+    lsb: 3
+    toneSet: sc8850_88ProMap_26_0_3
+- pc: 27
+  name: DANCE
+  banks:
+  - name: DANCE
+    msb: 0
+    lsb: 3
+    toneSet: sc8850_88ProMap_27_0_3
+- pc: 28
+  name: CR-78
+  banks:
+  - name: CR-78
+    msb: 0
+    lsb: 3
+    toneSet: sc8850_88ProMap_28_0_3
+- pc: 29
+  name: TR-606
+  banks:
+  - name: TR-606
+    msb: 0
+    lsb: 3
+    toneSet: sc8850_88ProMap_29_0_3
+- pc: 30
+  name: TR-707
+  banks:
+  - name: TR-707
+    msb: 0
+    lsb: 3
+    toneSet: sc8850_88ProMap_30_0_3
+- pc: 31
+  name: TR-909
+  banks:
+  - name: TR-909
+    msb: 0
+    lsb: 3
+    toneSet: sc8850_88ProMap_31_0_3
+- pc: 33
+  name: JAZZ
+  banks:
+  - name: JAZZ
+    msb: 0
+    lsb: 3
+    toneSet: sc8850_88ProMap_33_0_3
+- pc: 41
+  name: BRUSH
+  banks:
+  - name: BRUSH
+    msb: 0
+    lsb: 3
+    toneSet: sc8850_88ProMap_41_0_3
+- pc: 49
+  name: ORCHESTRA
+  banks:
+  - name: ORCHESTRA
+    msb: 0
+    lsb: 3
+    toneSet: sc8850_88ProMap_49_0_3
+- pc: 50
+  name: ETHNIC
+  banks:
+  - name: ETHNIC
+    msb: 0
+    lsb: 3
+    toneSet: sc8850_88ProMap_50_0_3
+- pc: 51
+  name: KICK & SNARE
+  banks:
+  - name: KICK & SNARE
+    msb: 0
+    lsb: 3
+    toneSet: sc8850_88ProMap_51_0_3
+- pc: 53
+  name: ASIA
+  banks:
+  - name: ASIA
+    msb: 0
+    lsb: 3
+    toneSet: sc8850_88ProMap_53_0_3
+- pc: 54
+  name: CYMBAL&CLAPS
+  banks:
+  - name: CYMBAL&CLAPS
+    msb: 0
+    lsb: 3
+    toneSet: sc8850_88ProMap_54_0_3
+- pc: 57
+  name: SFX
+  banks:
+  - name: SFX
+    msb: 0
+    lsb: 3
+    toneSet: sc8850_88ProMap_57_0_3
+- pc: 58
+  name: RHYTHM FX
+  banks:
+  - name: RHYTHM FX
+    msb: 0
+    lsb: 3
+    toneSet: sc8850_88ProMap_58_0_3
+- pc: 59
+  name: RHYTHM FX 2
+  banks:
+  - name: RHYTHM FX 2
+    msb: 0
+    lsb: 3
+    toneSet: sc8850_88ProMap_59_0_3
+- pc: 128
+  name: CM-64/32L
+  banks:
+  - name: CM-64/32L
+    msb: 0
+    lsb: 3
+    toneSet: sc8850_88ProMap_128_0_3

@@ -1,0 +1,22 @@
+type: ccm
+id: 506
+name: Program Change
+sync: Last
+value:
+  default: 1
+  min: 1
+  max: 128
+  offset: -1
+  name: Program
+gate:
+  default: 1
+  min: 1
+  max: 64
+  offset: -1
+  name: Part No.
+memo: Same as a Program Change on that part. Send the bank first.
+sysex:
+  profile: xg
+  address: '08H #GL 03H'
+  payload: '#VL'
+color: 0050D0

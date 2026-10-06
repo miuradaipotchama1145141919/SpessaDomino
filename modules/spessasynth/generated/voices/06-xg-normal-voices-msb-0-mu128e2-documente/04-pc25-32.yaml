@@ -1,0 +1,330 @@
+- pc: 25
+  name: NylonGtr
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: NylonGt2
+    msb: 0
+    lsb: 16
+  - name: NylonGt3
+    msb: 0
+    lsb: 25
+  - name: NylnGtDt
+    msb: 0
+    lsb: 32
+  - name: Wayside
+    msb: 0
+    lsb: 40
+  - name: VelGtHrm
+    msb: 0
+    lsb: 43
+  - name: EsGuitar
+    msb: 0
+    lsb: 64
+  - name: EsGtrHrd
+    msb: 0
+    lsb: 65
+  - name: EsGtMllo
+    msb: 0
+    lsb: 66
+  - name: EsGtrDcy
+    msb: 0
+    lsb: 67
+  - name: Ukulele
+    msb: 0
+    lsb: 96
+  - name: NylonGt#
+    msb: 0
+    lsb: 126
+- pc: 26
+  name: SteelGtr
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: SteelGt2
+    msb: 0
+    lsb: 16
+  - name: StlGtrDt
+    msb: 0
+    lsb: 32
+  - name: 12StrGtr
+    msb: 0
+    lsb: 35
+  - name: Nyln&Stl
+    msb: 0
+    lsb: 40
+  - name: Stl&Body
+    msb: 0
+    lsb: 41
+  - name: Nashvlle
+    msb: 0
+    lsb: 64
+  - name: NashvllR
+    msb: 0
+    lsb: 65
+  - name: Nashvl12
+    msb: 0
+    lsb: 66
+  - name: Mandolin
+    msb: 0
+    lsb: 96
+  - name: MndlnEns
+    msb: 0
+    lsb: 97
+  - name: SteelGt#
+    msb: 0
+    lsb: 126
+- pc: 27
+  name: Jazz Gtr
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: MelloGtr
+    msb: 0
+    lsb: 18
+  - name: Jazz Amp
+    msb: 0
+    lsb: 32
+  - name: OrganGtr
+    msb: 0
+    lsb: 40
+  - name: OctPlate
+    msb: 0
+    lsb: 41
+  - name: SuperJzM
+    msb: 0
+    lsb: 64
+  - name: SuperJzB
+    msb: 0
+    lsb: 65
+  - name: SuperJzD
+    msb: 0
+    lsb: 66
+  - name: SuperJzR
+    msb: 0
+    lsb: 67
+  - name: DX JzGtr
+    msb: 0
+    lsb: 68
+  - name: DXJzGt D
+    msb: 0
+    lsb: 69
+  - name: PulsJazz
+    msb: 0
+    lsb: 70
+  - name: RghcastN
+    msb: 0
+    lsb: 71
+  - name: RghcastM
+    msb: 0
+    lsb: 72
+  - name: PdlSteel
+    msb: 0
+    lsb: 96
+  - name: JazzGtr#
+    msb: 0
+    lsb: 126
+- pc: 28
+  name: CleanGtr
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: ChorusGt
+    msb: 0
+    lsb: 32
+  - name: ChoGtrLt
+    msb: 0
+    lsb: 33
+  - name: CleanGt2
+    msb: 0
+    lsb: 64
+  - name: MidT.Gtr
+    msb: 0
+    lsb: 65
+  - name: MidTGtSt
+    msb: 0
+    lsb: 66
+  - name: NasalGtr
+    msb: 0
+    lsb: 67
+  - name: NaslGtSt
+    msb: 0
+    lsb: 68
+  - name: Hammer M
+    msb: 0
+    lsb: 69
+  - name: Hammer B
+    msb: 0
+    lsb: 70
+  - name: Hammer D
+    msb: 0
+    lsb: 71
+  - name: HammerSt
+    msb: 0
+    lsb: 72
+  - name: FMChoGtr
+    msb: 0
+    lsb: 73
+  - name: FMChoGtS
+    msb: 0
+    lsb: 74
+  - name: PeskyGtr
+    msb: 0
+    lsb: 75
+  - name: ClaviGtr
+    msb: 0
+    lsb: 76
+- pc: 29
+  name: Mute Gtr
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: FunkGtr1
+    msb: 0
+    lsb: 40
+  - name: MuteStlG
+    msb: 0
+    lsb: 41
+  - name: FunkGtr2
+    msb: 0
+    lsb: 43
+  - name: Jazz Man
+    msb: 0
+    lsb: 45
+  - name: Wrench
+    msb: 0
+    lsb: 64
+  - name: WrenchHv
+    msb: 0
+    lsb: 65
+  - name: WrnchDbl
+    msb: 0
+    lsb: 66
+  - name: Tin
+    msb: 0
+    lsb: 67
+  - name: Mu.DstGt
+    msb: 0
+    lsb: 96
+  - name: MuteGtr#
+    msb: 0
+    lsb: 126
+- pc: 30
+  name: Ovrdrive
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: OdrvGtDt
+    msb: 0
+    lsb: 32
+  - name: Parallel
+    msb: 0
+    lsb: 40
+  - name: Gt.Pinch
+    msb: 0
+    lsb: 43
+  - name: ManhttnM
+    msb: 0
+    lsb: 64
+  - name: ManhttnB
+    msb: 0
+    lsb: 65
+  - name: ManhttnD
+    msb: 0
+    lsb: 66
+  - name: ManhttnP
+    msb: 0
+    lsb: 67
+  - name: Ovrdriv#
+    msb: 0
+    lsb: 126
+- pc: 31
+  name: Dist.Gtr
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: DstRthmG
+    msb: 0
+    lsb: 12
+  - name: DistGtr2
+    msb: 0
+    lsb: 24
+  - name: DistGtr3
+    msb: 0
+    lsb: 35
+  - name: PowerGt2
+    msb: 0
+    lsb: 36
+  - name: PowerGt1
+    msb: 0
+    lsb: 37
+  - name: Dst.5ths
+    msb: 0
+    lsb: 38
+  - name: FeedbkGt
+    msb: 0
+    lsb: 40
+  - name: FeedbkG2
+    msb: 0
+    lsb: 41
+  - name: TwinDist
+    msb: 0
+    lsb: 42
+  - name: RckRthm2
+    msb: 0
+    lsb: 43
+  - name: RckRthm1
+    msb: 0
+    lsb: 45
+  - name: Bite
+    msb: 0
+    lsb: 64
+  - name: Bite Res
+    msb: 0
+    lsb: 65
+  - name: Bite Dtd
+    msb: 0
+    lsb: 66
+  - name: Bite +
+    msb: 0
+    lsb: 67
+  - name: Burnout
+    msb: 0
+    lsb: 68
+  - name: Bombay
+    msb: 0
+    lsb: 69
+  - name: Bombay S
+    msb: 0
+    lsb: 70
+  - name: Jaipur
+    msb: 0
+    lsb: 71
+  - name: DistGtr#
+    msb: 0
+    lsb: 126
+- pc: 32
+  name: GtrHarmo
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: AcoHarmo
+    msb: 0
+    lsb: 64
+  - name: GtFeedbk
+    msb: 0
+    lsb: 65
+  - name: GtrHrmo2
+    msb: 0
+    lsb: 66
+  - name: Shimla
+    msb: 0
+    lsb: 67

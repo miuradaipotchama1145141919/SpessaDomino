@@ -1,0 +1,13 @@
+type: ccm
+id: 356
+name: Part Level
+sync: Last
+value:
+  default: 100
+  max: 127
+memo: Alias of CC7.
+sysex:
+  profile: gs
+  address: '40H #1RCH 19H'
+  payload: '#VL'
+color: 008000

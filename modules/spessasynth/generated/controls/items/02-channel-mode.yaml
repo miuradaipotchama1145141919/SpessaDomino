@@ -1,0 +1,45 @@
+type: folder
+name: Channel Mode
+items:
+- type: ccm
+  id: 120
+  name: All Sound Off
+  memo: Kills all voices, ignoring release.
+  data: '@CC 120 0'
+  color: '808000'
+- type: ccm
+  id: 121
+  name: Reset All Controllers
+  memo: RP-15 behavior.
+  data: '@CC 121 0'
+  color: '808000'
+- type: ccm
+  id: 123
+  name: All Notes Off
+  memo: Respects release.
+  data: '@CC 123 0'
+  color: '808000'
+- type: ccm
+  id: 124
+  name: Omni Mode Off
+  data: '@CC 124 0'
+  color: '808000'
+- type: ccm
+  id: 125
+  name: Omni Mode On
+  data: '@CC 125 0'
+  color: '808000'
+- type: ccm
+  id: 126
+  name: Mono Mode On
+  value:
+    default: 1
+    max: 127
+  memo: Any value switches mono on and terminates active voices on the channel.
+  data: '@CC 126 #VL'
+  color: '808000'
+- type: ccm
+  id: 127
+  name: Poly Mode On
+  data: '@CC 127 0'
+  color: '808000'

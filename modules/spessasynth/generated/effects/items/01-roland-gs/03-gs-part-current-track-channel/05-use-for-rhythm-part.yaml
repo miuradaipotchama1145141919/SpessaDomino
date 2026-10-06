@@ -1,0 +1,15 @@
+type: ccm
+id: 354
+name: Use for Rhythm Part
+sync: Last
+value:
+  default: 0
+  min: 0
+  max: 2
+  tableId: 14
+memo: Turns any channel into a drum channel. SpessaSynth has no limit on drum channels.
+sysex:
+  profile: gs
+  address: '40H #1RCH 15H'
+  payload: '#VL'
+color: '707070'

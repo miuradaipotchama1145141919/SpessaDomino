@@ -1,0 +1,4 @@
+type: folder
+name: XG Effects (Experimental 4.4.0)
+items:
+- include: 05-xg-effects-experimental-4-4-0/*.yaml

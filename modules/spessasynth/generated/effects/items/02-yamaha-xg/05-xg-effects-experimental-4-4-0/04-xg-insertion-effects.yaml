@@ -1,0 +1,4 @@
+type: folder
+name: XG Insertion Effects
+items:
+- include: 04-xg-insertion-effects/*.yaml

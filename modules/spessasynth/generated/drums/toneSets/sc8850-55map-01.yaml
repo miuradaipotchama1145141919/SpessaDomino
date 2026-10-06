@@ -1,0 +1,372 @@
+sc8850_55Map_1_0_1:
+  27: High Q
+  28: Slap
+  29: Scr.Push
+  30: Scr.Pull
+  31: Sticks
+  32: Sq.Click
+  33: Mt.Click
+  34: Mt. Bell
+  35: Kick 2
+  36: Kick 1
+  37: Sd.Stick
+  38: Snare 1
+  39: HandClap
+  40: Snare 2
+  41: LowTom 2
+  42: Closd HH
+  43: LowTom 1
+  44: Pedal HH
+  45: MidTom 2
+  46: Open HH
+  47: MidTom 1
+  48: Hi.Tom 2
+  49: CrshCym1
+  50: Hi.Tom 1
+  51: RideCym1
+  52: Chin.Cym
+  53: RideBell
+  54: Tambourn
+  55: SplshCym
+  56: Cowbell
+  57: CrshCym2
+  58: Vib-slap
+  59: RideCym2
+  60: Hi.Bongo
+  61: LowBongo
+  62: MH Conga
+  63: OH Conga
+  64: LowConga
+  65: Hi.Timbl
+  66: LowTimbl
+  67: Hi.Agogo
+  68: LowAgogo
+  69: Cabasa
+  70: Maracas
+  71: SH.Whisl
+  72: LL.Whisl
+  73: S.Guiro
+  74: L.Guiro
+  75: Claves
+  76: Hi.W.Blk
+  77: LowW.Blk
+  78: Mt.Cuica
+  79: Op.Cuica
+  80: Mt.Trigl
+  81: Op.Trigl
+  82: Shaker
+  83: Jng.Bell
+  84: BellTree
+  85: Castanet
+  86: Mt.Surdo
+  87: Op.Surdo
+sc8850_55Map_9_0_1:
+  27: High Q
+  28: Slap
+  29: Scr.Push
+  30: Scr.Pull
+  31: Sticks
+  32: Sq.Click
+  33: Mt.Click
+  34: Mt. Bell
+  35: Kick 2
+  36: Kick 1
+  37: Sd.Stick
+  38: Snare 1
+  39: HandClap
+  40: Snare 2
+  41: R.LTom 2
+  42: Closd HH
+  43: R.LTom 1
+  44: Pedal HH
+  45: R.MTom 2
+  46: Open HH
+  47: R.MTom 1
+  48: R.HTom 2
+  49: CrshCym1
+  50: R.HTom 1
+  51: RideCym1
+  52: Chin.Cym
+  53: RideBell
+  54: Tambourn
+  55: SplshCym
+  56: Cowbell
+  57: CrshCym2
+  58: Vib-slap
+  59: RideCym2
+  60: Hi.Bongo
+  61: LowBongo
+  62: MH Conga
+  63: OH Conga
+  64: LowConga
+  65: Hi.Timbl
+  66: LowTimbl
+  67: Hi.Agogo
+  68: LowAgogo
+  69: Cabasa
+  70: Maracas
+  71: SH.Whisl
+  72: LL.Whisl
+  73: S.Guiro
+  74: L.Guiro
+  75: Claves
+  76: Hi.W.Blk
+  77: LowW.Blk
+  78: Mt.Cuica
+  79: Op.Cuica
+  80: Mt.Trigl
+  81: Op.Trigl
+  82: Shaker
+  83: Jng.Bell
+  84: BellTree
+  85: Castanet
+  86: Mt.Surdo
+  87: Op.Surdo
+sc8850_55Map_17_0_1:
+  27: High Q
+  28: Slap
+  29: Scr.Push
+  30: Scr.Pull
+  31: Sticks
+  32: Sq.Click
+  33: Mt.Click
+  34: Mt. Bell
+  35: Kick 2
+  36: MONDO K
+  37: Sd.Stick
+  38: Gated SD
+  39: HandClap
+  40: Snare 2
+  41: R.LTom 2
+  42: Closd HH
+  43: R.LTom 1
+  44: Pedal HH
+  45: R.MTom 2
+  46: Open HH
+  47: R.MTom 1
+  48: R.HTom 2
+  49: CrshCym1
+  50: R.HTom 1
+  51: RideCym1
+  52: Chin.Cym
+  53: RideBell
+  54: Tambourn
+  55: SplshCym
+  56: Cowbell
+  57: CrshCym2
+  58: Vib-slap
+  59: RideCym2
+  60: Hi.Bongo
+  61: LowBongo
+  62: MH Conga
+  63: OH Conga
+  64: LowConga
+  65: Hi.Timbl
+  66: LowTimbl
+  67: Hi.Agogo
+  68: LowAgogo
+  69: Cabasa
+  70: Maracas
+  71: SH.Whisl
+  72: LL.Whisl
+  73: S.Guiro
+  74: L.Guiro
+  75: Claves
+  76: Hi.W.Blk
+  77: LowW.Blk
+  78: Mt.Cuica
+  79: Op.Cuica
+  80: Mt.Trigl
+  81: Op.Trigl
+  82: Shaker
+  83: Jng.Bell
+  84: BellTree
+  85: Castanet
+  86: Mt.Surdo
+  87: Op.Surdo
+sc8850_55Map_25_0_1:
+  27: High Q
+  28: Slap
+  29: Scr.Push
+  30: Scr.Pull
+  31: Sticks
+  32: Sq.Click
+  33: Mt.Click
+  34: Mt. Bell
+  35: Kick 2
+  36: Elec BD
+  37: Sd.Stick
+  38: Gated SD
+  39: HandClap
+  40: Gated SD
+  41: E.LTom 2
+  42: Closd HH
+  43: E.LTom 1
+  44: Pedal HH
+  45: E.MTom 2
+  46: Open HH
+  47: E.MTom 1
+  48: E.HTom 2
+  49: CrshCym1
+  50: E.HTom 1
+  51: RideCym1
+  52: Rev.Cym
+  53: RideBell
+  54: Tambourn
+  55: SplshCym
+  56: Cowbell
+  57: CrshCym2
+  58: Vib-slap
+  59: RideCym2
+  60: Hi.Bongo
+  61: LowBongo
+  62: MH Conga
+  63: OH Conga
+  64: LowConga
+  65: Hi.Timbl
+  66: LowTimbl
+  67: Hi.Agogo
+  68: LowAgogo
+  69: Cabasa
+  70: Maracas
+  71: SH.Whisl
+  72: LL.Whisl
+  73: S.Guiro
+  74: L.Guiro
+  75: Claves
+  76: Hi.W.Blk
+  77: LowW.Blk
+  78: Mt.Cuica
+  79: Op.Cuica
+  80: Mt.Trigl
+  81: Op.Trigl
+  82: Shaker
+  83: Jng.Bell
+  84: BellTree
+  85: Castanet
+  86: Mt.Surdo
+  87: Op.Surdo
+sc8850_55Map_26_0_1:
+  27: High Q
+  28: Slap
+  29: Scr.Push
+  30: Scr.Pull
+  31: Sticks
+  32: Sq.Click
+  33: Mt.Click
+  34: Mt. Bell
+  35: Kick 2
+  36: 808 BD
+  37: 808 Rmst
+  38: 808 SD
+  39: HandClap
+  40: Snare 2
+  41: 808 LT2
+  42: 808 CHH
+  43: 808 LT1
+  44: 808 CHH
+  45: 808 MT2
+  46: 808 OHH
+  47: 808 MT1
+  48: 808 HT2
+  49: 808 Cym
+  50: 808 HT1
+  51: RideCym1
+  52: Chin.Cym
+  53: RideBell
+  54: Tambourn
+  55: SplshCym
+  56: 808 Cwbl
+  57: CrshCym2
+  58: Vib-slap
+  59: RideCym2
+  60: Hi.Bongo
+  61: LowBongo
+  62: 808HCng
+  63: 808MCng
+  64: 808LCng
+  65: Hi.Timbl
+  66: LowTimbl
+  67: Hi.Agogo
+  68: LowAgogo
+  69: Cabasa
+  70: 808Mrcs
+  71: SH.Whisl
+  72: LL.Whisl
+  73: S.Guiro
+  74: L.Guiro
+  75: 808Clvs
+  76: Hi.W.Blk
+  77: LowW.Blk
+  78: Mt.Cuica
+  79: Op.Cuica
+  80: Mt.Trigl
+  81: Op.Trigl
+  82: Shaker
+  83: Jng.Bell
+  84: BellTree
+  85: Castanet
+  86: Mt.Surdo
+  87: Op.Surdo
+sc8850_55Map_33_0_1:
+  27: High Q
+  28: Slap
+  29: Scr.Push
+  30: Scr.Pull
+  31: Sticks
+  32: Sq.Click
+  33: Mt.Click
+  34: Mt. Bell
+  35: Jazz BD2
+  36: Jazz BD1
+  37: Sd.Stick
+  38: Snare 1
+  39: HandClap
+  40: Snare 2
+  41: LowTom 2
+  42: Closd HH
+  43: LowTom 1
+  44: Pedal HH
+  45: MidTom 2
+  46: Open HH
+  47: MidTom 1
+  48: Hi.Tom 2
+  49: CrshCym1
+  50: Hi.Tom 1
+  51: RideCym1
+  52: Chin.Cym
+  53: RideBell
+  54: Tambourn
+  55: SplshCym
+  56: Cowbell
+  57: CrshCym2
+  58: Vib-slap
+  59: RideCym2
+  60: Hi.Bongo
+  61: LowBongo
+  62: MH Conga
+  63: OH Conga
+  64: LowConga
+  65: Hi.Timbl
+  66: LowTimbl
+  67: Hi.Agogo
+  68: LowAgogo
+  69: Cabasa
+  70: Maracas
+  71: SH.Whisl
+  72: LL.Whisl
+  73: S.Guiro
+  74: L.Guiro
+  75: Claves
+  76: Hi.W.Blk
+  77: LowW.Blk
+  78: Mt.Cuica
+  79: Op.Cuica
+  80: Mt.Trigl
+  81: Op.Trigl
+  82: Shaker
+  83: Jng.Bell
+  84: BellTree
+  85: Castanet
+  86: Mt.Surdo
+  87: Op.Surdo

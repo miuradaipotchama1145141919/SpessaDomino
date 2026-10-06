@@ -1,0 +1,243 @@
+- pc: 121
+  name: Gt.FretNoise
+  banks:
+  - name: Gt.FretNoise
+    msb: 0
+    lsb: 3
+  - name: Gt.Cut Noise
+    msb: 1
+    lsb: 3
+  - name: String Slap
+    msb: 2
+    lsb: 3
+  - name: Gt.CutNoise2
+    msb: 3
+    lsb: 3
+  - name: Dist.CutNoiz
+    msb: 4
+    lsb: 3
+  - name: Bass Slide
+    msb: 5
+    lsb: 3
+  - name: Pick Scrape
+    msb: 6
+    lsb: 3
+  - name: Gt. FX Menu
+    msb: 8
+    lsb: 3
+  - name: Bartok Pizz.
+    msb: 9
+    lsb: 3
+  - name: Guitar Slap
+    msb: 10
+    lsb: 3
+  - name: Chord Stroke
+    msb: 11
+    lsb: 3
+  - name: Biwa Stroke
+    msb: 12
+    lsb: 3
+  - name: Biwa Tremolo
+    msb: 13
+    lsb: 3
+- pc: 122
+  name: Breath Noise
+  banks:
+  - name: Breath Noise
+    msb: 0
+    lsb: 3
+  - name: Fl.Key Click
+    msb: 1
+    lsb: 3
+- pc: 123
+  name: Seashore
+  banks:
+  - name: Seashore
+    msb: 0
+    lsb: 3
+  - name: Rain
+    msb: 1
+    lsb: 3
+  - name: Thunder
+    msb: 2
+    lsb: 3
+  - name: Wind
+    msb: 3
+    lsb: 3
+  - name: Stream
+    msb: 4
+    lsb: 3
+  - name: Bubble
+    msb: 5
+    lsb: 3
+  - name: Wind 2
+    msb: 6
+    lsb: 3
+  - name: Pink Noise
+    msb: 16
+    lsb: 3
+  - name: White Noise
+    msb: 17
+    lsb: 3
+- pc: 124
+  name: Bird
+  banks:
+  - name: Bird
+    msb: 0
+    lsb: 3
+  - name: Dog
+    msb: 1
+    lsb: 3
+  - name: Horse-Gallop
+    msb: 2
+    lsb: 3
+  - name: Bird 2
+    msb: 3
+    lsb: 3
+  - name: Kitty
+    msb: 4
+    lsb: 3
+  - name: Growl
+    msb: 5
+    lsb: 3
+- pc: 125
+  name: Telephone 1
+  banks:
+  - name: Telephone 1
+    msb: 0
+    lsb: 3
+  - name: Telephone 2
+    msb: 1
+    lsb: 3
+  - name: DoorCreaking
+    msb: 2
+    lsb: 3
+  - name: Door
+    msb: 3
+    lsb: 3
+  - name: Scratch
+    msb: 4
+    lsb: 3
+  - name: Wind Chimes
+    msb: 5
+    lsb: 3
+  - name: Scratch 2
+    msb: 7
+    lsb: 3
+  - name: ScratchKey
+    msb: 8
+    lsb: 3
+  - name: TapeRewind
+    msb: 9
+    lsb: 3
+  - name: Phono Noise
+    msb: 10
+    lsb: 3
+  - name: MC-500 Beep
+    msb: 11
+    lsb: 3
+- pc: 126
+  name: Helicopter
+  banks:
+  - name: Helicopter
+    msb: 0
+    lsb: 3
+  - name: Car-Engine
+    msb: 1
+    lsb: 3
+  - name: Car-Stop
+    msb: 2
+    lsb: 3
+  - name: Car-Pass
+    msb: 3
+    lsb: 3
+  - name: Car-Crash
+    msb: 4
+    lsb: 3
+  - name: Siren
+    msb: 5
+    lsb: 3
+  - name: Train
+    msb: 6
+    lsb: 3
+  - name: Jetplane
+    msb: 7
+    lsb: 3
+  - name: Starship
+    msb: 8
+    lsb: 3
+  - name: Burst Noise
+    msb: 9
+    lsb: 3
+  - name: Calculating
+    msb: 10
+    lsb: 3
+  - name: Perc. Bang
+    msb: 11
+    lsb: 3
+- pc: 127
+  name: Applause
+  banks:
+  - name: Applause
+    msb: 0
+    lsb: 3
+  - name: Laughing
+    msb: 1
+    lsb: 3
+  - name: Screaming
+    msb: 2
+    lsb: 3
+  - name: Punch
+    msb: 3
+    lsb: 3
+  - name: Heart Beat
+    msb: 4
+    lsb: 3
+  - name: Footsteps
+    msb: 5
+    lsb: 3
+  - name: Applause 2
+    msb: 6
+    lsb: 3
+  - name: Small Club
+    msb: 7
+    lsb: 3
+  - name: ApplauseWave
+    msb: 8
+    lsb: 3
+  - name: Voice One
+    msb: 16
+    lsb: 3
+  - name: Voice Two
+    msb: 17
+    lsb: 3
+  - name: Voice Three
+    msb: 18
+    lsb: 3
+  - name: Voice Tah
+    msb: 19
+    lsb: 3
+  - name: Voice Whey
+    msb: 20
+    lsb: 3
+- pc: 128
+  name: Gun Shot
+  banks:
+  - name: Gun Shot
+    msb: 0
+    lsb: 3
+  - name: Machine Gun
+    msb: 1
+    lsb: 3
+  - name: Lasergun
+    msb: 2
+    lsb: 3
+  - name: Explosion
+    msb: 3
+    lsb: 3
+  - name: Eruption
+    msb: 4
+    lsb: 3
+  - name: Big Shot
+    msb: 5
+    lsb: 3

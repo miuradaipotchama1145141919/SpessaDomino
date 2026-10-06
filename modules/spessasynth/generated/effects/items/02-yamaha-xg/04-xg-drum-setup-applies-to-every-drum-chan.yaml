@@ -1,0 +1,4 @@
+type: folder
+name: XG Drum Setup (applies to every drum channel using the setup)
+items:
+- include: 04-xg-drum-setup-applies-to-every-drum-chan/*.yaml

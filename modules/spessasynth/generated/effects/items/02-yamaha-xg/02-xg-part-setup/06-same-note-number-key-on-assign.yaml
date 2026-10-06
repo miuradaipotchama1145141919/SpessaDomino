@@ -1,0 +1,20 @@
+type: ccm
+id: 509
+name: Same Note Number Key On Assign
+sync: Last
+value:
+  default: 2
+  min: 0
+  max: 2
+  tableId: 20
+gate:
+  default: 1
+  min: 1
+  max: 64
+  offset: -1
+  name: Part No.
+sysex:
+  profile: xg
+  address: '08H #GL 06H'
+  payload: '#VL'
+color: '707070'

@@ -1,0 +1,305 @@
+mu128_127_1:
+  13: Surdo Mute
+  14: Surdo Open
+  15: Hi Q
+  16: Whip Slap
+  17: Scratch H
+  18: Scratch L
+  19: Finger Snap
+  20: Click Noise
+  21: Metronome Click
+  22: Metronome Bell
+  23: Seq Click L
+  24: Seq Click H
+  25: Brush Tap
+  26: Brush Swirl
+  27: Brush Slap
+  28: Brush Tap Swirl
+  29: Snare Roll
+  30: Castanet
+  31: Snare Soft
+  32: Sticks
+  33: Kick Soft
+  34: Open Rim Shot
+  35: Kick Tight
+  36: Kick
+  37: Side Stick
+  38: Snare
+  39: Hand Clap
+  40: Snare Tight
+  41: Floor Tom L
+  42: Hi-Hat Closed
+  43: Floor Tom H
+  44: Hi-Hat Pedal
+  45: Low Tom
+  46: Hi-Hat Open
+  47: Mid Tom L
+  48: Mid Tom H
+  49: Crash Cymbal 1
+  50: High Tom
+  51: Ride Cymbal 1
+  52: Chinese Cymbal
+  53: Ride Cymbal Cup
+  54: Tambourine
+  55: Splash Cymbal
+  56: Cowbell
+  57: Crash Cymbal 2
+  58: Vibraslap
+  59: Ride Cymbal 2
+  60: Bongo H
+  61: Bongo L
+  62: Conga H Mute
+  63: Conga H Open
+  64: Conga L
+  65: Timbale H
+  66: Timbale L
+  67: Agogo H
+  68: Agogo L
+  69: Cabasa
+  70: Maracas
+  71: Samba Whistle H
+  72: Samba Whistle L
+  73: Guiro Short
+  74: Guiro Long
+  75: Claves
+  76: Wood Block H
+  77: Wood Block L
+  78: Cuica Mute
+  79: Cuica Open
+  80: Triangle Mute
+  81: Triangle Open
+  82: Shaker
+  83: Jingle Bells
+  84: Bell Tree
+mu128_127_30:
+  13: Surdo Mute V
+  14: Surdo Open V
+  25: Brush Tap V
+  26: Brush Swirl V
+  27: Brush Slap V
+  28: Brush Tap Swirl V
+  29: Snare Roll V
+  31: Rim Gate 2
+  33: Kick Cough
+  34: Rim Gate 3
+  35: Kick Zap
+  36: Kick Dawn
+  37: Side Stick Dry
+  38: Snare Tin
+  40: Snare Can
+  41: Floor Tom L Short
+  42: Hi-Hat Closed 2 Soft
+  43: Floor Tom H Short
+  44: Hi-Hat Pedal 2 Soft
+  45: Low Tom Short
+  46: Hi-Hat Open 2 Soft
+  47: Mid Tom L Short
+  48: Mid Tom H Short
+  49: Crash Cymbal 1 V
+  50: High Tom Short
+  51: Ride Cymbal 1 V
+  52: Chinese Cymbal V
+  55: Splash Cymbal V
+  57: Crash Cymbal 2 V
+  59: Ride Cymbal 2 V
+  60: Bongo H V
+  61: Bongo L V
+  62: Conga H Mute V
+  63: Conga H Open V
+  64: Conga L V
+  65: Timbale H V
+  66: Timbale L V
+  67: Agogo H V
+  68: Agogo L V
+  71: Samba Whistle H V
+  72: Samba Whistle L V
+  78: Cuica Mute V
+  79: Cuica Open V
+mu128_127_31:
+  13: Surdo Mute V
+  14: Surdo Open V
+  25: Brush Tap V
+  26: Brush Swirl V
+  27: Brush Slap V
+  28: Reverse Cymbal
+  30: Hi Q 2
+  31: Snare Analog 4
+  33: Kick Techno 3
+  34: Open Rim Shot L
+  35: Kick Techno 4
+  36: Kick Techno Tight 2
+  37: Side Stick Analog 2
+  38: Snare Analog 5
+  39: Clap Ambience
+  40: Snare Analog 6
+  41: Tom Techno 1
+  42: Hi-Hat Closed Analog 3
+  43: Tom Techno 2
+  44: Hi-Hat Closed Analog 4
+  45: Tom Techno 3
+  46: Hi-Hat Open Analog 2
+  47: Tom Techno 4
+  48: Tom Techno 5
+  49: Crash Analog
+  50: Tom Techno 6
+  51: Ride Cymbal Analog 1
+  53: Ride Cymbal Cup Q
+  55: Splash Cymbal V
+  56: Cowbell Analog L
+  57: Crash Cymbal 2 V
+  59: Ride Cymbal Analog 2
+  60: Bongo H V
+  61: Bongo L V
+  62: Conga Analog H Long
+  63: Conga Analog M Long
+  64: Conga Analog L Long
+  65: Timbale H V
+  66: Timbale L V
+  67: Agogo H V
+  68: Agogo L V
+  70: Maracas 2
+  71: Samba Whistle H V
+  72: Samba Whistle L V
+  75: Claves 2
+  78: Scratch H 2
+  79: Scratch L 3
+mu128_127_32:
+  13: Surdo Mute V
+  14: Surdo Open V
+  25: Brush Tap V
+  26: Brush Swirl V
+  27: Brush Slap V
+  28: Reverse Cymbal
+  30: Hi Q 2
+  31: Snare Analog 4 H
+  33: Kick Techno 3
+  34: Open Rim Shot L
+  35: Kick Techno 4 H
+  36: Kick Techno Tight 2 H
+  37: Side Stick Analog 2 H
+  38: Snare Analog 5 H
+  39: Clap Ambience H
+  40: Snare Analog 6 H
+  41: Tom Techno 1 H
+  42: Hi-Hat Closed Analog 3 H
+  43: Tom Techno 2 H
+  44: Hi-Hat Closed Analog 4 H
+  45: Tom Techno 3 H
+  46: Hi-Hat Open Analog 2 H
+  47: Tom Techno 4 H
+  48: Tom Techno 5 H
+  49: Crash Analog H
+  50: Tom Techno 6 H
+  51: Ride Cymbal Analog 1 H
+  52: Chinese Cymbal H
+  53: Ride Cymbal Cup H
+  54: Tambourine H
+  55: Splash Cymbal H
+  56: Cowbell Analog H
+  57: Crash Cymbal 2 H
+  59: Ride Cymbal Analog 2 H
+  60: Bongo H V
+  61: Bongo L V
+  62: Conga Analog H Long H
+  63: Conga Analog M Long H
+  64: Conga Analog L Long H
+  65: Timbale H V
+  66: Timbale L V
+  67: Agogo H V
+  68: Agogo L V
+  70: Maracas 2
+  71: Samba Whistle H V
+  72: Samba Whistle L V
+  75: Claves 2
+  78: Scratch H 2
+  79: Scratch L 3
+mu128_127_33:
+  36: Kick Jazz
+  41: Tom Jazz 1
+  43: Tom Jazz 2
+  45: Tom Jazz 3
+  47: Tom Jazz 4
+  48: Tom Jazz 5
+  50: Tom Jazz 6
+mu128_127_34:
+  13: Surdo Mute V
+  14: Surdo Open V
+  25: Brush Tap V
+  26: Brush Swirl V
+  27: Brush Slap V
+  28: Brush Tap Swirl V
+  29: Snare Roll V
+  36: Kick Jazz L
+  38: Snare H
+  40: Snare Tight L
+  41: Tom Jazz 7
+  42: Hi-Hat Closed L
+  43: Tom Jazz 8
+  44: Hi-Hat Pedal L
+  45: Tom Jazz 9
+  46: Hi-Hat Open L
+  47: Tom Jazz 10
+  48: Tom Jazz 11
+  50: Tom Jazz 12
+  51: Ride Cymbal 1 V
+  52: Chinese Cymbal V
+  53: Ride Cymbal Cup L
+  55: Splash Cymbal V
+  57: Crash Cymbal 2 V
+  59: Ride Cymbal 2 V
+  60: Bongo H V
+  61: Bongo L V
+  62: Conga H Mute V
+  63: Conga H Open V
+  64: Conga L V
+  65: Timbale H V
+  66: Timbale L V
+  67: Agogo H V
+  68: Agogo L V
+  71: Samba Whistle H V
+  72: Samba Whistle L V
+  78: Cuica Mute V
+  79: Cuica Open V
+mu128_127_41:
+  31: Brush Slap 2
+  36: Kick Small
+  38: Brush Slap 3
+  40: Brush Tap 2
+  41: Tom Brush 1
+  43: Tom Brush 2
+  45: Tom Brush 3
+  47: Tom Brush 4
+  48: Tom Brush 5
+  50: Tom Brush 6
+mu128_127_42:
+  28: Brush Tap Swirl L
+  29: Snare Roll V
+  30: Castanet H
+  31: Snare Dry Hard
+  33: Kick Release
+  34: Open Rim Shot Dry L
+  35: Kick Cloudy H
+  36: Kick Cloudy L
+  37: Side Stick B 2
+  38: Brush Slap 3 Q
+  40: Brush Snare Loud
+  41: Tom Brush 7
+  42: Hi-Hat Closed 4
+  43: Tom Brush 8
+  44: Hi-Hat Pedal 4
+  45: Tom Brush 9
+  46: Hi-Hat Open 4
+  47: Tom Brush 10
+  48: Tom Brush 11
+  49: Crash Cymbal 4
+  50: Tom Brush 12
+  51: Ride Cymbal 1 H
+  53: Ride Cymbal Cup 6
+  55: Splash Cymbal V
+  56: Cowbell 2
+  59: Ride Cymbal 6
+  62: Conga H Mute V
+  63: Conga H Open V
+  64: Conga L 2
+  70: Maracas Q
+  79: Cuica Open H

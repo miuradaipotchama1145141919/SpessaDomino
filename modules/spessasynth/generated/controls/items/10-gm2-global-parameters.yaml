@@ -1,0 +1,88 @@
+type: folder
+name: GM2 Global Parameters
+items:
+- type: ccm
+  id: 210
+  name: GM2 Reverb Type
+  value:
+    default: 4
+    min: 0
+    max: 8
+    entries:
+    - label: Small Room
+      value: 0
+    - label: Medium Room
+      value: 1
+    - label: Large Room
+      value: 2
+    - label: Medium Hall
+      value: 3
+    - label: Large Hall
+      value: 4
+    - label: Plate
+      value: 8
+  data: '@SYSEX F0H 7FH 7FH 04H 05H 01H 01H 01H 01H 01H 00H #VL F7H'
+  color: 0080E0
+- type: ccm
+  id: 211
+  name: GM2 Reverb Time
+  value:
+    default: 64
+    max: 127
+  memo: Reverb time.
+  data: '@SYSEX F0H 7FH 7FH 04H 05H 01H 01H 01H 01H 01H 01H #VL F7H'
+  color: 0080E0
+- type: ccm
+  id: 212
+  name: GM2 Chorus Type
+  value:
+    default: 2
+    min: 0
+    max: 5
+    entries:
+    - label: Chorus 1
+      value: 0
+    - label: Chorus 2
+      value: 1
+    - label: Chorus 3
+      value: 2
+    - label: Chorus 4
+      value: 3
+    - label: Feedback Chorus
+      value: 4
+    - label: Flanger
+      value: 5
+  data: '@SYSEX F0H 7FH 7FH 04H 05H 01H 01H 01H 01H 02H 00H #VL F7H'
+  color: 00B060
+- type: ccm
+  id: 213
+  name: GM2 Chorus Mod Rate
+  value:
+    default: 3
+    max: 127
+  data: '@SYSEX F0H 7FH 7FH 04H 05H 01H 01H 01H 01H 02H 01H #VL F7H'
+  color: 00B060
+- type: ccm
+  id: 214
+  name: GM2 Chorus Mod Depth
+  value:
+    default: 19
+    max: 127
+  data: '@SYSEX F0H 7FH 7FH 04H 05H 01H 01H 01H 01H 02H 02H #VL F7H'
+  color: 00B060
+- type: ccm
+  id: 215
+  name: GM2 Chorus Feedback
+  value:
+    default: 8
+    max: 127
+  data: '@SYSEX F0H 7FH 7FH 04H 05H 01H 01H 01H 01H 02H 03H #VL F7H'
+  color: 00B060
+- type: ccm
+  id: 216
+  name: GM2 Chorus Send to Reverb
+  value:
+    default: 0
+    max: 127
+  data: '@SYSEX F0H 7FH 7FH 04H 05H 01H 01H 01H 01H 02H 04H #VL F7H'
+  color: 00B060

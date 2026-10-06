@@ -1,0 +1,4 @@
+type: folder
+name: XG Reverb (Experimental 4.4.0)
+items:
+- include: 01-xg-reverb-experimental-4-4-0/*.yaml

@@ -1,0 +1,9 @@
+name: GM1 (bank select ignored)
+programs:
+  - for: voice
+    in: {include: gmNames.yaml}
+    do:
+      pc: "{index + 1}"
+      name: "{voice}"
+      banks:
+        - name: "{voice}"

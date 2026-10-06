@@ -1,0 +1,277 @@
+type: folder
+name: XG
+items:
+- id: 6
+  name: XG System Setup
+  events:
+  - tag: Memo
+    text: Bank MSB 127 selects drums. XG effects need the SpessaSynth 4.4.0 experimental branch.
+  - tag: Comment
+    attrs:
+      Step: 0
+      Text: '---- Reset -------------------------------------------------------'
+  - tag: CC
+    attrs:
+      ID: 205
+  - tag: Comment
+    attrs:
+      Step: 0
+      Text: '---- Global ------------------------------------------------------'
+  - tag: CC
+    attrs:
+      ID: 170
+      Value: 16383
+  - tag: CC
+    attrs:
+      ID: 171
+      Value: 8192
+  - tag: CC
+    attrs:
+      ID: 172
+      Value: 0
+  - tag: CC
+    attrs:
+      ID: 173
+      Value: 0
+  - tag: CC
+    attrs:
+      ID: 500
+      Value: 0
+  - tag: CC
+    attrs:
+      ID: 501
+      Value: 127
+  - tag: CC
+    attrs:
+      ID: 502
+      Value: 0
+  - tag: CC
+    attrs:
+      ID: 503
+      Value: 0
+  - tag: Comment
+    attrs:
+      Step: 0
+      Text: '---- Reverb (Hall 1, Experimental) -------------------------------'
+  - tag: CC
+    attrs:
+      ID: 573
+      Value: 128
+  - tag: CC
+    attrs:
+      ID: 584
+      Value: 64
+  - tag: CC
+    attrs:
+      ID: 585
+      Value: 64
+  - tag: Comment
+    attrs:
+      Step: 0
+      Text: '---- Chorus (Chorus 1, Experimental) -----------------------------'
+  - tag: CC
+    attrs:
+      ID: 592
+      Value: 8320
+  - tag: CC
+    attrs:
+      ID: 603
+      Value: 64
+  - tag: CC
+    attrs:
+      ID: 604
+      Value: 64
+  - tag: CC
+    attrs:
+      ID: 605
+      Value: 0
+  - tag: Comment
+    attrs:
+      Step: 0
+      Text: '---- Variation (Thru, Experimental) ------------------------------'
+  - tag: CC
+    attrs:
+      ID: 612
+      Value: 8192
+  - tag: CC
+    attrs:
+      ID: 623
+      Value: 64
+  - tag: CC
+    attrs:
+      ID: 624
+      Value: 64
+  - tag: CC
+    attrs:
+      ID: 625
+      Value: 0
+  - tag: CC
+    attrs:
+      ID: 626
+      Value: 0
+  - tag: CC
+    attrs:
+      ID: 627
+      Value: 0
+  - tag: CC
+    attrs:
+      ID: 628
+      Value: 128
+  - tag: Comment
+    attrs:
+      Step: 0
+      Text: '---- Insertion 1 (Off, Experimental) -----------------------------'
+  - tag: CC
+    attrs:
+      ID: 635
+      Value: 8192
+  - tag: CC
+    attrs:
+      ID: 646
+      Value: 128
+  - tag: Comment
+    attrs:
+      Step: 0
+      Text: '---- Insertion 2 (Off, Experimental) -----------------------------'
+  - tag: CC
+    attrs:
+      ID: 663
+      Value: 8192
+  - tag: CC
+    attrs:
+      ID: 674
+      Value: 128
+  - tag: Comment
+    attrs:
+      Step: 0
+      Text: '---- Insertion 3 (Off, Experimental) -----------------------------'
+  - tag: CC
+    attrs:
+      ID: 691
+      Value: 8192
+  - tag: CC
+    attrs:
+      ID: 702
+      Value: 128
+  - tag: Comment
+    attrs:
+      Step: 0
+      Text: '---- Insertion 4 (Off, Experimental) -----------------------------'
+  - tag: CC
+    attrs:
+      ID: 719
+      Value: 8192
+  - tag: CC
+    attrs:
+      ID: 730
+      Value: 128
+- id: 7
+  name: XG Channel Init
+  events:
+  - tag: CC
+    attrs:
+      ID: 121
+      Value: 0
+  - tag: CC
+    attrs:
+      ID: 7
+      Value: 100
+  - tag: CC
+    attrs:
+      ID: 10
+      Value: 0
+  - tag: PC
+    attrs:
+      PC: 1
+      Mode: Auto
+  - tag: CC
+    attrs:
+      ID: 127
+  - tag: CC
+    attrs:
+      ID: 91
+      Value: 0
+  - tag: CC
+    attrs:
+      ID: 93
+      Value: 0
+  - tag: CC
+    attrs:
+      ID: 94
+      Value: 0
+  - tag: CC
+    attrs:
+      ID: 112
+      Value: 0
+  - tag: CC
+    attrs:
+      ID: 1
+      Value: 0
+  - tag: CC
+    attrs:
+      ID: 11
+      Value: 127
+  - tag: CC
+    attrs:
+      ID: 76
+      Value: 64
+  - tag: CC
+    attrs:
+      ID: 77
+      Value: 64
+  - tag: CC
+    attrs:
+      ID: 78
+      Value: 64
+  - tag: CC
+    attrs:
+      ID: 74
+      Value: 64
+  - tag: CC
+    attrs:
+      ID: 71
+      Value: 64
+  - tag: CC
+    attrs:
+      ID: 73
+      Value: 64
+  - tag: CC
+    attrs:
+      ID: 75
+      Value: 64
+  - tag: CC
+    attrs:
+      ID: 72
+      Value: 64
+  - tag: CC
+    attrs:
+      ID: 5
+      Value: 0
+  - tag: CC
+    attrs:
+      ID: 65
+      Value: 0
+  - tag: CC
+    attrs:
+      ID: 64
+      Value: 0
+  - tag: CC
+    attrs:
+      ID: 67
+      Value: 0
+  - tag: CC
+    attrs:
+      ID: 130
+      Value: 2
+  - tag: CC
+    attrs:
+      ID: 134
+      Value: 64
+  - tag: CC
+    attrs:
+      ID: 131
+      Value: 0
+  - tag: CC
+    attrs:
+      ID: 133
+      Value: 0

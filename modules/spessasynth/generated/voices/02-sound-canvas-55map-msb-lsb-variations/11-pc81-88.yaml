@@ -1,0 +1,84 @@
+- pc: 81
+  name: Square Wave
+  banks:
+  - name: Square Wave
+    msb: 0
+    lsb: 1
+  - name: Square
+    msb: 1
+    lsb: 1
+  - name: Sine Wave
+    msb: 8
+    lsb: 1
+  - name: Sax 3
+    msb: 127
+    lsb: 1
+- pc: 82
+  name: Saw Wave
+  banks:
+  - name: Saw Wave
+    msb: 0
+    lsb: 1
+  - name: Saw
+    msb: 1
+    lsb: 1
+  - name: Doctor Solo
+    msb: 8
+    lsb: 1
+  - name: Sax 4
+    msb: 127
+    lsb: 1
+- pc: 83
+  name: SynCalliope
+  banks:
+  - name: SynCalliope
+    msb: 0
+    lsb: 1
+  - name: Clarinet 1
+    msb: 127
+    lsb: 1
+- pc: 84
+  name: ChifferLead
+  banks:
+  - name: ChifferLead
+    msb: 0
+    lsb: 1
+  - name: Clarinet 2
+    msb: 127
+    lsb: 1
+- pc: 85
+  name: Charang
+  banks:
+  - name: Charang
+    msb: 0
+    lsb: 1
+  - name: Oboe
+    msb: 127
+    lsb: 1
+- pc: 86
+  name: Solo Vox
+  banks:
+  - name: Solo Vox
+    msb: 0
+    lsb: 1
+  - name: Engl Horn
+    msb: 127
+    lsb: 1
+- pc: 87
+  name: 5th Saw
+  banks:
+  - name: 5th Saw
+    msb: 0
+    lsb: 1
+  - name: Bassoon
+    msb: 127
+    lsb: 1
+- pc: 88
+  name: Bass & Lead
+  banks:
+  - name: Bass & Lead
+    msb: 0
+    lsb: 1
+  - name: Harmonica
+    msb: 127
+    lsb: 1

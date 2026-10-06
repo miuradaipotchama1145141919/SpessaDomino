@@ -1,0 +1,93 @@
+- pc: 9
+  name: Celesta
+  banks:
+  - name: Celesta
+    msb: 0
+    lsb: 3
+  - name: Pop Celesta
+    msb: 1
+    lsb: 3
+- pc: 10
+  name: Glockenspiel
+  banks:
+  - name: Glockenspiel
+    msb: 0
+    lsb: 3
+- pc: 11
+  name: Music Box
+  banks:
+  - name: Music Box
+    msb: 0
+    lsb: 3
+- pc: 12
+  name: Vibraphone
+  banks:
+  - name: Vibraphone
+    msb: 0
+    lsb: 3
+  - name: Pop Vibe.
+    msb: 1
+    lsb: 3
+  - name: Vibraphone w
+    msb: 8
+    lsb: 3
+  - name: Vibraphones
+    msb: 9
+    lsb: 3
+- pc: 13
+  name: Marimba
+  banks:
+  - name: Marimba
+    msb: 0
+    lsb: 3
+  - name: Marimba w
+    msb: 8
+    lsb: 3
+  - name: Barafon
+    msb: 16
+    lsb: 3
+  - name: Barafon 2
+    msb: 17
+    lsb: 3
+  - name: Log drum
+    msb: 24
+    lsb: 3
+- pc: 14
+  name: Xylophone
+  banks:
+  - name: Xylophone
+    msb: 0
+    lsb: 3
+- pc: 15
+  name: Tubular-bell
+  banks:
+  - name: Tubular-bell
+    msb: 0
+    lsb: 3
+  - name: Church Bell
+    msb: 8
+    lsb: 3
+  - name: Carillon
+    msb: 9
+    lsb: 3
+- pc: 16
+  name: Santur
+  banks:
+  - name: Santur
+    msb: 0
+    lsb: 3
+  - name: Santur 2
+    msb: 1
+    lsb: 3
+  - name: Cimbalom
+    msb: 8
+    lsb: 3
+  - name: Zither 1
+    msb: 16
+    lsb: 3
+  - name: Zither 2
+    msb: 17
+    lsb: 3
+  - name: Dulcimer
+    msb: 24
+    lsb: 3

@@ -1,0 +1,1640 @@
+name: 55Map
+programs:
+- pc: 1
+  name: Piano 1
+  banks:
+  - name: Piano 1
+    msb: 0
+    lsb: 1
+  - name: Piano 1w
+    msb: 8
+    lsb: 1
+  - name: Piano 1d
+    msb: 16
+    lsb: 1
+  - name: Piano 2
+    msb: 126
+    lsb: 1
+  - name: Acou Piano1
+    msb: 127
+    lsb: 1
+- pc: 2
+  name: Piano 2
+  banks:
+  - name: Piano 2
+    msb: 0
+    lsb: 1
+  - name: Piano 2w
+    msb: 8
+    lsb: 1
+  - name: Piano 2
+    msb: 126
+    lsb: 1
+  - name: Acou Piano2
+    msb: 127
+    lsb: 1
+- pc: 3
+  name: Piano 3
+  banks:
+  - name: Piano 3
+    msb: 0
+    lsb: 1
+  - name: Piano 3w
+    msb: 8
+    lsb: 1
+  - name: Piano 2
+    msb: 126
+    lsb: 1
+  - name: Acou Piano3
+    msb: 127
+    lsb: 1
+- pc: 4
+  name: Honky-tonk
+  banks:
+  - name: Honky-tonk
+    msb: 0
+    lsb: 1
+  - name: HonkyTonk w
+    msb: 8
+    lsb: 1
+  - name: Honky-tonk
+    msb: 126
+    lsb: 1
+  - name: Elec Piano1
+    msb: 127
+    lsb: 1
+- pc: 5
+  name: E.Piano 1
+  banks:
+  - name: E.Piano 1
+    msb: 0
+    lsb: 1
+  - name: Detuned EP1
+    msb: 8
+    lsb: 1
+  - name: E.Piano 1v
+    msb: 16
+    lsb: 1
+  - name: 60s E.Piano
+    msb: 24
+    lsb: 1
+  - name: Piano 1
+    msb: 126
+    lsb: 1
+  - name: Elec Piano2
+    msb: 127
+    lsb: 1
+- pc: 6
+  name: E.Piano 2
+  banks:
+  - name: E.Piano 2
+    msb: 0
+    lsb: 1
+  - name: Detuned EP2
+    msb: 8
+    lsb: 1
+  - name: E.Piano 2v
+    msb: 16
+    lsb: 1
+  - name: Piano 2
+    msb: 126
+    lsb: 1
+  - name: Elec Piano3
+    msb: 127
+    lsb: 1
+- pc: 7
+  name: Harpsichord
+  banks:
+  - name: Harpsichord
+    msb: 0
+    lsb: 1
+  - name: Coupled Hps
+    msb: 8
+    lsb: 1
+  - name: Harpsi.w
+    msb: 16
+    lsb: 1
+  - name: Harpsi.o
+    msb: 24
+    lsb: 1
+  - name: Piano 2
+    msb: 126
+    lsb: 1
+  - name: Elec Piano4
+    msb: 127
+    lsb: 1
+- pc: 8
+  name: Clav.
+  banks:
+  - name: Clav.
+    msb: 0
+    lsb: 1
+  - name: E.Piano 1
+    msb: 126
+    lsb: 1
+  - name: Honkytonk
+    msb: 127
+    lsb: 1
+- pc: 9
+  name: Celesta
+  banks:
+  - name: Celesta
+    msb: 0
+    lsb: 1
+  - name: Detuned EP1
+    msb: 126
+    lsb: 1
+  - name: Elec Org 1
+    msb: 127
+    lsb: 1
+- pc: 10
+  name: Glockenspl
+  banks:
+  - name: Glockenspl
+    msb: 0
+    lsb: 1
+  - name: E.Piano 2
+    msb: 126
+    lsb: 1
+  - name: Elec Org 2
+    msb: 127
+    lsb: 1
+- pc: 11
+  name: Music Box
+  banks:
+  - name: Music Box
+    msb: 0
+    lsb: 1
+  - name: Steel Gt.
+    msb: 126
+    lsb: 1
+  - name: Elec Org 3
+    msb: 127
+    lsb: 1
+- pc: 12
+  name: Vibraphone
+  banks:
+  - name: Vibraphone
+    msb: 0
+    lsb: 1
+  - name: Vib.w
+    msb: 8
+    lsb: 1
+  - name: Steel Gt.
+    msb: 126
+    lsb: 1
+  - name: Elec Org 4
+    msb: 127
+    lsb: 1
+- pc: 13
+  name: Marimba
+  banks:
+  - name: Marimba
+    msb: 0
+    lsb: 1
+  - name: Marimba w
+    msb: 8
+    lsb: 1
+  - name: 12-str.Gt
+    msb: 126
+    lsb: 1
+  - name: Pipe Org 1
+    msb: 127
+    lsb: 1
+- pc: 14
+  name: Xylophone
+  banks:
+  - name: Xylophone
+    msb: 0
+    lsb: 1
+  - name: Funk Gt.
+    msb: 126
+    lsb: 1
+  - name: Pipe Org 2
+    msb: 127
+    lsb: 1
+- pc: 15
+  name: Tubularbell
+  banks:
+  - name: Tubularbell
+    msb: 0
+    lsb: 1
+  - name: Church Bell
+    msb: 8
+    lsb: 1
+  - name: Carillon
+    msb: 9
+    lsb: 1
+  - name: Muted Gt.
+    msb: 126
+    lsb: 1
+  - name: Pipe Org 3
+    msb: 127
+    lsb: 1
+- pc: 16
+  name: Santur
+  banks:
+  - name: Santur
+    msb: 0
+    lsb: 1
+  - name: Slap Bass 1
+    msb: 126
+    lsb: 1
+  - name: Accordion
+    msb: 127
+    lsb: 1
+- pc: 17
+  name: Organ 1
+  banks:
+  - name: Organ 1
+    msb: 0
+    lsb: 1
+  - name: Detuned Or1
+    msb: 8
+    lsb: 1
+  - name: 60's Organ1
+    msb: 16
+    lsb: 1
+  - name: Organ 4
+    msb: 32
+    lsb: 1
+  - name: Slap Bass 1
+    msb: 126
+    lsb: 1
+  - name: Harpsi 1
+    msb: 127
+    lsb: 1
+- pc: 18
+  name: Organ 2
+  banks:
+  - name: Organ 2
+    msb: 0
+    lsb: 1
+  - name: Detuned Or2
+    msb: 8
+    lsb: 1
+  - name: Organ 5
+    msb: 32
+    lsb: 1
+  - name: Slap Bass 1
+    msb: 126
+    lsb: 1
+  - name: Harpsi 2
+    msb: 127
+    lsb: 1
+- pc: 19
+  name: Organ 3
+  banks:
+  - name: Organ 3
+    msb: 0
+    lsb: 1
+  - name: Slap Bass 1
+    msb: 126
+    lsb: 1
+  - name: Harpsi 3
+    msb: 127
+    lsb: 1
+- pc: 20
+  name: Church Org1
+  banks:
+  - name: Church Org1
+    msb: 0
+    lsb: 1
+  - name: Church Org2
+    msb: 8
+    lsb: 1
+  - name: Church Org3
+    msb: 16
+    lsb: 1
+  - name: Slap Bass 2
+    msb: 126
+    lsb: 1
+  - name: Clavi 1
+    msb: 127
+    lsb: 1
+- pc: 21
+  name: Reed Organ
+  banks:
+  - name: Reed Organ
+    msb: 0
+    lsb: 1
+  - name: Slap Bass 2
+    msb: 126
+    lsb: 1
+  - name: Clavi 2
+    msb: 127
+    lsb: 1
+- pc: 22
+  name: Accordion F
+  banks:
+  - name: Accordion F
+    msb: 0
+    lsb: 1
+  - name: Accordion I
+    msb: 8
+    lsb: 1
+  - name: Slap Bass 2
+    msb: 126
+    lsb: 1
+  - name: Clavi 3
+    msb: 127
+    lsb: 1
+- pc: 23
+  name: Harmonica
+  banks:
+  - name: Harmonica
+    msb: 0
+    lsb: 1
+  - name: Slap Bass 2
+    msb: 126
+    lsb: 1
+  - name: Celesta 1
+    msb: 127
+    lsb: 1
+- pc: 24
+  name: Bandoneon
+  banks:
+  - name: Bandoneon
+    msb: 0
+    lsb: 1
+  - name: Fingered Bs
+    msb: 126
+    lsb: 1
+  - name: Celesta 2
+    msb: 127
+    lsb: 1
+- pc: 25
+  name: Nylon Gt.
+  banks:
+  - name: Nylon Gt.
+    msb: 0
+    lsb: 1
+  - name: Ukulele
+    msb: 8
+    lsb: 1
+  - name: Nylon Gt.o
+    msb: 16
+    lsb: 1
+  - name: Nylon Gt.2
+    msb: 32
+    lsb: 1
+  - name: Fingered Bs
+    msb: 126
+    lsb: 1
+  - name: Syn Brass 1
+    msb: 127
+    lsb: 1
+- pc: 26
+  name: Steel Gt.
+  banks:
+  - name: Steel Gt.
+    msb: 0
+    lsb: 1
+  - name: 12-str.Gt
+    msb: 8
+    lsb: 1
+  - name: Mandolin
+    msb: 16
+    lsb: 1
+  - name: Picked Bass
+    msb: 126
+    lsb: 1
+  - name: Syn Brass 2
+    msb: 127
+    lsb: 1
+- pc: 27
+  name: Jazz Gt.
+  banks:
+  - name: Jazz Gt.
+    msb: 0
+    lsb: 1
+  - name: Hawaiian Gt
+    msb: 8
+    lsb: 1
+  - name: Picked Bass
+    msb: 126
+    lsb: 1
+  - name: Syn Brass 3
+    msb: 127
+    lsb: 1
+- pc: 28
+  name: Clean Gt.
+  banks:
+  - name: Clean Gt.
+    msb: 0
+    lsb: 1
+  - name: Chorus Gt.
+    msb: 8
+    lsb: 1
+  - name: Fretless Bs
+    msb: 126
+    lsb: 1
+  - name: Syn Brass 4
+    msb: 127
+    lsb: 1
+- pc: 29
+  name: Muted Gt.
+  banks:
+  - name: Muted Gt.
+    msb: 0
+    lsb: 1
+  - name: Funk Gt.
+    msb: 8
+    lsb: 1
+  - name: Funk Gt.2
+    msb: 16
+    lsb: 1
+  - name: Acoustic Bs
+    msb: 126
+    lsb: 1
+  - name: Syn Bass 1
+    msb: 127
+    lsb: 1
+- pc: 30
+  name: OverdriveGt
+  banks:
+  - name: OverdriveGt
+    msb: 0
+    lsb: 1
+  - name: Choir Aahs
+    msb: 126
+    lsb: 1
+  - name: Syn Bass 2
+    msb: 127
+    lsb: 1
+- pc: 31
+  name: Dist.Gt.
+  banks:
+  - name: Dist.Gt.
+    msb: 0
+    lsb: 1
+  - name: Feedback Gt
+    msb: 8
+    lsb: 1
+  - name: Choir Aahs
+    msb: 126
+    lsb: 1
+  - name: Syn Bass 3
+    msb: 127
+    lsb: 1
+- pc: 32
+  name: Gt.Harmonix
+  banks:
+  - name: Gt.Harmonix
+    msb: 0
+    lsb: 1
+  - name: Gt.Feedback
+    msb: 8
+    lsb: 1
+  - name: Choir Aahs
+    msb: 126
+    lsb: 1
+  - name: Syn Bass 4
+    msb: 127
+    lsb: 1
+- pc: 33
+  name: Acoustic Bs
+  banks:
+  - name: Acoustic Bs
+    msb: 0
+    lsb: 1
+  - name: Choir Aahs
+    msb: 126
+    lsb: 1
+  - name: Fantasy
+    msb: 127
+    lsb: 1
+- pc: 34
+  name: Fingered Bs
+  banks:
+  - name: Fingered Bs
+    msb: 0
+    lsb: 1
+  - name: SlowStrings
+    msb: 126
+    lsb: 1
+  - name: Harmo Pan
+    msb: 127
+    lsb: 1
+- pc: 35
+  name: Picked Bass
+  banks:
+  - name: Picked Bass
+    msb: 0
+    lsb: 1
+  - name: Strings
+    msb: 126
+    lsb: 1
+  - name: Chorale
+    msb: 127
+    lsb: 1
+- pc: 36
+  name: Fretless Bs
+  banks:
+  - name: Fretless Bs
+    msb: 0
+    lsb: 1
+  - name: SynStrings3
+    msb: 126
+    lsb: 1
+  - name: Glasses
+    msb: 127
+    lsb: 1
+- pc: 37
+  name: Slap Bass 1
+  banks:
+  - name: Slap Bass 1
+    msb: 0
+    lsb: 1
+  - name: SynStrings3
+    msb: 126
+    lsb: 1
+  - name: Soundtrack
+    msb: 127
+    lsb: 1
+- pc: 38
+  name: Slap Bass 2
+  banks:
+  - name: Slap Bass 2
+    msb: 0
+    lsb: 1
+  - name: Organ 1
+    msb: 126
+    lsb: 1
+  - name: Atmosphere
+    msb: 127
+    lsb: 1
+- pc: 39
+  name: Syn.Bass 1
+  banks:
+  - name: Syn.Bass 1
+    msb: 0
+    lsb: 1
+  - name: Syn.Bass101
+    msb: 1
+    lsb: 1
+  - name: Syn.Bass 3
+    msb: 8
+    lsb: 1
+  - name: Organ 1
+    msb: 126
+    lsb: 1
+  - name: Warm Bell
+    msb: 127
+    lsb: 1
+- pc: 40
+  name: Syn.Bass 2
+  banks:
+  - name: Syn.Bass 2
+    msb: 0
+    lsb: 1
+  - name: Syn.Bass 4
+    msb: 8
+    lsb: 1
+  - name: Rubber Bass
+    msb: 16
+    lsb: 1
+  - name: Organ 1
+    msb: 126
+    lsb: 1
+  - name: Funny Vox
+    msb: 127
+    lsb: 1
+- pc: 41
+  name: Violin
+  banks:
+  - name: Violin
+    msb: 0
+    lsb: 1
+  - name: Slow Violin
+    msb: 8
+    lsb: 1
+  - name: Organ 2
+    msb: 126
+    lsb: 1
+  - name: Echo Bell
+    msb: 127
+    lsb: 1
+- pc: 42
+  name: Viola
+  banks:
+  - name: Viola
+    msb: 0
+    lsb: 1
+  - name: Organ 1
+    msb: 126
+    lsb: 1
+  - name: Ice Rain
+    msb: 127
+    lsb: 1
+- pc: 43
+  name: Cello
+  banks:
+  - name: Cello
+    msb: 0
+    lsb: 1
+  - name: Organ 1
+    msb: 126
+    lsb: 1
+  - name: Oboe 2001
+    msb: 127
+    lsb: 1
+- pc: 44
+  name: Contrabass
+  banks:
+  - name: Contrabass
+    msb: 0
+    lsb: 1
+  - name: Organ 2
+    msb: 126
+    lsb: 1
+  - name: Echo Pan
+    msb: 127
+    lsb: 1
+- pc: 45
+  name: Tremolo Str
+  banks:
+  - name: Tremolo Str
+    msb: 0
+    lsb: 1
+  - name: Organ 2
+    msb: 126
+    lsb: 1
+  - name: Doctor Solo
+    msb: 127
+    lsb: 1
+- pc: 46
+  name: Pizzicato
+  banks:
+  - name: Pizzicato
+    msb: 0
+    lsb: 1
+  - name: Organ 2
+    msb: 126
+    lsb: 1
+  - name: School Daze
+    msb: 127
+    lsb: 1
+- pc: 47
+  name: Harp
+  banks:
+  - name: Harp
+    msb: 0
+    lsb: 1
+  - name: Trumpet
+    msb: 126
+    lsb: 1
+  - name: Bellsinger
+    msb: 127
+    lsb: 1
+- pc: 48
+  name: Timpani
+  banks:
+  - name: Timpani
+    msb: 0
+    lsb: 1
+  - name: Trumpet
+    msb: 126
+    lsb: 1
+  - name: Square Wave
+    msb: 127
+    lsb: 1
+- pc: 49
+  name: Strings
+  banks:
+  - name: Strings
+    msb: 0
+    lsb: 1
+  - name: Orchestra
+    msb: 8
+    lsb: 1
+  - name: Trombone
+    msb: 126
+    lsb: 1
+  - name: Str Sect 1
+    msb: 127
+    lsb: 1
+- pc: 50
+  name: SlowStrings
+  banks:
+  - name: SlowStrings
+    msb: 0
+    lsb: 1
+  - name: Trombone
+    msb: 126
+    lsb: 1
+  - name: Str Sect 2
+    msb: 127
+    lsb: 1
+- pc: 51
+  name: SynStrings1
+  banks:
+  - name: SynStrings1
+    msb: 0
+    lsb: 1
+  - name: SynStrings3
+    msb: 8
+    lsb: 1
+  - name: Trombone
+    msb: 126
+    lsb: 1
+  - name: Str Sect 3
+    msb: 127
+    lsb: 1
+- pc: 52
+  name: SynStrings2
+  banks:
+  - name: SynStrings2
+    msb: 0
+    lsb: 1
+  - name: Trombone
+    msb: 126
+    lsb: 1
+  - name: Pizzicato
+    msb: 127
+    lsb: 1
+- pc: 53
+  name: Choir Aahs
+  banks:
+  - name: Choir Aahs
+    msb: 0
+    lsb: 1
+  - name: Choir Aahs2
+    msb: 32
+    lsb: 1
+  - name: Trombone
+    msb: 126
+    lsb: 1
+  - name: Violin 1
+    msb: 127
+    lsb: 1
+- pc: 54
+  name: Voice Oohs
+  banks:
+  - name: Voice Oohs
+    msb: 0
+    lsb: 1
+  - name: Trombone
+    msb: 126
+    lsb: 1
+  - name: Violin 2
+    msb: 127
+    lsb: 1
+- pc: 55
+  name: SynVox
+  banks:
+  - name: SynVox
+    msb: 0
+    lsb: 1
+  - name: Alto Sax
+    msb: 126
+    lsb: 1
+  - name: Cello 1
+    msb: 127
+    lsb: 1
+- pc: 56
+  name: Orchest.Hit
+  banks:
+  - name: Orchest.Hit
+    msb: 0
+    lsb: 1
+  - name: Tenor Sax
+    msb: 126
+    lsb: 1
+  - name: Cello 2
+    msb: 127
+    lsb: 1
+- pc: 57
+  name: Trumpet
+  banks:
+  - name: Trumpet
+    msb: 0
+    lsb: 1
+  - name: BaritoneSax
+    msb: 126
+    lsb: 1
+  - name: Contrabass
+    msb: 127
+    lsb: 1
+- pc: 58
+  name: Trombone
+  banks:
+  - name: Trombone
+    msb: 0
+    lsb: 1
+  - name: Trombone 2
+    msb: 1
+    lsb: 1
+  - name: Alto Sax
+    msb: 126
+    lsb: 1
+  - name: Harp 1
+    msb: 127
+    lsb: 1
+- pc: 59
+  name: Tuba
+  banks:
+  - name: Tuba
+    msb: 0
+    lsb: 1
+  - name: Brass 1
+    msb: 126
+    lsb: 1
+  - name: Harp 2
+    msb: 127
+    lsb: 1
+- pc: 60
+  name: MuteTrumpet
+  banks:
+  - name: MuteTrumpet
+    msb: 0
+    lsb: 1
+  - name: Brass 1
+    msb: 126
+    lsb: 1
+  - name: Guitar 1
+    msb: 127
+    lsb: 1
+- pc: 61
+  name: French Horn
+  banks:
+  - name: French Horn
+    msb: 0
+    lsb: 1
+  - name: Fr.Horn 2
+    msb: 1
+    lsb: 1
+  - name: Brass 2
+    msb: 126
+    lsb: 1
+  - name: Guitar 2
+    msb: 127
+    lsb: 1
+- pc: 62
+  name: Brass 1
+  banks:
+  - name: Brass 1
+    msb: 0
+    lsb: 1
+  - name: Brass 2
+    msb: 8
+    lsb: 1
+  - name: Brass 2
+    msb: 126
+    lsb: 1
+  - name: Elec Gtr 1
+    msb: 127
+    lsb: 1
+- pc: 63
+  name: Syn.Brass 1
+  banks:
+  - name: Syn.Brass 1
+    msb: 0
+    lsb: 1
+  - name: Syn.Brass 3
+    msb: 8
+    lsb: 1
+  - name: Analog Brs1
+    msb: 16
+    lsb: 1
+  - name: Brass 1
+    msb: 126
+    lsb: 1
+  - name: Elec Gtr 2
+    msb: 127
+    lsb: 1
+- pc: 64
+  name: Syn.Brass 2
+  banks:
+  - name: Syn.Brass 2
+    msb: 0
+    lsb: 1
+  - name: Syn.Brass 4
+    msb: 8
+    lsb: 1
+  - name: Analog Brs2
+    msb: 16
+    lsb: 1
+  - name: Orchest.Hit
+    msb: 126
+    lsb: 1
+  - name: Sitar
+    msb: 127
+    lsb: 1
+- pc: 65
+  name: Soprano Sax
+  banks:
+  - name: Soprano Sax
+    msb: 0
+    lsb: 1
+  - name: Acou Bass 1
+    msb: 127
+    lsb: 1
+- pc: 66
+  name: Alto Sax
+  banks:
+  - name: Alto Sax
+    msb: 0
+    lsb: 1
+  - name: Acou Bass 2
+    msb: 127
+    lsb: 1
+- pc: 67
+  name: Tenor Sax
+  banks:
+  - name: Tenor Sax
+    msb: 0
+    lsb: 1
+  - name: Elec Bass 1
+    msb: 127
+    lsb: 1
+- pc: 68
+  name: BaritoneSax
+  banks:
+  - name: BaritoneSax
+    msb: 0
+    lsb: 1
+  - name: Elec Bass 2
+    msb: 127
+    lsb: 1
+- pc: 69
+  name: Oboe
+  banks:
+  - name: Oboe
+    msb: 0
+    lsb: 1
+  - name: Slap Bass 1
+    msb: 127
+    lsb: 1
+- pc: 70
+  name: EnglishHorn
+  banks:
+  - name: EnglishHorn
+    msb: 0
+    lsb: 1
+  - name: Slap Bass 2
+    msb: 127
+    lsb: 1
+- pc: 71
+  name: Bassoon
+  banks:
+  - name: Bassoon
+    msb: 0
+    lsb: 1
+  - name: Fretless 1
+    msb: 127
+    lsb: 1
+- pc: 72
+  name: Clarinet
+  banks:
+  - name: Clarinet
+    msb: 0
+    lsb: 1
+  - name: Fretless 2
+    msb: 127
+    lsb: 1
+- pc: 73
+  name: Piccolo
+  banks:
+  - name: Piccolo
+    msb: 0
+    lsb: 1
+  - name: Flute 1
+    msb: 127
+    lsb: 1
+- pc: 74
+  name: Flute
+  banks:
+  - name: Flute
+    msb: 0
+    lsb: 1
+  - name: Flute 2
+    msb: 127
+    lsb: 1
+- pc: 75
+  name: Recorder
+  banks:
+  - name: Recorder
+    msb: 0
+    lsb: 1
+  - name: Piccolo 1
+    msb: 127
+    lsb: 1
+- pc: 76
+  name: Pan Flute
+  banks:
+  - name: Pan Flute
+    msb: 0
+    lsb: 1
+  - name: Piccolo 2
+    msb: 127
+    lsb: 1
+- pc: 77
+  name: Bottle Blow
+  banks:
+  - name: Bottle Blow
+    msb: 0
+    lsb: 1
+  - name: Recorder
+    msb: 127
+    lsb: 1
+- pc: 78
+  name: Shakuhachi
+  banks:
+  - name: Shakuhachi
+    msb: 0
+    lsb: 1
+  - name: Pan Pipes
+    msb: 127
+    lsb: 1
+- pc: 79
+  name: Whistle
+  banks:
+  - name: Whistle
+    msb: 0
+    lsb: 1
+  - name: Sax 1
+    msb: 127
+    lsb: 1
+- pc: 80
+  name: Ocarina
+  banks:
+  - name: Ocarina
+    msb: 0
+    lsb: 1
+  - name: Sax 2
+    msb: 127
+    lsb: 1
+- pc: 81
+  name: Square Wave
+  banks:
+  - name: Square Wave
+    msb: 0
+    lsb: 1
+  - name: Square
+    msb: 1
+    lsb: 1
+  - name: Sine Wave
+    msb: 8
+    lsb: 1
+  - name: Sax 3
+    msb: 127
+    lsb: 1
+- pc: 82
+  name: Saw Wave
+  banks:
+  - name: Saw Wave
+    msb: 0
+    lsb: 1
+  - name: Saw
+    msb: 1
+    lsb: 1
+  - name: Doctor Solo
+    msb: 8
+    lsb: 1
+  - name: Sax 4
+    msb: 127
+    lsb: 1
+- pc: 83
+  name: SynCalliope
+  banks:
+  - name: SynCalliope
+    msb: 0
+    lsb: 1
+  - name: Clarinet 1
+    msb: 127
+    lsb: 1
+- pc: 84
+  name: ChifferLead
+  banks:
+  - name: ChifferLead
+    msb: 0
+    lsb: 1
+  - name: Clarinet 2
+    msb: 127
+    lsb: 1
+- pc: 85
+  name: Charang
+  banks:
+  - name: Charang
+    msb: 0
+    lsb: 1
+  - name: Oboe
+    msb: 127
+    lsb: 1
+- pc: 86
+  name: Solo Vox
+  banks:
+  - name: Solo Vox
+    msb: 0
+    lsb: 1
+  - name: Engl Horn
+    msb: 127
+    lsb: 1
+- pc: 87
+  name: 5th Saw
+  banks:
+  - name: 5th Saw
+    msb: 0
+    lsb: 1
+  - name: Bassoon
+    msb: 127
+    lsb: 1
+- pc: 88
+  name: Bass & Lead
+  banks:
+  - name: Bass & Lead
+    msb: 0
+    lsb: 1
+  - name: Harmonica
+    msb: 127
+    lsb: 1
+- pc: 89
+  name: Fantasia
+  banks:
+  - name: Fantasia
+    msb: 0
+    lsb: 1
+  - name: Trumpet 1
+    msb: 127
+    lsb: 1
+- pc: 90
+  name: Warm Pad
+  banks:
+  - name: Warm Pad
+    msb: 0
+    lsb: 1
+  - name: Trumpet 2
+    msb: 127
+    lsb: 1
+- pc: 91
+  name: Polysynth
+  banks:
+  - name: Polysynth
+    msb: 0
+    lsb: 1
+  - name: Trombone 1
+    msb: 127
+    lsb: 1
+- pc: 92
+  name: Space Voice
+  banks:
+  - name: Space Voice
+    msb: 0
+    lsb: 1
+  - name: Trombone 2
+    msb: 127
+    lsb: 1
+- pc: 93
+  name: Bowed Glass
+  banks:
+  - name: Bowed Glass
+    msb: 0
+    lsb: 1
+  - name: Fr Horn 1
+    msb: 127
+    lsb: 1
+- pc: 94
+  name: Metal Pad
+  banks:
+  - name: Metal Pad
+    msb: 0
+    lsb: 1
+  - name: Fr Horn 2
+    msb: 127
+    lsb: 1
+- pc: 95
+  name: Halo Pad
+  banks:
+  - name: Halo Pad
+    msb: 0
+    lsb: 1
+  - name: Tuba
+    msb: 127
+    lsb: 1
+- pc: 96
+  name: Sweep Pad
+  banks:
+  - name: Sweep Pad
+    msb: 0
+    lsb: 1
+  - name: Brs Sect 1
+    msb: 127
+    lsb: 1
+- pc: 97
+  name: Ice Rain
+  banks:
+  - name: Ice Rain
+    msb: 0
+    lsb: 1
+  - name: Brs Sect 2
+    msb: 127
+    lsb: 1
+- pc: 98
+  name: Soundtrack
+  banks:
+  - name: Soundtrack
+    msb: 0
+    lsb: 1
+  - name: Vibe 1
+    msb: 127
+    lsb: 1
+- pc: 99
+  name: Crystal
+  banks:
+  - name: Crystal
+    msb: 0
+    lsb: 1
+  - name: Syn Mallet
+    msb: 1
+    lsb: 1
+  - name: Vibe 2
+    msb: 127
+    lsb: 1
+- pc: 100
+  name: Atmosphere
+  banks:
+  - name: Atmosphere
+    msb: 0
+    lsb: 1
+  - name: Syn Mallet
+    msb: 127
+    lsb: 1
+- pc: 101
+  name: Brightness
+  banks:
+  - name: Brightness
+    msb: 0
+    lsb: 1
+  - name: Windbell
+    msb: 127
+    lsb: 1
+- pc: 102
+  name: Goblin
+  banks:
+  - name: Goblin
+    msb: 0
+    lsb: 1
+  - name: Glock
+    msb: 127
+    lsb: 1
+- pc: 103
+  name: Echo Drops
+  banks:
+  - name: Echo Drops
+    msb: 0
+    lsb: 1
+  - name: Echo Bell
+    msb: 1
+    lsb: 1
+  - name: Echo Pan
+    msb: 2
+    lsb: 1
+  - name: Tube Bell
+    msb: 127
+    lsb: 1
+- pc: 104
+  name: Star Theme
+  banks:
+  - name: Star Theme
+    msb: 0
+    lsb: 1
+  - name: Xylophone
+    msb: 127
+    lsb: 1
+- pc: 105
+  name: Sitar
+  banks:
+  - name: Sitar
+    msb: 0
+    lsb: 1
+  - name: Sitar 2
+    msb: 1
+    lsb: 1
+  - name: Marimba
+    msb: 127
+    lsb: 1
+- pc: 106
+  name: Banjo
+  banks:
+  - name: Banjo
+    msb: 0
+    lsb: 1
+  - name: Koto
+    msb: 127
+    lsb: 1
+- pc: 107
+  name: Shamisen
+  banks:
+  - name: Shamisen
+    msb: 0
+    lsb: 1
+  - name: Sho
+    msb: 127
+    lsb: 1
+- pc: 108
+  name: Koto
+  banks:
+  - name: Koto
+    msb: 0
+    lsb: 1
+  - name: Taisho Koto
+    msb: 8
+    lsb: 1
+  - name: Shakuhachi
+    msb: 127
+    lsb: 1
+- pc: 109
+  name: Kalimba
+  banks:
+  - name: Kalimba
+    msb: 0
+    lsb: 1
+  - name: Whistle 1
+    msb: 127
+    lsb: 1
+- pc: 110
+  name: Bagpipe
+  banks:
+  - name: Bagpipe
+    msb: 0
+    lsb: 1
+  - name: Whistle 2
+    msb: 127
+    lsb: 1
+- pc: 111
+  name: Fiddle
+  banks:
+  - name: Fiddle
+    msb: 0
+    lsb: 1
+  - name: Bottleblow
+    msb: 127
+    lsb: 1
+- pc: 112
+  name: Shanai
+  banks:
+  - name: Shanai
+    msb: 0
+    lsb: 1
+  - name: Breathpipe
+    msb: 127
+    lsb: 1
+- pc: 113
+  name: Tinkle Bell
+  banks:
+  - name: Tinkle Bell
+    msb: 0
+    lsb: 1
+  - name: Timpani
+    msb: 127
+    lsb: 1
+- pc: 114
+  name: Agogo
+  banks:
+  - name: Agogo
+    msb: 0
+    lsb: 1
+  - name: Melodic Tom
+    msb: 127
+    lsb: 1
+- pc: 115
+  name: Steel Drums
+  banks:
+  - name: Steel Drums
+    msb: 0
+    lsb: 1
+  - name: Deep Snare
+    msb: 127
+    lsb: 1
+- pc: 116
+  name: Woodblock
+  banks:
+  - name: Woodblock
+    msb: 0
+    lsb: 1
+  - name: Castanets
+    msb: 8
+    lsb: 1
+  - name: Elec Perc 1
+    msb: 127
+    lsb: 1
+- pc: 117
+  name: Taiko
+  banks:
+  - name: Taiko
+    msb: 0
+    lsb: 1
+  - name: Concert BD
+    msb: 8
+    lsb: 1
+  - name: Elec Perc 2
+    msb: 127
+    lsb: 1
+- pc: 118
+  name: Melo. Tom 1
+  banks:
+  - name: Melo. Tom 1
+    msb: 0
+    lsb: 1
+  - name: Melo. Tom 2
+    msb: 8
+    lsb: 1
+  - name: Taiko
+    msb: 127
+    lsb: 1
+- pc: 119
+  name: Synth Drum
+  banks:
+  - name: Synth Drum
+    msb: 0
+    lsb: 1
+  - name: 808 Tom
+    msb: 8
+    lsb: 1
+  - name: Elec Perc
+    msb: 9
+    lsb: 1
+  - name: Taiko Rim
+    msb: 127
+    lsb: 1
+- pc: 120
+  name: Reverse Cym
+  banks:
+  - name: Reverse Cym
+    msb: 0
+    lsb: 1
+  - name: Cymbal
+    msb: 127
+    lsb: 1
+- pc: 121
+  name: Gt.FretNoiz
+  banks:
+  - name: Gt.FretNoiz
+    msb: 0
+    lsb: 1
+  - name: Gt.CutNoise
+    msb: 1
+    lsb: 1
+  - name: String Slap
+    msb: 2
+    lsb: 1
+  - name: Castanets
+    msb: 127
+    lsb: 1
+- pc: 122
+  name: BreathNoise
+  banks:
+  - name: BreathNoise
+    msb: 0
+    lsb: 1
+  - name: Fl.KeyClick
+    msb: 1
+    lsb: 1
+  - name: Triangle
+    msb: 127
+    lsb: 1
+- pc: 123
+  name: Seashore
+  banks:
+  - name: Seashore
+    msb: 0
+    lsb: 1
+  - name: Rain
+    msb: 1
+    lsb: 1
+  - name: Thunder
+    msb: 2
+    lsb: 1
+  - name: Wind
+    msb: 3
+    lsb: 1
+  - name: Stream
+    msb: 4
+    lsb: 1
+  - name: Bubble
+    msb: 5
+    lsb: 1
+  - name: Orche Hit
+    msb: 127
+    lsb: 1
+- pc: 124
+  name: Bird
+  banks:
+  - name: Bird
+    msb: 0
+    lsb: 1
+  - name: Dog
+    msb: 1
+    lsb: 1
+  - name: HorseGallop
+    msb: 2
+    lsb: 1
+  - name: Bird 2
+    msb: 3
+    lsb: 1
+  - name: Telephone
+    msb: 127
+    lsb: 1
+- pc: 125
+  name: Telephone 1
+  banks:
+  - name: Telephone 1
+    msb: 0
+    lsb: 1
+  - name: Telephone 2
+    msb: 1
+    lsb: 1
+  - name: Creaking
+    msb: 2
+    lsb: 1
+  - name: Door
+    msb: 3
+    lsb: 1
+  - name: Scratch
+    msb: 4
+    lsb: 1
+  - name: Wind Chimes
+    msb: 5
+    lsb: 1
+  - name: Bird Tweet
+    msb: 127
+    lsb: 1
+- pc: 126
+  name: Helicopter
+  banks:
+  - name: Helicopter
+    msb: 0
+    lsb: 1
+  - name: Car-Engine
+    msb: 1
+    lsb: 1
+  - name: Car-Stop
+    msb: 2
+    lsb: 1
+  - name: Car-Pass
+    msb: 3
+    lsb: 1
+  - name: Car-Crash
+    msb: 4
+    lsb: 1
+  - name: Siren
+    msb: 5
+    lsb: 1
+  - name: Train
+    msb: 6
+    lsb: 1
+  - name: Jetplane
+    msb: 7
+    lsb: 1
+  - name: Starship
+    msb: 8
+    lsb: 1
+  - name: Burst Noise
+    msb: 9
+    lsb: 1
+  - name: OneNote Jam
+    msb: 127
+    lsb: 1
+- pc: 127
+  name: Applause
+  banks:
+  - name: Applause
+    msb: 0
+    lsb: 1
+  - name: Laughing
+    msb: 1
+    lsb: 1
+  - name: Screaming
+    msb: 2
+    lsb: 1
+  - name: Punch
+    msb: 3
+    lsb: 1
+  - name: Heart Beat
+    msb: 4
+    lsb: 1
+  - name: Footsteps
+    msb: 5
+    lsb: 1
+  - name: Water Bell
+    msb: 127
+    lsb: 1
+- pc: 128
+  name: Gun Shot
+  banks:
+  - name: Gun Shot
+    msb: 0
+    lsb: 1
+  - name: Machine Gun
+    msb: 1
+    lsb: 1
+  - name: Lasergun
+    msb: 2
+    lsb: 1
+  - name: Explosion
+    msb: 3
+    lsb: 1
+  - name: Jungle Tune
+    msb: 127
+    lsb: 1

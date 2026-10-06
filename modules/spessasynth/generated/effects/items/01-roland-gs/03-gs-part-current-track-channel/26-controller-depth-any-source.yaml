@@ -1,0 +1,19 @@
+type: ccm
+id: 375
+name: Controller Depth (any source)
+sync: LastEachGate
+value:
+  default: 64
+  max: 127
+gate:
+  default: 0
+  min: 0
+  max: 90
+  name: Source and Parameter
+  tableId: 18
+memo: MOD, BEND, CAT, PAF, CC1, CC2 destinations. Implemented with dynamic modulators. MOD LFO1 Pitch Depth and BEND Pitch Control map to channel parameters.
+sysex:
+  profile: gs
+  address: '40H #2RCH #GL'
+  payload: '#VL'
+color: '707070'

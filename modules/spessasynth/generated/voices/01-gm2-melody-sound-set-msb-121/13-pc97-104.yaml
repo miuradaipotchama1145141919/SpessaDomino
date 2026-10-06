@@ -1,0 +1,57 @@
+- pc: 97
+  name: FX 1 (rain)
+  banks:
+  - name: FX 1 (rain)
+    msb: 121
+    lsb: 0
+- pc: 98
+  name: FX 2 (soundtrack)
+  banks:
+  - name: FX 2 (soundtrack)
+    msb: 121
+    lsb: 0
+- pc: 99
+  name: FX 3 (crystal)
+  banks:
+  - name: FX 3 (crystal)
+    msb: 121
+    lsb: 0
+  - name: FX 3a (synth mallet)
+    msb: 121
+    lsb: 1
+- pc: 100
+  name: FX 4 (atmosphere)
+  banks:
+  - name: FX 4 (atmosphere)
+    msb: 121
+    lsb: 0
+- pc: 101
+  name: FX 5 (brightness)
+  banks:
+  - name: FX 5 (brightness)
+    msb: 121
+    lsb: 0
+- pc: 102
+  name: FX 6 (goblins)
+  banks:
+  - name: FX 6 (goblins)
+    msb: 121
+    lsb: 0
+- pc: 103
+  name: FX 7 (echoes)
+  banks:
+  - name: FX 7 (echoes)
+    msb: 121
+    lsb: 0
+  - name: FX 7a (echo bell)
+    msb: 121
+    lsb: 1
+  - name: FX 7b (echo pan)
+    msb: 121
+    lsb: 2
+- pc: 104
+  name: FX 8 (sci-fi)
+  banks:
+  - name: FX 8 (sci-fi)
+    msb: 121
+    lsb: 0

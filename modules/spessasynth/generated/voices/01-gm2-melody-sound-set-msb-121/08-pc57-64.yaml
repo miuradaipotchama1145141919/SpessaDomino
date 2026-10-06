@@ -1,0 +1,81 @@
+- pc: 57
+  name: Trumpet
+  banks:
+  - name: Trumpet
+    msb: 121
+    lsb: 0
+  - name: Dark Trumpet Soft
+    msb: 121
+    lsb: 1
+- pc: 58
+  name: Trombone
+  banks:
+  - name: Trombone
+    msb: 121
+    lsb: 0
+  - name: Trombone 2
+    msb: 121
+    lsb: 1
+  - name: Bright Trombone
+    msb: 121
+    lsb: 2
+- pc: 59
+  name: Tuba
+  banks:
+  - name: Tuba
+    msb: 121
+    lsb: 0
+- pc: 60
+  name: Muted Trumpet
+  banks:
+  - name: Muted Trumpet
+    msb: 121
+    lsb: 0
+  - name: Muted Trumpet 2
+    msb: 121
+    lsb: 1
+- pc: 61
+  name: French Horn
+  banks:
+  - name: French Horn
+    msb: 121
+    lsb: 0
+  - name: French Horn 2 (warm)
+    msb: 121
+    lsb: 1
+- pc: 62
+  name: Brass Section
+  banks:
+  - name: Brass Section
+    msb: 121
+    lsb: 0
+  - name: Brass Section 2 (octave mix)
+    msb: 121
+    lsb: 1
+- pc: 63
+  name: Synth Brass 1
+  banks:
+  - name: Synth Brass 1
+    msb: 121
+    lsb: 0
+  - name: Synth Brass 3
+    msb: 121
+    lsb: 1
+  - name: Analog Synth Brass 1
+    msb: 121
+    lsb: 2
+  - name: Jump Brass
+    msb: 121
+    lsb: 3
+- pc: 64
+  name: Synth Brass 2
+  banks:
+  - name: Synth Brass 2
+    msb: 121
+    lsb: 0
+  - name: Synth Brass 4
+    msb: 121
+    lsb: 1
+  - name: Analog Synth Brass 2
+    msb: 121
+    lsb: 2

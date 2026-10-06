@@ -1,0 +1,399 @@
+- pc: 33
+  name: Aco.Bass
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: JazzRthm
+    msb: 0
+    lsb: 40
+  - name: PckAcoBa
+    msb: 0
+    lsb: 41
+  - name: Blink Ba
+    msb: 0
+    lsb: 43
+  - name: VXUprght
+    msb: 0
+    lsb: 45
+  - name: Boston
+    msb: 0
+    lsb: 64
+  - name: BostnBrt
+    msb: 0
+    lsb: 65
+  - name: Coolth
+    msb: 0
+    lsb: 66
+  - name: Coolth B
+    msb: 0
+    lsb: 67
+  - name: WalkSyBa
+    msb: 0
+    lsb: 96
+  - name: Dim&Cool
+    msb: 0
+    lsb: 97
+  - name: AcoBass#
+    msb: 0
+    lsb: 126
+- pc: 34
+  name: FngrBass
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: FingrDrk
+    msb: 0
+    lsb: 18
+  - name: FlangeBa
+    msb: 0
+    lsb: 27
+  - name: FngrBaDt
+    msb: 0
+    lsb: 32
+  - name: Ba&DstEG
+    msb: 0
+    lsb: 40
+  - name: FngrSlap
+    msb: 0
+    lsb: 43
+  - name: FngBass2
+    msb: 0
+    lsb: 45
+  - name: Jazzy Ba
+    msb: 0
+    lsb: 64
+  - name: Mod.Bass
+    msb: 0
+    lsb: 65
+  - name: Chase
+    msb: 0
+    lsb: 66
+  - name: ChaseRes
+    msb: 0
+    lsb: 67
+  - name: BlueBass
+    msb: 0
+    lsb: 68
+  - name: JazzyBa2
+    msb: 0
+    lsb: 69
+  - name: FngBass3
+    msb: 0
+    lsb: 70
+  - name: 'FngrBa #'
+    msb: 0
+    lsb: 126
+- pc: 35
+  name: PickBass
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: PickBa 2
+    msb: 0
+    lsb: 6
+  - name: MutePkBa
+    msb: 0
+    lsb: 28
+  - name: PkB&MtGt
+    msb: 0
+    lsb: 40
+  - name: HardPick
+    msb: 0
+    lsb: 64
+  - name: HrdPikRs
+    msb: 0
+    lsb: 65
+  - name: PkBass +
+    msb: 0
+    lsb: 66
+  - name: PickBa 4
+    msb: 0
+    lsb: 67
+- pc: 36
+  name: Fretless
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: Fretles2
+    msb: 0
+    lsb: 32
+  - name: Fretles3
+    msb: 0
+    lsb: 33
+  - name: Fretles4
+    msb: 0
+    lsb: 34
+  - name: PwrFrtls
+    msb: 0
+    lsb: 64
+  - name: PwrFrtlR
+    msb: 0
+    lsb: 65
+  - name: TalkinBa
+    msb: 0
+    lsb: 66
+  - name: NoizFrtl
+    msb: 0
+    lsb: 67
+  - name: SynFretl
+    msb: 0
+    lsb: 96
+  - name: SmthFrtl
+    msb: 0
+    lsb: 97
+  - name: Frtless#
+    msb: 0
+    lsb: 126
+- pc: 37
+  name: SlapBas1
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: CsmicSlp
+    msb: 0
+    lsb: 21
+  - name: ResoSlap
+    msb: 0
+    lsb: 27
+  - name: PunchThm
+    msb: 0
+    lsb: 32
+  - name: Slapper
+    msb: 0
+    lsb: 64
+  - name: Thum&Slp
+    msb: 0
+    lsb: 65
+  - name: GltzySlp
+    msb: 0
+    lsb: 66
+  - name: FM Slap
+    msb: 0
+    lsb: 67
+  - name: FMSlpDtd
+    msb: 0
+    lsb: 68
+  - name: SlapBa1#
+    msb: 0
+    lsb: 126
+- pc: 38
+  name: SlapBas2
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: BrtSlpSp
+    msb: 0
+    lsb: 16
+  - name: Wah Slap
+    msb: 0
+    lsb: 22
+  - name: VeloSlap
+    msb: 0
+    lsb: 43
+  - name: SlapBa2#
+    msb: 0
+    lsb: 126
+- pc: 39
+  name: SynBass1
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: SynBa1Dk
+    msb: 0
+    lsb: 18
+  - name: FastResB
+    msb: 0
+    lsb: 20
+  - name: TL66
+    msb: 0
+    lsb: 21
+  - name: AcidBass
+    msb: 0
+    lsb: 24
+  - name: ResoBass
+    msb: 0
+    lsb: 27
+  - name: MtdPulsB
+    msb: 0
+    lsb: 28
+  - name: SlwAttck
+    msb: 0
+    lsb: 29
+  - name: Clv Bass
+    msb: 0
+    lsb: 35
+  - name: TechnoBa
+    msb: 0
+    lsb: 40
+  - name: Kik'n'Ba
+    msb: 0
+    lsb: 41
+  - name: NEP
+    msb: 0
+    lsb: 42
+  - name: Orbiter
+    msb: 0
+    lsb: 64
+  - name: Sqr.Bass
+    msb: 0
+    lsb: 65
+  - name: RubberBa
+    msb: 0
+    lsb: 66
+  - name: Fish
+    msb: 0
+    lsb: 67
+  - name: HardReso
+    msb: 0
+    lsb: 68
+  - name: Wah Saw
+    msb: 0
+    lsb: 69
+  - name: Pluto
+    msb: 0
+    lsb: 70
+  - name: Pluto +
+    msb: 0
+    lsb: 71
+  - name: Stimuli
+    msb: 0
+    lsb: 72
+  - name: RunPulse
+    msb: 0
+    lsb: 73
+  - name: TalkPuls
+    msb: 0
+    lsb: 74
+  - name: Node
+    msb: 0
+    lsb: 75
+  - name: Stainer
+    msb: 0
+    lsb: 76
+  - name: StainAtk
+    msb: 0
+    lsb: 77
+  - name: SweepSqr
+    msb: 0
+    lsb: 78
+  - name: SwpSqr +
+    msb: 0
+    lsb: 79
+  - name: Stinks
+    msb: 0
+    lsb: 80
+  - name: StnksRes
+    msb: 0
+    lsb: 81
+  - name: Reso Sqr
+    msb: 0
+    lsb: 82
+  - name: Dagger
+    msb: 0
+    lsb: 83
+  - name: Zinc
+    msb: 0
+    lsb: 84
+  - name: SweePWM
+    msb: 0
+    lsb: 85
+  - name: SwPWM St
+    msb: 0
+    lsb: 86
+  - name: Slow Wah
+    msb: 0
+    lsb: 87
+  - name: Crook
+    msb: 0
+    lsb: 88
+  - name: FstFltBa
+    msb: 0
+    lsb: 89
+  - name: Rubber30
+    msb: 0
+    lsb: 90
+  - name: FstResB2
+    msb: 0
+    lsb: 91
+  - name: Hammer
+    msb: 0
+    lsb: 96
+- pc: 40
+  name: SynBass2
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: MelloSBa
+    msb: 0
+    lsb: 6
+  - name: Seq Bass
+    msb: 0
+    lsb: 12
+  - name: ClkSynBa
+    msb: 0
+    lsb: 18
+  - name: SynBa2Dk
+    msb: 0
+    lsb: 19
+  - name: Zealot
+    msb: 0
+    lsb: 22
+  - name: SmthSynB
+    msb: 0
+    lsb: 32
+  - name: ModulrBa
+    msb: 0
+    lsb: 40
+  - name: DX Bass
+    msb: 0
+    lsb: 41
+  - name: DXBa Brt
+    msb: 0
+    lsb: 42
+  - name: X WireBa
+    msb: 0
+    lsb: 64
+  - name: AtkPulse
+    msb: 0
+    lsb: 65
+  - name: CS Light
+    msb: 0
+    lsb: 66
+  - name: MetlBass
+    msb: 0
+    lsb: 67
+  - name: FrcOscBa
+    msb: 0
+    lsb: 68
+  - name: Cubit
+    msb: 0
+    lsb: 69
+  - name: Cubit +
+    msb: 0
+    lsb: 70
+  - name: Keel
+    msb: 0
+    lsb: 71
+  - name: KeelPwrd
+    msb: 0
+    lsb: 72
+  - name: PlnPulse
+    msb: 0
+    lsb: 73
+  - name: PwrdPuls
+    msb: 0
+    lsb: 74
+  - name: PwrPulsB
+    msb: 0
+    lsb: 75
+  - name: Pwrd Saw
+    msb: 0
+    lsb: 76

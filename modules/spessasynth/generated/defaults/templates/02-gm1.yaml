@@ -1,0 +1,66 @@
+type: folder
+name: GM1
+items:
+- id: 2
+  name: GM1 System Setup
+  events:
+  - tag: Memo
+    text: Bank select is ignored in GM1 mode.
+  - tag: Comment
+    attrs:
+      Step: 0
+      Text: '---- Reset -------------------------------------------------------'
+  - tag: CC
+    attrs:
+      ID: 200
+  - tag: Comment
+    attrs:
+      Step: 0
+      Text: '---- Global ------------------------------------------------------'
+  - tag: CC
+    attrs:
+      ID: 170
+      Value: 16383
+  - tag: CC
+    attrs:
+      ID: 171
+      Value: 8192
+  - tag: CC
+    attrs:
+      ID: 172
+      Value: 0
+  - tag: CC
+    attrs:
+      ID: 173
+      Value: 0
+- id: 11
+  name: GM1 Channel Init
+  events:
+  - tag: CC
+    attrs:
+      ID: 121
+      Value: 0
+  - tag: CC
+    attrs:
+      ID: 7
+      Value: 100
+  - tag: CC
+    attrs:
+      ID: 10
+      Value: 0
+  - tag: PC
+    attrs:
+      PC: 1
+      Mode: Auto
+  - tag: CC
+    attrs:
+      ID: 112
+      Value: 0
+  - tag: CC
+    attrs:
+      ID: 1
+      Value: 0
+  - tag: CC
+    attrs:
+      ID: 11
+      Value: 127

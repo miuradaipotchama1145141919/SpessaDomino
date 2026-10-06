@@ -1,0 +1,3 @@
+name: Sound Canvas 55Map (MSB/LSB variations)
+programs:
+- include: 02-sound-canvas-55map-msb-lsb-variations/*.yaml

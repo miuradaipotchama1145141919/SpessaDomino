@@ -1,0 +1,126 @@
+- pc: 25
+  name: Nylonstr.Gt
+  banks:
+  - name: Nylonstr.Gt
+    msb: 0
+    lsb: 2
+  - name: Ukulele
+    msb: 8
+    lsb: 2
+  - name: Nylon Gt.o
+    msb: 16
+    lsb: 2
+  - name: VeloHarmnix
+    msb: 24
+    lsb: 2
+  - name: Nylon Gt.2
+    msb: 32
+    lsb: 2
+  - name: Lequint Gt.
+    msb: 40
+    lsb: 2
+- pc: 26
+  name: Steelstr.Gt
+  banks:
+  - name: Steelstr.Gt
+    msb: 0
+    lsb: 2
+  - name: 12-str.Gt
+    msb: 8
+    lsb: 2
+  - name: Nylon+Steel
+    msb: 9
+    lsb: 2
+  - name: Mandolin
+    msb: 16
+    lsb: 2
+  - name: Steel Gt.2
+    msb: 32
+    lsb: 2
+- pc: 27
+  name: Jazz Gt.
+  banks:
+  - name: Jazz Gt.
+    msb: 0
+    lsb: 2
+  - name: Mellow Gt.
+    msb: 1
+    lsb: 2
+  - name: Pedal Steel
+    msb: 8
+    lsb: 2
+- pc: 28
+  name: Clean Gt.
+  banks:
+  - name: Clean Gt.
+    msb: 0
+    lsb: 2
+  - name: Chorus Gt.
+    msb: 8
+    lsb: 2
+- pc: 29
+  name: Muted Gt.
+  banks:
+  - name: Muted Gt.
+    msb: 0
+    lsb: 2
+  - name: MutedDis.Gt
+    msb: 1
+    lsb: 2
+  - name: Funk Pop
+    msb: 8
+    lsb: 2
+  - name: Funk Gt.2
+    msb: 16
+    lsb: 2
+- pc: 30
+  name: OverdriveGt
+  banks:
+  - name: OverdriveGt
+    msb: 0
+    lsb: 2
+- pc: 31
+  name: DistortionGt
+  banks:
+  - name: DistortionGt
+    msb: 0
+    lsb: 2
+  - name: Dist. Gt2
+    msb: 1
+    lsb: 2
+  - name: DazedGuitar
+    msb: 2
+    lsb: 2
+  - name: FeedbackGt.
+    msb: 8
+    lsb: 2
+  - name: FeedbackGt2
+    msb: 9
+    lsb: 2
+  - name: PowerGuitar
+    msb: 16
+    lsb: 2
+  - name: Power Gt.2
+    msb: 17
+    lsb: 2
+  - name: 5th Dist.
+    msb: 18
+    lsb: 2
+  - name: Rock Rhythm
+    msb: 24
+    lsb: 2
+  - name: RockRhythm2
+    msb: 25
+    lsb: 2
+- pc: 32
+  name: Gt.Harmonix
+  banks:
+  - name: Gt.Harmonix
+    msb: 0
+    lsb: 2
+  - name: Gt.Feedback
+    msb: 8
+    lsb: 2
+  - name: Ac.Gt.Harm.
+    msb: 16
+    lsb: 2

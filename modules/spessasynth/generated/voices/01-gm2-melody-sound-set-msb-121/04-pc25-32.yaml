@@ -1,0 +1,96 @@
+- pc: 25
+  name: Acoustic Guitar (nylon)
+  banks:
+  - name: Acoustic Guitar (nylon)
+    msb: 121
+    lsb: 0
+  - name: Ukulele
+    msb: 121
+    lsb: 1
+  - name: Acoustic Guitar (nylon + key off)
+    msb: 121
+    lsb: 2
+  - name: Acoustic Guitar (nylon 2)
+    msb: 121
+    lsb: 3
+- pc: 26
+  name: Acoustic Guitar (steel)
+  banks:
+  - name: Acoustic Guitar (steel)
+    msb: 121
+    lsb: 0
+  - name: 12-Strings Guitar
+    msb: 121
+    lsb: 1
+  - name: Mandolin
+    msb: 121
+    lsb: 2
+  - name: Steel Guitar with Body Sound
+    msb: 121
+    lsb: 3
+- pc: 27
+  name: Electric Guitar (jazz)
+  banks:
+  - name: Electric Guitar (jazz)
+    msb: 121
+    lsb: 0
+  - name: Electric Guitar (pedal steel)
+    msb: 121
+    lsb: 1
+- pc: 28
+  name: Electric Guitar (clean)
+  banks:
+  - name: Electric Guitar (clean)
+    msb: 121
+    lsb: 0
+  - name: Electric Guitar (detuned clean)
+    msb: 121
+    lsb: 1
+  - name: Mid Tone Guitar
+    msb: 121
+    lsb: 2
+- pc: 29
+  name: Electric Guitar (muted)
+  banks:
+  - name: Electric Guitar (muted)
+    msb: 121
+    lsb: 0
+  - name: Electric Guitar (funky cutting)
+    msb: 121
+    lsb: 1
+  - name: Electric Guitar (muted velo-sw)
+    msb: 121
+    lsb: 2
+  - name: Jazz Man
+    msb: 121
+    lsb: 3
+- pc: 30
+  name: Overdriven Guitar
+  banks:
+  - name: Overdriven Guitar
+    msb: 121
+    lsb: 0
+  - name: Guitar Pinch
+    msb: 121
+    lsb: 1
+- pc: 31
+  name: Distortion Guitar
+  banks:
+  - name: Distortion Guitar
+    msb: 121
+    lsb: 0
+  - name: Distortion Guitar (with feedback)
+    msb: 121
+    lsb: 1
+  - name: Distorted Rhythm Guitar
+    msb: 121
+    lsb: 2
+- pc: 32
+  name: Guitar Harmonics
+  banks:
+  - name: Guitar Harmonics
+    msb: 121
+    lsb: 0
+  - name: Guitar Feedback
+    msb: 121
+    lsb: 1

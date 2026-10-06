@@ -1,0 +1,258 @@
+- pc: 97
+  name: Rain
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: ClaviPad
+    msb: 0
+    lsb: 45
+  - name: HrmoRain
+    msb: 0
+    lsb: 64
+  - name: AfrcnWnd
+    msb: 0
+    lsb: 65
+  - name: Carib
+    msb: 0
+    lsb: 66
+  - name: DigiBell
+    msb: 0
+    lsb: 69
+  - name: AirBells
+    msb: 0
+    lsb: 70
+  - name: BellHarp
+    msb: 0
+    lsb: 71
+  - name: Gamelmba
+    msb: 0
+    lsb: 72
+  - name: Bounce
+    msb: 0
+    lsb: 73
+  - name: Ana Bell
+    msb: 0
+    lsb: 74
+- pc: 98
+  name: SoundTrk
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: Prologue
+    msb: 0
+    lsb: 27
+  - name: Ancestrl
+    msb: 0
+    lsb: 64
+  - name: Rave
+    msb: 0
+    lsb: 65
+  - name: Fairy
+    msb: 0
+    lsb: 66
+  - name: Hermit
+    msb: 0
+    lsb: 67
+  - name: Akasaka
+    msb: 0
+    lsb: 69
+  - name: DgBermda
+    msb: 0
+    lsb: 70
+  - name: Cloud Pd
+    msb: 0
+    lsb: 71
+  - name: PulseKey
+    msb: 0
+    lsb: 72
+  - name: NoisePno
+    msb: 0
+    lsb: 73
+- pc: 99
+  name: Crystal
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: SynDrCmp
+    msb: 0
+    lsb: 12
+  - name: Popcorn
+    msb: 0
+    lsb: 14
+  - name: TinyBell
+    msb: 0
+    lsb: 18
+  - name: RndGlock
+    msb: 0
+    lsb: 35
+  - name: GlockChi
+    msb: 0
+    lsb: 40
+  - name: ClearBel
+    msb: 0
+    lsb: 41
+  - name: ChorBell
+    msb: 0
+    lsb: 42
+  - name: SynMalet
+    msb: 0
+    lsb: 64
+  - name: SftCryst
+    msb: 0
+    lsb: 65
+  - name: LoudGlok
+    msb: 0
+    lsb: 66
+  - name: ChrstBel
+    msb: 0
+    lsb: 67
+  - name: VibeBell
+    msb: 0
+    lsb: 68
+- pc: 100
+  name: Atmosphr
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: WarmAtms
+    msb: 0
+    lsb: 18
+  - name: HollwRls
+    msb: 0
+    lsb: 19
+  - name: Nylon EP
+    msb: 0
+    lsb: 40
+  - name: NylnHarp
+    msb: 0
+    lsb: 64
+  - name: Harp Vox
+    msb: 0
+    lsb: 65
+  - name: AtmosPad
+    msb: 0
+    lsb: 66
+  - name: Planet
+    msb: 0
+    lsb: 67
+  - name: Lyra
+    msb: 0
+    lsb: 68
+  - name: MilkyWay
+    msb: 0
+    lsb: 69
+  - name: Night
+    msb: 0
+    lsb: 70
+  - name: Glisten
+    msb: 0
+    lsb: 71
+  - name: Puffy
+    msb: 0
+    lsb: 72
+  - name: Mimicry
+    msb: 0
+    lsb: 73
+  - name: Parasite
+    msb: 0
+    lsb: 74
+  - name: Cicada
+    msb: 0
+    lsb: 75
+- pc: 101
+  name: Bright
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: FantaBel
+    msb: 0
+    lsb: 64
+  - name: ShinStar
+    msb: 0
+    lsb: 65
+  - name: BritStab
+    msb: 0
+    lsb: 66
+  - name: Reso&Pan
+    msb: 0
+    lsb: 69
+  - name: Ana Echo
+    msb: 0
+    lsb: 70
+  - name: Smokey
+    msb: 0
+    lsb: 96
+- pc: 102
+  name: Goblins
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: GobSynth
+    msb: 0
+    lsb: 64
+  - name: Creeper
+    msb: 0
+    lsb: 65
+  - name: Ring Pad
+    msb: 0
+    lsb: 66
+  - name: Ritual
+    msb: 0
+    lsb: 67
+  - name: ToHeaven
+    msb: 0
+    lsb: 68
+  - name: Beacon
+    msb: 0
+    lsb: 76
+  - name: BelChoir
+    msb: 0
+    lsb: 96
+  - name: Dharma
+    msb: 0
+    lsb: 97
+- pc: 103
+  name: Echoes
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: Echoes 2
+    msb: 0
+    lsb: 8
+  - name: Echo Pan
+    msb: 0
+    lsb: 14
+  - name: EchoBell
+    msb: 0
+    lsb: 64
+  - name: Big Pan
+    msb: 0
+    lsb: 65
+  - name: SynPiano
+    msb: 0
+    lsb: 66
+  - name: Creation
+    msb: 0
+    lsb: 67
+  - name: StarDust
+    msb: 0
+    lsb: 68
+- pc: 104
+  name: Sci-Fi
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: Starz
+    msb: 0
+    lsb: 64
+  - name: Odin
+    msb: 0
+    lsb: 65

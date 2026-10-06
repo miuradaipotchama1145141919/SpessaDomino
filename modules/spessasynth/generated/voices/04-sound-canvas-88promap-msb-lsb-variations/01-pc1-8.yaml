@@ -1,0 +1,141 @@
+- pc: 1
+  name: Piano 1
+  banks:
+  - name: Piano 1
+    msb: 0
+    lsb: 3
+  - name: Piano 1w
+    msb: 8
+    lsb: 3
+  - name: European Pf
+    msb: 16
+    lsb: 3
+  - name: Piano + Str.
+    msb: 24
+    lsb: 3
+- pc: 2
+  name: Piano 2
+  banks:
+  - name: Piano 2
+    msb: 0
+    lsb: 3
+  - name: Piano 2w
+    msb: 8
+    lsb: 3
+  - name: Dance Piano
+    msb: 16
+    lsb: 3
+- pc: 3
+  name: Piano 3
+  banks:
+  - name: Piano 3
+    msb: 0
+    lsb: 3
+  - name: EG+Rhodes 1
+    msb: 1
+    lsb: 3
+  - name: EG+Rhodes 2
+    msb: 2
+    lsb: 3
+  - name: Piano 3w
+    msb: 8
+    lsb: 3
+- pc: 4
+  name: Honky-tonk
+  banks:
+  - name: Honky-tonk
+    msb: 0
+    lsb: 3
+  - name: Honky-tonk 2
+    msb: 8
+    lsb: 3
+- pc: 5
+  name: E.Piano 1
+  banks:
+  - name: E.Piano 1
+    msb: 0
+    lsb: 3
+  - name: St.Soft EP
+    msb: 8
+    lsb: 3
+  - name: Cho. E.Piano
+    msb: 9
+    lsb: 3
+  - name: SilentRhodes
+    msb: 10
+    lsb: 3
+  - name: FM+SA EP
+    msb: 16
+    lsb: 3
+  - name: Dist E.Piano
+    msb: 17
+    lsb: 3
+  - name: Wurly
+    msb: 24
+    lsb: 3
+  - name: Hard Rhodes
+    msb: 25
+    lsb: 3
+  - name: MellowRhodes
+    msb: 26
+    lsb: 3
+- pc: 6
+  name: E.Piano 2
+  banks:
+  - name: E.Piano 2
+    msb: 0
+    lsb: 3
+  - name: Detuned EP 2
+    msb: 8
+    lsb: 3
+  - name: St.FM EP
+    msb: 16
+    lsb: 3
+  - name: Hard FM EP
+    msb: 24
+    lsb: 3
+- pc: 7
+  name: Harpsichord
+  banks:
+  - name: Harpsichord
+    msb: 0
+    lsb: 3
+  - name: Harpsichord2
+    msb: 1
+    lsb: 3
+  - name: Coupled Hps.
+    msb: 8
+    lsb: 3
+  - name: Harpsi.w
+    msb: 16
+    lsb: 3
+  - name: Harpsi.o
+    msb: 24
+    lsb: 3
+  - name: Synth Harpsi
+    msb: 32
+    lsb: 3
+- pc: 8
+  name: Clav.
+  banks:
+  - name: Clav.
+    msb: 0
+    lsb: 3
+  - name: Comp Clav.
+    msb: 8
+    lsb: 3
+  - name: Reso Clav.
+    msb: 16
+    lsb: 3
+  - name: Clav.o
+    msb: 24
+    lsb: 3
+  - name: Analog Clav.
+    msb: 32
+    lsb: 3
+  - name: JP8 Clav. 1
+    msb: 33
+    lsb: 3
+  - name: JP8 Clav. 2
+    msb: 35
+    lsb: 3

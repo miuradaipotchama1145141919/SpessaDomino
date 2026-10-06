@@ -1,0 +1,4 @@
+maps:
+  - include: parts/gm1.yaml
+  - include: generated/voices/*.yaml
+  - include: parts/xgSfx.yaml

@@ -1,0 +1,5 @@
+include: generated/defaults/header.yaml
+templates:
+  - include: generated/defaults/templates/*.yaml
+tracks:
+  - include: generated/defaults/tracks/*.yaml

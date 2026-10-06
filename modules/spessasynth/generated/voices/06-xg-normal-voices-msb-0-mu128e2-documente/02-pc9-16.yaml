@@ -1,0 +1,171 @@
+- pc: 9
+  name: Celesta
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: FMCelsta
+    msb: 0
+    lsb: 64
+  - name: OrganHit
+    msb: 48
+    lsb: 8
+  - name: Boomout
+    msb: 48
+    lsb: 16
+  - name: ChoCalcO
+    msb: 48
+    lsb: 24
+  - name: Vein +
+    msb: 48
+    lsb: 72
+  - name: Malfnctn
+    msb: 48
+    lsb: 88
+- pc: 10
+  name: Glocken
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: OrgnHit+
+    msb: 48
+    lsb: 8
+  - name: ChoirSpl
+    msb: 48
+    lsb: 16
+  - name: Sodium
+    msb: 48
+    lsb: 24
+  - name: Universe
+    msb: 48
+    lsb: 72
+- pc: 11
+  name: MusicBox
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: Orgel
+    msb: 0
+    lsb: 64
+  - name: SmalOrgl
+    msb: 0
+    lsb: 65
+  - name: Soft Hit
+    msb: 48
+    lsb: 8
+  - name: Veld
+    msb: 48
+    lsb: 16
+  - name: UnvrsSwp
+    msb: 48
+    lsb: 72
+- pc: 12
+  name: Vibes
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: Vibes K
+    msb: 0
+    lsb: 1
+  - name: HardVibe
+    msb: 0
+    lsb: 45
+  - name: Vein
+    msb: 48
+    lsb: 8
+  - name: VaporVox
+    msb: 48
+    lsb: 16
+  - name: Xe +
+    msb: 48
+    lsb: 72
+- pc: 13
+  name: Marimba
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: MarimbaK
+    msb: 0
+    lsb: 1
+  - name: SineMrmb
+    msb: 0
+    lsb: 64
+  - name: Balafon
+    msb: 0
+    lsb: 96
+  - name: Balimba
+    msb: 0
+    lsb: 97
+  - name: Log Drum
+    msb: 0
+    lsb: 98
+  - name: Packet
+    msb: 48
+    lsb: 8
+  - name: VoxShoot
+    msb: 48
+    lsb: 16
+  - name: Daze
+    msb: 48
+    lsb: 72
+- pc: 14
+  name: Xylophon
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: Jolly
+    msb: 48
+    lsb: 8
+  - name: SemiacOr
+    msb: 48
+    lsb: 16
+  - name: Refusal
+    msb: 48
+    lsb: 72
+- pc: 15
+  name: TubulBel
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: ChrchBel
+    msb: 0
+    lsb: 96
+  - name: Carillon
+    msb: 0
+    lsb: 97
+  - name: Jolly +
+    msb: 48
+    lsb: 8
+  - name: Refusal+
+    msb: 48
+    lsb: 72
+- pc: 16
+  name: Dulcimer
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: Dulcimr2
+    msb: 0
+    lsb: 35
+  - name: Cimbalom
+    msb: 0
+    lsb: 96
+  - name: Santur
+    msb: 0
+    lsb: 97
+  - name: Yang Qin
+    msb: 0
+    lsb: 98
+  - name: Envy
+    msb: 48
+    lsb: 8
+  - name: Lie
+    msb: 48
+    lsb: 72

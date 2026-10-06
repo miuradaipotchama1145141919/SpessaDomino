@@ -1,0 +1,3 @@
+name: GM2 Melody Sound Set (MSB 121)
+programs:
+- include: 01-gm2-melody-sound-set-msb-121/*.yaml

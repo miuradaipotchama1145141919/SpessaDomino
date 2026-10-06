@@ -1,0 +1,363 @@
+- pc: 33
+  name: Acoustic Bs.
+  banks:
+  - name: Acoustic Bs.
+    msb: 0
+    lsb: 4
+  - name: Rockabilly
+    msb: 1
+    lsb: 4
+  - name: Wild A.Bass
+    msb: 8
+    lsb: 4
+  - name: Atk A.Bass
+    msb: 9
+    lsb: 4
+  - name: Bass + OHH
+    msb: 16
+    lsb: 4
+- pc: 34
+  name: Fingered Bs.
+  banks:
+  - name: Fingered Bs.
+    msb: 0
+    lsb: 4
+  - name: Fingered Bs2
+    msb: 1
+    lsb: 4
+  - name: Jazz Bass
+    msb: 2
+    lsb: 4
+  - name: Jazz Bass 2
+    msb: 3
+    lsb: 4
+  - name: Rock Bass
+    msb: 4
+    lsb: 4
+  - name: Heart Bass
+    msb: 5
+    lsb: 4
+  - name: AttackFinger
+    msb: 6
+    lsb: 4
+  - name: Finger Slap
+    msb: 7
+    lsb: 4
+  - name: ChorusJazzBs
+    msb: 8
+    lsb: 4
+  - name: F.Bass/Harm.
+    msb: 16
+    lsb: 4
+- pc: 35
+  name: Picked Bass
+  banks:
+  - name: Picked Bass
+    msb: 0
+    lsb: 4
+  - name: Picked Bass2
+    msb: 1
+    lsb: 4
+  - name: Picked Bass3
+    msb: 2
+    lsb: 4
+  - name: Picked Bass4
+    msb: 3
+    lsb: 4
+  - name: Double Pick
+    msb: 4
+    lsb: 4
+  - name: Muted PickBs
+    msb: 8
+    lsb: 4
+  - name: P.Bass/Harm.
+    msb: 16
+    lsb: 4
+- pc: 36
+  name: Fretless Bs.
+  banks:
+  - name: Fretless Bs.
+    msb: 0
+    lsb: 4
+  - name: Fretless Bs2
+    msb: 1
+    lsb: 4
+  - name: Fretless Bs3
+    msb: 2
+    lsb: 4
+  - name: Fretless Bs4
+    msb: 3
+    lsb: 4
+  - name: Syn Fretless
+    msb: 4
+    lsb: 4
+  - name: Mr.Smooth
+    msb: 5
+    lsb: 4
+  - name: Wood+FlessBs
+    msb: 8
+    lsb: 4
+- pc: 37
+  name: Slap Bass 1
+  banks:
+  - name: Slap Bass 1
+    msb: 0
+    lsb: 4
+  - name: Slap Pop
+    msb: 1
+    lsb: 4
+  - name: Reso Slap
+    msb: 8
+    lsb: 4
+  - name: Unison Slap
+    msb: 9
+    lsb: 4
+- pc: 38
+  name: Slap Bass 2
+  banks:
+  - name: Slap Bass 2
+    msb: 0
+    lsb: 4
+  - name: Slap Bass 3
+    msb: 1
+    lsb: 4
+  - name: FM Slap
+    msb: 8
+    lsb: 4
+- pc: 39
+  name: Synth Bass 1
+  banks:
+  - name: Synth Bass 1
+    msb: 0
+    lsb: 4
+  - name: SynthBass101
+    msb: 1
+    lsb: 4
+  - name: CS Bass
+    msb: 2
+    lsb: 4
+  - name: JP-4 Bass
+    msb: 3
+    lsb: 4
+  - name: JP-8 Bass
+    msb: 4
+    lsb: 4
+  - name: P5 Bass
+    msb: 5
+    lsb: 4
+  - name: JPMG Bass
+    msb: 6
+    lsb: 4
+  - name: Acid Bass
+    msb: 8
+    lsb: 4
+  - name: TB303 Bass
+    msb: 9
+    lsb: 4
+  - name: Tekno Bass
+    msb: 10
+    lsb: 4
+  - name: TB303 Bass 2
+    msb: 11
+    lsb: 4
+  - name: Kicked TB303
+    msb: 12
+    lsb: 4
+  - name: TB303 Saw Bs
+    msb: 13
+    lsb: 4
+  - name: Rubber303 Bs
+    msb: 14
+    lsb: 4
+  - name: Reso 303 Bs
+    msb: 15
+    lsb: 4
+  - name: Reso SH Bass
+    msb: 16
+    lsb: 4
+  - name: TB303 Sqr Bs
+    msb: 17
+    lsb: 4
+  - name: TB303 DistBs
+    msb: 18
+    lsb: 4
+  - name: Clavi Bass
+    msb: 19
+    lsb: 4
+  - name: Hammer
+    msb: 20
+    lsb: 4
+  - name: Jungle Bass
+    msb: 21
+    lsb: 4
+  - name: Square Bass
+    msb: 22
+    lsb: 4
+  - name: Square Bass2
+    msb: 23
+    lsb: 4
+  - name: Arpeggio Bs
+    msb: 24
+    lsb: 4
+  - name: Hit&Saw Bass
+    msb: 32
+    lsb: 4
+  - name: Ring Bass
+    msb: 33
+    lsb: 4
+  - name: AtkSineBass
+    msb: 34
+    lsb: 4
+  - name: OB sine Bass
+    msb: 35
+    lsb: 4
+  - name: Auxiliary Bs
+    msb: 36
+    lsb: 4
+  - name: 303SqDistBs
+    msb: 40
+    lsb: 4
+  - name: 303SqDistBs2
+    msb: 41
+    lsb: 4
+  - name: 303SqDistBs3
+    msb: 42
+    lsb: 4
+  - name: 303Sqr.Rev
+    msb: 43
+    lsb: 4
+  - name: TeeBee
+    msb: 44
+    lsb: 4
+- pc: 40
+  name: Synth Bass 2
+  banks:
+  - name: Synth Bass 2
+    msb: 0
+    lsb: 4
+  - name: SynthBass201
+    msb: 1
+    lsb: 4
+  - name: Modular Bass
+    msb: 2
+    lsb: 4
+  - name: Seq Bass
+    msb: 3
+    lsb: 4
+  - name: MG Bass
+    msb: 4
+    lsb: 4
+  - name: Mg Oct Bass1
+    msb: 5
+    lsb: 4
+  - name: MG Oct Bass2
+    msb: 6
+    lsb: 4
+  - name: 'MG Blip Bs:'
+    msb: 7
+    lsb: 4
+  - name: Beef FM Bass
+    msb: 8
+    lsb: 4
+  - name: Dly Bass
+    msb: 9
+    lsb: 4
+  - name: X Wire Bass
+    msb: 10
+    lsb: 4
+  - name: WireStr Bass
+    msb: 11
+    lsb: 4
+  - name: 'Blip Bass :'
+    msb: 12
+    lsb: 4
+  - name: RubberBass 1
+    msb: 13
+    lsb: 4
+  - name: Syn Bell Bs
+    msb: 14
+    lsb: 4
+  - name: Odd Bass
+    msb: 15
+    lsb: 4
+  - name: RubberBass 2
+    msb: 16
+    lsb: 4
+  - name: SH101 Bass 1
+    msb: 17
+    lsb: 4
+  - name: SH101 Bass 2
+    msb: 18
+    lsb: 4
+  - name: Smooth Bass
+    msb: 19
+    lsb: 4
+  - name: SH101 Bass 3
+    msb: 20
+    lsb: 4
+  - name: Spike Bass
+    msb: 21
+    lsb: 4
+  - name: 'House Bass:'
+    msb: 22
+    lsb: 4
+  - name: KG Bass
+    msb: 23
+    lsb: 4
+  - name: Sync Bass
+    msb: 24
+    lsb: 4
+  - name: MG 5th Bass
+    msb: 25
+    lsb: 4
+  - name: RND Bass
+    msb: 26
+    lsb: 4
+  - name: WowMG Bass
+    msb: 27
+    lsb: 4
+  - name: Bubble Bass
+    msb: 28
+    lsb: 4
+  - name: Attack Pulse
+    msb: 29
+    lsb: 4
+  - name: Sync Bass 2
+    msb: 30
+    lsb: 4
+  - name: Pulse Mix Bs
+    msb: 31
+    lsb: 4
+  - name: MG Dist Bass
+    msb: 32
+    lsb: 4
+  - name: Seq Bass 2
+    msb: 33
+    lsb: 4
+  - name: 3rd Bass
+    msb: 34
+    lsb: 4
+  - name: MG Oct Bass
+    msb: 35
+    lsb: 4
+  - name: SlowEnvBass
+    msb: 36
+    lsb: 4
+  - name: Mild Bass
+    msb: 37
+    lsb: 4
+  - name: DistEnvBass
+    msb: 38
+    lsb: 4
+  - name: MG LightBass
+    msb: 39
+    lsb: 4
+  - name: DistSynBass
+    msb: 40
+    lsb: 4
+  - name: Rise Bass
+    msb: 41
+    lsb: 4
+  - name: Cyber Bass
+    msb: 42
+    lsb: 4

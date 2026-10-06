@@ -1,0 +1,3 @@
+name: Sound Canvas 88ProMap (MSB/LSB variations)
+programs:
+- include: 04-sound-canvas-88promap-msb-lsb-variations/*.yaml

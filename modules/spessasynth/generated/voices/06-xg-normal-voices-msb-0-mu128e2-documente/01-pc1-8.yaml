@@ -1,0 +1,552 @@
+- pc: 1
+  name: GrandPno
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: GrndPnoK
+    msb: 0
+    lsb: 1
+  - name: MelloGrP
+    msb: 0
+    lsb: 18
+  - name: PianoStr
+    msb: 0
+    lsb: 40
+  - name: Dream
+    msb: 0
+    lsb: 41
+  - name: ConGrnd
+    msb: 0
+    lsb: 64
+  - name: ConGrndK
+    msb: 0
+    lsb: 65
+  - name: DblConGr
+    msb: 0
+    lsb: 66
+  - name: MIDIGrd1
+    msb: 0
+    lsb: 67
+  - name: MIDIGrd2
+    msb: 0
+    lsb: 68
+  - name: 'GrandP #'
+    msb: 0
+    lsb: 126
+  - name: MtdClavi
+    msb: 48
+    lsb: 0
+  - name: Beeline
+    msb: 48
+    lsb: 8
+  - name: Rage
+    msb: 48
+    lsb: 16
+  - name: Fuss
+    msb: 48
+    lsb: 24
+  - name: Reflex 1
+    msb: 48
+    lsb: 48
+  - name: Insanity
+    msb: 48
+    lsb: 56
+  - name: DstnFire
+    msb: 48
+    lsb: 64
+  - name: Litning
+    msb: 48
+    lsb: 72
+  - name: Zipzap
+    msb: 48
+    lsb: 80
+  - name: Escape
+    msb: 48
+    lsb: 88
+  - name: TinKettl
+    msb: 48
+    lsb: 96
+  - name: Satya
+    msb: 48
+    lsb: 104
+  - name: Vodou
+    msb: 48
+    lsb: 120
+- pc: 2
+  name: BritePno
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: BritPnoK
+    msb: 0
+    lsb: 1
+  - name: StBrtPno
+    msb: 0
+    lsb: 3
+  - name: ResoBrtP
+    msb: 0
+    lsb: 20
+  - name: DtndBrtP
+    msb: 0
+    lsb: 32
+  - name: SyPadPno
+    msb: 0
+    lsb: 40
+  - name: BrConGrd
+    msb: 0
+    lsb: 64
+  - name: BrConGrK
+    msb: 0
+    lsb: 65
+  - name: MIDIGrd3
+    msb: 0
+    lsb: 66
+  - name: MIDIGrd4
+    msb: 0
+    lsb: 67
+  - name: OldPiano
+    msb: 0
+    lsb: 68
+  - name: 'BriteP #'
+    msb: 0
+    lsb: 126
+  - name: Orimba
+    msb: 48
+    lsb: 0
+  - name: BlineHrd
+    msb: 48
+    lsb: 8
+  - name: TnglCaos
+    msb: 48
+    lsb: 16
+  - name: VanAllen
+    msb: 48
+    lsb: 24
+  - name: Reflex 2
+    msb: 48
+    lsb: 48
+  - name: Habakkuk
+    msb: 48
+    lsb: 56
+  - name: BlowNoiz
+    msb: 48
+    lsb: 64
+  - name: Oof
+    msb: 48
+    lsb: 72
+  - name: Zigzag
+    msb: 48
+    lsb: 88
+  - name: K/S Anlg
+    msb: 48
+    lsb: 96
+  - name: Monastry
+    msb: 48
+    lsb: 104
+- pc: 3
+  name: El.Grand
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: ElGrPnoK
+    msb: 0
+    lsb: 1
+  - name: Det.CP80
+    msb: 0
+    lsb: 32
+  - name: Synth CP
+    msb: 0
+    lsb: 35
+  - name: LayerCP1
+    msb: 0
+    lsb: 40
+  - name: LayerCP2
+    msb: 0
+    lsb: 41
+  - name: Dwarf
+    msb: 48
+    lsb: 8
+  - name: Incontnc
+    msb: 48
+    lsb: 16
+  - name: Divinity
+    msb: 48
+    lsb: 24
+  - name: Prcesion
+    msb: 48
+    lsb: 48
+  - name: Fall
+    msb: 48
+    lsb: 64
+  - name: Lust
+    msb: 48
+    lsb: 72
+  - name: Scud
+    msb: 48
+    lsb: 88
+  - name: K/S Humd
+    msb: 48
+    lsb: 96
+  - name: Vinaya
+    msb: 48
+    lsb: 104
+- pc: 4
+  name: HnkyTonk
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: HnkyTnkK
+    msb: 0
+    lsb: 1
+  - name: Byte
+    msb: 48
+    lsb: 8
+  - name: IncntClk
+    msb: 48
+    lsb: 16
+  - name: Paranoia
+    msb: 48
+    lsb: 24
+  - name: RndmWalk
+    msb: 48
+    lsb: 48
+  - name: Chaff
+    msb: 48
+    lsb: 64
+  - name: Lust St
+    msb: 48
+    lsb: 72
+  - name: Hinayana
+    msb: 48
+    lsb: 88
+  - name: K/S Slap
+    msb: 48
+    lsb: 96
+  - name: Prana
+    msb: 48
+    lsb: 104
+- pc: 5
+  name: E.Piano1
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: El.Pno1K
+    msb: 0
+    lsb: 1
+  - name: MelloEP1
+    msb: 0
+    lsb: 18
+  - name: Chor.EP1
+    msb: 0
+    lsb: 32
+  - name: HardEl.P
+    msb: 0
+    lsb: 40
+  - name: VX El.P1
+    msb: 0
+    lsb: 45
+  - name: 60sEl.P1
+    msb: 0
+    lsb: 64
+  - name: Old EP
+    msb: 0
+    lsb: 65
+  - name: Tribecca
+    msb: 0
+    lsb: 66
+  - name: Diploid1
+    msb: 0
+    lsb: 67
+  - name: Flops
+    msb: 0
+    lsb: 68
+  - name: Soho
+    msb: 0
+    lsb: 69
+  - name: FlopsDtd
+    msb: 0
+    lsb: 70
+  - name: Diploid2
+    msb: 0
+    lsb: 71
+  - name: Brooklyn
+    msb: 0
+    lsb: 72
+  - name: Diploid3
+    msb: 0
+    lsb: 73
+  - name: PhunkyDX
+    msb: 0
+    lsb: 74
+  - name: Nasal DX
+    msb: 0
+    lsb: 75
+  - name: NaslDXDt
+    msb: 0
+    lsb: 76
+  - name: Din
+    msb: 0
+    lsb: 77
+  - name: EPiano1#
+    msb: 0
+    lsb: 126
+  - name: Ping
+    msb: 48
+    lsb: 8
+  - name: CheapOsc
+    msb: 48
+    lsb: 16
+  - name: Vexation
+    msb: 48
+    lsb: 24
+  - name: RandmRun
+    msb: 48
+    lsb: 48
+  - name: SoftHit+
+    msb: 48
+    lsb: 72
+  - name: Boot
+    msb: 48
+    lsb: 88
+  - name: Rvr/Crsh
+    msb: 48
+    lsb: 96
+  - name: Delight
+    msb: 48
+    lsb: 104
+- pc: 6
+  name: E.Piano2
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: El.Pno2K
+    msb: 0
+    lsb: 1
+  - name: ChoEPDcy
+    msb: 0
+    lsb: 12
+  - name: Chor.EP2
+    msb: 0
+    lsb: 32
+  - name: DX Hard
+    msb: 0
+    lsb: 33
+  - name: DXLegend
+    msb: 0
+    lsb: 34
+  - name: DX Phase
+    msb: 0
+    lsb: 40
+  - name: DX+Analg
+    msb: 0
+    lsb: 41
+  - name: DXKotoEP
+    msb: 0
+    lsb: 42
+  - name: VX El.P2
+    msb: 0
+    lsb: 45
+  - name: ChoEP K
+    msb: 0
+    lsb: 48
+  - name: DXMallet
+    msb: 0
+    lsb: 52
+  - name: Shrakawa
+    msb: 0
+    lsb: 64
+  - name: OldEP Tn
+    msb: 0
+    lsb: 65
+  - name: Flips
+    msb: 0
+    lsb: 66
+  - name: FlipsDtd
+    msb: 0
+    lsb: 67
+  - name: Flicks
+    msb: 0
+    lsb: 68
+  - name: FliksDtd
+    msb: 0
+    lsb: 69
+  - name: BrightDX
+    msb: 0
+    lsb: 70
+  - name: BrtDXDtd
+    msb: 0
+    lsb: 71
+  - name: Kitayama
+    msb: 0
+    lsb: 72
+  - name: Turnpik1
+    msb: 0
+    lsb: 73
+  - name: Turnpik2
+    msb: 0
+    lsb: 74
+  - name: Cerritos
+    msb: 0
+    lsb: 75
+  - name: Sunset
+    msb: 0
+    lsb: 76
+  - name: Soft DX
+    msb: 0
+    lsb: 77
+  - name: Reso DX
+    msb: 0
+    lsb: 78
+  - name: PiercnDX
+    msb: 0
+    lsb: 79
+  - name: ShvrngDX
+    msb: 0
+    lsb: 80
+  - name: ShvrnDX+
+    msb: 0
+    lsb: 81
+  - name: RattlnDX
+    msb: 0
+    lsb: 82
+  - name: RatlnDX+
+    msb: 0
+    lsb: 83
+  - name: TinkerDX
+    msb: 0
+    lsb: 84
+  - name: TinkrDX+
+    msb: 0
+    lsb: 85
+  - name: EPiano2#
+    msb: 0
+    lsb: 126
+  - name: NastyCut
+    msb: 48
+    lsb: 8
+  - name: CheapOc+
+    msb: 48
+    lsb: 16
+  - name: CalcOrg1
+    msb: 48
+    lsb: 24
+  - name: Cough +
+    msb: 48
+    lsb: 72
+  - name: Anathema
+    msb: 48
+    lsb: 88
+  - name: Puja
+    msb: 48
+    lsb: 104
+- pc: 7
+  name: Harpsi.
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: Harpsi.K
+    msb: 0
+    lsb: 1
+  - name: Harpsi.2
+    msb: 0
+    lsb: 25
+  - name: HarpsiDt
+    msb: 0
+    lsb: 32
+  - name: Harpsi.3
+    msb: 0
+    lsb: 35
+  - name: ElHarpsi
+    msb: 0
+    lsb: 40
+  - name: SynHrpsi
+    msb: 0
+    lsb: 64
+  - name: NstyCtSt
+    msb: 48
+    lsb: 8
+  - name: NstOrSpl
+    msb: 48
+    lsb: 16
+  - name: CalcOrg2
+    msb: 48
+    lsb: 24
+  - name: Ruin
+    msb: 48
+    lsb: 72
+  - name: Germ 1
+    msb: 48
+    lsb: 88
+  - name: Bent Tom
+    msb: 48
+    lsb: 104
+- pc: 8
+  name: Clavi
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: Clavi K
+    msb: 0
+    lsb: 1
+  - name: ClaviWah
+    msb: 0
+    lsb: 27
+  - name: CsmcClav
+    msb: 0
+    lsb: 40
+  - name: PulseClv
+    msb: 0
+    lsb: 64
+  - name: PierceCl
+    msb: 0
+    lsb: 65
+  - name: ClrClavi
+    msb: 0
+    lsb: 66
+  - name: SwpClavi
+    msb: 0
+    lsb: 67
+  - name: SynClavi
+    msb: 0
+    lsb: 68
+  - name: SprClavi
+    msb: 0
+    lsb: 69
+  - name: GtrClavi
+    msb: 0
+    lsb: 70
+  - name: HardyPlk
+    msb: 0
+    lsb: 71
+  - name: HrdyPlk+
+    msb: 0
+    lsb: 72
+  - name: FMClavDb
+    msb: 0
+    lsb: 73
+  - name: 'Clavi #'
+    msb: 0
+    lsb: 126
+  - name: Xe
+    msb: 48
+    lsb: 8
+  - name: SprClick
+    msb: 48
+    lsb: 16
+  - name: CalcOrg3
+    msb: 48
+    lsb: 24
+  - name: Ruin St
+    msb: 48
+    lsb: 72
+  - name: Germ 2
+    msb: 48
+    lsb: 88

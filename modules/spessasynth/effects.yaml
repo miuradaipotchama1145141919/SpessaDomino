@@ -1,0 +1,4 @@
+tables:
+  - include: generated/effects/tables.yaml
+items:
+  - include: generated/effects/items/*.yaml

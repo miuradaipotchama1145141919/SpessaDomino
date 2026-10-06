@@ -1,0 +1,1403 @@
+base:
+  '1': GrandPno
+  '2': BritePno
+  '3': El.Grand
+  '4': HnkyTonk
+  '5': E.Piano1
+  '6': E.Piano2
+  '7': Harpsi.
+  '8': Clavi
+  '9': Celesta
+  '10': Glocken
+  '11': MusicBox
+  '12': Vibes
+  '13': Marimba
+  '14': Xylophon
+  '15': TubulBel
+  '16': Dulcimer
+  '17': DrawOrgn
+  '18': PercOrgn
+  '19': RockOrgn
+  '20': ChrchOrg
+  '21': ReedOrgn
+  '22': Acordion
+  '23': Harmnica
+  '24': TangoAcd
+  '25': NylonGtr
+  '26': SteelGtr
+  '27': Jazz Gtr
+  '28': CleanGtr
+  '29': Mute Gtr
+  '30': Ovrdrive
+  '31': Dist.Gtr
+  '32': GtrHarmo
+  '33': Aco.Bass
+  '34': FngrBass
+  '35': PickBass
+  '36': Fretless
+  '37': SlapBas1
+  '38': SlapBas2
+  '39': SynBass1
+  '40': SynBass2
+  '41': Violin
+  '42': Viola
+  '43': Cello
+  '44': Contrabs
+  '45': Trem.Str
+  '46': Pizz.Str
+  '47': Harp
+  '48': Timpani
+  '49': Strings1
+  '50': Strings2
+  '51': Syn Str1
+  '52': Syn Str2
+  '53': ChoirAah
+  '54': VoiceOoh
+  '55': SynVoice
+  '56': Orch.Hit
+  '57': Trumpet
+  '58': Trombone
+  '59': Tuba
+  '60': Mute Trp
+  '61': Fr. Horn
+  '62': BrssSect
+  '63': SynBrss1
+  '64': SynBrss2
+  '65': SprnoSax
+  '66': Alto Sax
+  '67': TenorSax
+  '68': Bari.Sax
+  '69': Oboe
+  '70': Eng.Horn
+  '71': Bassoon
+  '72': Clarinet
+  '73': Piccolo
+  '74': Flute
+  '75': Recorder
+  '76': PanFlute
+  '77': Bottle
+  '78': Shakhchi
+  '79': Whistle
+  '80': Ocarina
+  '81': SquareLd
+  '82': Saw Ld
+  '83': CaliopLd
+  '84': Chiff Ld
+  '85': CharanLd
+  '86': Voice Ld
+  '87': Fifth Ld
+  '88': Bass&Ld
+  '89': NewAgePd
+  '90': Warm Pad
+  '91': PolySyPd
+  '92': ChoirPad
+  '93': BowedPad
+  '94': MetalPad
+  '95': Halo Pad
+  '96': SweepPad
+  '97': Rain
+  '98': SoundTrk
+  '99': Crystal
+  '100': Atmosphr
+  '101': Bright
+  '102': Goblins
+  '103': Echoes
+  '104': Sci-Fi
+  '105': Sitar
+  '106': Banjo
+  '107': Shamisen
+  '108': Koto
+  '109': Kalimba
+  '110': Bagpipe
+  '111': Fiddle
+  '112': Shanai
+  '113': TnklBell
+  '114': Agogo
+  '115': SteelDrm
+  '116': Woodblok
+  '117': TaikoDrm
+  '118': MelodTom
+  '119': Syn Drum
+  '120': RevCymbl
+  '121': FretNoiz
+  '122': BrthNoiz
+  '123': Seashore
+  '124': Tweet
+  '125': Telphone
+  '126': Helicptr
+  '127': Applause
+  '128': Gunshot
+banks:
+  0:0:
+    '1': GrandPno
+    '2': BritePno
+    '3': El.Grand
+    '4': HnkyTonk
+    '5': E.Piano1
+    '6': E.Piano2
+    '7': Harpsi.
+    '8': Clavi
+    '9': Celesta
+    '10': Glocken
+    '11': MusicBox
+    '12': Vibes
+    '13': Marimba
+    '14': Xylophon
+    '15': TubulBel
+    '16': Dulcimer
+    '17': DrawOrgn
+    '18': PercOrgn
+    '19': RockOrgn
+    '20': ChrchOrg
+    '21': ReedOrgn
+    '22': Acordion
+    '23': Harmnica
+    '24': TangoAcd
+    '25': NylonGtr
+    '26': SteelGtr
+    '27': Jazz Gtr
+    '28': CleanGtr
+    '29': Mute Gtr
+    '30': Ovrdrive
+    '31': Dist.Gtr
+    '32': GtrHarmo
+    '33': Aco.Bass
+    '34': FngrBass
+    '35': PickBass
+    '36': Fretless
+    '37': SlapBas1
+    '38': SlapBas2
+    '39': SynBass1
+    '40': SynBass2
+    '41': Violin
+    '42': Viola
+    '43': Cello
+    '44': Contrabs
+    '45': Trem.Str
+    '46': Pizz.Str
+    '47': Harp
+    '48': Timpani
+    '49': Strings1
+    '50': Strings2
+    '51': Syn Str1
+    '52': Syn Str2
+    '53': ChoirAah
+    '54': VoiceOoh
+    '55': SynVoice
+    '56': Orch.Hit
+    '57': Trumpet
+    '58': Trombone
+    '59': Tuba
+    '60': Mute Trp
+    '61': Fr. Horn
+    '62': BrssSect
+    '63': SynBrss1
+    '64': SynBrss2
+    '65': SprnoSax
+    '66': Alto Sax
+    '67': TenorSax
+    '68': Bari.Sax
+    '69': Oboe
+    '70': Eng.Horn
+    '71': Bassoon
+    '72': Clarinet
+    '73': Piccolo
+    '74': Flute
+    '75': Recorder
+    '76': PanFlute
+    '77': Bottle
+    '78': Shakhchi
+    '79': Whistle
+    '80': Ocarina
+    '81': SquareLd
+    '82': Saw Ld
+    '83': CaliopLd
+    '84': Chiff Ld
+    '85': CharanLd
+    '86': Voice Ld
+    '87': Fifth Ld
+    '88': Bass&Ld
+    '89': NewAgePd
+    '90': Warm Pad
+    '91': PolySyPd
+    '92': ChoirPad
+    '93': BowedPad
+    '94': MetalPad
+    '95': Halo Pad
+    '96': SweepPad
+    '97': Rain
+    '98': SoundTrk
+    '99': Crystal
+    '100': Atmosphr
+    '101': Bright
+    '102': Goblins
+    '103': Echoes
+    '104': Sci-Fi
+    '105': Sitar
+    '106': Banjo
+    '107': Shamisen
+    '108': Koto
+    '109': Kalimba
+    '110': Bagpipe
+    '111': Fiddle
+    '112': Shanai
+    '113': TnklBell
+    '114': Agogo
+    '115': SteelDrm
+    '116': Woodblok
+    '117': TaikoDrm
+    '118': MelodTom
+    '119': Syn Drum
+    '120': RevCymbl
+    '121': FretNoiz
+    '122': BrthNoiz
+    '123': Seashore
+    '124': Tweet
+    '125': Telphone
+    '126': Helicptr
+    '127': Applause
+    '128': Gunshot
+  0:1:
+    '1': GrndPnoK
+    '2': BritPnoK
+    '3': ElGrPnoK
+    '4': HnkyTnkK
+    '5': El.Pno1K
+    '6': El.Pno2K
+    '7': Harpsi.K
+    '8': Clavi K
+    '12': Vibes K
+    '13': MarimbaK
+  0:3:
+    '2': StBrtPno
+    '17': StDrawOr
+    '49': S.Strngs
+    '50': S.SlwStr
+    '53': S.Choir
+    '62': StBrsSec
+  0:12:
+    '6': ChoEPDcy
+    '31': DstRthmG
+    '40': Seq Bass
+    '56': LoFi Hit
+    '63': Quack Br
+    '99': SynDrCmp
+  0:6:
+    '35': PickBa 2
+    '40': MelloSBa
+    '61': FrHrSolo 1
+    '81': SquarLd2
+    '82': Saw Ld 2
+  0:8:
+    '41': Slow Vln
+    '45': SlwTrStr
+    '49': Slow Str
+    '50': LegatoSt
+    '51': Memory
+    '65': VgSprnSx
+    '81': LMSquare
+    '82': ThickSaw
+    '87': FifthLdS
+    '103': Echoes 2
+  0:18:
+    '1': MelloGrP
+    '5': MelloEP1
+    '27': MelloGtr
+    '34': FingrDrk
+    '39': SynBa1Dk
+    '40': ClkSynBa
+    '51': Zephyr
+    '58': Trmbone2
+    '62': MildBrss
+    '64': Soft Brs
+    '66': ASax Lgt
+    '81': Hollow
+    '82': Dyna Saw
+    '90': Sine Pad
+    '99': TinyBell
+    '100': WarmAtms
+  0:20:
+    '2': ResoBrtP
+    '39': FastResB
+    '63': RezSynBr
+    '82': Big Lead
+    '96': Shwimmer
+  0:16:
+    '25': NylonGt2
+    '26': SteelGt2
+    '38': BrtSlpSp
+    '53': Ch.Aahs2
+    '57': Trumpet2
+    '59': Tuba 2
+    '88': Big&Low
+    '90': ThickPad
+  0:21:
+    '37': CsmicSlp
+    '39': TL66
+    '52': TradeWnd
+  0:19:
+    '40': SynBa2Dk
+    '81': Shroud
+    '82': Digi Saw
+    '100': HollwRls
+  0:14:
+    '49': SfzStrgs
+    '62': SfrzndBr
+    '99': Popcorn
+    '103': Echo Pan
+  0:17:
+    '57': BriteTrp
+    '90': Soft Pad
+  0:25:
+    '7': Harpsi.2
+    '25': NylonGt3
+    '82': WaspySyn
+  0:27:
+    '8': ClaviWah
+    '34': FlangeBa
+    '37': ResoSlap
+    '39': ResoBass
+    '51': Reso Str
+    '63': SynBrss3
+    '82': RezzySaw
+    '96': Converge
+    '98': Prologue
+  0:24:
+    '18': 70sPcOr1
+    '31': DistGtr2
+    '39': AcidBass
+    '49': Arco Str
+    '63': PolyBrss
+    '82': HeavySyn
+    '86': SynthAah
+  0:22:
+    '38': Wah Slap
+    '40': Zealot
+  0:32:
+    '2': DtndBrtP
+    '3': Det.CP80
+    '5': Chor.EP1
+    '6': Chor.EP2
+    '7': HarpsiDt
+    '17': DetDrwOr
+    '18': DetPrcOr
+    '20': ChurOrg3
+    '21': ReedOrDt
+    '22': AccordIt
+    '23': Harmo. 2
+    '25': NylnGtDt
+    '26': StlGtrDt
+    '27': Jazz Amp
+    '28': ChorusGt
+    '30': OdrvGtDt
+    '34': FngrBaDt
+    '36': Fretles2
+    '37': PunchThm
+    '40': SmthSynB
+    '53': MelChoir
+    '57': Warm Trp
+    '61': FrHorn 2
+    '63': JumpBrss
+    '82': DoublSaw
+    '105': DetSitar
+  0:35:
+    '3': Synth CP
+    '7': Harpsi.3
+    '16': Dulcimr2
+    '17': 70sDrOr1
+    '20': ChurOrg2
+    '26': 12StrGtr
+    '31': DistGtr3
+    '39': Clv Bass
+    '46': Pizz Oct
+    '49': 60sStrng
+    '51': Syn Str3
+    '56': OrchHit2
+    '62': Tp&TbSec
+    '81': 2 Osc
+    '82': Toy Lead
+    '87': Big Five
+    '99': RndGlock
+    '105': Sitar 2
+  0:33:
+    '6': DX Hard
+    '17': 60sDrOr1
+    '18': Lite Org
+    '28': ChoGtrLt
+    '36': Fretles3
+  0:34:
+    '6': DXLegend
+    '17': 60sDrOr2
+    '36': Fretles4
+  0:36:
+    '17': DrawOrg2
+    '31': PowerGt2
+    '62': Tp&TbSc2
+    '82': Dim Saw
+  0:28:
+    '35': MutePkBa
+    '39': MtdPulsB
+    '106': MuteBnjo
+  0:29:
+    '39': SlwAttck
+    '63': AnalgSfz
+  0:40:
+    '1': PianoStr
+    '2': SyPadPno
+    '3': LayerCP1
+    '5': HardEl.P
+    '6': DX Phase
+    '7': ElHarpsi
+    '8': CsmcClav
+    '17': 16+2"2/3
+    '20': NotreDam
+    '21': Puff Org
+    '25': Wayside
+    '26': Nyln&Stl
+    '27': OrganGtr
+    '29': FunkGtr1
+    '30': Parallel
+    '31': FeedbkGt
+    '33': JazzRthm
+    '34': Ba&DstEG
+    '35': PkB&MtGt
+    '39': TechnoBa
+    '40': ModulrBa
+    '41': Unison
+    '42': VlaDoubl
+    '45': Susp.Str
+    '46': Sleep
+    '47': YangChin
+    '49': Orchestr
+    '50': Warm Str
+    '51': GrandPad
+    '53': ChoirStr
+    '55': SyVoice2
+    '56': Throne
+    '60': Backyard
+    '62': BrssSec2
+    '63': SyBrsSub
+    '64': SynBrss4
+    '66': Sax Sect
+    '67': BrthTnSx
+    '72': Syn&Clr
+    '74': Brthy Fl
+    '82': PulseSaw
+    '83': Novice
+    '84': SaltLead
+    '90': Vishnu
+    '95': Tiu
+    '99': GlockChi
+    '100': Nylon EP
+    '105': Bhuj
+  0:41:
+    '1': Dream
+    '3': LayerCP2
+    '6': DX+Analg
+    '26': Stl&Body
+    '27': OctPlate
+    '29': MuteStlG
+    '31': FeedbkG2
+    '33': PckAcoBa
+    '39': Kik'n'Ba
+    '40': DX Bass
+    '49': Orchstr2
+    '50': Kingdom
+    '51': SweepStr
+    '53': Dead Sea
+    '55': Choral
+    '62': Hi Brass
+    '64': ChoirBrs
+    '67': SoftTenr
+    '82': Dr.Lead
+    '99': ClearBel
+  0:37:
+    '17': 60sDrOr3
+    '18': PercOrg2
+    '31': PowerGt1
+    '61': HornOrch
+  0:38:
+    '17': Even Bar
+    '31': Dst.5ths
+  0:39:
+    '51': Monarchy
+    '52': WormHole
+    '53': Gasp
+    '62': BrssFall
+  0:45:
+    '5': VX El.P1
+    '6': VX El.P2
+    '12': HardVibe
+    '29': Jazz Man
+    '31': RckRthm1
+    '33': VXUprght
+    '34': FngBass2
+    '49': Velo.Str
+    '63': AnVelBr1
+    '64': AnVelBr2
+    '82': VeloLead
+    '97': ClaviPad
+  0:42:
+    '6': DXKotoEP
+    '31': TwinDist
+    '39': NEP
+    '40': DXBa Brt
+    '49': TremOrch
+    '51': SwpStOct
+    '62': MelloBrs
+    '64': AnHrnRch
+    '99': ChorBell
+  0:48:
+    '6': ChoEP K
+  0:52:
+    '6': DXMallet
+    '49': Lento
+    '62': Bund
+  0:43:
+    '25': VelGtHrm
+    '29': FunkGtr2
+    '30': Gt.Pinch
+    '31': RckRthm2
+    '33': Blink Ba
+    '34': FngrSlap
+    '38': VeloSlap
+    '48': Roll&Hit
+    '66': HyprAlto
+  0:53:
+    '62': FakeHorn
+  0:54:
+    '62': FkHrnOct
+  0:64:
+    '1': ConGrnd
+    '2': BrConGrd
+    '5': 60sEl.P1
+    '6': Shrakawa
+    '7': SynHrpsi
+    '8': PulseClv
+    '9': FMCelsta
+    '11': Orgel
+    '13': SineMrmb
+    '17': Organ Ba
+    '18': JazOrgan
+    '19': RotaryOr
+    '20': OrgFlute
+    '21': SyReedDk
+    '24': TngoAcd2
+    '25': EsGuitar
+    '26': Nashvlle
+    '27': SuperJzM
+    '28': CleanGt2
+    '29': Wrench
+    '30': ManhttnM
+    '31': Bite
+    '32': AcoHarmo
+    '33': Boston
+    '34': Jazzy Ba
+    '35': HardPick
+    '36': PwrFrtls
+    '37': Slapper
+    '39': Orbiter
+    '40': X WireBa
+    '41': Cadenza
+    '42': Sonata
+    '43': CelloSec
+    '44': CB Sec
+    '45': Fear
+    '46': Collegno
+    '47': El.Harp
+    '49': SprStrng
+    '50': 70s Str
+    '51': Syn Str4
+    '52': Hope
+    '53': StrngAah
+    '54': VoiceDoo
+    '55': AnaVoice
+    '56': Impact
+    '57': Dark Trp
+    '58': BrghtTrb
+    '60': MuteTrp2
+    '61': Syn Horn
+    '62': SprBrass
+    '63': AnaBrss1
+    '64': AnaBrss2
+    '65': Mdtation
+    '66': ASaxPwrd
+    '67': TnrSax 2
+    '69': Heinz
+    '74': Boehm
+    '75': Piplith
+    '76': PanFlut2
+    '77': BottlLgt
+    '79': Reverie
+    '80': Opalina
+    '81': Mellow
+    '82': Digger
+    '83': Vent Syn
+    '84': Rubby
+    '85': DistLead
+    '86': Vox Lead
+    '88': Fat&Prky
+    '89': Fantasy
+    '90': Horn Pad
+    '91': PolyPd80
+    '92': Heaven
+    '95': Aries
+    '96': PolarPad
+    '97': HrmoRain
+    '98': Ancestrl
+    '99': SynMalet
+    '100': NylnHarp
+    '101': FantaBel
+    '102': GobSynth
+    '103': EchoBell
+    '104': Starz
+    '105': Raga Syn
+    '106': El Banjo
+    '108': FM Koto
+    '109': BigKalim
+    '110': Thistle
+    '112': Shanai 2
+    '113': TcklBell
+    '118': Mel Tom2
+    '119': Ana Tom
+    '120': Rev Cym2
+  0:65:
+    '1': ConGrndK
+    '2': BrConGrK
+    '5': Old EP
+    '6': OldEP Tn
+    '8': PierceCl
+    '11': SmalOrgl
+    '17': 70sDrOr2
+    '18': WarmJzOr
+    '19': SloRotar
+    '20': TrmOrgFl
+    '24': TightAcd
+    '25': EsGtrHrd
+    '26': NashvllR
+    '27': SuperJzB
+    '28': MidT.Gtr
+    '29': WrenchHv
+    '30': ManhttnB
+    '31': Bite Res
+    '32': GtFeedbk
+    '33': BostnBrt
+    '34': Mod.Bass
+    '35': HrdPikRs
+    '36': PwrFrtlR
+    '37': Thum&Slp
+    '39': Sqr.Bass
+    '40': AtkPulse
+    '41': CadenzDk
+    '42': Vla Sec
+    '43': Hrd Vcs
+    '44': Hrd CBs
+    '45': Fear Dtd
+    '49': SprStrSt
+    '50': Strings3
+    '51': Syn Str5
+    '52': Virgo
+    '53': Male Aah
+    '54': Hmn
+    '55': Aspirate
+    '56': BrssStab
+    '57': DrkTpSft
+    '58': MellowTb
+    '60': Bkstairs
+    '61': HornOrc2
+    '62': SprBrCut
+    '63': SynthThn
+    '64': Soft Cut
+    '65': MdtatnRs
+    '66': FakeAlto
+    '67': SprTenor
+    '69': HeinzUni
+    '74': Boehm Br
+    '75': Home
+    '76': Meadow
+    '81': SoloSine
+    '82': Dunce
+    '83': PureLead
+    '84': HardSync
+    '85': WireLead
+    '86': Br.Layer
+    '88': Soft Wrl
+    '89': Libra
+    '90': RotarStr
+    '91': ClickPad
+    '92': Lite Pad
+    '93': GlassPad
+    '94': Pan Pad
+    '95': ChorusPd
+    '96': Sweepy
+    '97': AfrcnWnd
+    '98': Rave
+    '99': SftCryst
+    '100': Harp Vox
+    '101': ShinStar
+    '102': Creeper
+    '103': Big Pan
+    '104': Odin
+    '118': Real Tom
+    '119': ElecPerc
+    '120': Rev Cym3
+  0:66:
+    '1': DblConGr
+    '2': MIDIGrd3
+    '5': Tribecca
+    '6': Flips
+    '8': ClrClavi
+    '17': CheezOrg
+    '18': ClikOrgn
+    '19': FstRotar
+    '24': TghtAcdD
+    '25': EsGtMllo
+    '26': Nashvl12
+    '27': SuperJzD
+    '28': MidTGtSt
+    '29': WrnchDbl
+    '30': ManhttnD
+    '31': Bite Dtd
+    '32': GtrHrmo2
+    '33': Coolth
+    '34': Chase
+    '35': PkBass +
+    '36': TalkinBa
+    '37': GltzySlp
+    '39': RubberBa
+    '40': CS Light
+    '41': Vln Sec
+    '42': Hrd Vlas
+    '43': Slw Vcs
+    '44': Slw CBs
+    '45': Apoclyps
+    '49': Triste
+    '51': Solitude
+    '52': Platinum
+    '53': Scroll
+    '54': WrlChoir
+    '55': AsprateD
+    '56': DoublHit
+    '57': Soft Trp
+    '58': JJJ
+    '62': SprBrBlw
+    '63': SyncBrss
+    '64': AnaHornS
+    '66': FakeAlt+
+    '67': SprTnr +
+    '69': Oboe Exp
+    '74': Pastoral
+    '81': SineLead
+    '82': BrassSaw
+    '83': ElPrimtv
+    '85': SynPluck
+    '86': Cypher 1
+    '88': Cant
+    '89': Bell Pad
+    '91': Ana. Pad
+    '92': Itopia
+    '93': SqrTwang
+    '94': Queever
+    '96': Celstial
+    '97': Carib
+    '98': Fairy
+    '99': LoudGlok
+    '100': AtmosPad
+    '101': BritStab
+    '102': Ring Pad
+    '103': SynPiano
+    '118': Rock Tom
+    '119': Syn Perc
+  0:67:
+    '1': MIDIGrd1
+    '2': MIDIGrd4
+    '5': Diploid1
+    '6': FlipsDtd
+    '8': SwpClavi
+    '17': DrawOrg3
+    '18': Grace
+    '19': GlaclRtr
+    '25': EsGtrDcy
+    '27': SuperJzR
+    '28': NasalGtr
+    '29': Tin
+    '30': ManhttnP
+    '31': Bite +
+    '32': Shimla
+    '33': Coolth B
+    '34': ChaseRes
+    '35': PickBa 4
+    '36': NoizFrtl
+    '37': FM Slap
+    '39': Fish
+    '40': MetlBass
+    '41': Hrd Vlns
+    '42': Slw Vlas
+    '49': Basso
+    '51': Fate
+    '52': OctavPWM
+    '53': Scroll +
+    '55': Facula
+    '56': BrStab80
+    '57': Blow
+    '62': Pwrd Sfz
+    '63': SyncBrSt
+    '66': FakeAltD
+    '67': SprTnrSt
+    '74': Shepherd
+    '81': Pulse Ld
+    '82': SawRiver
+    '86': Cypher 2
+    '88': Mogul
+    '91': SquarPad
+    '92': CC Pad
+    '93': SquarPd8
+    '96': Monsoon
+    '98': Hermit
+    '99': ChrstBel
+    '100': Planet
+    '102': Ritual
+    '103': Creation
+  0:68:
+    '1': MIDIGrd2
+    '2': OldPiano
+    '5': Flops
+    '6': Flicks
+    '8': SynClavi
+    '17': StdiumOr
+    '18': CrnGrace
+    '27': DX JzGtr
+    '28': NaslGtSt
+    '31': Burnout
+    '34': BlueBass
+    '37': FMSlpDtd
+    '39': HardReso
+    '40': FrcOscBa
+    '41': Slw Vlns
+    '49': Stacc H
+    '51': Thulium
+    '52': Taurus
+    '56': Bass Hit
+    '57': Blow Dbl
+    '62': PwrSfzBr
+    '63': AnaHorn1
+    '67': Tnr&Alto
+    '81': SyncLead
+    '82': BrPulsDb
+    '86': Cypher 3
+    '88': Distance
+    '91': Snow Pad
+    '92': CosmicPd
+    '96': Io
+    '99': VibeBell
+    '100': Lyra
+    '102': ToHeaven
+    '103': StarDust
+  0:69:
+    '5': Soho
+    '6': FliksDtd
+    '8': SprClavi
+    '17': StdiumO2
+    '18': DimClick
+    '27': DXJzGt D
+    '28': Hammer M
+    '31': Bombay
+    '34': JazzyBa2
+    '39': Wah Saw
+    '40': Cubit
+    '49': Stacc L
+    '51': Brook
+    '52': Frost
+    '56': BassHit+
+    '57': 4th TP
+    '62': Alto&Trp
+    '63': AnaHorn2
+    '81': ForcdOsc
+    '82': Saw Trp
+    '86': SprCyphr
+    '88': Sync B&L
+    '91': Pixie
+    '97': DigiBell
+    '98': Akasaka
+    '100': MilkyWay
+    '101': Reso&Pan
+  0:70:
+    '5': FlopsDtd
+    '6': BrightDX
+    '8': GtrClavi
+    '17': GospelOr
+    '18': Dusk
+    '27': PulsJazz
+    '28': Hammer B
+    '31': Bombay S
+    '34': FngBass3
+    '39': Pluto
+    '40': Cubit +
+    '49': Hall Str
+    '51': Brook St
+    '52': Leo
+    '56': 6th Hit
+    '57': Synth Tp
+    '62': Tnr&Trp
+    '63': AnHrnOct
+    '81': Accent
+    '82': Hue
+    '88': Ba Lead
+    '91': Pisces
+    '97': AirBells
+    '98': DgBermda
+    '100': Night
+    '101': Ana Echo
+  0:71:
+    '5': Diploid2
+    '6': BrtDXDtd
+    '8': HardyPlk
+    '17': ClkGsplO
+    '18': FM Click
+    '27': RghcastN
+    '28': Hammer D
+    '31': Jaipur
+    '39': Pluto +
+    '40': Keel
+    '49': Str/FHrn
+    '51': OldSynSt
+    '52': SolPlexs
+    '56': 6thHit +
+    '62': BrssBros
+    '63': SawBrPwr
+    '81': Brick
+    '82': StrghtSw
+    '91': Spiral
+    '97': BellHarp
+    '98': Cloud Pd
+    '100': Glisten
+  0:72:
+    '5': Brooklyn
+    '6': Kitayama
+    '8': HrdyPlk+
+    '17': ChapelOr
+    '18': Spoony
+    '27': RghcastM
+    '28': HammerSt
+    '39': Stimuli
+    '40': KeelPwrd
+    '52': SunRise
+    '56': Euro Hit
+    '62': VagueBro
+    '81': Alum
+    '82': StrtPuls
+    '91': PolySPd2
+    '97': Gamelmba
+    '98': PulseKey
+    '100': Puffy
+  0:73:
+    '5': Diploid3
+    '6': Turnpik1
+    '8': FMClavDb
+    '17': DimChors
+    '18': SprRotry
+    '28': FMChoGtr
+    '39': RunPulse
+    '40': PlnPulse
+    '56': EuroHit+
+    '62': BrssSec3
+    '81': Query
+    '82': PWMania
+    '91': PolyPdKg
+    '97': Bounce
+    '98': NoisePno
+    '100': Mimicry
+  0:74:
+    '5': PhunkyDX
+    '6': Turnpik2
+    '17': Dawn
+    '18': LoFiOrgn
+    '28': FMChoGtS
+    '39': TalkPuls
+    '40': PwrdPuls
+    '56': Blowout
+    '62': SfrzdBr2
+    '81': FMSlwSwp
+    '82': Mod Saw
+    '97': Ana Bell
+    '100': Parasite
+  0:75:
+    '5': Nasal DX
+    '6': Cerritos
+    '17': Mellorgn
+    '18': BeepOrgn
+    '28': PeskyGtr
+    '39': Node
+    '40': PwrPulsB
+    '62': OctBrass
+    '81': SyncLdDb
+    '82': Toad
+    '100': Cicada
+  0:76:
+    '5': NaslDXDt
+    '6': Sunset
+    '17': Fuzzorgn
+    '18': Belief
+    '28': ClaviGtr
+    '39': Stainer
+    '40': Pwrd Saw
+    '81': Curse
+    '82': FatOctav
+    '102': Beacon
+  0:77:
+    '5': Din
+    '6': Soft DX
+    '17': FMO
+    '18': SnapOrgn
+    '39': StainAtk
+    '81': OctvBeep
+    '82': Overdose
+  0:78:
+    '6': Reso DX
+    '17': 70sDrOr3
+    '39': SweepSqr
+    '81': Sine Ld2
+    '82': PWMDecay
+  0:79:
+    '6': PiercnDX
+    '39': SwpSqr +
+    '81': SquarLd3
+    '82': SawDecay
+  0:80:
+    '6': ShvrngDX
+    '39': Stinks
+    '81': SquarLd4
+    '82': FatSawLd
+  0:81:
+    '6': ShvrnDX+
+    '39': StnksRes
+    '82': DuckLead
+  0:82:
+    '6': RattlnDX
+    '39': Reso Sqr
+    '82': BoostSaw
+  0:83:
+    '6': RatlnDX+
+    '39': Dagger
+    '82': Mr.Saw
+  0:84:
+    '6': TinkerDX
+    '39': Zinc
+    '82': ThinSwLd
+  0:85:
+    '6': TinkrDX+
+    '39': SweePWM
+    '82': MouthSaw
+  0:86:
+    '39': SwPWM St
+    '82': Dr.Lead2
+  0:87:
+    '39': Slow Wah
+    '82': Saw Unis
+  0:96:
+    '13': Balafon
+    '15': ChrchBel
+    '16': Cimbalom
+    '25': Ukulele
+    '26': Mandolin
+    '27': PdlSteel
+    '29': Mu.DstGt
+    '33': WalkSyBa
+    '36': SynFretl
+    '39': Hammer
+    '47': Vln Harp
+    '54': VoiceHmn
+    '57': FluglHrn
+    '72': BassClar
+    '73': Bang Di
+    '74': Qu Di
+    '76': Kawala
+    '82': Seq Ana.
+    '101': Smokey
+    '102': BelChoir
+    '105': Tambra
+    '106': Rabab
+    '107': Tsugaru
+    '108': Taisho-k
+    '110': Sheng
+    '111': Er Hu
+    '112': Pungi
+    '113': Bonang
+    '114': Atrigane
+    '115': Tablas
+    '116': Castanet
+    '117': Gr.Cassa
+    '120': RevSnar1
+  0:88:
+    '39': Crook
+    '82': OctSawLd
+  0:89:
+    '39': FstFltBa
+    '82': Seq Saw1
+  0:90:
+    '39': Rubber30
+    '82': Seq Saw2
+  0:91:
+    '39': FstResB2
+  0:126:
+    '1': 'GrandP #'
+    '2': 'BriteP #'
+    '5': EPiano1#
+    '6': EPiano2#
+    '8': 'Clavi #'
+    '17': DrawOrg#
+    '18': PercOrg#
+    '19': RockOrg#
+    '24': TangoAc#
+    '25': NylonGt#
+    '26': SteelGt#
+    '27': JazzGtr#
+    '29': MuteGtr#
+    '30': Ovrdriv#
+    '31': DistGtr#
+    '33': AcoBass#
+    '34': 'FngrBa #'
+    '36': Frtless#
+    '37': SlapBa1#
+    '38': SlapBa2#
+    '41': 'Violin #'
+    '45': TremStr#
+    '49': Strngs1#
+    '50': Strngs2#
+    '57': Trumpet#
+    '58': Trmbone#
+    '60': MuteTrp#
+    '62': BrssSec#
+    '66': AltoSax#
+    '69': 'Oboe #'
+    '74': 'Flute #'
+    '76': PanFlut#
+  0:97:
+    '13': Balimba
+    '15': Carillon
+    '16': Santur
+    '26': MndlnEns
+    '33': Dim&Cool
+    '36': SmthFrtl
+    '47': VlnHrpDt
+    '57': Cornet
+    '102': Dharma
+    '105': Tamboura
+    '106': Gopichnt
+    '108': Kanoon
+    '111': Ban Hu
+    '112': Hichriki
+    '113': Altair
+    '115': GlasPerc
+    '120': RevSnar2
+  0:98:
+    '13': Log Drum
+    '16': Yang Qin
+    '106': Oud
+    '108': Zheng
+    '111': Jing Hu
+    '112': Suo Na
+    '113': Gamelan
+    '115': ThaiBell
+    '120': RevKick1
+  0:26:
+    '82': Mondo
+  0:99:
+    '106': Pi Pa
+    '113': S.Gamlan
+    '120': RevConBD
+  0:100:
+    '113': Rama Cym
+    '120': Rev Tom1
+  0:101:
+    '113': AsianBel
+    '120': Rev Tom2
+exclusiveBanks:
+  '48:0':
+    '1': MtdClavi
+    '2': Orimba
+  '48:8':
+    '1': Beeline
+    '2': BlineHrd
+    '3': Dwarf
+    '4': Byte
+    '5': Ping
+    '6': NastyCut
+    '7': NstyCtSt
+    '8': Xe
+    '9': OrganHit
+    '10': OrgnHit+
+    '11': Soft Hit
+    '12': Vein
+    '13': Packet
+    '14': Jolly
+    '15': Jolly +
+    '16': Envy
+    '17': EnvyShrt
+    '18': Cough
+    '19': Remark
+    '20': Potala
+    '21': Fury
+    '22': Glocken+
+  '48:16':
+    '1': Rage
+    '2': TnglCaos
+    '3': Incontnc
+    '4': IncntClk
+    '5': CheapOsc
+    '6': CheapOc+
+    '7': NstOrSpl
+    '8': SprClick
+    '9': Boomout
+    '10': ChoirSpl
+    '11': Veld
+    '12': VaporVox
+    '13': VoxShoot
+    '14': SemiacOr
+  '48:24':
+    '1': Fuss
+    '2': VanAllen
+    '3': Divinity
+    '4': Paranoia
+    '5': Vexation
+    '6': CalcOrg1
+    '7': CalcOrg2
+    '8': CalcOrg3
+    '9': ChoCalcO
+    '10': Sodium
+  '48:48':
+    '1': Reflex 1
+    '2': Reflex 2
+    '3': Prcesion
+    '4': RndmWalk
+    '5': RandmRun
+  '48:56':
+    '1': Insanity
+    '2': Habakkuk
+  48:64:
+    '1': DstnFire
+    '2': BlowNoiz
+    '3': Fall
+    '4': Chaff
+  48:72:
+    '1': Litning
+    '2': Oof
+    '3': Lust
+    '4': Lust St
+    '5': SoftHit+
+    '6': Cough +
+    '7': Ruin
+    '8': Ruin St
+    '9': Vein +
+    '10': Universe
+    '11': UnvrsSwp
+    '12': Xe +
+    '13': Daze
+    '14': Refusal
+    '15': Refusal+
+    '16': Lie
+    '17': Malice
+    '18': Doubt
+    '19': DoubtDbl
+  48:80:
+    '1': Zipzap
+  48:88:
+    '1': Escape
+    '2': Zigzag
+    '3': Scud
+    '4': Hinayana
+    '5': Boot
+    '6': Anathema
+    '7': Germ 1
+    '8': Germ 2
+    '9': Malfnctn
+  48:96:
+    '1': TinKettl
+    '2': K/S Anlg
+    '3': K/S Humd
+    '4': K/S Slap
+    '5': Rvr/Crsh
+  48:104:
+    '1': Satya
+    '2': Monastry
+    '3': Vinaya
+    '4': Prana
+    '5': Delight
+    '6': Puja
+    '7': Bent Tom
+  48:120:
+    '1': Vodou
+bankLabels:
+  '0': MU Basic
+  '1': Key Scale
+  '3': Panning
+  '6': Single
+  '8': Slow
+  '12': Fast Decay
+  '14': Double Attack
+  '16': Bright 1
+  '17': Bright 2
+  '18': Dark 1
+  '19': Dark 2
+  '20': Resonant
+  '21': LFO-Cutoff Frequency
+  '22': Velocity-Cutoff Frequency
+  '24': Attack
+  '25': Release
+  '26': Sweep
+  '27': Resonant Sweep
+  '28': Other Variation
+  '29': Other Variation
+  '32': Other Variation
+  '33': Other Variation
+  '34': Other Variation
+  '35': Other Variation
+  '36': Other Variation
+  '37': 5th 1
+  '38': 5th 2
+  '39': Bend
+  '40': Tutti 1
+  '41': Tutti 2
+  '42': Other Variation
+  '43': Other Variation
+  '45': Other Variation
+  '48': Other Instrument 1
+  '52': Other Variation
+  '53': Other Variation
+  '54': Other Variation
+  '64': Other Waves 1
+  '65': Other Waves 2
+  '66': Other Waves 3
+  '67': Other Waves 4
+  '68': Other Waves 5
+  '69': Other Variation
+  '70': Other Variation
+  '71': Other Variation
+  '72': Other Instrument 3
+  '73': Other Variation
+  '74': Other Variation
+  '75': Other Variation
+  '76': Other Waves 13
+  '77': Other Waves 14
+  '78': Other Waves 15
+  '79': Other Waves 16
+  '80': Other Waves 17
+  '81': Other Variation
+  '82': Other Variation
+  '83': Other Variation
+  '84': Other Variation
+  '85': Other Variation
+  '86': Other Variation
+  '87': Other Variation
+  '88': Other Waves 25
+  '89': Other Waves 26
+  '90': Other Waves 27
+  '91': Other Waves 28
+  '96': Other Instrument 1
+  '97': Other Variation
+  '98': Other Instrument 2
+  '99': Other Variation
+  '100': Other Variation
+  '101': Other Variation
+  '126': Other Variation
+  '127': Other Variation

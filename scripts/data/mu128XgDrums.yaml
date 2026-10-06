@@ -1,0 +1,1149 @@
+- msb: 127
+  pc: 9
+  name: Room Kit
+  notes:
+    '36': Kick Room
+    '38': Snare Snappy
+    '40': Snare Tight Snappy
+    '41': Tom Room 1
+    '43': Tom Room 2
+    '45': Tom Room 3
+    '47': Tom Room 4
+    '48': Tom Room 5
+    '50': Tom Room 6
+- msb: 127
+  pc: 10
+  name: Dark Room Kit
+  notes:
+    '13': Surdo Mute V
+    '14': Surdo Open V
+    '25': Brush Tap V
+    '26': Brush Swirl V
+    '27': Brush Slap V
+    '28': Brush Tap Swirl V
+    '29': Snare Roll V
+    '35': Kick Dark
+    '36': Kick Room Gate
+    '38': Snare Snappy 2
+    '40': Snare Tight Snappy 2
+    '41': Tom Room 1 Q
+    '42': Hi-Hat Closed Q
+    '43': Room Tom 2 Q
+    '44': Hi-Hat Pedal Q
+    '45': Room Tom 3 Q
+    '46': Hi-Hat Open L
+    '47': Tom Room 4 Dark
+    '48': Tom Room 5 L Dark
+    '50': Tom Room 6 L Dark
+    '51': Ride Cymbal 1 V
+    '52': Chinese Cymbal V
+    '55': Splash Cymbal V
+    '57': Crash Cymbal 2 V
+    '59': Ride Cymbal 2 V
+    '60': Bongo H V
+    '61': Bongo L V
+    '62': Conga H Mute V
+    '63': Conga H Open V
+    '64': Conga L V
+    '65': Timbale H V
+    '66': Timbale L V
+    '67': Agogo H V
+    '68': Agogo L V
+    '71': Samba Whistle H V
+    '72': Samba Whistle L V
+    '78': Cuica Mute V
+    '79': Cuica Open V
+- msb: 127
+  pc: 17
+  name: Rock Kit
+  notes:
+    '31': Snare Noisy
+    '33': Kick Tight 2
+    '35': Kick 2
+    '36': Kick Gate
+    '38': Snare Rock
+    '40': Snare Rock Rim
+    '41': Tom Rock 1
+    '43': Tom Rock 2
+    '45': Tom Rock 3
+    '47': Tom Rock 4
+    '48': Tom Rock 5
+    '50': Tom Rock 6
+- msb: 127
+  pc: 18
+  name: Rock Kit 2
+  notes:
+    '13': Surdo Mute V
+    '14': Surdo Open V
+    '25': Brush Tap V
+    '26': Brush Swirl V
+    '27': Brush Slap V
+    '28': Brush Tap Swirl V
+    '29': Snare Roll V
+    '31': Snare Noisy 5
+    '33': Kick Tight 3
+    '35': Kick 4
+    '36': Kick Gate 2
+    '38': Snare Rock 2
+    '40': Snare Rock Rim Q
+    '41': Tom Rock 1 H
+    '42': Hi-Hat Closed 2
+    '43': Tom Rock 2 H
+    '44': Hi-Hat Pedal 2
+    '45': Tom Rock 3 L Short
+    '46': Hi-Hat Open 2
+    '47': Tom Rock 4 L Short
+    '48': Tom Rock 5 L Short
+    '50': Tom Rock 6 L Short
+    '51': Ride Cymbal 1 V
+    '52': Chinese Cymbal V
+    '55': Splash Cymbal V
+    '57': Crash Cymbal 2 V
+    '59': Ride Cymbal 2 V
+    '60': Bongo H V
+    '61': Bongo L V
+    '62': Conga H Mute V
+    '63': Conga H Open V
+    '64': Conga L V
+    '65': Timbale H V
+    '66': Timbale L V
+    '67': Agogo H V
+    '68': Agogo L V
+    '71': Samba Whistle H V
+    '72': Samba Whistle L V
+    '78': Cuica Mute V
+    '79': Cuica Open V
+- msb: 127
+  pc: 25
+  name: Electro Kit
+  notes:
+    '28': Reverse Cymbal
+    '30': Hi Q 2
+    '31': Snare Snappy Electro
+    '33': Kick 3
+    '35': Kick Gate
+    '36': Kick Gate Heavy
+    '38': Snare Noisy 2
+    '40': Snare Noisy 3
+    '41': Tom Electro 1
+    '43': Tom Electro 2
+    '45': Tom Electro 3
+    '47': Tom Electro 4
+    '48': Tom Electro 5
+    '50': Tom Electro 6
+    '78': Scratch H 2
+    '79': Scratch L 2
+- msb: 127
+  pc: 26
+  name: Analog Kit
+  notes:
+    '28': Reverse Cymbal
+    '30': Hi Q 2
+    '31': Snare Noisy 4
+    '33': Kick Tight 2
+    '35': Kick Analog Short
+    '36': Kick Analog
+    '37': Side Stick Analog
+    '38': Snare Analog
+    '40': Snare Analog 2
+    '41': Tom Analog 1
+    '42': Hi-Hat Closed Analog
+    '43': Tom Analog 2
+    '44': Hi-Hat Closed Analog 2
+    '45': Tom Analog 3
+    '46': Hi-Hat Open Analog
+    '47': Tom Analog 4
+    '48': Tom Analog 5
+    '49': Crash Analog
+    '50': Tom Analog 6
+    '56': Cowbell Analog
+    '62': Conga Analog H
+    '63': Conga Analog M
+    '64': Conga Analog L
+    '70': Maracas 2
+    '75': Claves 2
+    '78': Scratch H 2
+    '79': Scratch L 3
+- msb: 127
+  pc: 27
+  name: Analog Kit 2
+  notes:
+    '13': Surdo Mute V
+    '14': Surdo Open V
+    '25': Brush Tap V
+    '26': Brush Swirl V
+    '27': Brush Slap V
+    '28': Reverse Cymbal
+    '29': Snare Roll V
+    '30': Hi Q 2
+    '31': Snare Analog 3
+    '33': Kick Techno Soft
+    '34': Open Rim Shot Dry V
+    '35': Kick Techno Tight
+    '36': Kick Techno
+    '37': Side Stick Analog
+    '38': Snare Techno
+    '40': Snare Techno 2
+    '41': Tom Analog 1
+    '42': Hi-Hat Closed Analog
+    '43': Tom Analog 2
+    '44': Hi-Hat Closed Analog 2
+    '45': Tom Analog 3
+    '46': Hi-Hat Open Analog
+    '47': Tom Analog 4
+    '48': Tom Analog 5
+    '49': Crash Analog
+    '50': Tom Analog 6
+    '51': Ride Cymbal 1 V
+    '52': Chinese Cymbal V
+    '55': Splash Cymbal V
+    '56': Cowbell Analog
+    '57': Crash Cymbal 2 V
+    '59': Ride Cymbal 2 V
+    '60': Bongo H V
+    '61': Bongo L V
+    '62': Conga Analog H
+    '63': Conga Analog M
+    '64': Conga Analog L
+    '65': Timbale H V
+    '66': Timbale L V
+    '67': Agogo H V
+    '68': Agogo L V
+    '70': Maracas 2
+    '71': Samba Whistle H V
+    '72': Samba Whistle L V
+    '75': Claves 2
+    '78': Scratch H 2
+    '79': Scratch L 3
+- msb: 127
+  pc: 28
+  name: Dance Kit
+  notes:
+    '28': Reverse Cymbal
+    '30': Hi Q 2
+    '31': Snare Techno 3
+    '33': Kick Techno Q
+    '34': Rim Gate
+    '35': Kick Techno L
+    '36': Kick Techno 2
+    '37': Side Stick Analog
+    '38': Snare Clap
+    '40': Snare Dry 2
+    '41': Tom Analog 1
+    '42': Hi-Hat Closed 3
+    '43': Tom Analog 2
+    '44': Hi-Hat Closed Analog 2
+    '45': Tom Analog 3
+    '46': Hi-Hat Open 3
+    '47': Tom Analog 4
+    '48': Tom Analog 5
+    '49': Crash Analog
+    '50': Tom Analog 6
+    '56': Cowbell Analog
+    '62': Conga Analog H
+    '63': Conga Analog M
+    '64': Conga Analog L
+    '70': Maracas 2
+    '75': Claves 2
+    '78': Scratch H 2
+    '79': Scratch L 3
+- msb: 127
+  pc: 29
+  name: Hip Hop Kit
+  notes:
+    '13': Surdo Mute V
+    '14': Surdo Open V
+    '25': Brush Tap V
+    '26': Brush Swirl V
+    '27': Brush Slap V
+    '28': Brush Tap Swirl V
+    '29': Snare Roll V
+    '31': Open Rim Shot 2 Soft
+    '33': Kick Dry Soft 2
+    '34': Open Rim Shot 2
+    '35': Kick Dim
+    '36': Kick Boon
+    '37': Side Stick Dry
+    '38': Snare Dry Mute
+    '40': Snare White
+    '41': Floor Tom L Short
+    '42': Hi-Hat Closed 2 H
+    '43': Floor Tom H Short
+    '44': Hi-Hat Pedal 2 H
+    '45': Low Tom Short
+    '46': Hi-Hat Open 2 L
+    '47': Mid Tom L Short
+    '48': Mid Tom H Short
+    '49': Crash Cymbal 1 V
+    '50': High Tom Short
+    '51': Ride Cymbal 1 V
+    '52': Chinese Cymbal V
+    '55': Splash Cymbal V
+    '57': Crash Cymbal 2 V
+    '59': Ride Cymbal 2 V
+    '60': Bongo H V
+    '61': Bongo L V
+    '62': Conga H Mute V
+    '63': Conga H Open V
+    '64': Conga L V
+    '65': Timbale H V
+    '66': Timbale L V
+    '67': Agogo H V
+    '68': Agogo L V
+    '71': Samba Whistle H V
+    '72': Samba Whistle L V
+    '78': Cuica Mute V
+    '79': Cuica Open V
+- msb: 127
+  pc: 1
+  name: Standard Kit Mu Basic
+  notes:
+    '13': Surdo Mute
+    '14': Surdo Open
+    '15': Hi Q
+    '16': Whip Slap
+    '17': Scratch H
+    '18': Scratch L
+    '19': Finger Snap
+    '20': Click Noise
+    '21': Metronome Click
+    '22': Metronome Bell
+    '23': Seq Click L
+    '24': Seq Click H
+    '25': Brush Tap
+    '26': Brush Swirl
+    '27': Brush Slap
+    '28': Brush Tap Swirl
+    '29': Snare Roll
+    '30': Castanet
+    '31': Snare Soft
+    '32': Sticks
+    '33': Kick Soft
+    '34': Open Rim Shot
+    '35': Kick Tight
+    '36': Kick
+    '37': Side Stick
+    '38': Snare
+    '39': Hand Clap
+    '40': Snare Tight
+    '41': Floor Tom L
+    '42': Hi-Hat Closed
+    '43': Floor Tom H
+    '44': Hi-Hat Pedal
+    '45': Low Tom
+    '46': Hi-Hat Open
+    '47': Mid Tom L
+    '48': Mid Tom H
+    '49': Crash Cymbal 1
+    '50': High Tom
+    '51': Ride Cymbal 1
+    '52': Chinese Cymbal
+    '53': Ride Cymbal Cup
+    '54': Tambourine
+    '55': Splash Cymbal
+    '56': Cowbell
+    '57': Crash Cymbal 2
+    '58': Vibraslap
+    '59': Ride Cymbal 2
+    '60': Bongo H
+    '61': Bongo L
+    '62': Conga H Mute
+    '63': Conga H Open
+    '64': Conga L
+    '65': Timbale H
+    '66': Timbale L
+    '67': Agogo H
+    '68': Agogo L
+    '69': Cabasa
+    '70': Maracas
+    '71': Samba Whistle H
+    '72': Samba Whistle L
+    '73': Guiro Short
+    '74': Guiro Long
+    '75': Claves
+    '76': Wood Block H
+    '77': Wood Block L
+    '78': Cuica Mute
+    '79': Cuica Open
+    '80': Triangle Mute
+    '81': Triangle Open
+    '82': Shaker
+    '83': Jingle Bells
+    '84': Bell Tree
+- msb: 127
+  pc: 30
+  name: Jungle Kit
+  notes:
+    '13': Surdo Mute V
+    '14': Surdo Open V
+    '25': Brush Tap V
+    '26': Brush Swirl V
+    '27': Brush Slap V
+    '28': Brush Tap Swirl V
+    '29': Snare Roll V
+    '31': Rim Gate 2
+    '33': Kick Cough
+    '34': Rim Gate 3
+    '35': Kick Zap
+    '36': Kick Dawn
+    '37': Side Stick Dry
+    '38': Snare Tin
+    '40': Snare Can
+    '41': Floor Tom L Short
+    '42': Hi-Hat Closed 2 Soft
+    '43': Floor Tom H Short
+    '44': Hi-Hat Pedal 2 Soft
+    '45': Low Tom Short
+    '46': Hi-Hat Open 2 Soft
+    '47': Mid Tom L Short
+    '48': Mid Tom H Short
+    '49': Crash Cymbal 1 V
+    '50': High Tom Short
+    '51': Ride Cymbal 1 V
+    '52': Chinese Cymbal V
+    '55': Splash Cymbal V
+    '57': Crash Cymbal 2 V
+    '59': Ride Cymbal 2 V
+    '60': Bongo H V
+    '61': Bongo L V
+    '62': Conga H Mute V
+    '63': Conga H Open V
+    '64': Conga L V
+    '65': Timbale H V
+    '66': Timbale L V
+    '67': Agogo H V
+    '68': Agogo L V
+    '71': Samba Whistle H V
+    '72': Samba Whistle L V
+    '78': Cuica Mute V
+    '79': Cuica Open V
+- msb: 127
+  pc: 31
+  name: Apogee Kit
+  notes:
+    '13': Surdo Mute V
+    '14': Surdo Open V
+    '25': Brush Tap V
+    '26': Brush Swirl V
+    '27': Brush Slap V
+    '28': Reverse Cymbal
+    '30': Hi Q 2
+    '31': Snare Analog 4
+    '33': Kick Techno 3
+    '34': Open Rim Shot L
+    '35': Kick Techno 4
+    '36': Kick Techno Tight 2
+    '37': Side Stick Analog 2
+    '38': Snare Analog 5
+    '39': Clap Ambience
+    '40': Snare Analog 6
+    '41': Tom Techno 1
+    '42': Hi-Hat Closed Analog 3
+    '43': Tom Techno 2
+    '44': Hi-Hat Closed Analog 4
+    '45': Tom Techno 3
+    '46': Hi-Hat Open Analog 2
+    '47': Tom Techno 4
+    '48': Tom Techno 5
+    '49': Crash Analog
+    '50': Tom Techno 6
+    '51': Ride Cymbal Analog 1
+    '53': Ride Cymbal Cup Q
+    '55': Splash Cymbal V
+    '56': Cowbell Analog L
+    '57': Crash Cymbal 2 V
+    '59': Ride Cymbal Analog 2
+    '60': Bongo H V
+    '61': Bongo L V
+    '62': Conga Analog H Long
+    '63': Conga Analog M Long
+    '64': Conga Analog L Long
+    '65': Timbale H V
+    '66': Timbale L V
+    '67': Agogo H V
+    '68': Agogo L V
+    '70': Maracas 2
+    '71': Samba Whistle H V
+    '72': Samba Whistle L V
+    '75': Claves 2
+    '78': Scratch H 2
+    '79': Scratch L 3
+- msb: 127
+  pc: 32
+  name: Perigee Kit
+  notes:
+    '13': Surdo Mute V
+    '14': Surdo Open V
+    '25': Brush Tap V
+    '26': Brush Swirl V
+    '27': Brush Slap V
+    '28': Reverse Cymbal
+    '30': Hi Q 2
+    '31': Snare Analog 4 H
+    '33': Kick Techno 3
+    '34': Open Rim Shot L
+    '35': Kick Techno 4 H
+    '36': Kick Techno Tight 2 H
+    '37': Side Stick Analog 2 H
+    '38': Snare Analog 5 H
+    '39': Clap Ambience H
+    '40': Snare Analog 6 H
+    '41': Tom Techno 1 H
+    '42': Hi-Hat Closed Analog 3 H
+    '43': Tom Techno 2 H
+    '44': Hi-Hat Closed Analog 4 H
+    '45': Tom Techno 3 H
+    '46': Hi-Hat Open Analog 2 H
+    '47': Tom Techno 4 H
+    '48': Tom Techno 5 H
+    '49': Crash Analog H
+    '50': Tom Techno 6 H
+    '51': Ride Cymbal Analog 1 H
+    '52': Chinese Cymbal H
+    '53': Ride Cymbal Cup H
+    '54': Tambourine H
+    '55': Splash Cymbal H
+    '56': Cowbell Analog H
+    '57': Crash Cymbal 2 H
+    '59': Ride Cymbal Analog 2 H
+    '60': Bongo H V
+    '61': Bongo L V
+    '62': Conga Analog H Long H
+    '63': Conga Analog M Long H
+    '64': Conga Analog L Long H
+    '65': Timbale H V
+    '66': Timbale L V
+    '67': Agogo H V
+    '68': Agogo L V
+    '70': Maracas 2
+    '71': Samba Whistle H V
+    '72': Samba Whistle L V
+    '75': Claves 2
+    '78': Scratch H 2
+    '79': Scratch L 3
+- msb: 127
+  pc: 33
+  name: Jazz Kit
+  notes:
+    '36': Kick Jazz
+    '41': Tom Jazz 1
+    '43': Tom Jazz 2
+    '45': Tom Jazz 3
+    '47': Tom Jazz 4
+    '48': Tom Jazz 5
+    '50': Tom Jazz 6
+- msb: 127
+  pc: 34
+  name: Jazz Kit 2
+  notes:
+    '13': Surdo Mute V
+    '14': Surdo Open V
+    '25': Brush Tap V
+    '26': Brush Swirl V
+    '27': Brush Slap V
+    '28': Brush Tap Swirl V
+    '29': Snare Roll V
+    '36': Kick Jazz L
+    '38': Snare H
+    '40': Snare Tight L
+    '41': Tom Jazz 7
+    '42': Hi-Hat Closed L
+    '43': Tom Jazz 8
+    '44': Hi-Hat Pedal L
+    '45': Tom Jazz 9
+    '46': Hi-Hat Open L
+    '47': Tom Jazz 10
+    '48': Tom Jazz 11
+    '50': Tom Jazz 12
+    '51': Ride Cymbal 1 V
+    '52': Chinese Cymbal V
+    '53': Ride Cymbal Cup L
+    '55': Splash Cymbal V
+    '57': Crash Cymbal 2 V
+    '59': Ride Cymbal 2 V
+    '60': Bongo H V
+    '61': Bongo L V
+    '62': Conga H Mute V
+    '63': Conga H Open V
+    '64': Conga L V
+    '65': Timbale H V
+    '66': Timbale L V
+    '67': Agogo H V
+    '68': Agogo L V
+    '71': Samba Whistle H V
+    '72': Samba Whistle L V
+    '78': Cuica Mute V
+    '79': Cuica Open V
+- msb: 127
+  pc: 41
+  name: Brush Kit
+  notes:
+    '31': Brush Slap 2
+    '36': Kick Small
+    '38': Brush Slap 3
+    '40': Brush Tap 2
+    '41': Tom Brush 1
+    '43': Tom Brush 2
+    '45': Tom Brush 3
+    '47': Tom Brush 4
+    '48': Tom Brush 5
+    '50': Tom Brush 6
+- msb: 127
+  pc: 42
+  name: Brush Kit2
+  notes:
+    '28': Brush Tap Swirl L
+    '29': Snare Roll V
+    '30': Castanet H
+    '31': Snare Dry Hard
+    '33': Kick Release
+    '34': Open Rim Shot Dry L
+    '35': Kick Cloudy H
+    '36': Kick Cloudy L
+    '37': Side Stick B 2
+    '38': Brush Slap 3 Q
+    '40': Brush Snare Loud
+    '41': Tom Brush 7
+    '42': Hi-Hat Closed 4
+    '43': Tom Brush 8
+    '44': Hi-Hat Pedal 4
+    '45': Tom Brush 9
+    '46': Hi-Hat Open 4
+    '47': Tom Brush 10
+    '48': Tom Brush 11
+    '49': Crash Cymbal 4
+    '50': Tom Brush 12
+    '51': Ride Cymbal 1 H
+    '53': Ride Cymbal Cup 6
+    '55': Splash Cymbal V
+    '56': Cowbell 2
+    '59': Ride Cymbal 6
+    '62': Conga H Mute V
+    '63': Conga H Open V
+    '64': Conga L 2
+    '70': Maracas Q
+    '79': Cuica Open H
+- msb: 127
+  pc: 49
+  name: Symphony Kit
+  notes:
+    '33': Kick Soft 2
+    '35': Gran Cassa
+    '36': Gran Cassa Mute
+    '38': Band Snare
+    '40': Band Snare 2
+    '41': Tom Jazz 1
+    '43': Tom Jazz 2
+    '45': Tom Jazz 3
+    '47': Tom Jazz 4
+    '48': Tom Jazz 5
+    '49': Hand Cymbal
+    '50': Tom Jazz 6
+    '51': Hand Cymbal Short
+    '57': Hand Cymbal 2
+    '59': Hand Cymbal 2 Short
+- msb: 127
+  pc: 65
+  name: Tramp Kit
+  notes:
+    '25': Brush Tap V
+    '26': Brush Swirl V
+    '27': Brush Slap V
+    '28': Reverse Cymbal
+    '29': Snare Roll V
+    '30': Hi Q 2
+    '31': Snare Techno 3 Q
+    '32': Sticks Q
+    '33': Kick Techno Q 2
+    '34': Rim Gate Lo-Fi
+    '35': Kick Techno L Q
+    '36': Kick Techno 2 Gate
+    '37': Side Stick Analog Q
+    '38': Snare Clap
+    '39': Hand Clap Dark
+    '40': Snare Dry 2 Gate
+    '41': Tom Analog 7
+    '42': Hi-Hat Closed 3 Dark
+    '43': Tom Analog 8
+    '44': Hi-Hat Closed Analog 2 L
+    '45': Tom Analog 9
+    '46': Hi-Hat Open 3 Dark
+    '47': Tom Analog 10
+    '48': Tom Analog 11
+    '49': Crash Analog Dark
+    '50': Tom Analog 12
+    '51': Ride Cymbal 1 Dark
+    '52': Chinese Cymbal L
+    '53': Ride Cymbal Cup Dark
+    '54': Tambourine Dark
+    '55': Splash Cymbal L Q
+    '56': Cowbell Analog Q
+    '57': Crash Cymbal 2 Q
+    '59': Ride Cymbal 2 D
+    '60': Bongo H V
+    '61': Bongo L V
+    '62': Conga Analog H Long
+    '63': Conga Analog M Long
+    '64': Conga Analog L Long
+    '65': Timbale H V
+    '66': Timbale L V
+    '67': Agogo H V
+    '68': Agogo L V
+    '70': Maracas 2
+    '71': Samba Whistle H V
+    '72': Samba Whistle L V
+    '78': Scratch H 2
+    '79': Scratch L 3
+- msb: 127
+  pc: 66
+  name: Amber Kit
+  notes:
+    '13': Surdo Mute V
+    '14': Surdo Open V
+    '25': Brush Tap V
+    '26': Brush Swirl V
+    '27': Brush Slap V
+    '28': Brush Tap Swirl L
+    '29': Snare Roll V
+    '31': Open Rim Shot 3 Soft
+    '32': Sticks Q
+    '33': KickDrySoft3
+    '34': Open Rim Shot Dry
+    '35': Kick Comp 1 L
+    '36': Kick Comp 1 H
+    '37': Side Stick Dry L
+    '38': Snare Dry Mute L
+    '39': Hand Clap Dark
+    '40': Hip Snare Long
+    '41': Floor Tom Tech L
+    '42': Hi-Hat Closed Tech
+    '43': Floor Tom Tech H
+    '44': Hi-Hat Pedal Tech
+    '45': Low Tom Tech
+    '46': Hi-Hat Open 3 Dark
+    '47': Mid Tom Tech L
+    '48': Mid Tom Tech H
+    '49': Crash Cymbal Dark
+    '50': High Tom Tech
+    '51': Ride Cymbal 1 Dark
+    '52': Chinese Cymbal H2
+    '53': Ride Cymbal Cup Dark
+    '54': Tambourine Dark
+    '55': Splash Cymbal L Q
+    '56': Cowbell Lo-Fi
+    '57': Crash Cymbal 2 Q
+    '59': Ride Cymbal 2 V
+    '60': Bongo H V
+    '61': Bongo L V
+    '62': Conga H Mute V
+    '63': Conga H Open V
+    '64': Conga L 2
+    '65': Timbale H V
+    '66': Timbale L V
+    '67': Agogo H V
+    '68': Agogo L V
+    '70': Maracas Q
+    '71': Samba Whistle H V
+    '72': Samba Whistle L V
+    '79': Cuica Open H
+- msb: 127
+  pc: 67
+  name: Coffin Kit
+  notes:
+    '13': Surdo Mute V
+    '14': Surdo Open V
+    '25': Brush Tap V
+    '26': Brush Swirl V
+    '27': Brush Slap V
+    '28': Brush Tap Swirl L
+    '29': Snare Roll V
+    '31': Rim Gate 4
+    '32': Sticks Q
+    '33': Kick Cough L
+    '34': Rim Gate 5
+    '35': Kick Comp 2 L
+    '36': Kick Comp 2 H
+    '37': Side Stick Dry L
+    '38': Snare Tin L
+    '39': Hand Clap Dark
+    '40': Snare Can L
+    '41': Floor Tom Tech L
+    '42': Hi-Hat Closed Tech
+    '43': Floor Tom Tech H
+    '44': Hi-Hat Pedal Tech
+    '45': Low Tom Tech
+    '46': Hi-Hat Open 3 Dark
+    '47': Mid Tom Tech L
+    '48': Mid Tom Tech H
+    '49': Crash Cymbal Dark 2
+    '50': High Tom Tech
+    '51': Ride Cymbal Hard 2
+    '52': Chinese Cymbal Q
+    '53': Ride Cymbal Cup 5
+    '54': Tambourine Dark
+    '55': Tech Splash Cymbal
+    '56': Cowbell Lo-Fi
+    '57': Crash Cymbal 2 Q
+    '59': Ride Cymbal 5
+    '60': Bongo H V
+    '61': Bongo L V
+    '62': Conga H Mute V
+    '63': Conga H Open V
+    '64': Conga L 2
+    '65': Timbale H V
+    '66': Timbale L V
+    '67': Agogo H V
+    '68': Agogo L V
+    '70': Maracas Q
+    '71': Samba Whistle H V
+    '72': Samba Whistle L V
+    '79': Cuica Open H
+- msb: 127
+  pc: 127
+  name: Standard Kit MU100 Native
+  notes:
+    '30': Castanet#
+    '31': Snare Soft#
+    '34': Open Rim Shot#
+    '37': Side Stick#
+    '38': Snare#
+    '40': Snare Tight#
+    '42': Hi-Hat Closed#
+    '44': Hi-Hat Pedal#
+    '46': Hi-Hat Open#
+    '49': Crash Cymbal 1#
+    '51': Ride Cymbal 1#
+    '52': Chinese Cymbal#
+    '53': Ride Cymbal Cup#
+    '56': Cowbell#
+    '57': Crash Cymbal 2#
+    '59': Ride Cymbal 2#
+    '62': Conga H Mute#
+    '63': Conga H Open#
+    '64': Conga L#
+- msb: 127
+  pc: 128
+  name: Standard Kit MU Basic
+  notes:
+    '13': Surdo Mute
+    '14': Surdo Open
+    '15': Hi Q
+    '16': Whip Slap
+    '17': Scratch H
+    '18': Scratch L
+    '19': Finger Snap
+    '20': Click Noise
+    '21': Metronome Click
+    '22': Metronome Bell
+    '23': Seq Click L
+    '24': Seq Click H
+    '25': Brush Tap
+    '26': Brush Swirl
+    '27': Brush Slap
+    '28': Brush Tap Swirl
+    '29': Snare Roll
+    '30': Castanet
+    '31': Snare Soft
+    '32': Sticks
+    '33': Kick Soft
+    '34': Open Rim Shot
+    '35': Kick Tight
+    '36': Kick
+    '37': Side Stick
+    '38': Snare
+    '39': Hand Clap
+    '40': Snare Tight
+    '41': Floor Tom L
+    '42': Hi-Hat Closed
+    '43': Floor Tom H
+    '44': Hi-Hat Pedal
+    '45': Low Tom
+    '46': Hi-Hat Open
+    '47': Mid Tom L
+    '48': Mid Tom H
+    '49': Crash Cymbal 1
+    '50': High Tom
+    '51': Ride Cymbal 1
+    '52': Chinese Cymbal
+    '53': Ride Cymbal Cup
+    '54': Tambourine
+    '55': Splash Cymbal
+    '56': Cowbell
+    '57': Crash Cymbal 2
+    '58': Vibraslap
+    '59': Ride Cymbal 2
+    '60': Bongo H
+    '61': Bongo L
+    '62': Conga H Mute
+    '63': Conga H Open
+    '64': Conga L
+    '65': Timbale H
+    '66': Timbale L
+    '67': Agogo H
+    '68': Agogo L
+    '69': Cabasa
+    '70': Maracas
+    '71': Samba Whistle H
+    '72': Samba Whistle L
+    '73': Guiro Short
+    '74': Guiro Long
+    '75': Claves
+    '76': Wood Block H
+    '77': Wood Block L
+    '78': Cuica Mute
+    '79': Cuica Open
+    '80': Triangle Mute
+    '81': Triangle Open
+    '82': Shaker
+    '83': Jingle Bells
+    '84': Bell Tree
+- msb: 126
+  pc: 1
+  name: SFX Kit 1
+  notes:
+    '28': Insects
+    '29': Bacteria
+    '36': Cutting Noise
+    '37': Cutting Noise 2
+    '38': Distorted Cutting Noise
+    '39': String Slap
+    '40': Bass Slide
+    '41': Pick Scrape
+    '52': Flute Key Click
+    '68': Shower
+    '69': Thunder
+    '70': Wind
+    '71': Stream
+    '72': Bubble
+    '73': Feed
+    '74': Cave
+    '84': Dog
+    '85': Horse
+    '86': Bird Tweet 2
+    '87': Kitty
+    '88': Growl
+    '89': Haunted
+    '90': Ghost
+    '91': Maou
+- msb: 126
+  pc: 2
+  name: SFX Kit 2
+  notes:
+    '36': Phone Call
+    '37': Door Squeak
+    '38': Door Slam
+    '39': Scratch Cut
+    '40': Scratch H 3
+    '41': Wind Chime
+    '42': Telephone Ring 2
+    '52': Car Engine Ignition
+    '53': Car Tires Squeal
+    '54': Car Passing
+    '55': Car Crash
+    '56': Siren
+    '57': Train
+    '58': Jet Plane
+    '59': Starship
+    '60': Burst
+    '61': Roller Coaster
+    '62': Submarine
+    '63': Connectivity
+    '64': Mystery
+    '68': Laugh
+    '69': Scream
+    '70': Punch
+    '71': Heart Beat
+    '72': Foot Steps
+    '73': Applause 2
+    '84': Machine Gun
+    '85': Laser Gun
+    '86': Explosion
+    '87': Firework
+    '88': Fireball
+- msb: 126
+  pc: 17
+  name: Techno Kit K/S
+  notes:
+    '36': Heavy Techno Kick 1
+    '37': Heavy Techno Kick 2
+    '38': Psychedelic Kick
+    '39': Gate Tekno Kick
+    '40': Rap Kick
+    '41': Heavy Techno Kick 3
+    '42': Heavy Techno Kick 4
+    '43': Future Kick
+    '44': Asian Kick
+    '45': Imbalance Kick
+    '46': Justice Kick
+    '47': Minimal Kick
+    '52': Radio Snare
+    '53': Cold Dry Snare 1
+    '54': Slap Snare
+    '55': Cold Dry Snare 2
+    '56': Cold Dry Snare 3
+    '57': Lo-Fi Metal Snare
+    '68': Hi Pitch Slap H
+    '69': Hi Pitch Slap L
+- msb: 126
+  pc: 18
+  name: Techno Kit Hi
+  notes:
+    '36': Hyper Tom H 1
+    '37': Asian Tom H
+    '38': Lo-Fi Tom H
+    '39': Hyper Tom H 2
+    '40': Flanged Tom H
+    '41': Minimal Tom H
+    '42': Vox Drum H
+    '43': Android Walk 1 H
+    '44': Android Walk 2 H
+    '45': Electro Blip H
+    '46': Wood Percussions H
+    '47': Wood Door Open H
+    '48': Reso Noise Burst H
+    '49': LFO Metal Attack H
+    '50': Steel Conga H
+    '51': Rate Down Snare H
+    '52': Pop Ambient H
+    '53': Tunnel Ambient H
+    '54': Vibraslap H
+    '55': Gun Shot Slap H
+    '56': Punch Snare H
+    '57': Bomb Snare H
+    '58': Space Tambourine H
+    '59': Ambient Cow Bell H
+    '60': Chink Hat H
+    '61': Coal Mine 1 H
+    '62': Coal Mine 2 H
+    '63': Hammer Hit 1 H
+    '64': Hammer Hit 2 H
+    '65': Hammer Hit 3 H
+    '66': Insensible Hah H
+    '67': Robot 1 H
+    '68': Insensible Fuh H
+    '69': Robot 2 H
+    '70': Rude Loop Cymbal H
+    '71': Noise Burst H
+    '72': Fizzer H
+    '73': Lo-Fi Shaker H
+    '74': Temple Gong H
+- msb: 126
+  pc: 19
+  name: Techno Kit Lo
+  notes:
+    '36': Hyper Tom L 1
+    '37': Asian Tom L
+    '38': Lo-Fi Tom L
+    '39': Hyper Tom L 2
+    '40': Flanged Tom L
+    '41': Minimal Tom L
+    '42': Vox Drum L
+    '43': Android Walk 1 L
+    '44': Android Walk 2 L
+    '45': Electro Blip L
+    '46': Wood Percussions L
+    '47': Wood Door Open L
+    '48': Reso Noise Burst L
+    '49': LFO Metal Attack L
+    '50': Steel Conga L
+    '51': Rate Down Snare L
+    '52': Pop Ambient L
+    '53': Tunnel Ambient L
+    '54': Vibraslap L
+    '55': Gun Shot Slap L
+    '56': Punch Snare L
+    '57': Bomb Snare L
+    '58': Space Tambourine L
+    '59': Ambient Cow Bell L
+    '60': Chink Hat L
+    '61': Coal Mine 1 L
+    '62': Coal Mine 2 L
+    '63': Hammer Hit 1 L
+    '64': Hammer Hit 2 L
+    '65': Hammer Hit 3 L
+    '66': Insensible Hah L
+    '67': Robot 1 L
+    '68': Insensible Fuh L
+    '69': Robot 2 L
+    '70': Rude Loop Cymbal L
+    '71': Noise Burst L
+    '72': Fizzer L
+    '73': Lo-Fi Shaker L
+    '74': Temple Gong L
+- msb: 126
+  pc: 33
+  name: Sakura Kit
+  notes:
+    '36': Dora
+    '37': Tsuzumi Pon
+    '38': Tsuzumi Pu
+    '39': Tsuzumi Ta
+    '40': Tsuzumi Chon
+    '41': Tsuzumi Tsu
+    '42': Shimetaiko Ten
+    '43': Shimetaiko Tsu
+    '44': Yagura Open
+    '45': Ohdaiko Rim
+    '46': Oriental Tambourine
+    '47': Oriental Drum 1
+    '48': Oriental Drum 2
+    '49': Oriental Drum 3
+    '50': Oriental Rim 1
+    '51': Oriental Rim 2
+    '52': Oriental Rim 3
+    '53': Oriental Rim 4
+    '54': Oriental Metal Rim 1
+    '55': Oriental Metal Rim 2
+    '56': Oriental Metal Rim 3
+    '57': Oriental Metal Rim 4
+    '58': Oriental Metal Rim 5
+- msb: 126
+  pc: 34
+  name: Small Latin Kit
+  notes:
+    '36': Latin Cymbal Short
+    '37': Claves SL 1
+    '38': Claves SL 2
+    '39': Claves SL 3
+    '40': Claves SL 4
+    '41': Claves SL 5
+    '42': Muted Percussion SL 1
+    '43': Muted Percussion SL 2
+    '44': Muted Percussion SL 3
+    '45': Muted Percussion SL 4
+    '46': Pandiero
+    '47': Surdo Mute SL 1
+    '48': Surdo Mute SL 2
+    '49': Surdo Open SL
+    '50': Surdo Rim SL
+    '51': Tamborim Mute
+    '52': Tamborim Open
+    '53': TimbaleL Drum
+    '54': TimbaleH Drum
+    '55': TimbaleL Rim
+    '56': TimbaleH Rim
+    '57': Timbale Paila 1
+    '58': Timbale Paila 2
+- msb: 126
+  pc: 35
+  name: China Kit
+  notes:
+    '36': Bangu
+    '37': Dagu Mute
+    '38': Dagu Heavy
+    '39': Paigu High
+    '40': Paigu Middle
+    '41': Paigu Low
+    '52': Zhongcha Mute
+    '53': Zhongcha Open
+    '54': Zhongluo Mute
+    '55': Zhongluo Open
+    '56': Xiaoluo Open
+    '57': Xizocha Mute
+    '58': Xiaocha Open
+    '68': Bangzi
+    '69': Muyu High
+    '70': Muyu Mid-High
+    '71': Muyu Mid
+    '72': Muyu Mid-Low
+    '73': Muyu Low

@@ -1,0 +1,18 @@
+type: ccm
+id: 513
+name: Velocity Sense Depth
+sync: Last
+value:
+  default: 64
+  max: 127
+gate:
+  default: 1
+  min: 1
+  max: 64
+  offset: -1
+  name: Part No.
+sysex:
+  profile: xg
+  address: '08H #GL 0CH'
+  payload: '#VL'
+color: '707070'

@@ -1,0 +1,90 @@
+- pc: 105
+  name: Sitar
+  banks:
+  - name: Sitar
+    msb: 0
+    lsb: 2
+  - name: Sitar 2
+    msb: 1
+    lsb: 2
+  - name: DetuneSitar
+    msb: 2
+    lsb: 2
+  - name: Tambra
+    msb: 8
+    lsb: 2
+  - name: Tamboura
+    msb: 16
+    lsb: 2
+- pc: 106
+  name: Banjo
+  banks:
+  - name: Banjo
+    msb: 0
+    lsb: 2
+  - name: Muted Banjo
+    msb: 1
+    lsb: 2
+  - name: Rabab
+    msb: 8
+    lsb: 2
+  - name: Gopichant
+    msb: 16
+    lsb: 2
+  - name: Oud
+    msb: 24
+    lsb: 2
+- pc: 107
+  name: Shamisen
+  banks:
+  - name: Shamisen
+    msb: 0
+    lsb: 2
+  - name: Tsugaru
+    msb: 1
+    lsb: 2
+- pc: 108
+  name: Koto
+  banks:
+  - name: Koto
+    msb: 0
+    lsb: 2
+  - name: Taisho Koto
+    msb: 8
+    lsb: 2
+  - name: Kanoon
+    msb: 16
+    lsb: 2
+- pc: 109
+  name: Kalimba
+  banks:
+  - name: Kalimba
+    msb: 0
+    lsb: 2
+- pc: 110
+  name: Bagpipe
+  banks:
+  - name: Bagpipe
+    msb: 0
+    lsb: 2
+- pc: 111
+  name: Fiddle
+  banks:
+  - name: Fiddle
+    msb: 0
+    lsb: 2
+- pc: 112
+  name: Shanai
+  banks:
+  - name: Shanai
+    msb: 0
+    lsb: 2
+  - name: Shanai 2
+    msb: 1
+    lsb: 2
+  - name: Pungi
+    msb: 8
+    lsb: 2
+  - name: Hichiriki
+    msb: 16
+    lsb: 2

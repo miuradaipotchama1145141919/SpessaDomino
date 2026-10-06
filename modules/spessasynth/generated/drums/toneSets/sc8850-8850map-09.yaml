@@ -1,0 +1,406 @@
+sc8850_8850Map_52_0_4:
+  25: CR-78 K1
+  26: CR-78 K2
+  27: 606 BD
+  28: 707 BD
+  29: 808 K1
+  30: 909 K1
+  31: 909 K2
+  32: HipHopK2
+  33: HipHopK1
+  34: JungleK2
+  35: JungleK1
+  36: TechnoK2
+  37: TechnoK1
+  38: Std.1 K2
+  39: Std.1 K1
+  40: Std1 K2
+  41: Std1 K1
+  42: Brush K2
+  43: Brush K1
+  44: Jazz K2
+  45: Jazz K1
+  46: HHop BD2
+  47: HHop BD1
+  48: Cnct.BDM
+  49: Cnct.BD
+  50: Room K2
+  51: Room K1
+  52: Jngl BD2
+  53: Jngl BD1
+  54: JnglBDRl
+  55: Fat BD
+  56: Dance BD
+  57: 808 BD
+  58: 909 BD2
+  59: 909 BD1
+  60: Std1 S1
+  61: Std1 S2
+  62: Std.2 S1
+  63: Std.2 S2
+  64: Tight SD
+  65: Con.SD
+  66: Jazz S1
+  67: Jazz S2
+  68: Room S1
+  69: Room S2
+  70: LoFi SD1
+  71: LoFi SD2
+  72: Gated SD
+  73: LoFiSDRm
+  74: Dance S2
+  75: HHop SD1
+  76: HHop SD2
+  77: Dance SD
+  78: 606 SD2
+  79: Tchno SD
+  80: House SD
+  81: Rock SDD
+  82: Jngl SD
+  83: JnglSDRl
+  84: B.Tap 1
+  85: B.Tap 2
+  86: BrshTap2
+  87: BrshSlp2
+  88: B.Slap 3
+  89: B.Swirl1
+  90: B.Swirl2
+  91: B.LngSwl
+  92: Std.1 S1
+  93: Std.1 S2
+  94: Std.1 S3
+  95: RapSnare
+  96: HipHopS2
+  97: JungleS1
+  98: JungleS2
+  99: TechnoS1
+  100: TechnoS2
+  101: House S2
+  102: CR-78 S1
+  103: CR-78 S2
+  104: 606 S1
+  105: 606 S2
+  106: 707 S1
+  107: 707 S2
+  108: Std.3 S2
+  109: 808 S2
+  110: 909 S1
+  111: 909 S2
+sc8850_8850Map_53_0_4:
+  25: GamGng 1
+  26: GamGng 2
+  27: GamGng 3
+  28: GamGng 4
+  29: GamGng 5
+  30: GamGng 6
+  31: GamGng 7
+  32: GamGng 8
+  33: GamGng 9
+  34: GamGng10
+  35: Gender 1
+  36: Gender 2
+  37: Gender 3
+  38: Gender 4
+  39: Gender 5
+  40: Bonang 1
+  41: Bonang 2
+  42: Bonang 3
+  43: Bonang 4
+  44: Bonang 5
+  45: RamaCymL
+  46: RamaCymH
+  47: O.Sagat
+  48: C.Sagat
+  49: JawsHarp
+  50: Wadaiko
+  51: WadaikoR
+  52: SmlTaiko
+  53: SimeTaik
+  54: Atarigan
+  55: Hyousigi
+  56: Ohkawa
+  57: TsuzumiH
+  58: TsuzumiL
+  59: YyooDude
+  60: Buk
+  61: Buk Rim
+  62: Gengr p
+  63: Gengr ML
+  64: Gengr f
+  65: Gengr MH
+  66: Gengr S
+  67: JangGu C
+  68: JangGu K
+  69: JangGu R
+  70: Jing p
+  71: Jing f
+  72: Jing M
+  73: AsianGng
+  74: Big Gong
+  75: Sml Gong
+  76: Pai Ban
+  77: Ban Gu
+  78: Tan Gu
+  79: Tan Gu M
+  80: Shou Luo
+  81: BendGong
+  82: HY Luo L
+  83: HY Luo M
+  84: HY LuoM2
+  85: HY Luo H
+  86: HY LuoH2
+  87: Nao Bo
+  88: Xiao Bo
+  89: Dholak 1
+  90: Dholak 2
+sc8850_8850Map_54_0_4:
+  32: Rev.OHH
+  33: Rev.CHH1
+  34: Rev.CHH2
+  35: Jungl HH
+  36: Closd HH
+  37: C.HiHat2
+  38: C.HiHat3
+  39: C.HiHat4
+  40: C.Hi-Hat
+  41: 707 CHH
+  42: 606 CHH
+  43: 808 CHH
+  44: 808 CHH
+  45: CR-78CHH
+  46: Pedal HH
+  47: P.Hi-Hat
+  48: P.Hi-Hat
+  49: Half OH1
+  50: Half OH2
+  51: Open HH
+  52: O.HiHat2
+  53: O.HiHat3
+  54: O.HiHat2
+  55: 909 OHH
+  56: 707 OHH
+  57: 606 OHH
+  58: 808 OHH
+  59: 808 OHH
+  60: CR-78OHH
+  61: CrshCym1
+  62: CrshCym2
+  63: CrshCym3
+  64: B.Crash
+  65: HardCrsh
+  66: 909 Crsh
+  67: 808 Crsh
+  68: M.Crash1
+  69: M.Crash2
+  70: r.Cymbl1
+  71: r.Cymbl2
+  72: r.Cymbl3
+  73: r.909 Cr
+  74: SplshCym
+  75: SplshCym
+  76: RideBell
+  77: B.Ride B
+  78: RideCym1
+  79: RideCym2
+  80: B.RidCym
+  81: RideIN L
+  82: RideIN M
+  83: RideIN H
+  84: RdeEdgeL
+  85: RdeEdgeM
+  86: RdeEdgeH
+  87: 606 Ride
+  88: 808 Ride
+  89: Chin.Cym
+  90: ChinCym2
+  91: HandClap
+  92: H.Clap2
+  93: HandClap
+  94: HandClap
+  95: H.Clap2
+  96: 707 Clap
+sc8850_8850Map_55_0_4:
+  36: KendngWd
+  37: KendngLn
+  38: Bebarngn
+  39: Pelegngn
+  40: Kelontuk
+  41: KelntkMt
+  42: KelntkSd
+  43: GongWadn
+  44: GongLang
+  45: CengCeng
+  46: KopyakOp
+  47: KopyakMt
+  48: Kajar
+  49: Kempur
+  50: Jegogan
+  51: Jegogan
+  52: Jegogan
+  53: Jegogan
+  54: Jegogan
+  55: Jublag
+  56: Jublag
+  57: Jublag
+  58: Jublag
+  59: Jublag
+  60: Penyacah
+  61: Penyacah
+  62: Penyacah
+  63: Penyacah
+  64: Penyacah
+  65: Penyacah
+  66: Penyacah
+  67: Pemade
+  68: Pemade
+  69: Pemade
+  70: Pemade
+  71: Pemade
+  72: Pemade
+  73: Pemade
+  74: Pemade
+  75: Pemade
+  76: Pemade
+  77: Reyong
+  78: Reyong
+  79: Reyong
+  80: Reyong
+  81: Reyong
+  82: Reyong
+  83: Reyong
+  84: Reyong
+  85: Reyong
+  86: Reyong
+  87: Reyong
+  88: Reyong
+sc8850_8850Map_56_0_4:
+  36: KendngWd
+  37: KendngLn
+  38: Bebarngn
+  39: Pelegngn
+  40: Kelontuk
+  41: KelntkMt
+  42: KelntkSd
+  43: GongWadn
+  44: GongLang
+  45: CengCeng
+  46: KopyakOp
+  47: KopyakMt
+  48: Kajar
+  49: Kempur
+  50: Jegogan
+  51: Jegogan
+  52: Jegogan
+  53: Jegogan
+  54: Jegogan
+  55: Jublag
+  56: Jublag
+  57: Jublag
+  58: Jublag
+  59: Jublag
+  60: Penyacah
+  61: Penyacah
+  62: Penyacah
+  63: Penyacah
+  64: Penyacah
+  65: Penyacah
+  66: Penyacah
+  67: Pemade
+  68: Pemade
+  69: Pemade
+  70: Pemade
+  71: Pemade
+  72: Pemade
+  73: Pemade
+  74: Pemade
+  75: Pemade
+  76: Pemade
+  77: Reyong
+  78: Reyong
+  79: Reyong
+  80: Reyong
+  81: Reyong
+  82: Reyong
+  83: Reyong
+  84: Reyong
+  85: Reyong
+  86: Reyong
+  87: Reyong
+  88: Reyong
+sc8850_8850Map_57_0_4:
+  21: MC Beep1
+  22: MC Beep2
+  23: Gt.Slide
+  24: Gt.Wah
+  25: Gt.Slap
+  26: Stroke D
+  27: Stroke U
+  28: Biwa FX
+  29: Phono Nz
+  30: Tape Rew
+  31: Sc.Push2
+  32: Sc.Pull2
+  33: CutN2.U
+  34: CutN2.D
+  35: D.CutN.U
+  36: D.CutN.D
+  37: Bs.Slide
+  38: Pk.Scrap
+  39: High Q
+  40: Slap
+  41: Scr.Push
+  42: Scr.Pull
+  43: Sticks
+  44: Sq.Click
+  45: Mt.Click
+  46: Mt.Bell
+  47: FretNoiz
+  48: CutNoizU
+  49: CutNoizD
+  50: Str.Slap
+  51: KeyClick
+  52: Laughing
+  53: Scream
+  54: Punch
+  55: HeartBt.
+  56: Ft.step1
+  57: Ft.step2
+  58: Applause
+  59: Creaking
+  60: Door
+  61: Scratch
+  62: Windchim
+  63: CarEngin
+  64: Car-Stop
+  65: Car-Pass
+  66: CarCrash
+  67: Siren
+  68: Train
+  69: Jetplane
+  70: Helcpter
+  71: Starship
+  72: Gun Shot
+  73: MachnGun
+  74: Lasergun
+  75: Explsion
+  76: Dog
+  77: Gallop
+  78: Birds
+  79: Rain
+  80: Thunder
+  81: Wind
+  82: Seashore
+  83: Stream
+  84: Bubble
+  85: Kitty
+  86: Bird 2
+  87: Growl
+  88: Applaus2
+  89: Telphon1
+  90: Telphon2
+  91: SmlClub1
+  92: SmlClub2
+  93: ApplWave
+  94: Eruption
+  95: Big Shot
+  96: PercBang

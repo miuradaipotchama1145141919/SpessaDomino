@@ -1,0 +1,19 @@
+type: ccm
+id: 504
+name: Bank Select MSB
+sync: Last
+value:
+  default: 0
+  max: 127
+gate:
+  default: 1
+  min: 1
+  max: 64
+  offset: -1
+  name: Part No.
+memo: Alias of CC0.
+sysex:
+  profile: xg
+  address: '08H #GL 01H'
+  payload: '#VL'
+color: 0050D0

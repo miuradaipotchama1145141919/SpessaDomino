@@ -1,0 +1,108 @@
+- pc: 33
+  name: Acoustic Bs
+  banks:
+  - name: Acoustic Bs
+    msb: 0
+    lsb: 1
+  - name: Choir Aahs
+    msb: 126
+    lsb: 1
+  - name: Fantasy
+    msb: 127
+    lsb: 1
+- pc: 34
+  name: Fingered Bs
+  banks:
+  - name: Fingered Bs
+    msb: 0
+    lsb: 1
+  - name: SlowStrings
+    msb: 126
+    lsb: 1
+  - name: Harmo Pan
+    msb: 127
+    lsb: 1
+- pc: 35
+  name: Picked Bass
+  banks:
+  - name: Picked Bass
+    msb: 0
+    lsb: 1
+  - name: Strings
+    msb: 126
+    lsb: 1
+  - name: Chorale
+    msb: 127
+    lsb: 1
+- pc: 36
+  name: Fretless Bs
+  banks:
+  - name: Fretless Bs
+    msb: 0
+    lsb: 1
+  - name: SynStrings3
+    msb: 126
+    lsb: 1
+  - name: Glasses
+    msb: 127
+    lsb: 1
+- pc: 37
+  name: Slap Bass 1
+  banks:
+  - name: Slap Bass 1
+    msb: 0
+    lsb: 1
+  - name: SynStrings3
+    msb: 126
+    lsb: 1
+  - name: Soundtrack
+    msb: 127
+    lsb: 1
+- pc: 38
+  name: Slap Bass 2
+  banks:
+  - name: Slap Bass 2
+    msb: 0
+    lsb: 1
+  - name: Organ 1
+    msb: 126
+    lsb: 1
+  - name: Atmosphere
+    msb: 127
+    lsb: 1
+- pc: 39
+  name: Syn.Bass 1
+  banks:
+  - name: Syn.Bass 1
+    msb: 0
+    lsb: 1
+  - name: Syn.Bass101
+    msb: 1
+    lsb: 1
+  - name: Syn.Bass 3
+    msb: 8
+    lsb: 1
+  - name: Organ 1
+    msb: 126
+    lsb: 1
+  - name: Warm Bell
+    msb: 127
+    lsb: 1
+- pc: 40
+  name: Syn.Bass 2
+  banks:
+  - name: Syn.Bass 2
+    msb: 0
+    lsb: 1
+  - name: Syn.Bass 4
+    msb: 8
+    lsb: 1
+  - name: Rubber Bass
+    msb: 16
+    lsb: 1
+  - name: Organ 1
+    msb: 126
+    lsb: 1
+  - name: Funny Vox
+    msb: 127
+    lsb: 1

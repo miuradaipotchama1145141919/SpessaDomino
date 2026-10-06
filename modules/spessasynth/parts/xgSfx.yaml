@@ -1,0 +1,11 @@
+name: XG SFX Voice Bank (MSB 64, LSB 0)
+programs:
+  - for: voice
+    in: {include: gmNames.yaml}
+    do:
+      pc: "{index + 1}"
+      name: "{voice}"
+      banks:
+        - name: "{voice}"
+          msb: 64
+          lsb: 0

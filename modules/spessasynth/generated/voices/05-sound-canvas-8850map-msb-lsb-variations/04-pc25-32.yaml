@@ -1,0 +1,240 @@
+- pc: 25
+  name: Nylon-str.Gt
+  banks:
+  - name: Nylon-str.Gt
+    msb: 0
+    lsb: 4
+  - name: Ukulele
+    msb: 8
+    lsb: 4
+  - name: Nylon Gt.o
+    msb: 16
+    lsb: 4
+  - name: Velo Harmnix
+    msb: 24
+    lsb: 4
+  - name: Nylon Gt.2
+    msb: 32
+    lsb: 4
+  - name: Lequint Gt.
+    msb: 40
+    lsb: 4
+- pc: 26
+  name: Steel-str.Gt
+  banks:
+  - name: Steel-str.Gt
+    msb: 0
+    lsb: 4
+  - name: 12-str.Gt
+    msb: 8
+    lsb: 4
+  - name: Nylon+Steel
+    msb: 9
+    lsb: 4
+  - name: Atk Steel Gt
+    msb: 10
+    lsb: 4
+  - name: Mandolin
+    msb: 16
+    lsb: 4
+  - name: Mandolin 2
+    msb: 17
+    lsb: 4
+  - name: MandolinTrem
+    msb: 18
+    lsb: 4
+  - name: Steel Gt.2
+    msb: 32
+    lsb: 4
+  - name: Steel + Body
+    msb: 33
+    lsb: 4
+- pc: 27
+  name: Jazz Gt.
+  banks:
+  - name: Jazz Gt.
+    msb: 0
+    lsb: 4
+  - name: Mellow Gt.
+    msb: 1
+    lsb: 4
+  - name: Pedal Steel
+    msb: 8
+    lsb: 4
+- pc: 28
+  name: Clean Gt.
+  banks:
+  - name: Clean Gt.
+    msb: 0
+    lsb: 4
+  - name: Clean Half
+    msb: 1
+    lsb: 4
+  - name: Open Hard 1
+    msb: 2
+    lsb: 4
+  - name: Open Hard 2
+    msb: 3
+    lsb: 4
+  - name: JC Clean Gt.
+    msb: 4
+    lsb: 4
+  - name: Atk CleanGt.
+    msb: 5
+    lsb: 4
+  - name: Chorus Gt.
+    msb: 8
+    lsb: 4
+  - name: JC Chorus Gt
+    msb: 9
+    lsb: 4
+  - name: TC FrontPick
+    msb: 16
+    lsb: 4
+  - name: TC Rear Pick
+    msb: 17
+    lsb: 4
+  - name: TC Clean ff
+    msb: 18
+    lsb: 4
+  - name: 'TC Clean 2:'
+    msb: 19
+    lsb: 4
+  - name: LP Rear Pick
+    msb: 20
+    lsb: 4
+  - name: LP Rear 2
+    msb: 21
+    lsb: 4
+  - name: LP RearAtack
+    msb: 22
+    lsb: 4
+  - name: Mid Tone GTR
+    msb: 23
+    lsb: 4
+  - name: Chung Ruan
+    msb: 24
+    lsb: 4
+  - name: Chung Ruan 2
+    msb: 25
+    lsb: 4
+- pc: 29
+  name: Muted Gt.
+  banks:
+  - name: Muted Gt.
+    msb: 0
+    lsb: 4
+  - name: Muted Dis.Gt
+    msb: 1
+    lsb: 4
+  - name: TC Muted Gt.
+    msb: 2
+    lsb: 4
+  - name: Funk Pop
+    msb: 8
+    lsb: 4
+  - name: Funk Gt.2
+    msb: 16
+    lsb: 4
+  - name: Jazz Man
+    msb: 24
+    lsb: 4
+- pc: 30
+  name: Overdrive Gt
+  banks:
+  - name: Overdrive Gt
+    msb: 0
+    lsb: 4
+  - name: Overdrive 2
+    msb: 1
+    lsb: 4
+  - name: Overdrive 3
+    msb: 2
+    lsb: 4
+  - name: More Drive
+    msb: 3
+    lsb: 4
+  - name: Guitar Pinch
+    msb: 4
+    lsb: 4
+  - name: Attack Drive
+    msb: 5
+    lsb: 4
+  - name: LP OverDrvGt
+    msb: 8
+    lsb: 4
+  - name: 'LP OverDrv:'
+    msb: 9
+    lsb: 4
+  - name: LP Half Drv
+    msb: 10
+    lsb: 4
+  - name: LP Half Drv2
+    msb: 11
+    lsb: 4
+  - name: LP Chorus
+    msb: 12
+    lsb: 4
+- pc: 31
+  name: DistortionGt
+  banks:
+  - name: DistortionGt
+    msb: 0
+    lsb: 4
+  - name: 'Dist. Gt2 :'
+    msb: 1
+    lsb: 4
+  - name: Dazed Guitar
+    msb: 2
+    lsb: 4
+  - name: 'Distortion:'
+    msb: 3
+    lsb: 4
+  - name: 'Dist.Fast :'
+    msb: 4
+    lsb: 4
+  - name: Attack Dist
+    msb: 5
+    lsb: 4
+  - name: Feedback Gt.
+    msb: 8
+    lsb: 4
+  - name: Feedback Gt2
+    msb: 9
+    lsb: 4
+  - name: Power Guitar
+    msb: 16
+    lsb: 4
+  - name: Power Gt.2
+    msb: 17
+    lsb: 4
+  - name: 5th Dist.
+    msb: 18
+    lsb: 4
+  - name: Rock Rhythm
+    msb: 24
+    lsb: 4
+  - name: Rock Rhythm2
+    msb: 25
+    lsb: 4
+  - name: Dist Rtm GTR
+    msb: 26
+    lsb: 4
+- pc: 32
+  name: Gt.Harmonics
+  banks:
+  - name: Gt.Harmonics
+    msb: 0
+    lsb: 4
+  - name: Gt. Feedback
+    msb: 8
+    lsb: 4
+  - name: Gt.Feedback2
+    msb: 9
+    lsb: 4
+  - name: Ac.Gt.Harmnx
+    msb: 16
+    lsb: 4
+  - name: E.Bass Harm.
+    msb: 24
+    lsb: 4

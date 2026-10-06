@@ -1,0 +1,120 @@
+- pc: 65
+  name: SprnoSax
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: VgSprnSx
+    msb: 0
+    lsb: 8
+  - name: Mdtation
+    msb: 0
+    lsb: 64
+  - name: MdtatnRs
+    msb: 0
+    lsb: 65
+- pc: 66
+  name: Alto Sax
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: ASax Lgt
+    msb: 0
+    lsb: 18
+  - name: Sax Sect
+    msb: 0
+    lsb: 40
+  - name: HyprAlto
+    msb: 0
+    lsb: 43
+  - name: ASaxPwrd
+    msb: 0
+    lsb: 64
+  - name: FakeAlto
+    msb: 0
+    lsb: 65
+  - name: FakeAlt+
+    msb: 0
+    lsb: 66
+  - name: FakeAltD
+    msb: 0
+    lsb: 67
+  - name: AltoSax#
+    msb: 0
+    lsb: 126
+- pc: 67
+  name: TenorSax
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: BrthTnSx
+    msb: 0
+    lsb: 40
+  - name: SoftTenr
+    msb: 0
+    lsb: 41
+  - name: TnrSax 2
+    msb: 0
+    lsb: 64
+  - name: SprTenor
+    msb: 0
+    lsb: 65
+  - name: SprTnr +
+    msb: 0
+    lsb: 66
+  - name: SprTnrSt
+    msb: 0
+    lsb: 67
+  - name: Tnr&Alto
+    msb: 0
+    lsb: 68
+- pc: 68
+  name: Bari.Sax
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+- pc: 69
+  name: Oboe
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: Heinz
+    msb: 0
+    lsb: 64
+  - name: HeinzUni
+    msb: 0
+    lsb: 65
+  - name: Oboe Exp
+    msb: 0
+    lsb: 66
+  - name: 'Oboe #'
+    msb: 0
+    lsb: 126
+- pc: 70
+  name: Eng.Horn
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+- pc: 71
+  name: Bassoon
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+- pc: 72
+  name: Clarinet
+  banks:
+  - name: MU Basic
+    msb: 0
+    lsb: 0
+  - name: Syn&Clr
+    msb: 0
+    lsb: 40
+  - name: BassClar
+    msb: 0
+    lsb: 96

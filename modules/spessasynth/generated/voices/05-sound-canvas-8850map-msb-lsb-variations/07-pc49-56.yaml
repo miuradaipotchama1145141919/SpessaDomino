@@ -1,0 +1,426 @@
+- pc: 49
+  name: Strings
+  banks:
+  - name: Strings
+    msb: 0
+    lsb: 4
+  - name: 'Bright Str:'
+    msb: 1
+    lsb: 4
+  - name: ChamberStr
+    msb: 2
+    lsb: 4
+  - name: Cello sect.
+    msb: 3
+    lsb: 4
+  - name: Bright Str.2
+    msb: 4
+    lsb: 4
+  - name: Bright Str.3
+    msb: 5
+    lsb: 4
+  - name: Quad Strings
+    msb: 6
+    lsb: 4
+  - name: Mild Strings
+    msb: 7
+    lsb: 4
+  - name: Orchestra
+    msb: 8
+    lsb: 4
+  - name: Orchestra 2
+    msb: 9
+    lsb: 4
+  - name: Tremolo Orch
+    msb: 10
+    lsb: 4
+  - name: Choir Str.
+    msb: 11
+    lsb: 4
+  - name: Strings+Horn
+    msb: 12
+    lsb: 4
+  - name: Str.+Flute
+    msb: 13
+    lsb: 4
+  - name: Choir Str.2
+    msb: 14
+    lsb: 4
+  - name: Choir Str.3
+    msb: 15
+    lsb: 4
+  - name: St. Strings
+    msb: 16
+    lsb: 4
+  - name: St.Strings 2
+    msb: 17
+    lsb: 4
+  - name: St.Strings 3
+    msb: 18
+    lsb: 4
+  - name: Orchestra 3
+    msb: 19
+    lsb: 4
+  - name: Orchestra 4
+    msb: 20
+    lsb: 4
+  - name: Velo Strings
+    msb: 24
+    lsb: 4
+  - name: Oct Strings1
+    msb: 32
+    lsb: 4
+  - name: Oct Strings2
+    msb: 33
+    lsb: 4
+  - name: ContraBsSect
+    msb: 34
+    lsb: 4
+  - name: 60s Strings
+    msb: 40
+    lsb: 4
+- pc: 50
+  name: Slow Strings
+  banks:
+  - name: Slow Strings
+    msb: 0
+    lsb: 4
+  - name: SlowStrings2
+    msb: 1
+    lsb: 4
+  - name: SlowStrings3
+    msb: 2
+    lsb: 4
+  - name: Legato Str.
+    msb: 8
+    lsb: 4
+  - name: Warm Strings
+    msb: 9
+    lsb: 4
+  - name: St.Slow Str.
+    msb: 10
+    lsb: 4
+  - name: St.Slow Str2
+    msb: 11
+    lsb: 4
+  - name: S.Str+Choir
+    msb: 12
+    lsb: 4
+  - name: S.Str+Choir2
+    msb: 13
+    lsb: 4
+- pc: 51
+  name: Syn.Strings1
+  banks:
+  - name: Syn.Strings1
+    msb: 0
+    lsb: 4
+  - name: OB Strings
+    msb: 1
+    lsb: 4
+  - name: StackStrings
+    msb: 2
+    lsb: 4
+  - name: JP Strings
+    msb: 3
+    lsb: 4
+  - name: Chorus Str.
+    msb: 4
+    lsb: 4
+  - name: Syn.Strings3
+    msb: 8
+    lsb: 4
+  - name: Syn.Strings4
+    msb: 9
+    lsb: 4
+  - name: Syn.Strings6
+    msb: 10
+    lsb: 4
+  - name: Syn.Strings7
+    msb: 11
+    lsb: 4
+  - name: LoFi Strings
+    msb: 12
+    lsb: 4
+  - name: High Strings
+    msb: 16
+    lsb: 4
+  - name: Hybrid Str.
+    msb: 17
+    lsb: 4
+  - name: Tron Strings
+    msb: 24
+    lsb: 4
+  - name: Noiz Strings
+    msb: 25
+    lsb: 4
+- pc: 52
+  name: Syn.Strings2
+  banks:
+  - name: Syn.Strings2
+    msb: 0
+    lsb: 4
+  - name: Syn.Strings5
+    msb: 1
+    lsb: 4
+  - name: JUNO Strings
+    msb: 2
+    lsb: 4
+  - name: FilteredOrch
+    msb: 3
+    lsb: 4
+  - name: JP Saw Str.
+    msb: 4
+    lsb: 4
+  - name: Hybrid Str.2
+    msb: 5
+    lsb: 4
+  - name: DistStrings
+    msb: 6
+    lsb: 4
+  - name: JUNOFullStr.
+    msb: 7
+    lsb: 4
+  - name: Air Strings
+    msb: 8
+    lsb: 4
+  - name: Atk Syn Str.
+    msb: 9
+    lsb: 4
+  - name: StraightStr.
+    msb: 10
+    lsb: 4
+- pc: 53
+  name: Choir Aahs
+  banks:
+  - name: Choir Aahs
+    msb: 0
+    lsb: 4
+  - name: St.ChoirAahs
+    msb: 8
+    lsb: 4
+  - name: Melted Choir
+    msb: 9
+    lsb: 4
+  - name: Church Choir
+    msb: 10
+    lsb: 4
+  - name: Boys Choir 1
+    msb: 11
+    lsb: 4
+  - name: Boys Choir 2
+    msb: 12
+    lsb: 4
+  - name: St.BoysChoir
+    msb: 13
+    lsb: 4
+  - name: Rich Choir
+    msb: 14
+    lsb: 4
+  - name: Choir Hahs
+    msb: 16
+    lsb: 4
+  - name: Chorus Lahs
+    msb: 24
+    lsb: 4
+  - name: Chorus Aahs
+    msb: 32
+    lsb: 4
+  - name: Male Aah+Str
+    msb: 33
+    lsb: 4
+- pc: 54
+  name: Voice Oohs
+  banks:
+  - name: Voice Oohs
+    msb: 0
+    lsb: 4
+  - name: Chorus Oohs
+    msb: 1
+    lsb: 4
+  - name: Voice Oohs 2
+    msb: 2
+    lsb: 4
+  - name: Chorus Oohs2
+    msb: 3
+    lsb: 4
+  - name: OohsCodeMaj7
+    msb: 4
+    lsb: 4
+  - name: OohsCodeSus4
+    msb: 5
+    lsb: 4
+  - name: Jazz Scat
+    msb: 6
+    lsb: 4
+  - name: Voice Dahs
+    msb: 8
+    lsb: 4
+  - name: JzVoice Dat
+    msb: 9
+    lsb: 4
+  - name: JzVoice Bap
+    msb: 10
+    lsb: 4
+  - name: JzVoice Dow
+    msb: 11
+    lsb: 4
+  - name: JzVoice Thum
+    msb: 12
+    lsb: 4
+  - name: VoiceLah Fem
+    msb: 16
+    lsb: 4
+  - name: ChorusLahFem
+    msb: 17
+    lsb: 4
+  - name: VoiceLuh Fem
+    msb: 18
+    lsb: 4
+  - name: ChorusLuhFem
+    msb: 19
+    lsb: 4
+  - name: VoiceLan Fem
+    msb: 20
+    lsb: 4
+  - name: ChorusLanFem
+    msb: 21
+    lsb: 4
+  - name: VoiceAah Fem
+    msb: 22
+    lsb: 4
+  - name: VoiceUuh Fem
+    msb: 23
+    lsb: 4
+  - name: Fem Lah&Lan
+    msb: 24
+    lsb: 4
+  - name: VoiceWah Mal
+    msb: 32
+    lsb: 4
+  - name: ChorusWahMal
+    msb: 33
+    lsb: 4
+  - name: VoiceWoh Mal
+    msb: 34
+    lsb: 4
+  - name: ChorusWohMal
+    msb: 35
+    lsb: 4
+  - name: VoiceAah Mal
+    msb: 36
+    lsb: 4
+  - name: VoiceOoh Mal
+    msb: 37
+    lsb: 4
+  - name: Humming
+    msb: 40
+    lsb: 4
+- pc: 55
+  name: SynVox
+  banks:
+  - name: SynVox
+    msb: 0
+    lsb: 4
+  - name: SynVox 2
+    msb: 1
+    lsb: 4
+  - name: SynVox 3
+    msb: 2
+    lsb: 4
+  - name: Syn.Voice
+    msb: 8
+    lsb: 4
+  - name: Silent Night
+    msb: 9
+    lsb: 4
+  - name: Syn.Voice 2
+    msb: 10
+    lsb: 4
+  - name: VP330 Choir
+    msb: 16
+    lsb: 4
+  - name: Vinyl Choir
+    msb: 17
+    lsb: 4
+  - name: JX8P Vox
+    msb: 18
+    lsb: 4
+  - name: Analog Voice
+    msb: 19
+    lsb: 4
+- pc: 56
+  name: OrchestraHit
+  banks:
+  - name: OrchestraHit
+    msb: 0
+    lsb: 4
+  - name: Bass Hit
+    msb: 1
+    lsb: 4
+  - name: 6th Hit
+    msb: 2
+    lsb: 4
+  - name: Euro Hit
+    msb: 3
+    lsb: 4
+  - name: Impact Hit
+    msb: 8
+    lsb: 4
+  - name: Philly Hit
+    msb: 9
+    lsb: 4
+  - name: Double Hit
+    msb: 10
+    lsb: 4
+  - name: Perc. Hit
+    msb: 11
+    lsb: 4
+  - name: Shock Wave
+    msb: 12
+    lsb: 4
+  - name: Bounce Hit
+    msb: 13
+    lsb: 4
+  - name: Drill Hit
+    msb: 14
+    lsb: 4
+  - name: Thrill Hit
+    msb: 15
+    lsb: 4
+  - name: Lo Fi Rave
+    msb: 16
+    lsb: 4
+  - name: Techno Hit
+    msb: 17
+    lsb: 4
+  - name: Dist. Hit
+    msb: 18
+    lsb: 4
+  - name: Bam Hit
+    msb: 19
+    lsb: 4
+  - name: Bit Hit
+    msb: 20
+    lsb: 4
+  - name: Bim Hit
+    msb: 21
+    lsb: 4
+  - name: Technorg Hit
+    msb: 22
+    lsb: 4
+  - name: Rave Hit
+    msb: 23
+    lsb: 4
+  - name: Strings Hit
+    msb: 24
+    lsb: 4
+  - name: Stack Hit
+    msb: 25
+    lsb: 4
+  - name: Industry Hit
+    msb: 26
+    lsb: 4
+  - name: Clap Hit
+    msb: 27
+    lsb: 4

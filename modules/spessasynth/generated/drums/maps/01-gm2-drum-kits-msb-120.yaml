@@ -1,0 +1,65 @@
+name: GM2 Drum Kits (MSB 120)
+programs:
+- pc: 1
+  name: Standard Kit
+  banks:
+  - name: Standard Kit
+    msb: 120
+    lsb: 0
+    toneSet: gm2
+- pc: 9
+  name: Room Kit
+  banks:
+  - name: Room Kit
+    msb: 120
+    lsb: 0
+    toneSet: gm2_alt
+- pc: 17
+  name: Power Kit
+  banks:
+  - name: Power Kit
+    msb: 120
+    lsb: 0
+    toneSet: gm2
+- pc: 25
+  name: Electric Kit
+  banks:
+  - name: Electric Kit
+    msb: 120
+    lsb: 0
+    toneSet: gm2_alt
+- pc: 26
+  name: Analog Kit
+  banks:
+  - name: Analog Kit
+    msb: 120
+    lsb: 0
+    toneSet: gm2
+- pc: 33
+  name: Jazz Kit
+  banks:
+  - name: Jazz Kit
+    msb: 120
+    lsb: 0
+    toneSet: gm2_alt
+- pc: 41
+  name: Brush Kit
+  banks:
+  - name: Brush Kit
+    msb: 120
+    lsb: 0
+    toneSet: gm2
+- pc: 49
+  name: Orchestra Kit
+  banks:
+  - name: Orchestra Kit
+    msb: 120
+    lsb: 0
+    toneSet: gm2_alt
+- pc: 57
+  name: SFX Kit
+  banks:
+  - name: SFX Kit
+    msb: 120
+    lsb: 0
+    toneSet: gm2

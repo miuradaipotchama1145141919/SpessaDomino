@@ -1,0 +1,12 @@
+type: ccm
+id: 358
+name: Velocity Sense Offset
+sync: Last
+value:
+  default: 64
+  max: 127
+sysex:
+  profile: gs
+  address: '40H #1RCH 1BH'
+  payload: '#VL'
+color: '707070'

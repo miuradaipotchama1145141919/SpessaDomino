@@ -1,0 +1,276 @@
+- pc: 57
+  name: Trumpet
+  banks:
+  - name: Trumpet
+    msb: 0
+    lsb: 4
+  - name: Trumpet 2
+    msb: 1
+    lsb: 4
+  - name: 'Trumpet   :'
+    msb: 2
+    lsb: 4
+  - name: Dark Trumpet
+    msb: 3
+    lsb: 4
+  - name: Trumpet & Nz
+    msb: 4
+    lsb: 4
+  - name: Flugel Horn
+    msb: 8
+    lsb: 4
+  - name: 4th Trumpets
+    msb: 16
+    lsb: 4
+  - name: Bright Tp.
+    msb: 24
+    lsb: 4
+  - name: Warm Tp.
+    msb: 25
+    lsb: 4
+  - name: Warm Tp.2
+    msb: 26
+    lsb: 4
+  - name: Twin Tp.
+    msb: 27
+    lsb: 4
+  - name: Syn. Trumpet
+    msb: 32
+    lsb: 4
+- pc: 58
+  name: Trombone
+  banks:
+  - name: Trombone
+    msb: 0
+    lsb: 4
+  - name: Trombone 2
+    msb: 1
+    lsb: 4
+  - name: Twin bones
+    msb: 2
+    lsb: 4
+  - name: Bones & Tuba
+    msb: 3
+    lsb: 4
+  - name: Bright Tb
+    msb: 4
+    lsb: 4
+  - name: Bs. Trombone
+    msb: 8
+    lsb: 4
+  - name: Euphonium
+    msb: 16
+    lsb: 4
+- pc: 59
+  name: Tuba
+  banks:
+  - name: Tuba
+    msb: 0
+    lsb: 4
+  - name: Tuba 2
+    msb: 1
+    lsb: 4
+  - name: Tuba + Horn
+    msb: 8
+    lsb: 4
+- pc: 60
+  name: MutedTrumpet
+  banks:
+  - name: MutedTrumpet
+    msb: 0
+    lsb: 4
+  - name: Cup Mute Tp
+    msb: 1
+    lsb: 4
+  - name: MuteTrumpet2
+    msb: 2
+    lsb: 4
+  - name: MuteTrumpet3
+    msb: 3
+    lsb: 4
+  - name: Muted Horns
+    msb: 8
+    lsb: 4
+- pc: 61
+  name: French Horns
+  banks:
+  - name: French Horns
+    msb: 0
+    lsb: 4
+  - name: Fr.Horn 2
+    msb: 1
+    lsb: 4
+  - name: Horn + Orche
+    msb: 2
+    lsb: 4
+  - name: Wide FreHrns
+    msb: 3
+    lsb: 4
+  - name: 'F.Hrn Slow:'
+    msb: 8
+    lsb: 4
+  - name: Dual Horns
+    msb: 9
+    lsb: 4
+  - name: Synth Horn
+    msb: 16
+    lsb: 4
+  - name: F.Horn Rip
+    msb: 24
+    lsb: 4
+- pc: 62
+  name: Brass 1
+  banks:
+  - name: Brass 1
+    msb: 0
+    lsb: 4
+  - name: Brass ff
+    msb: 1
+    lsb: 4
+  - name: Bones Sect.
+    msb: 2
+    lsb: 4
+  - name: St. Brass ff
+    msb: 3
+    lsb: 4
+  - name: Quad Brass1
+    msb: 4
+    lsb: 4
+  - name: Quad Brass2
+    msb: 5
+    lsb: 4
+  - name: Brass 2
+    msb: 8
+    lsb: 4
+  - name: Brass 3
+    msb: 9
+    lsb: 4
+  - name: Brass sfz
+    msb: 10
+    lsb: 4
+  - name: Brass sfz 2
+    msb: 12
+    lsb: 4
+  - name: FatPop Brass
+    msb: 14
+    lsb: 4
+  - name: Brass Fall
+    msb: 16
+    lsb: 4
+  - name: Trumpet Fall
+    msb: 17
+    lsb: 4
+  - name: Octave Brass
+    msb: 24
+    lsb: 4
+  - name: Brass + Reed
+    msb: 25
+    lsb: 4
+  - name: Fat + Reed
+    msb: 26
+    lsb: 4
+  - name: Orch Brass
+    msb: 32
+    lsb: 4
+  - name: Orch Brass 2
+    msb: 33
+    lsb: 4
+  - name: St.FatPopBrs
+    msb: 35
+    lsb: 4
+  - name: St.Orch Brs
+    msb: 36
+    lsb: 4
+  - name: St.Orch Brs2
+    msb: 37
+    lsb: 4
+  - name: St.Orch Brs3
+    msb: 38
+    lsb: 4
+- pc: 63
+  name: Synth Brass1
+  banks:
+  - name: Synth Brass1
+    msb: 0
+    lsb: 4
+  - name: JUNO Brass
+    msb: 1
+    lsb: 4
+  - name: Stack Brass
+    msb: 2
+    lsb: 4
+  - name: SH-5 Brass
+    msb: 3
+    lsb: 4
+  - name: MKS Brass
+    msb: 4
+    lsb: 4
+  - name: Jump Brass
+    msb: 5
+    lsb: 4
+  - name: Pro Brass
+    msb: 8
+    lsb: 4
+  - name: P5 Brass
+    msb: 9
+    lsb: 4
+  - name: OrchSynBrass
+    msb: 10
+    lsb: 4
+  - name: Oct SynBrass
+    msb: 16
+    lsb: 4
+  - name: Hybrid Brass
+    msb: 17
+    lsb: 4
+  - name: OctSynBrass2
+    msb: 18
+    lsb: 4
+  - name: BPF Brass
+    msb: 19
+    lsb: 4
+- pc: 64
+  name: Synth Brass2
+  banks:
+  - name: Synth Brass2
+    msb: 0
+    lsb: 4
+  - name: Soft Brass
+    msb: 1
+    lsb: 4
+  - name: Warm Brass
+    msb: 2
+    lsb: 4
+  - name: Synth Brass3
+    msb: 3
+    lsb: 4
+  - name: Sync Brass
+    msb: 4
+    lsb: 4
+  - name: Fat SynBrass
+    msb: 5
+    lsb: 4
+  - name: DeepSynBrass
+    msb: 6
+    lsb: 4
+  - name: SynBrass sfz
+    msb: 8
+    lsb: 4
+  - name: OB Brass
+    msb: 9
+    lsb: 4
+  - name: Reso Brass
+    msb: 10
+    lsb: 4
+  - name: DistSqrBrass
+    msb: 11
+    lsb: 4
+  - name: JP8000SawBrs
+    msb: 12
+    lsb: 4
+  - name: Velo Brass 1
+    msb: 16
+    lsb: 4
+  - name: Transbrass
+    msb: 17
+    lsb: 4

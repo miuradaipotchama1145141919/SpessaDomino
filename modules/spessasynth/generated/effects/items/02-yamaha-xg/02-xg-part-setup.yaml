@@ -1,0 +1,4 @@
+type: folder
+name: XG Part Setup
+items:
+- include: 02-xg-part-setup/*.yaml

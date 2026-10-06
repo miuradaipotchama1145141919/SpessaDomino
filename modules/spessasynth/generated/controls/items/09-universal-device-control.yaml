@@ -1,0 +1,46 @@
+type: folder
+name: Universal Device Control
+items:
+- type: ccm
+  id: 170
+  name: Master Volume
+  value:
+    default: 16383
+    min: 0
+    max: 16383
+    name: 14 bit
+  data: '@SYSEX F0H 7FH 7FH 04H 01H #VL #VH F7H'
+  color: '900000'
+- type: ccm
+  id: 171
+  name: Master Balance
+  value:
+    default: 8192
+    min: 0
+    max: 16383
+    name: 14 bit
+  memo: 8192 is center.
+  data: '@SYSEX F0H 7FH 7FH 04H 02H #VL #VH F7H'
+  color: '900000'
+- type: ccm
+  id: 172
+  name: Master Fine Tuning
+  value:
+    default: 0
+    min: -8192
+    max: 8191
+    offset: 8192
+    name: 100/8192 cents
+  data: '@SYSEX F0H 7FH 7FH 04H 03H #VL #VH F7H'
+  color: '900000'
+- type: ccm
+  id: 173
+  name: Master Coarse Tuning
+  value:
+    default: 0
+    min: -64
+    max: 63
+    offset: 64
+    name: Semitones
+  data: '@SYSEX F0H 7FH 7FH 04H 04H 00H #VL F7H'
+  color: '900000'

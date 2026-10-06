@@ -1,0 +1,75 @@
+- pc: 17
+  name: Drawbar Organ
+  banks:
+  - name: Drawbar Organ
+    msb: 121
+    lsb: 0
+  - name: Detuned Drawbar Organ
+    msb: 121
+    lsb: 1
+  - name: Italian 60's Organ
+    msb: 121
+    lsb: 2
+  - name: Drawbar Organ 2
+    msb: 121
+    lsb: 3
+- pc: 18
+  name: Percussive Organ
+  banks:
+  - name: Percussive Organ
+    msb: 121
+    lsb: 0
+  - name: Detuned Percussive Organ
+    msb: 121
+    lsb: 1
+  - name: Percussive Organ 2
+    msb: 121
+    lsb: 2
+- pc: 19
+  name: Rock Organ
+  banks:
+  - name: Rock Organ
+    msb: 121
+    lsb: 0
+- pc: 20
+  name: Church Organ
+  banks:
+  - name: Church Organ
+    msb: 121
+    lsb: 0
+  - name: Church Organ (octave mix)
+    msb: 121
+    lsb: 1
+  - name: Detuned Church Organ
+    msb: 121
+    lsb: 2
+- pc: 21
+  name: Reed Organ
+  banks:
+  - name: Reed Organ
+    msb: 121
+    lsb: 0
+  - name: Puff Organ
+    msb: 121
+    lsb: 1
+- pc: 22
+  name: Accordion
+  banks:
+  - name: Accordion
+    msb: 121
+    lsb: 0
+  - name: Accordion 2
+    msb: 121
+    lsb: 1
+- pc: 23
+  name: Harmonica
+  banks:
+  - name: Harmonica
+    msb: 121
+    lsb: 0
+- pc: 24
+  name: Tango Accordion
+  banks:
+  - name: Tango Accordion
+    msb: 121
+    lsb: 0

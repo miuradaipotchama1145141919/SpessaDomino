@@ -1,0 +1,309 @@
+- pc: 113
+  name: Tinkle Bell
+  banks:
+  - name: Tinkle Bell
+    msb: 0
+    lsb: 4
+  - name: Bonang
+    msb: 8
+    lsb: 4
+  - name: Gender
+    msb: 9
+    lsb: 4
+  - name: Gamelan Gong
+    msb: 10
+    lsb: 4
+  - name: St.Gamelan
+    msb: 11
+    lsb: 4
+  - name: Jang Gu
+    msb: 12
+    lsb: 4
+  - name: Jegogan
+    msb: 13
+    lsb: 4
+  - name: Jublag
+    msb: 14
+    lsb: 4
+  - name: Pemade
+    msb: 15
+    lsb: 4
+  - name: RAMA Cymbal
+    msb: 16
+    lsb: 4
+  - name: Kajar
+    msb: 17
+    lsb: 4
+  - name: Kelontuk
+    msb: 18
+    lsb: 4
+  - name: Kelontuk Mt
+    msb: 19
+    lsb: 4
+  - name: Kelontuk Sid
+    msb: 20
+    lsb: 4
+  - name: Kopyak Op
+    msb: 21
+    lsb: 4
+  - name: Kopyak Mt
+    msb: 22
+    lsb: 4
+  - name: Ceng Ceng
+    msb: 23
+    lsb: 4
+  - name: Reyong
+    msb: 24
+    lsb: 4
+  - name: Kempur
+    msb: 25
+    lsb: 4
+  - name: Jngl Crash
+    msb: 32
+    lsb: 4
+  - name: Crash Menu
+    msb: 40
+    lsb: 4
+  - name: RideCym Menu
+    msb: 41
+    lsb: 4
+  - name: RideBellMenu
+    msb: 42
+    lsb: 4
+- pc: 114
+  name: Agogo
+  banks:
+  - name: Agogo
+    msb: 0
+    lsb: 4
+  - name: Atarigane
+    msb: 8
+    lsb: 4
+  - name: Tambourine
+    msb: 16
+    lsb: 4
+- pc: 115
+  name: Steel Drums
+  banks:
+  - name: Steel Drums
+    msb: 0
+    lsb: 4
+  - name: Island Mlt
+    msb: 1
+    lsb: 4
+- pc: 116
+  name: Woodblock
+  banks:
+  - name: Woodblock
+    msb: 0
+    lsb: 4
+  - name: Castanets
+    msb: 8
+    lsb: 4
+  - name: Angklung
+    msb: 16
+    lsb: 4
+  - name: Angkl Rhythm
+    msb: 17
+    lsb: 4
+  - name: Finger Snaps
+    msb: 24
+    lsb: 4
+  - name: 909 HandClap
+    msb: 32
+    lsb: 4
+  - name: HandClapMenu
+    msb: 40
+    lsb: 4
+- pc: 117
+  name: Taiko
+  banks:
+  - name: Taiko
+    msb: 0
+    lsb: 4
+  - name: Small Taiko
+    msb: 1
+    lsb: 4
+  - name: Concert BD
+    msb: 8
+    lsb: 4
+  - name: ConcertBD Mt
+    msb: 9
+    lsb: 4
+  - name: Jungle BD
+    msb: 16
+    lsb: 4
+  - name: Techno BD
+    msb: 17
+    lsb: 4
+  - name: Bounce
+    msb: 18
+    lsb: 4
+  - name: KendangWadon
+    msb: 24
+    lsb: 4
+  - name: Bebarongan
+    msb: 25
+    lsb: 4
+  - name: Pelegongan
+    msb: 26
+    lsb: 4
+  - name: Dholak 1
+    msb: 27
+    lsb: 4
+  - name: Dholak 2
+    msb: 28
+    lsb: 4
+  - name: Jngl BD Roll
+    msb: 32
+    lsb: 4
+  - name: Kick Menu 1
+    msb: 40
+    lsb: 4
+  - name: Kick Menu 2
+    msb: 41
+    lsb: 4
+  - name: Kick Menu 3
+    msb: 42
+    lsb: 4
+  - name: Kick Menu 4
+    msb: 43
+    lsb: 4
+- pc: 118
+  name: Melo. Tom 1
+  banks:
+  - name: Melo. Tom 1
+    msb: 0
+    lsb: 4
+  - name: Real Tom
+    msb: 1
+    lsb: 4
+  - name: Real Tom 2
+    msb: 2
+    lsb: 4
+  - name: Jazz Tom
+    msb: 3
+    lsb: 4
+  - name: Brush Tom
+    msb: 4
+    lsb: 4
+  - name: Melo. Tom 2
+    msb: 8
+    lsb: 4
+  - name: Rock Tom
+    msb: 9
+    lsb: 4
+  - name: Rash SD
+    msb: 16
+    lsb: 4
+  - name: House SD
+    msb: 17
+    lsb: 4
+  - name: Jungle SD
+    msb: 18
+    lsb: 4
+  - name: 909 SD
+    msb: 19
+    lsb: 4
+  - name: Jngl SD Roll
+    msb: 24
+    lsb: 4
+  - name: SD Menu 1
+    msb: 40
+    lsb: 4
+  - name: SD Menu 2
+    msb: 41
+    lsb: 4
+  - name: SD Menu 3
+    msb: 42
+    lsb: 4
+  - name: SD Menu 4
+    msb: 43
+    lsb: 4
+  - name: SD Menu 5
+    msb: 44
+    lsb: 4
+- pc: 119
+  name: Synth Drum
+  banks:
+  - name: Synth Drum
+    msb: 0
+    lsb: 4
+  - name: 808 Tom
+    msb: 8
+    lsb: 4
+  - name: Elec Perc
+    msb: 9
+    lsb: 4
+  - name: Sine Perc.
+    msb: 10
+    lsb: 4
+  - name: 606 Tom
+    msb: 11
+    lsb: 4
+  - name: 909 Tom
+    msb: 12
+    lsb: 4
+  - name: 606 Dist.Tom
+    msb: 13
+    lsb: 4
+- pc: 120
+  name: Reverse Cym.
+  banks:
+  - name: Reverse Cym.
+    msb: 0
+    lsb: 4
+  - name: Reverse Cym2
+    msb: 1
+    lsb: 4
+  - name: Reverse Cym3
+    msb: 2
+    lsb: 4
+  - name: Reverse Cym4
+    msb: 3
+    lsb: 4
+  - name: Rev.Snare 1
+    msb: 8
+    lsb: 4
+  - name: Rev.Snare 2
+    msb: 9
+    lsb: 4
+  - name: Rev.Kick 1
+    msb: 16
+    lsb: 4
+  - name: Rev.ConBD
+    msb: 17
+    lsb: 4
+  - name: Rev.Tom 1
+    msb: 24
+    lsb: 4
+  - name: Rev.Tom 2
+    msb: 25
+    lsb: 4
+  - name: Rev.Tom 3
+    msb: 26
+    lsb: 4
+  - name: Rev.Tom 4
+    msb: 27
+    lsb: 4
+  - name: Rev.SD Menu1
+    msb: 40
+    lsb: 4
+  - name: Rev.SD Menu2
+    msb: 41
+    lsb: 4
+  - name: Rev.SD Menu3
+    msb: 42
+    lsb: 4
+  - name: Rev.BD Menu1
+    msb: 43
+    lsb: 4
+  - name: Rev.BD Menu2
+    msb: 44
+    lsb: 4
+  - name: Rev.BD Menu3
+    msb: 45
+    lsb: 4
+  - name: Rev.ClapMenu
+    msb: 46
+    lsb: 4

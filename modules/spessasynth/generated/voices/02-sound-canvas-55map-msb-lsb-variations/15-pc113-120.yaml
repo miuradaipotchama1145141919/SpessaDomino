@@ -1,0 +1,87 @@
+- pc: 113
+  name: Tinkle Bell
+  banks:
+  - name: Tinkle Bell
+    msb: 0
+    lsb: 1
+  - name: Timpani
+    msb: 127
+    lsb: 1
+- pc: 114
+  name: Agogo
+  banks:
+  - name: Agogo
+    msb: 0
+    lsb: 1
+  - name: Melodic Tom
+    msb: 127
+    lsb: 1
+- pc: 115
+  name: Steel Drums
+  banks:
+  - name: Steel Drums
+    msb: 0
+    lsb: 1
+  - name: Deep Snare
+    msb: 127
+    lsb: 1
+- pc: 116
+  name: Woodblock
+  banks:
+  - name: Woodblock
+    msb: 0
+    lsb: 1
+  - name: Castanets
+    msb: 8
+    lsb: 1
+  - name: Elec Perc 1
+    msb: 127
+    lsb: 1
+- pc: 117
+  name: Taiko
+  banks:
+  - name: Taiko
+    msb: 0
+    lsb: 1
+  - name: Concert BD
+    msb: 8
+    lsb: 1
+  - name: Elec Perc 2
+    msb: 127
+    lsb: 1
+- pc: 118
+  name: Melo. Tom 1
+  banks:
+  - name: Melo. Tom 1
+    msb: 0
+    lsb: 1
+  - name: Melo. Tom 2
+    msb: 8
+    lsb: 1
+  - name: Taiko
+    msb: 127
+    lsb: 1
+- pc: 119
+  name: Synth Drum
+  banks:
+  - name: Synth Drum
+    msb: 0
+    lsb: 1
+  - name: 808 Tom
+    msb: 8
+    lsb: 1
+  - name: Elec Perc
+    msb: 9
+    lsb: 1
+  - name: Taiko Rim
+    msb: 127
+    lsb: 1
+- pc: 120
+  name: Reverse Cym
+  banks:
+  - name: Reverse Cym
+    msb: 0
+    lsb: 1
+  - name: Cymbal
+    msb: 127
+    lsb: 1

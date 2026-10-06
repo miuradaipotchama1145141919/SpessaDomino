@@ -1,0 +1,4 @@
+type: folder
+name: GS Effects
+items:
+- include: 02-gs-effects/*.yaml

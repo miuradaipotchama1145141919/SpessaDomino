@@ -1,0 +1,171 @@
+- pc: 121
+  name: Gt.FretNoiz
+  banks:
+  - name: Gt.FretNoiz
+    msb: 0
+    lsb: 2
+  - name: Gt.CutNoise
+    msb: 1
+    lsb: 2
+  - name: String Slap
+    msb: 2
+    lsb: 2
+  - name: Gt.CutNz. 2
+    msb: 3
+    lsb: 2
+  - name: Dist.CutNz.
+    msb: 4
+    lsb: 2
+  - name: Bass Slide
+    msb: 5
+    lsb: 2
+  - name: Pick Scrape
+    msb: 6
+    lsb: 2
+- pc: 122
+  name: BreathNoise
+  banks:
+  - name: BreathNoise
+    msb: 0
+    lsb: 2
+  - name: Fl.KeyClick
+    msb: 1
+    lsb: 2
+- pc: 123
+  name: Seashore
+  banks:
+  - name: Seashore
+    msb: 0
+    lsb: 2
+  - name: Rain
+    msb: 1
+    lsb: 2
+  - name: Thunder
+    msb: 2
+    lsb: 2
+  - name: Wind
+    msb: 3
+    lsb: 2
+  - name: Stream
+    msb: 4
+    lsb: 2
+  - name: Bubble
+    msb: 5
+    lsb: 2
+- pc: 124
+  name: Bird
+  banks:
+  - name: Bird
+    msb: 0
+    lsb: 2
+  - name: Dog
+    msb: 1
+    lsb: 2
+  - name: HorseGallop
+    msb: 2
+    lsb: 2
+  - name: Bird 2
+    msb: 3
+    lsb: 2
+  - name: Kitty
+    msb: 4
+    lsb: 2
+  - name: Growl
+    msb: 5
+    lsb: 2
+- pc: 125
+  name: Telephone 1
+  banks:
+  - name: Telephone 1
+    msb: 0
+    lsb: 2
+  - name: Telephone 2
+    msb: 1
+    lsb: 2
+  - name: Creaking
+    msb: 2
+    lsb: 2
+  - name: Door
+    msb: 3
+    lsb: 2
+  - name: Scratch
+    msb: 4
+    lsb: 2
+  - name: Wind Chimes
+    msb: 5
+    lsb: 2
+  - name: Scratch 2
+    msb: 7
+    lsb: 2
+- pc: 126
+  name: Helicopter
+  banks:
+  - name: Helicopter
+    msb: 0
+    lsb: 2
+  - name: Car-Engine
+    msb: 1
+    lsb: 2
+  - name: Car-Stop
+    msb: 2
+    lsb: 2
+  - name: Car-Pass
+    msb: 3
+    lsb: 2
+  - name: Car-Crash
+    msb: 4
+    lsb: 2
+  - name: Siren
+    msb: 5
+    lsb: 2
+  - name: Train
+    msb: 6
+    lsb: 2
+  - name: Jetplane
+    msb: 7
+    lsb: 2
+  - name: Starship
+    msb: 8
+    lsb: 2
+  - name: Burst Noise
+    msb: 9
+    lsb: 2
+- pc: 127
+  name: Applause
+  banks:
+  - name: Applause
+    msb: 0
+    lsb: 2
+  - name: Laughing
+    msb: 1
+    lsb: 2
+  - name: Screaming
+    msb: 2
+    lsb: 2
+  - name: Punch
+    msb: 3
+    lsb: 2
+  - name: Heart Beat
+    msb: 4
+    lsb: 2
+  - name: Footsteps
+    msb: 5
+    lsb: 2
+  - name: Applause 2
+    msb: 6
+    lsb: 2
+- pc: 128
+  name: Gun Shot
+  banks:
+  - name: Gun Shot
+    msb: 0
+    lsb: 2
+  - name: Machine Gun
+    msb: 1
+    lsb: 2
+  - name: Lasergun
+    msb: 2
+    lsb: 2
+  - name: Explosion
+    msb: 3
+    lsb: 2

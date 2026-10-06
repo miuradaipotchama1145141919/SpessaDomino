@@ -1,0 +1,112 @@
+sc8850_88ProMap_58_0_3:
+  36: r.Kick 1
+  37: r.ConBD
+  38: r.Pwr K1
+  39: r.ElecK1
+  40: r.Snare1
+  41: r.Snare2
+  42: r.Std1S1
+  43: r.TightS
+  44: r.DanceS
+  45: r.808SD
+  46: r.Tom 1
+  47: r.Tom 2
+  48: r.Sticks
+  49: r.Slap
+  50: r.Cymbl1
+  51: r.Cymbl2
+  52: r.Opn HH
+  53: r.RideCy
+  54: r.78OHH
+  55: r.Cls.HH
+  56: r.Gong
+  57: r.Bltree
+  58: r.Guiro
+  59: r.Bendir
+  60: r.GunSht
+  61: r.Scrtch
+  62: r.Laser
+  63: Click
+  64: Tek.Thip
+  65: Pop Drop
+  66: WoodSlap
+  67: Dist.Kik
+  68: Syn.Drop
+  69: r.Hi-Q
+  70: Pipe
+  71: Ice Blok
+  72: DigiTmb.
+  73: Alias
+  74: Mod.Bell
+  75: Spark
+  76: Mtl.Perc
+  77: VeloNoiz
+  78: NoizClap
+  79: Swish
+  80: Slappy
+  81: Voice Ou
+  82: Voice Au
+  83: Hoo
+  84: Tape St1
+  85: Tape St2
+  86: Missile
+  87: Space Bd
+  88: FlyMonst
+sc8850_88ProMap_59_0_3:
+  36: r.707 K1
+  37: r.909 K2
+  38: r.Hip K1
+  39: r.Jgl K2
+  40: r.Tch K2
+  41: r.606 S2
+  42: r.CR78S1
+  43: r.CR78S2
+  44: r.Jgl S2
+  45: r.Tch S2
+  46: r.707 SD
+  47: r.606 S1
+  48: r.909 S1
+  49: r.Hip S2
+  50: r.Jgl S1
+  51: r.Hse SD
+  52: r.Cls.HH
+  53: r.606 CH
+  54: r.707 CH
+  55: r.808 CH
+  56: r.Jgl HH
+  57: r.Tamb 2
+  58: r.S.Tamb
+  59: r.808 OH
+  60: r.707 OH
+  61: r.Opn HH
+  62: r.606 OH
+  63: r.HY Luo
+  64: r.707 Cr
+  65: One
+  66: r.One
+  67: Two
+  68: r.Two
+  69: Three
+  70: r.Three
+  71: Tah
+  72: r.Tah
+  73: Voice Ou
+  74: Voice Au
+  75: Whey
+  76: FrogVpoc
+  77: r.Yyooh
+  78: Douby
+  79: r.Douby
+  80: Baert H
+  81: Baert L
+  82: Bounce
+  83: r.Bounce
+  84: DstKnock
+  85: Gt.Slide
+  86: SbMarine
+  87: NzAttack
+  88: SpcWorms
+  89: Emrgency
+  90: Calculat
+  91: Saw LFO
+sc8850_88ProMap_128_0_3: {}

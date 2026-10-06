@@ -1,0 +1,114 @@
+- pc: 17
+  name: Organ 1
+  banks:
+  - name: Organ 1
+    msb: 0
+    lsb: 2
+  - name: Organ 101
+    msb: 1
+    lsb: 2
+  - name: DetunedOr.1
+    msb: 8
+    lsb: 2
+  - name: Organ 109
+    msb: 9
+    lsb: 2
+  - name: 60'sOrgan 1
+    msb: 16
+    lsb: 2
+  - name: 60'sOrgan 2
+    msb: 17
+    lsb: 2
+  - name: 60'sOrgan 3
+    msb: 18
+    lsb: 2
+  - name: CheeseOrgan
+    msb: 24
+    lsb: 2
+  - name: Organ 4
+    msb: 32
+    lsb: 2
+  - name: Even Bar
+    msb: 33
+    lsb: 2
+  - name: Organ Bass
+    msb: 40
+    lsb: 2
+- pc: 18
+  name: Organ 2
+  banks:
+  - name: Organ 2
+    msb: 0
+    lsb: 2
+  - name: Organ 201
+    msb: 1
+    lsb: 2
+  - name: DetunedOr.2
+    msb: 8
+    lsb: 2
+  - name: Organ 5
+    msb: 32
+    lsb: 2
+- pc: 19
+  name: Organ 3
+  banks:
+  - name: Organ 3
+    msb: 0
+    lsb: 2
+  - name: Rotary Org.
+    msb: 8
+    lsb: 2
+  - name: RotaryOrg.S
+    msb: 16
+    lsb: 2
+  - name: RotaryOrg.F
+    msb: 24
+    lsb: 2
+- pc: 20
+  name: ChurchOrg.1
+  banks:
+  - name: ChurchOrg.1
+    msb: 0
+    lsb: 2
+  - name: ChurchOrg.2
+    msb: 8
+    lsb: 2
+  - name: ChurchOrg.3
+    msb: 16
+    lsb: 2
+  - name: Organ Flute
+    msb: 24
+    lsb: 2
+  - name: Trem.Flute
+    msb: 32
+    lsb: 2
+- pc: 21
+  name: Reed Organ
+  banks:
+  - name: Reed Organ
+    msb: 0
+    lsb: 2
+- pc: 22
+  name: AccordionFr
+  banks:
+  - name: AccordionFr
+    msb: 0
+    lsb: 2
+  - name: AccordionIt
+    msb: 8
+    lsb: 2
+- pc: 23
+  name: Harmonica
+  banks:
+  - name: Harmonica
+    msb: 0
+    lsb: 2
+  - name: Harmonica 2
+    msb: 1
+    lsb: 2
+- pc: 24
+  name: Bandoneon
+  banks:
+  - name: Bandoneon
+    msb: 0
+    lsb: 2

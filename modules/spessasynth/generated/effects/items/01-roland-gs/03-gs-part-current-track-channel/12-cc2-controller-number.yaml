@@ -1,0 +1,12 @@
+type: ccm
+id: 361
+name: CC2 Controller Number
+sync: Last
+value:
+  default: 17
+  max: 127
+sysex:
+  profile: gs
+  address: '40H #1RCH 20H'
+  payload: '#VL'
+color: '707070'

@@ -1,0 +1,153 @@
+- pc: 89
+  name: Fantasia
+  banks:
+  - name: Fantasia
+    msb: 0
+    lsb: 3
+  - name: Fantasia 2
+    msb: 1
+    lsb: 3
+  - name: New Age Pad
+    msb: 2
+    lsb: 3
+  - name: Bell Heaven
+    msb: 3
+    lsb: 3
+- pc: 90
+  name: Warm Pad
+  banks:
+  - name: Warm Pad
+    msb: 0
+    lsb: 3
+  - name: Thick Matrix
+    msb: 1
+    lsb: 3
+  - name: Horn Pad
+    msb: 2
+    lsb: 3
+  - name: Rotary Strng
+    msb: 3
+    lsb: 3
+  - name: OB Soft Pad
+    msb: 4
+    lsb: 3
+  - name: Octave Pad
+    msb: 8
+    lsb: 3
+  - name: Stack Pad
+    msb: 9
+    lsb: 3
+- pc: 91
+  name: Polysynth
+  banks:
+  - name: Polysynth
+    msb: 0
+    lsb: 3
+  - name: 80's PolySyn
+    msb: 1
+    lsb: 3
+  - name: Polysynth 2
+    msb: 2
+    lsb: 3
+  - name: Poly King
+    msb: 3
+    lsb: 3
+  - name: Power Stack
+    msb: 8
+    lsb: 3
+  - name: Octave Stack
+    msb: 9
+    lsb: 3
+  - name: Reso Stack
+    msb: 10
+    lsb: 3
+  - name: Techno Stack
+    msb: 11
+    lsb: 3
+- pc: 92
+  name: Space Voice
+  banks:
+  - name: Space Voice
+    msb: 0
+    lsb: 3
+  - name: Heaven II
+    msb: 1
+    lsb: 3
+  - name: SC Heaven
+    msb: 2
+    lsb: 3
+  - name: Cosmic Voice
+    msb: 8
+    lsb: 3
+  - name: Auh Vox
+    msb: 9
+    lsb: 3
+  - name: AuhAuh
+    msb: 10
+    lsb: 3
+  - name: Vocorderman
+    msb: 11
+    lsb: 3
+- pc: 93
+  name: Bowed Glass
+  banks:
+  - name: Bowed Glass
+    msb: 0
+    lsb: 3
+  - name: SoftBellPad
+    msb: 1
+    lsb: 3
+  - name: JP8 Sqr Pad
+    msb: 2
+    lsb: 3
+  - name: 7thBelPad
+    msb: 3
+    lsb: 3
+- pc: 94
+  name: Metal Pad
+  banks:
+  - name: Metal Pad
+    msb: 0
+    lsb: 3
+  - name: Tine Pad
+    msb: 1
+    lsb: 3
+  - name: Panner Pad
+    msb: 2
+    lsb: 3
+- pc: 95
+  name: Halo Pad
+  banks:
+  - name: Halo Pad
+    msb: 0
+    lsb: 3
+  - name: Vox Pad
+    msb: 1
+    lsb: 3
+  - name: Vox Sweep
+    msb: 2
+    lsb: 3
+  - name: Horror Pad
+    msb: 8
+    lsb: 3
+- pc: 96
+  name: Sweep Pad
+  banks:
+  - name: Sweep Pad
+    msb: 0
+    lsb: 3
+  - name: Polar Pad
+    msb: 1
+    lsb: 3
+  - name: Converge
+    msb: 8
+    lsb: 3
+  - name: Shwimmer
+    msb: 9
+    lsb: 3
+  - name: Celestial Pd
+    msb: 10
+    lsb: 3
+  - name: Bag Sweep
+    msb: 11
+    lsb: 3

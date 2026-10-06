@@ -1,0 +1,15 @@
+type: ccm
+id: 691
+name: Insertion 3 Type
+sync: Last
+value:
+  default: 8192
+  min: 0
+  max: 16383
+  tableId: 25
+memo: '[Experimental 4.4.0] Types other than NO EFFECT and THRU have no DSP in SpessaSynth 4.4.0. Unknown reverb and chorus types are silent, unknown variation and insertion types pass dry.'
+sysex:
+  profile: xg
+  address: 03H 02H 00H
+  payload: '#VH #VL'
+color: B00060
