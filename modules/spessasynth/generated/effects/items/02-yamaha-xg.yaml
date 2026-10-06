@@ -1,4 +1,0 @@
-type: folder
-name: Yamaha XG
-items:
-- include: 02-yamaha-xg/*.yaml

@@ -1,4 +1,0 @@
-type: folder
-name: GS Drum Setup
-items:
-- include: 04-gs-drum-setup/*.yaml

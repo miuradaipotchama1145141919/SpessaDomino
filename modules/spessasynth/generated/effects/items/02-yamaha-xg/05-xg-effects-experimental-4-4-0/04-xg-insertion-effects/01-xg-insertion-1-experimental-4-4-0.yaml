@@ -1,4 +1,0 @@
-type: folder
-name: XG Insertion 1 (Experimental 4.4.0)
-items:
-- include: 01-xg-insertion-1-experimental-4-4-0/*.yaml

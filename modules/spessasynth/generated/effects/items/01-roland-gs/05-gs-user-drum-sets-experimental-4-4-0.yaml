@@ -1,4 +1,0 @@
-type: folder
-name: GS User Drum Sets (Experimental 4.4.0)
-items:
-- include: 05-gs-user-drum-sets-experimental-4-4-0/*.yaml

@@ -1,4 +1,0 @@
-type: folder
-name: XG Chorus (Experimental 4.4.0)
-items:
-- include: 02-xg-chorus-experimental-4-4-0/*.yaml

@@ -1,4 +1,0 @@
-type: folder
-name: AWE32 NRPN
-items:
-- include: 07-awe32-nrpn/*.yaml

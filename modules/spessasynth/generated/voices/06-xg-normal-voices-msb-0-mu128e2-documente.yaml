@@ -1,3 +1,0 @@
-name: XG Normal Voices (MSB 0, MU128E2-documented LSB variations)
-programs:
-- include: 06-xg-normal-voices-msb-0-mu128e2-documente/*.yaml

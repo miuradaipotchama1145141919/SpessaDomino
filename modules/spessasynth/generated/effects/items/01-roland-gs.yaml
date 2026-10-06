@@ -1,4 +1,0 @@
-type: folder
-name: Roland GS
-items:
-- include: 01-roland-gs/*.yaml
