@@ -1,11 +1,332 @@
 name: XG SFX Voice Bank (MSB 64, LSB 0)
 programs:
-  - for: voice
-    in: {include: gmNames.yaml}
-    do:
-      pc: "{index + 1}"
-      name: "{voice}"
-      banks:
-        - name: "{voice}"
-          msb: 64
-          lsb: 0
+  - pc: 1
+    name: "CuttngNz"
+    banks:
+      - name: "CuttngNz"
+        msb: 64
+        lsb: 0
+  - pc: 2
+    name: "CttngNz2"
+    banks:
+      - name: "CttngNz2"
+        msb: 64
+        lsb: 0
+  - pc: 3
+    name: "DstCutNz **"
+    banks:
+      - name: "DstCutNz **"
+        msb: 64
+        lsb: 0
+  - pc: 4
+    name: "Str Slap"
+    banks:
+      - name: "Str Slap"
+        msb: 64
+        lsb: 0
+  - pc: 5
+    name: "B.Slide **"
+    banks:
+      - name: "B.Slide **"
+        msb: 64
+        lsb: 0
+  - pc: 6
+    name: "P.Scrape **"
+    banks:
+      - name: "P.Scrape **"
+        msb: 64
+        lsb: 0
+  - pc: 17
+    name: "Fl.KClik"
+    banks:
+      - name: "Fl.KClik"
+        msb: 64
+        lsb: 0
+  - pc: 33
+    name: "Shower"
+    banks:
+      - name: "Shower"
+        msb: 64
+        lsb: 0
+  - pc: 34
+    name: "Thunder"
+    banks:
+      - name: "Thunder"
+        msb: 64
+        lsb: 0
+  - pc: 35
+    name: "Wind"
+    banks:
+      - name: "Wind"
+        msb: 64
+        lsb: 0
+  - pc: 36
+    name: "Stream"
+    banks:
+      - name: "Stream"
+        msb: 64
+        lsb: 0
+  - pc: 37
+    name: "Bubble"
+    banks:
+      - name: "Bubble"
+        msb: 64
+        lsb: 0
+  - pc: 38
+    name: "Feed **"
+    banks:
+      - name: "Feed **"
+        msb: 64
+        lsb: 0
+  - pc: 39
+    name: "Cave †"
+    banks:
+      - name: "Cave †"
+        msb: 64
+        lsb: 0
+  - pc: 49
+    name: "Dog"
+    banks:
+      - name: "Dog"
+        msb: 64
+        lsb: 0
+  - pc: 50
+    name: "Horse"
+    banks:
+      - name: "Horse"
+        msb: 64
+        lsb: 0
+  - pc: 51
+    name: "Tweet 2"
+    banks:
+      - name: "Tweet 2"
+        msb: 64
+        lsb: 0
+  - pc: 52
+    name: "Kitty **"
+    banks:
+      - name: "Kitty **"
+        msb: 64
+        lsb: 0
+  - pc: 53
+    name: "Growl **"
+    banks:
+      - name: "Growl **"
+        msb: 64
+        lsb: 0
+  - pc: 54
+    name: "Haunted **"
+    banks:
+      - name: "Haunted **"
+        msb: 64
+        lsb: 0
+  - pc: 55
+    name: "Ghost"
+    banks:
+      - name: "Ghost"
+        msb: 64
+        lsb: 0
+  - pc: 56
+    name: "Maou **"
+    banks:
+      - name: "Maou **"
+        msb: 64
+        lsb: 0
+  - pc: 57
+    name: "Insects †"
+    banks:
+      - name: "Insects †"
+        msb: 64
+        lsb: 0
+  - pc: 58
+    name: "Bacteria †"
+    banks:
+      - name: "Bacteria †"
+        msb: 64
+        lsb: 0
+  - pc: 65
+    name: "PhonCall **"
+    banks:
+      - name: "PhonCall **"
+        msb: 64
+        lsb: 0
+  - pc: 66
+    name: "DoorSqek"
+    banks:
+      - name: "DoorSqek"
+        msb: 64
+        lsb: 0
+  - pc: 67
+    name: "DoorSlam"
+    banks:
+      - name: "DoorSlam"
+        msb: 64
+        lsb: 0
+  - pc: 68
+    name: "ScratchC"
+    banks:
+      - name: "ScratchC"
+        msb: 64
+        lsb: 0
+  - pc: 69
+    name: "ScratchS **"
+    banks:
+      - name: "ScratchS **"
+        msb: 64
+        lsb: 0
+  - pc: 70
+    name: "WindChim"
+    banks:
+      - name: "WindChim"
+        msb: 64
+        lsb: 0
+  - pc: 71
+    name: "Telphon2"
+    banks:
+      - name: "Telphon2"
+        msb: 64
+        lsb: 0
+  - pc: 81
+    name: "CarEIgnt"
+    banks:
+      - name: "CarEIgnt"
+        msb: 64
+        lsb: 0
+  - pc: 82
+    name: "CarTSqel"
+    banks:
+      - name: "CarTSqel"
+        msb: 64
+        lsb: 0
+  - pc: 83
+    name: "Car Pass"
+    banks:
+      - name: "Car Pass"
+        msb: 64
+        lsb: 0
+  - pc: 84
+    name: "CarCrash"
+    banks:
+      - name: "CarCrash"
+        msb: 64
+        lsb: 0
+  - pc: 85
+    name: "Siren"
+    banks:
+      - name: "Siren"
+        msb: 64
+        lsb: 0
+  - pc: 86
+    name: "Train"
+    banks:
+      - name: "Train"
+        msb: 64
+        lsb: 0
+  - pc: 87
+    name: "JetPlane"
+    banks:
+      - name: "JetPlane"
+        msb: 64
+        lsb: 0
+  - pc: 88
+    name: "Starship"
+    banks:
+      - name: "Starship"
+        msb: 64
+        lsb: 0
+  - pc: 89
+    name: "Burst"
+    banks:
+      - name: "Burst"
+        msb: 64
+        lsb: 0
+  - pc: 90
+    name: "Coaster"
+    banks:
+      - name: "Coaster"
+        msb: 64
+        lsb: 0
+  - pc: 91
+    name: "Submarin"
+    banks:
+      - name: "Submarin"
+        msb: 64
+        lsb: 0
+  - pc: 92
+    name: "Cnectvty †"
+    banks:
+      - name: "Cnectvty †"
+        msb: 64
+        lsb: 0
+  - pc: 93
+    name: "Mystery †"
+    banks:
+      - name: "Mystery †"
+        msb: 64
+        lsb: 0
+  - pc: 97
+    name: "Laugh"
+    banks:
+      - name: "Laugh"
+        msb: 64
+        lsb: 0
+  - pc: 98
+    name: "Scream"
+    banks:
+      - name: "Scream"
+        msb: 64
+        lsb: 0
+  - pc: 99
+    name: "Punch"
+    banks:
+      - name: "Punch"
+        msb: 64
+        lsb: 0
+  - pc: 100
+    name: "Heart"
+    banks:
+      - name: "Heart"
+        msb: 64
+        lsb: 0
+  - pc: 101
+    name: "Footstep"
+    banks:
+      - name: "Footstep"
+        msb: 64
+        lsb: 0
+  - pc: 102
+    name: "Applaus2 **"
+    banks:
+      - name: "Applaus2 **"
+        msb: 64
+        lsb: 0
+  - pc: 113
+    name: "MchinGun"
+    banks:
+      - name: "MchinGun"
+        msb: 64
+        lsb: 0
+  - pc: 114
+    name: "LaserGun"
+    banks:
+      - name: "LaserGun"
+        msb: 64
+        lsb: 0
+  - pc: 115
+    name: "Xplosion"
+    banks:
+      - name: "Xplosion"
+        msb: 64
+        lsb: 0
+  - pc: 116
+    name: "Firework"
+    banks:
+      - name: "Firework"
+        msb: 64
+        lsb: 0
+  - pc: 117
+    name: "Fireball †"
+    banks:
+      - name: "Fireball †"
+        msb: 64
+        lsb: 0
