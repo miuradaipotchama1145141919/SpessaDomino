@@ -11,6 +11,8 @@ resetIds = {"GS": 203, "GM1": 200, "GM2": 202, "XG": 205}
 sendsByMode = {"GM1": [], "GM2": [91, 93], "GS": [91, 93, 94], "XG": [91, 93, 94]}
 vibratoIds = [76, 77, 78]
 toneIds = [74, 71, 73, 75, 72]
+setupSpacing = 21
+channelSpacing = 41
 
 universalGlobal = [(170, 16383), (171, 8192), (172, 0), (173, 0)]
 gsGlobal = [(301, 127), (300, 0), (302, 0), (303, 64)]
@@ -109,24 +111,15 @@ def sectionEvents(mode):
     ]
 
 
-def systemTemplate(ident, mode, spaced=False):
+def systemTemplate(ident, mode):
     events = [
         {"tag": "Memo", "text": systemMemos[mode]},
         divider("Reset"),
         cc(resetIds[mode]),
     ] + sectionEvents(mode)
-    if spaced:
-        # Space system-wide setup messages too, so hardware receives reset and
-        # global/effect settings before any channel initialization.
-        events = [
-            event if event.get("tag") == "Memo" else dict(
-                event, attrs=dict(event.get("attrs", {}), Step=4)
-            )
-            for event in events
-        ]
     return {
         "id": ident,
-        "name": "%s System Setup (%s)" % (mode, "Spaced" if spaced else "Immediate"),
+        "name": "%s System Setup" % mode,
         "events": events,
     }
 
@@ -158,15 +151,11 @@ def channelEvents(mode):
     return head + [cc(127)] + sends + bendAndMod + expression + vibrato + tone + extras
 
 
-def channelTemplate(ident, mode, spaced=False):
-    events = channelEvents(mode)
-    if spaced:
-        # Step is a delta from the previous event
-        events = [dict(event, attrs=dict(event.get("attrs", {}), Step=4)) for event in events]
+def channelTemplate(ident, mode):
     return {
         "id": ident,
-        "name": "%s Channel Init (%s)" % (mode, "Spaced" if spaced else "Immediate"),
-        "events": events,
+        "name": "%s Channel Init" % mode,
+        "events": channelEvents(mode),
     }
 
 
@@ -176,27 +165,35 @@ def folderOf(name, items):
 
 def buildTemplates():
     return [
-        folderOf("GS (default)", [systemTemplate(10, "GS"), systemTemplate(30, "GS", True), channelTemplate(0, "GS"), channelTemplate(20, "GS", True)]),
-        folderOf("GM1", [systemTemplate(2, "GM1"), systemTemplate(31, "GM1", True), channelTemplate(11, "GM1"), channelTemplate(21, "GM1", True)]),
-        folderOf("GM2", [systemTemplate(3, "GM2"), systemTemplate(32, "GM2", True), channelTemplate(4, "GM2"), channelTemplate(22, "GM2", True)]),
-        folderOf("XG", [systemTemplate(6, "XG"), systemTemplate(33, "XG", True), channelTemplate(7, "XG"), channelTemplate(23, "XG", True)]),
+        folderOf("GS (default)", [systemTemplate(10, "GS"), channelTemplate(0, "GS")]),
+        folderOf("GM1", [systemTemplate(2, "GM1"), channelTemplate(11, "GM1")]),
+        folderOf("GM2", [systemTemplate(3, "GM2"), channelTemplate(4, "GM2")]),
+        folderOf("XG", [systemTemplate(6, "XG"), channelTemplate(7, "XG")]),
     ]
 
 
-def channelTrack(channel):
+def channelTrack(channel, initTick):
     track = {"name": "CH%02d" % channel, "ch": channel}
     if channel == 10:
         track["mode"] = "Rhythm"
     if channel == 1:
         track["current"] = True
+    channelSetup = [
+        dict(
+            event,
+            attrs=dict(
+                event.get("attrs", {}),
+                Tick=initTick + index * channelSpacing,
+            ),
+        )
+        for index, event in enumerate(channelEvents("GS"))
+    ]
     track["events"] = [
         {
             "tag": "Comment",
             "attrs": {"Tick": 0, "Step": 0, "Text": "---- CH Setup %s" % ("-" * 48)},
         },
-        {"tag": "Template", "attrs": {"ID": 0, "Step": 1}},
-        divider("End of CH Setup"),
-    ]
+    ] + channelSetup + [divider("End of CH Setup")]
     return track
 
 
@@ -216,10 +213,11 @@ def buildTracks():
     }
     system["events"] = [
         event if event.get("tag") == "Comment" and event.get("attrs", {}).get("Text", "").startswith("---- Reset")
-        else dict(event, attrs=dict(event.get("attrs", {}), Step=4))
+        else dict(event, attrs=dict(event.get("attrs", {}), Step=setupSpacing))
         for event in system["events"]
     ]
     system["events"][1]["attrs"]["Step"] = 1
+    systemEndTick = sum(event.get("attrs", {}).get("Step", 0) for event in system["events"])
     drums = {
         "name": "Drum Key-Based Controllers",
         "ch": 10,
@@ -238,7 +236,7 @@ def buildTracks():
             divider("End of Drum Parameter"),
         ],
     }
-    return [system] + [channelTrack(channel) for channel in range(1, 17)] + [drums]
+    return [system] + [channelTrack(channel, systemEndTick + 1) for channel in range(1, 17)] + [drums]
 
 
 def writeDefaults():
