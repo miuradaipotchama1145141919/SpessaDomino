@@ -1,6 +1,6 @@
 # SpessaDomino
 
-A Domino sound source definition for SpessaSynth, generated with DominoDefBuilder. It is based on the [SpessaSynth core v4-4-0 branch](https://github.com/spessasus/spessasynth_core/tree/v4-4-0).
+A Domino sound source definition for SpessaSynth, generated with [DominoDefBuilder](https://github.com/miuradaipotchama1145141919/DominoDefBuilder). It is based on the [SpessaSynth core v4-4-0 branch](https://github.com/spessasus/spessasynth_core/tree/v4-4-0).
 
 ## Installation
 
