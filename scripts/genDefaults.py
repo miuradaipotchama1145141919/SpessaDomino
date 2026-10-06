@@ -109,16 +109,25 @@ def sectionEvents(mode):
     ]
 
 
-def systemTemplate(ident, mode):
+def systemTemplate(ident, mode, spaced=False):
+    events = [
+        {"tag": "Memo", "text": systemMemos[mode]},
+        divider("Reset"),
+        cc(resetIds[mode]),
+    ] + sectionEvents(mode)
+    if spaced:
+        # Space system-wide setup messages too, so hardware receives reset and
+        # global/effect settings before any channel initialization.
+        events = [
+            event if event.get("tag") == "Memo" else dict(
+                event, attrs=dict(event.get("attrs", {}), Step=4)
+            )
+            for event in events
+        ]
     return {
         "id": ident,
-        "name": "%s System Setup" % mode,
-        "events": [
-            {"tag": "Memo", "text": systemMemos[mode]},
-            divider("Reset"),
-            cc(resetIds[mode]),
-        ]
-        + sectionEvents(mode),
+        "name": "%s System Setup (%s)" % (mode, "Spaced" if spaced else "Immediate"),
+        "events": events,
     }
 
 
@@ -127,6 +136,8 @@ def channelEvents(mode):
     head = [cc(121, Value=0), cc(7, Value=100), cc(10, Value=0), autoPc()]
     expression = [cc(11, Value=127)]
     bendAndMod = [cc(112, Value=0), cc(1, Value=0)]
+    if mode == "GS":
+        head = head + [cc(352, Value=1)]
     if mode == "GM1":
         return head + bendAndMod + expression
     efxAssign = [cc(374, Value=0)] if mode == "GS" else []
@@ -147,11 +158,15 @@ def channelEvents(mode):
     return head + [cc(127)] + sends + bendAndMod + expression + vibrato + tone + extras
 
 
-def channelTemplate(ident, mode):
+def channelTemplate(ident, mode, spaced=False):
+    events = channelEvents(mode)
+    if spaced:
+        # Step is a delta from the previous event
+        events = [dict(event, attrs=dict(event.get("attrs", {}), Step=4)) for event in events]
     return {
         "id": ident,
-        "name": "%s Channel Init" % mode,
-        "events": channelEvents(mode),
+        "name": "%s Channel Init (%s)" % (mode, "Spaced" if spaced else "Immediate"),
+        "events": events,
     }
 
 
@@ -161,10 +176,10 @@ def folderOf(name, items):
 
 def buildTemplates():
     return [
-        folderOf("GS (default)", [channelTemplate(0, "GS"), systemTemplate(10, "GS")]),
-        folderOf("GM1", [systemTemplate(2, "GM1"), channelTemplate(11, "GM1")]),
-        folderOf("GM2", [systemTemplate(3, "GM2"), channelTemplate(4, "GM2")]),
-        folderOf("XG", [systemTemplate(6, "XG"), channelTemplate(7, "XG")]),
+        folderOf("GS (default)", [systemTemplate(10, "GS"), systemTemplate(30, "GS", True), channelTemplate(0, "GS"), channelTemplate(20, "GS", True)]),
+        folderOf("GM1", [systemTemplate(2, "GM1"), systemTemplate(31, "GM1", True), channelTemplate(11, "GM1"), channelTemplate(21, "GM1", True)]),
+        folderOf("GM2", [systemTemplate(3, "GM2"), systemTemplate(32, "GM2", True), channelTemplate(4, "GM2"), channelTemplate(22, "GM2", True)]),
+        folderOf("XG", [systemTemplate(6, "XG"), systemTemplate(33, "XG", True), channelTemplate(7, "XG"), channelTemplate(23, "XG", True)]),
     ]
 
 
@@ -199,6 +214,12 @@ def buildTracks():
         + sectionEvents("GS")
         + [divider("End of System Setup")],
     }
+    system["events"] = [
+        event if event.get("tag") == "Comment" and event.get("attrs", {}).get("Text", "").startswith("---- Reset")
+        else dict(event, attrs=dict(event.get("attrs", {}), Step=4))
+        for event in system["events"]
+    ]
+    system["events"][1]["attrs"]["Step"] = 1
     drums = {
         "name": "Drum Key-Based Controllers",
         "ch": 10,
@@ -228,6 +249,7 @@ def writeDefaults():
             "timeSignature": "4/4",
             "keySignature": "C Maj",
             "endTick": 1920,
+            "conductorMarks": [{"tick": 0, "name": "Setup"}, {"tick": 1920, "name": "Start"}],
             "templates": buildTemplates(),
             "tracks": buildTracks(),
         },
