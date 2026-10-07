@@ -128,7 +128,7 @@ def channelEvents(mode):
     sends = [cc(ident, Value=0) for ident in sendsByMode[mode]]
     head = [cc(121, Value=0), cc(7, Value=100), cc(10, Value=0), autoPc()]
     expression = [cc(11, Value=127)]
-    bendAndMod = [cc(112, Value=0), cc(1, Value=0)]
+    bendAndMod = [cc(112, Value=0), cc(130, Value=2), cc(1, Value=0)]
     if mode == "GS":
         head = head + [cc(352, Value=1)]
     if mode == "GM1":
@@ -137,18 +137,18 @@ def channelEvents(mode):
     vibrato = [cc(ident, Value=64) for ident in vibratoIds]
     tone = [cc(ident, Value=64) for ident in toneIds]
     if mode != "XG":
-        return head + sends + bendAndMod + expression + vibrato + tone + efxAssign
+        gsPortamento = [cc(5, Value=0), cc(65, Value=0)] if mode == "GS" else []
+        return head + sends + bendAndMod + expression + vibrato + tone + efxAssign + gsPortamento
     extras = [
         cc(5, Value=0),
         cc(65, Value=0),
         cc(64, Value=0),
         cc(67, Value=0),
-        cc(130, Value=2),
         cc(134, Value=64),
         cc(131, Value=0),
         cc(133, Value=0),
     ]
-    return head + [cc(127)] + sends + bendAndMod + expression + vibrato + tone + extras
+    return head + [cc(508, Gate=1, Value=1)] + sends + bendAndMod + expression + vibrato + tone + extras
 
 
 def channelTemplate(ident, mode):
