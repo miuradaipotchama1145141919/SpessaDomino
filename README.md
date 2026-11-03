@@ -24,7 +24,7 @@ The definition is written to dist/spessasynth.xml. Copy it into the Domino Modul
 
 | Map | Melody | Drums |
 | --- | --- | --- |
-| GM1 | Yes | No |
+| GM1 | Yes | Yes |
 | GM2 | Yes | Yes |
 | Sound Canvas 55Map | Yes | Yes |
 | Sound Canvas 88Map | Yes | Yes |
@@ -37,9 +37,9 @@ The definition is written to dist/spessasynth.xml. Copy it into the Domino Modul
 
 New projects open in GS mode. A System Setup track sends GS Reset, and channels 1 to 16 are initialized from the GS Channel Init template, with channel 10 as the rhythm track. The template list also has System Setup and Channel Init templates for GM1, GM2 and XG.
 
-## Experimental features
+## Effect coverage
 
-Some features exist only in the SpessaSynth 4.4.0 experimental branch and are marked Experimental in their names and memos. These are XG effects and insertion effects, the XG controller depth matrix, AC1 and AC2 numbers, and XG part dry level and portamento.
+The effect definitions come straight from the SpessaSynth source. XG reverb, chorus, variation and insertion effects expose every type the synth implements with per-type parameter defaults, and the GS insertion effect (EFX) has all 65 types with their parameters, send levels and EFX control sources.
 
 ## Continuous integration
 
@@ -47,9 +47,9 @@ Some features exist only in the SpessaSynth 4.4.0 experimental branch and are ma
 
 ## Releases
 
-Push a tag such as `v0.8`. The `release` workflow rebuilds with the tag (without the `v`) as the module version and attaches `spessasynth.xml` and `manifest.json` to a GitHub Release.
+Push a tag such as `v0.9`. The `release` workflow rebuilds with the tag (without the `v`) as the module version and attaches `spessasynth.xml` and `manifest.json` to a GitHub Release.
 
 ```
-git tag v0.8
-git push origin v0.8
+git tag v0.9
+git push origin v0.9
 ```

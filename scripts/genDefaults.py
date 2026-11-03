@@ -1,4 +1,44 @@
+import os
+
+import yaml
+
 from lib.ctl import writeYaml
+
+partsDir = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+    "modules",
+    "spessasynth",
+    "generated",
+    "effectParts",
+)
+
+
+def partCcms(subPath):
+    with open(os.path.join(partsDir, subPath), encoding="utf-8") as handle:
+        document = yaml.safe_load(handle)
+    found = {}
+
+    def walk(items):
+        for item in items:
+            kind = item.get("type")
+            if kind == "folder":
+                walk(item.get("items", []))
+            elif kind == "ccm":
+                found[item["name"]] = item["id"]
+
+    walk(document if isinstance(document, list) else document.get("items", []))
+    return found
+
+
+def loadEffects():
+    return {
+        "xg/reverb": partCcms(os.path.join("xg", "reverb.yaml")),
+        "xg/chorus": partCcms(os.path.join("xg", "chorus.yaml")),
+        "xg/variation": partCcms(os.path.join("xg", "variation.yaml")),
+        "xg/insertion": partCcms(os.path.join("xg", "insertion.yaml")),
+        "gs/efx": partCcms(os.path.join("gs", "efx.yaml")),
+    }
+
 
 divider = lambda text: {
     "tag": "Comment",
@@ -17,6 +57,13 @@ channelSpacing = 41
 universalGlobal = [(170, 16383), (171, 8192), (172, 0), (173, 0)]
 gsGlobal = [(301, 127), (300, 0), (302, 0), (303, 64)]
 xgGlobal = [(500, 0), (501, 127), (502, 0), (503, 0)]
+
+effects = loadEffects()
+
+
+def fx(kind, name):
+    return effects[kind][name]
+
 
 systemSections = {
     "GM1": [("Global", universalGlobal)],
@@ -45,7 +92,15 @@ systemSections = {
                 (328, 0),
             ],
         ),
-        ("EFX Insertion (Thru)", [(345, 0), (347, 40), (348, 0), (349, 0)]),
+        (
+            "EFX (Thru)",
+            [
+                (fx("gs/efx", "EFX Type"), 0),
+                (fx("gs/efx", "Send Level to Reverb"), 40),
+                (fx("gs/efx", "Send Level to Chorus"), 0),
+                (fx("gs/efx", "Send Level to Delay"), 0),
+            ],
+        ),
         (
             "Delay (Delay 1)",
             [
@@ -65,32 +120,36 @@ systemSections = {
     ],
     "XG": [
         ("Global", universalGlobal + xgGlobal),
-        ("Reverb (Hall 1, Experimental)", [(573, 128), (584, 64), (585, 64)]),
-        (
-            "Chorus (Chorus 1, Experimental)",
-            [(592, 8320), (603, 64), (604, 64), (605, 0)],
-        ),
-        (
-            "Variation (Thru, Experimental)",
-            [
-                (612, 8192),
-                (623, 64),
-                (624, 64),
-                (625, 0),
-                (626, 0),
-                (627, 0),
-                (628, 128),
-            ],
-        ),
+        ("Reverb (Hall 1)", [
+            (fx("xg/reverb", "XG Reverb Type"), 128),
+            (fx("xg/reverb", "Reverb Return"), 64),
+            (fx("xg/reverb", "Reverb Pan"), 64),
+        ]),
+        ("Chorus (Chorus 1)", [
+            (fx("xg/chorus", "XG Chorus Type"), 8320),
+            (fx("xg/chorus", "Chorus Return"), 64),
+            (fx("xg/chorus", "Chorus Pan"), 64),
+            (fx("xg/chorus", "Chorus Send To Reverb"), 0),
+        ]),
+        ("Variation (Thru)", [
+            (fx("xg/variation", "XG Variation Type"), 8192),
+            (fx("xg/variation", "Variation Return"), 64),
+            (fx("xg/variation", "Variation Pan"), 64),
+            (fx("xg/variation", "Variation Send To Reverb"), 0),
+            (fx("xg/variation", "Variation Send To Chorus"), 0),
+            (fx("xg/variation", "Variation Connection"), 0),
+            (fx("xg/variation", "Variation Part Number"), 128),
+        ]),
     ]
     + [
         (
-            "Insertion %d (Off, Experimental)" % (index + 1),
-            [(typeId, 8192), (partId, 128)],
+            "Insertion %d (Off)" % number,
+            [
+                (fx("xg/insertion", "XG Insertion Effects Type"), 8192, number),
+                (fx("xg/insertion", "Insertion Part Number"), 128, number),
+            ],
         )
-        for index, (typeId, partId) in enumerate(
-            [(635, 646), (663, 674), (691, 702), (719, 730)]
-        )
+        for number in range(1, 5)
     ],
 }
 
@@ -98,17 +157,20 @@ systemMemos = {
     "GM1": "Bank select is ignored in GM1 mode.",
     "GM2": "Default melodic bank MSB becomes 121 and drum bank MSB 120.",
     "GS": "Default mode. Native SpessaSynth system.",
-    "XG": "Bank MSB 127 selects drums. XG effects need the SpessaSynth 4.4.0 experimental branch.",
+    "XG": "Bank MSB 127 selects drums.",
 }
 
 
 def sectionEvents(mode):
-    return [
-        event
-        for title, pairs in systemSections[mode]
-        for event in [divider(title)]
-        + [cc(ident, Value=value) for ident, value in pairs]
-    ]
+    events = []
+    for title, pairs in systemSections[mode]:
+        events.append(divider(title))
+        for pair in pairs:
+            if len(pair) > 2:
+                events.append(cc(pair[0], Gate=pair[2], Value=pair[1]))
+            else:
+                events.append(cc(pair[0], Value=pair[1]))
+    return events
 
 
 def systemTemplate(ident, mode):

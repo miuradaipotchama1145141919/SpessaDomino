@@ -19,20 +19,6 @@ gm1Keys = (
     "Mute Triangle,Open Triangle"
 ).split(",")
 
-gsKits = [
-    (1, "Standard 1 (GM1 Standard)"),
-    (2, "Standard 2"),
-    (9, "Room"),
-    (17, "Power"),
-    (25, "Electronic"),
-    (26, "TR-808"),
-    (33, "Jazz"),
-    (41, "Brush"),
-    (49, "Orchestra"),
-    (57, "SFX"),
-    (128, "CM-64/CM-32L"),
-]
-
 # MU128E2 XG voice and drum definitions transcribed from the manual tables.
 # Generated source data lives in scripts/data/mu128XgVoices.yaml and
 # scripts/data/mu128XgDrums.yaml so regeneration does not require PDF tooling.
@@ -318,15 +304,12 @@ def buildDrums():
     gm2 = readYaml("gm2Drums.yaml")
     gm2Map = gm2["maps"][0]
     gm2Map["name"] = "GM2 Drum Kits (MSB 120)"
-    gsMap = {
-        "name": "GS Drum Kits (program change, bank MSB not sent)",
-        "programs": [
-            kitProgram(pc, name, {"toneSet": "gm2" if pc == 1 else "gm1"})
-            for pc, name in gsKits
-        ],
-    }
     toneSets = dict(gm2["toneSets"])
     toneSets["gm1"] = gm1Tones()
+    gm1Map = {
+        "name": "GM1 Drum Kit (channel 10, bank select ignored)",
+        "programs": [kitProgram(1, "GM1 Standard Kit", {"toneSet": "gm1"})],
+    }
     manualKits = readYaml("mu128XgDrums.yaml")
     xgPrograms = []
     xgSfxPrograms = []
@@ -348,7 +331,7 @@ def buildDrums():
         "programs": xgSfxPrograms,
     }
     scMaps = buildScDrums(toneSets)
-    return {"toneSets": toneSets, "maps": [gm2Map, *scMaps, xgMap, xgSfxMap]}
+    return {"toneSets": toneSets, "maps": [gm1Map, gm2Map, *scMaps, xgMap, xgSfxMap]}
 
 
 if __name__ == "__main__":

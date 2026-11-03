@@ -6,9 +6,6 @@ outDir = os.path.join(
     "build",
 )
 
-experimentalTag = "Experimental 4.4.0"
-
-
 class noAliasDumper(yaml.SafeDumper):
     def ignore_aliases(self, data):
         return True
@@ -88,10 +85,6 @@ def ccm(
 
 def folder(name, items, ident=None):
     return drop({"type": "folder", "id": ident, "name": name, "items": items})
-
-
-def experimental(text):
-    return "[%s] %s" % (experimentalTag, text)
 
 
 def sysexSpec(profile, address, payload=""):

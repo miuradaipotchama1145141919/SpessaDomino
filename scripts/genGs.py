@@ -1,4 +1,4 @@
-from lib.ctl import ccm, experimental, folder, sysexSpec, val
+from lib.ctl import ccm, folder, sysexSpec, val
 
 macroReverb = [
     (0, "Room 1"),
@@ -25,15 +25,6 @@ assignModes = [(0, "Single"), (1, "Limited Multi"), (2, "Full Multi")]
 rhythmModes = [(0, "Off (melodic)"), (1, "Drum Map 1"), (2, "Drum Map 2")]
 offOn = [(0, "Off"), (1, "On")]
 rxChannels = [(index, "Ch %d" % (index + 1)) for index in range(16)] + [(16, "Off")]
-efxTypes = [
-    (0x0000, "Thru"),
-    (0x0100, "Stereo EQ"),
-    (0x0120, "Phaser"),
-    (0x0121, "Auto Wah"),
-    (0x0125, "Tremolo"),
-    (0x0126, "Auto Pan"),
-    (0x1108, "PH / Auto Wah"),
-]
 signed64 = dict(minimum=-64, maximum=63, offset=64)
 keyGate = val(36, 0, 127, name="Drum Note", kind="Key")
 
@@ -45,7 +36,6 @@ tableIds = {
     "rhythm": 14,
     "rxChannel": 15,
     "offOn": 16,
-    "efx": 17,
     "controller": 18,
 }
 
@@ -82,7 +72,6 @@ def buildTables():
         {"id": tableIds["rhythm"], "entries": toEntries(rhythmModes)},
         {"id": tableIds["rxChannel"], "entries": toEntries(rxChannels)},
         {"id": tableIds["offOn"], "entries": toEntries(offOn)},
-        {"id": tableIds["efx"], "entries": toEntries(efxTypes)},
         {"id": tableIds["controller"], "entries": controller},
     ]
 
@@ -193,32 +182,6 @@ def effects():
                 plain(338, "Delay Level", "40H 01H 58H", 64),
                 plain(339, "Delay Feedback", "40H 01H 59H", 80),
                 plain(340, "Delay Send Level to Reverb", "40H 01H 5AH", 0),
-            ],
-        ),
-        folder(
-            "GS Insertion Effect (EFX)",
-            [
-                gsCcm(
-                    345,
-                    "EFX Type",
-                    "40H 03H 00H",
-                    "#VH #VL",
-                    val(0, 0, 16383, tableId=tableIds["efx"]),
-                    memo="Only the types SpessaSynth implements are listed. Any other type passes the signal dry (Thru). Value is MSB*128+LSB.",
-                ),
-                gsCcm(
-                    346,
-                    "EFX Parameter",
-                    "40H 03H #GL",
-                    "#VL",
-                    val(64),
-                    gate=val(1, 1, 20, offset=2, name="Parameter No."),
-                    memo="Parameters 1 to 20. Meaning depends on the EFX type. Send the type first, it resets all parameters.",
-                    sync="LastEachGate",
-                ),
-                gsCcm(347, "EFX Send Level to Reverb", "40H 03H 17H", "#VL", val(40)),
-                gsCcm(348, "EFX Send Level to Chorus", "40H 03H 18H", "#VL", val(0)),
-                gsCcm(349, "EFX Send Level to Delay", "40H 03H 19H", "#VL", val(0)),
             ],
         ),
     ]
@@ -350,7 +313,7 @@ def drumParams(mapIndex, baseId):
                 1,
                 "Level",
                 val(120),
-                "Normalized to 120. Gain is (data/120) squared in 4.4.0 and data/120 in stable builds.",
+                "Normalized to 120. The gain is (data/120) squared.",
             ),
             row(2, "Assign Group Number", val(0), "Overrides the exclusive class."),
             row(
@@ -410,14 +373,14 @@ def userDrums():
                     "#VL",
                     value,
                     gate=keyGate,
-                    memo=experimental(memo or "User drum set parameter."),
+                    memo=memo or "User drum set parameter.",
                     sync="LastEachGate",
                 )
             )
         sets.append(
-            folder("User Drum Set %d (Experimental 4.4.0)" % (setIndex + 1), items)
+            folder("User Drum Set %d" % (setIndex + 1), items)
         )
-    return folder("GS User Drum Sets (Experimental 4.4.0)", sets)
+    return folder("GS User Drum Sets", sets)
 
 
 def buildGs():

@@ -6,6 +6,8 @@ rootDir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 scriptsDir = os.path.join(rootDir, "scripts")
 
 steps = [
+    [os.path.join(scriptsDir, "syncFromCore.py")],
+    [os.path.join(scriptsDir, "emitParts.py")],
     [os.path.join(scriptsDir, "genBanks.py")],
     [os.path.join(scriptsDir, "genControls.py")],
     [os.path.join(scriptsDir, "splitModule.py")],

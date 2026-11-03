@@ -137,7 +137,10 @@ def splitDrums():
 
 
 if __name__ == "__main__":
-    shutil.rmtree(generatedDir, ignore_errors=True)
+    os.makedirs(generatedDir, exist_ok=True)
+    for entry in os.listdir(generatedDir):
+        if entry != "effectParts":
+            shutil.rmtree(os.path.join(generatedDir, entry), ignore_errors=True)
     writeMaps(os.path.join(generatedDir, "voices"), readBuild("voices.yaml"))
     splitDrums()
     splitControls("controls")

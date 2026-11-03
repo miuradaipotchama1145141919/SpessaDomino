@@ -2,7 +2,7 @@ name: SpessaSynth
 folder: Spessasus
 priority: 100
 creator: anon
-version: "0.8"
+version: "0.9"
 website: https://github.com/spessasus/spessasynth_core
 defaultCcmId: 7
 exclusiveDefault: F0H 7EH 7FH 09H 01H F7H

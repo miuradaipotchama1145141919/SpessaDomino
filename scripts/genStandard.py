@@ -1,4 +1,4 @@
-from lib.ctl import ccm, experimental, folder, val
+from lib.ctl import ccm, folder, val
 
 onOffTable = 1
 onOffEntries = [(0, "Off"), (127, "On")]
@@ -78,7 +78,7 @@ def channelControls():
                 "Variation Send",
                 94,
                 0,
-                "GS: delay send. XG: variation send, only in system connection (Experimental 4.4.0). Stable builds: GS only.",
+                "GS: delay send. XG: variation send, only in system connection.",
             ),
             ccm(
                 110,
@@ -163,16 +163,14 @@ def rpnControls():
                 "Channel Fine Tuning (RPN 0,1)",
                 "@RPN 00H 01H #VH #VL",
                 val(0, -8192, 8191, 8192, name="100/8192 cents"),
-                memo=experimental(
-                    "Standard fine tuning RPN. The stable documentation lists fine tuning on RPN 0,3 instead."
-                ),
+                memo="Standard fine tuning RPN.",
             ),
             ccm(
                 132,
                 "Channel Fine Tuning (RPN 0,3)",
                 "@RPN 00H 03H #VH #VL",
                 val(0, -8192, 8191, 8192, name="100/8192 cents"),
-                memo="Stable 4.3.x documentation lists this as fine tuning. Non-standard numbering.",
+                memo="Fine tuning on the non-standard RPN 0,3 numbering.",
             ),
             ccm(
                 133,
@@ -209,8 +207,8 @@ def nrpnControls():
     centered = lambda ident, name, msb, lsb, memo=None: ccm(
         ident, name, "@NRPN %02XH %02XH #VL #NONE" % (msb, lsb), val(64), memo=memo
     )
-    customVibrato = experimental(
-        "Custom vibrato mode (when enabled) uses these NRPNs directly. Any value other than 64 activates it. Ignored while CC1 is above 0. Stable builds alias CC76 to 78."
+    customVibrato = (
+        "Custom vibrato mode (when enabled) uses these NRPNs directly. Any value other than 64 activates it. Ignored while CC1 is above 0."
     )
     drumGate = val(36, 0, 127, name="Drum Note", kind="Key")
     return folder(
@@ -261,7 +259,7 @@ def nrpnControls():
                         val(64),
                         gate=drumGate,
                         sync="LastEachGate",
-                        memo="0 is random. 64 leaves the channel pan alone in 4.4.0 (Experimental 4.4.0). Stable builds treat it as absolute pan.",
+                        memo="0 is random. 64 leaves the channel pan unchanged.",
                     ),
                     ccm(
                         154,
@@ -287,7 +285,7 @@ def nrpnControls():
                         val(0),
                         gate=drumGate,
                         sync="LastEachGate",
-                        memo="GS and GM: delay send. XG: variation send, system connection only (Experimental 4.4.0).",
+                        memo="GS and GM: delay send. XG: variation send, system connection only.",
                     ),
                 ],
             ),
