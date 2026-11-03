@@ -1,0 +1,4 @@
+[submodule "vendor/spessasynth_core"]
+	path = vendor/spessasynth_core
+	url = https://github.com/spessasus/spessasynth_core.git
+	branch = main
