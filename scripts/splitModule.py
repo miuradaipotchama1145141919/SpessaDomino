@@ -6,6 +6,7 @@ import yaml
 
 rootDir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 buildDir = os.path.join(rootDir, "build")
+moduleDir = os.path.join(rootDir, "modules", "spessasynth")
 generatedDir = os.path.join(rootDir, "modules", "spessasynth", "generated")
 sizeLimit = 6000
 programChunk = 8
@@ -23,7 +24,32 @@ def dump(data):
     )
 
 
+def relink(node, dirPath):
+    if isinstance(node, dict):
+        result = {}
+        for key, value in node.items():
+            if key == "include" and isinstance(value, str) and value.startswith("@module/"):
+                target = os.path.join(moduleDir, value[len("@module/"):])
+                value = os.path.relpath(target, dirPath).replace(os.sep, "/")
+            else:
+                value = relink(value, dirPath)
+            result[key] = value
+        return result
+    if isinstance(node, list):
+        return [relink(value, dirPath) for value in node]
+    return node
+
+
+def itemName(item):
+    if "name" in item:
+        return item["name"]
+    if "include" in item:
+        return os.path.splitext(os.path.basename(item["include"]))[0]
+    return item.get("id")
+
+
 def writeYaml(path, data):
+    data = relink(data, os.path.dirname(os.path.abspath(path)))
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8", newline="\n") as handle:
         handle.write(dump(data))
@@ -49,7 +75,7 @@ def numbered(index, total, name):
 # Items
 def writeItems(dirPath, items):
     for index, item in enumerate(items, 1):
-        base = numbered(index, len(items), item.get("name", item.get("id")))
+        base = numbered(index, len(items), itemName(item))
         path = os.path.join(dirPath, base)
         if item.get("type") == "folder" and len(dump(item)) > sizeLimit:
             writeYaml(path + ".yaml", dict(item, items=includeAll(base)))

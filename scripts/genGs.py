@@ -391,7 +391,11 @@ def buildGs():
                 "Roland GS",
                 [
                     master(),
-                    folder("GS Effects", effects()),
+                    folder(
+                        "GS Effects",
+                        effects()
+                        + [{"include": "@module/generated/effectParts/gs/efx.yaml"}],
+                    ),
                     part(),
                     folder("GS Drum Setup", [drumParams(0, 380), drumParams(1, 390)]),
                     userDrums(),

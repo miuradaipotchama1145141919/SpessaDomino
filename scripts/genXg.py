@@ -293,6 +293,13 @@ def buildXg():
                 "Yamaha XG",
                 [
                     system(take),
+                    folder(
+                        "XG Effects",
+                        [
+                            {"include": "@module/generated/effectParts/xg/%s.yaml" % name}
+                            for name in ("reverb", "chorus", "variation", "insertion")
+                        ],
+                    ),
                     partSetup(take),
                     drumSetups(take),
                 ],

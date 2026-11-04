@@ -2,9 +2,4 @@ tables:
   - include: generated/effectParts/tables.yaml
   - include: generated/effects/tables.yaml
 items:
-  - include: generated/effectParts/xg/reverb.yaml
-  - include: generated/effectParts/xg/chorus.yaml
-  - include: generated/effectParts/xg/variation.yaml
-  - include: generated/effectParts/xg/insertion.yaml
-  - include: generated/effectParts/gs/efx.yaml
   - include: generated/effects/items/*.yaml

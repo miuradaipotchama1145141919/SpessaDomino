@@ -31,8 +31,10 @@ jobs:
         env:
           TAG: ${{ github.ref_name }}
         run: dominodef --modules modules build --version "${TAG#v}" spessasynth
+      - name: Pack the generated sources
+        run: cd modules/spessasynth && zip -qr ../../dist/generated.zip generated
       - name: Publish
         env:
           GH_TOKEN: ${{ github.token }}
           TAG: ${{ github.ref_name }}
-        run: gh release create "$TAG" dist/spessasynth.xml dist/manifest.json --title "$TAG" --generate-notes --verify-tag
+        run: gh release create "$TAG" dist/spessasynth.xml dist/manifest.json dist/generated.zip --title "$TAG" --generate-notes --verify-tag
