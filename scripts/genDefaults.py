@@ -79,8 +79,6 @@ gm1Global = [(170, 16383)]
 universalGlobal = gm1Global + [(171, 8192), (172, 0), (173, 0)]
 gsGlobal = [(301, 127), (300, 0), (302, 0), (303, 64)]
 xgGlobal = [(500, 0), (501, 127), (502, 0), (503, 0)]
-# 7 bit master volumes. A hybrid sends the 14 bit universal master volume (170) instead.
-sevenBitMasterVolumes = (301, 501)
 
 effects = loadEffects()
 
@@ -185,13 +183,11 @@ def systemSections(variant):
     sections = plainSections[base]
     if not isSs(variant):
         return sections
-    title, pairs = sections[0]
-    merged = universalGlobal + [
-        pair
-        for pair in pairs
-        if pair not in universalGlobal and pair[0] not in sevenBitMasterVolumes
-    ]
-    return [(title, merged)] + sections[1:]
+    # spessasynth_core routes the universal 14 bit master sysex (170 to 173) and the GS and XG master
+    # sysex into the same four parameters (volume, pan, fine tune, key shift), so a hybrid sends
+    # only the finer universal ones. GS 300 to 303 and XG 500 to 503 would be redundant.
+    title = sections[0][0]
+    return [(title, universalGlobal)] + sections[1:]
 
 
 baseMemos = {
@@ -208,11 +204,11 @@ def systemMemo(variant):
         base = baseOf[variant]
         note = hybridNote % base
         if variant == "SS":
-            return "Default. " + note + "GS master volume is replaced by the 14 bit one."
+            return "Default. " + note + "GS master volume, tune, key shift and pan are replaced by the universal 14 bit ones."
         if base == "GS":
-            return note + "GS master volume is replaced by the 14 bit one."
+            return note + "GS master volume, tune, key shift and pan are replaced by the universal 14 bit ones."
         if base == "XG":
-            return note + "XG master volume is replaced by the 14 bit one. " + baseMemos[base]
+            return note + "XG master tune, volume, attenuation and transpose are replaced by the universal 14 bit ones. " + baseMemos[base]
         return note + baseMemos[base]
     return baseMemos[variant]
 
