@@ -47,9 +47,29 @@ divider = lambda text: {
 cc = lambda ident, **attrs: {"tag": "CC", "attrs": dict({"ID": ident}, **attrs)}
 autoPc = lambda: {"tag": "PC", "attrs": {"PC": 1, "Mode": "Auto"}}
 
-resetIds = {"SpessaSynth": 203, "GS": 203, "GM1": 200, "GM2": 202, "XG": 205}
-sendsByMode = {"GM1": [], "GM2": [91, 93], "SpessaSynth": [91, 93, 94], "GS": [91, 93, 94], "XG": [91, 93, 94]}
-gsFamily = ("GS", "SpessaSynth")
+# Variants. SS is SpessaSynth and is the GS hybrid: a GS setup plus the SpessaSynth only 14 bit
+# channel controls, so there is no separate SSGS. The other hybrids (SSGM1, SSGM2, SSXG) are a
+# GM1, GM2 or XG setup plus the same controls. SpessaSynth reads CC 7, 10, 11 and
+# their LSBs (CC 39, 42, 43) in every system mode, so a mode switch never silences them.
+variantOrder = ["SS", "GM1", "GM2", "GS", "XG", "SSGM1", "SSGM2", "SSXG"]
+baseOf = {
+    "SS": "GS",
+    "GM1": "GM1",
+    "GM2": "GM2",
+    "GS": "GS",
+    "XG": "XG",
+    "SSGM1": "GM1",
+    "SSGM2": "GM2",
+    "SSXG": "XG",
+}
+labelOf = dict((name, name) for name in variantOrder)
+labelOf["SS"] = "SpessaSynth"
+isSs = lambda variant: variant.startswith("SS")
+isGsFamily = lambda variant: baseOf[variant] == "GS"
+defaultVariant = "SS"
+
+resetIds = {"GS": 203, "GM1": 200, "GM2": 202, "XG": 205}
+sendsByBase = {"GM1": [], "GM2": [91, 93], "GS": [91, 93, 94], "XG": [91, 93, 94]}
 vibratoIds = [76, 77, 78]
 toneIds = [74, 71, 73, 75, 72]
 setupSpacing = 21
@@ -59,6 +79,8 @@ gm1Global = [(170, 16383)]
 universalGlobal = gm1Global + [(171, 8192), (172, 0), (173, 0)]
 gsGlobal = [(301, 127), (300, 0), (302, 0), (303, 64)]
 xgGlobal = [(500, 0), (501, 127), (502, 0), (503, 0)]
+# 7 bit master volumes. A hybrid sends the 14 bit universal master volume (170) instead.
+sevenBitMasterVolumes = (301, 501)
 
 effects = loadEffects()
 
@@ -113,14 +135,14 @@ gsBody = [
     ),
 ]
 
-systemSections = {
+
+plainSections = {
     "GM1": [("Global", gm1Global)],
     "GM2": [
         ("Global", universalGlobal),
         ("Reverb (Hall 2)", [(210, 4), (211, 64)]),
         ("Chorus (Chorus 3)", [(212, 2), (213, 3), (214, 19), (215, 8), (216, 0)]),
     ],
-    "SpessaSynth": [("Global", universalGlobal)] + gsBody,
     "GS": [("Global", gsGlobal)] + gsBody,
     "XG": [
         ("Global", xgGlobal),
@@ -157,18 +179,47 @@ systemSections = {
     ],
 }
 
-systemMemos = {
+
+def systemSections(variant):
+    base = baseOf[variant]
+    sections = plainSections[base]
+    if not isSs(variant):
+        return sections
+    title, pairs = sections[0]
+    merged = universalGlobal + [
+        pair
+        for pair in pairs
+        if pair not in universalGlobal and pair[0] not in sevenBitMasterVolumes
+    ]
+    return [(title, merged)] + sections[1:]
+
+
+baseMemos = {
     "GM1": "Bank select is ignored in GM1 mode.",
     "GM2": "Default melodic bank MSB becomes 121 and drum bank MSB 120.",
-    "SpessaSynth": "Default. GS mode with 14 bit master and channel volume, pan and expression, which SpessaSynth reads in any mode.",
     "GS": "Strict Roland GS. Master settings use GS sysex only, nothing 14 bit.",
     "XG": "Bank MSB 127 selects drums.",
 }
+hybridNote = "SpessaSynth hybrid: %s setup plus 14 bit master and channel volume, pan and expression, which SpessaSynth reads in any mode. "
 
 
-def sectionEvents(mode):
+def systemMemo(variant):
+    if isSs(variant):
+        base = baseOf[variant]
+        note = hybridNote % base
+        if variant == "SS":
+            return "Default. " + note + "GS master volume is replaced by the 14 bit one."
+        if base == "GS":
+            return note + "GS master volume is replaced by the 14 bit one."
+        if base == "XG":
+            return note + "XG master volume is replaced by the 14 bit one. " + baseMemos[base]
+        return note + baseMemos[base]
+    return baseMemos[variant]
+
+
+def sectionEvents(variant):
     events = []
-    for title, pairs in systemSections[mode]:
+    for title, pairs in systemSections(variant):
         events.append(divider(title))
         for pair in pairs:
             if len(pair) > 2:
@@ -178,22 +229,23 @@ def sectionEvents(mode):
     return events
 
 
-def systemTemplate(ident, mode):
+def systemTemplate(ident, variant):
     events = [
-        {"tag": "Memo", "text": systemMemos[mode]},
+        {"tag": "Memo", "text": systemMemo(variant)},
         divider("Reset"),
-        cc(resetIds[mode]),
-    ] + sectionEvents(mode)
+        cc(resetIds[baseOf[variant]]),
+    ] + sectionEvents(variant)
     return {
         "id": ident,
-        "name": "%s System Setup" % mode,
+        "name": "%s System Setup" % labelOf[variant],
         "events": events,
     }
 
 
-def channelEvents(mode):
-    sends = [cc(ident, Value=0) for ident in sendsByMode[mode]]
-    if mode == "SpessaSynth":
+def channelEvents(variant):
+    base = baseOf[variant]
+    sends = [cc(ident, Value=0) for ident in sendsByBase[base]]
+    if isSs(variant):
         # 14 bit channel volume, pan and expression, which SpessaSynth stores at full resolution
         head = [cc(121, Value=0), cc(160, Value=12800), cc(161, Value=0), autoPc()]
         expression = [cc(162, Value=16383)]
@@ -201,15 +253,15 @@ def channelEvents(mode):
         head = [cc(121, Value=0), cc(7, Value=100), cc(10, Value=0), autoPc()]
         expression = [cc(11, Value=127)]
     bendAndMod = [cc(112, Value=0), cc(130, Value=2), cc(1, Value=0)]
-    if mode in gsFamily:
+    if base == "GS":
         head = head + [cc(352, Value=1)]
-    if mode == "GM1":
+    if base == "GM1":
         return head + bendAndMod + expression
-    efxAssign = [cc(374, Value=0)] if mode in gsFamily else []
+    efxAssign = [cc(374, Value=0)] if base == "GS" else []
     vibrato = [cc(ident, Value=64) for ident in vibratoIds]
     tone = [cc(ident, Value=64) for ident in toneIds]
-    if mode != "XG":
-        gsPortamento = [cc(5, Value=0), cc(65, Value=0)] if mode in gsFamily else []
+    if base != "XG":
+        gsPortamento = [cc(5, Value=0), cc(65, Value=0)] if base == "GS" else []
         return head + sends + bendAndMod + expression + vibrato + tone + efxAssign + gsPortamento
     extras = [
         cc(5, Value=0),
@@ -223,11 +275,11 @@ def channelEvents(mode):
     return head + [cc(508, Gate=1, Value=1)] + sends + bendAndMod + expression + vibrato + tone + extras
 
 
-def channelTemplate(ident, mode):
+def channelTemplate(ident, variant):
     return {
         "id": ident,
-        "name": "%s Channel Init" % mode,
-        "events": channelEvents(mode),
+        "name": "%s Channel Init" % labelOf[variant],
+        "events": channelEvents(variant),
     }
 
 
@@ -235,17 +287,40 @@ def folderOf(name, items):
     return {"type": "folder", "name": name, "items": items}
 
 
+# Template ids per variant: (system setup, channel init). Existing ids are kept stable.
+templateIds = {
+    "SS": (12, 0),
+    "GS": (10, 13),
+    "GM1": (2, 11),
+    "GM2": (3, 4),
+    "XG": (6, 7),
+    "SSGM1": (14, 15),
+    "SSGM2": (16, 17),
+    "SSXG": (20, 21),
+}
+folderNames = {
+    "SS": "SpessaSynth (default)",
+    "SSGM1": "SSGM1 (SpessaSynth + GM1)",
+    "SSGM2": "SSGM2 (SpessaSynth + GM2)",
+    "SSXG": "SSXG (SpessaSynth + XG)",
+}
+
+
 def buildTemplates():
+    # Every variant keeps its templates in all builds, only the starter project differs.
     return [
-        folderOf("SpessaSynth (default)", [systemTemplate(12, "SpessaSynth"), channelTemplate(0, "SpessaSynth")]),
-        folderOf("GS", [systemTemplate(10, "GS"), channelTemplate(13, "GS")]),
-        folderOf("GM1", [systemTemplate(2, "GM1"), channelTemplate(11, "GM1")]),
-        folderOf("GM2", [systemTemplate(3, "GM2"), channelTemplate(4, "GM2")]),
-        folderOf("XG", [systemTemplate(6, "XG"), channelTemplate(7, "XG")]),
+        folderOf(
+            folderNames.get(variant, variant),
+            [
+                systemTemplate(templateIds[variant][0], variant),
+                channelTemplate(templateIds[variant][1], variant),
+            ],
+        )
+        for variant in variantOrder
     ]
 
 
-def channelTrack(channel, initTick):
+def channelTrack(channel, initTick, variant):
     track = {"name": "CH%02d" % channel, "ch": channel}
     if channel == 10:
         track["mode"] = "Rhythm"
@@ -259,7 +334,7 @@ def channelTrack(channel, initTick):
                 Tick=initTick + index * channelSpacing,
             ),
         )
-        for index, event in enumerate(channelEvents("SpessaSynth"))
+        for index, event in enumerate(channelEvents(variant))
     ]
     track["events"] = [
         {
@@ -270,7 +345,7 @@ def channelTrack(channel, initTick):
     return track
 
 
-def buildTracks():
+def buildTracks(variant):
     system = {
         "name": "System Setup",
         "ch": 1,
@@ -279,9 +354,9 @@ def buildTracks():
                 "tag": "Comment",
                 "attrs": {"Tick": 0, "Step": 0, "Text": "---- Reset %s" % ("-" * 52)},
             },
-            cc(203, Step=1),
+            cc(resetIds[baseOf[variant]], Step=1),
         ]
-        + sectionEvents("SpessaSynth")
+        + sectionEvents(variant)
         + [divider("End of System Setup")],
     }
     system["events"] = [
@@ -309,10 +384,12 @@ def buildTracks():
             divider("End of Drum Parameter"),
         ],
     }
-    return [system] + [channelTrack(channel, systemEndTick + 1) for channel in range(1, 17)] + [drums]
+    return [system] + [channelTrack(channel, systemEndTick + 1, variant) for channel in range(1, 17)] + [drums]
 
 
-def writeDefaults():
+def writeDefaults(variant=defaultVariant):
+    if variant not in baseOf:
+        raise SystemExit("Unknown default data variant: %s (use %s)" % (variant, ", ".join(variantOrder)))
     writeYaml(
         "defaults.yaml",
         {
@@ -322,10 +399,14 @@ def writeDefaults():
             "endTick": 1920,
             "conductorMarks": [{"tick": 0, "name": "Setup"}, {"tick": 1920, "name": "Start"}],
             "templates": buildTemplates(),
-            "tracks": buildTracks(),
+            "tracks": buildTracks(variant),
         },
     )
 
 
 if __name__ == "__main__":
-    writeDefaults()
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Write build/defaults.yaml for one default data variant.")
+    parser.add_argument("--variant", default=defaultVariant, type=str.upper, choices=variantOrder)
+    writeDefaults(parser.parse_args().variant)

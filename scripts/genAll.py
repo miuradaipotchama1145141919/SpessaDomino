@@ -12,7 +12,7 @@ steps = [
     [os.path.join(scriptsDir, "genControls.py")],
     [os.path.join(scriptsDir, "splitModule.py")],
     ["-m", "DominoDefBuilder", "--modules", "modules", "validate"],
-    ["-m", "DominoDefBuilder", "--modules", "modules", "build"],
+    [os.path.join(scriptsDir, "buildVariants.py")],
 ]
 
 

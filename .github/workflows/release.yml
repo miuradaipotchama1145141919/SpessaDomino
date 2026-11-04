@@ -27,14 +27,14 @@ jobs:
           cache-dependency-path: requirements.txt
       - run: pip install -r requirements.txt
       - run: python scripts/genAll.py
-      - name: Rebuild with the tag as the module version
+      - name: Rebuild every variant with the tag as the module version
         env:
           TAG: ${{ github.ref_name }}
-        run: dominodef --modules modules build --version "${TAG#v}" spessasynth
+        run: python scripts/buildVariants.py --version "${TAG#v}"
       - name: Pack the generated sources
         run: cd modules/spessasynth && zip -qr ../../dist/generated.zip generated
       - name: Publish
         env:
           GH_TOKEN: ${{ github.token }}
           TAG: ${{ github.ref_name }}
-        run: gh release create "$TAG" dist/spessasynth.xml dist/manifest.json dist/generated.zip --title "$TAG" --generate-notes --verify-tag
+        run: gh release create "$TAG" dist/*.xml dist/manifest.json dist/generated.zip --title "$TAG" --generate-notes --verify-tag
