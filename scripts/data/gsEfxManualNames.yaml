@@ -1,0 +1,834 @@
+'0100':
+  1: Low Freq
+  2: Low Gain
+  3: High Freq
+  4: High Gain
+  5: Mid1 Freq
+  6: Mid1 Q
+  7: Mid1 Gain
+  8: Mid2 Freq
+  9: Mid2 Q
+  10: Mid2 Gain
+  20: Level
+'0101':
+  1: Band1 (250Hz) Gain
+  2: Band2 (500Hz) Gain
+  3: Band3 (1000Hz) Gain
+  4: Band4 (1250Hz) Gain
+  5: Band5 (2000Hz) Gain
+  6: Band6 (3150Hz) Gain
+  7: Band7 (4000Hz) Gain
+  8: Band8 (8000Hz) Gain
+  9: Width
+  19: Pan
+  20: Level
+'0102':
+  1: Sens
+  2: Mix
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0103':
+  1: Drive
+  2: DriveSwitch
+  3: Vowel
+  4: Accel
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  19: Pan
+  20: Level
+'0110':
+  1: Drive
+  2: Amp Type
+  3: Amp Switch
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  19: Pan
+  20: Level
+'0111':
+  1: Drive
+  2: Amp Type
+  3: Amp Switch
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  19: Pan
+  20: Level
+'0120':
+  1: Manual
+  2: Rate
+  3: Depth
+  4: Resonance
+  5: Mix
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0121':
+  1: Filter Type
+  2: Sens
+  3: Manual
+  4: Peak
+  5: Rate
+  6: Depth
+  7: Polarity
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  19: Pan
+  20: Level
+'0122':
+  1: Low Rate Slow
+  2: Low Rate Fast
+  3: Low Accl
+  4: Low Level
+  5: High Rate-Slow
+  6: High Rate-Fast
+  7: High Accl
+  8: High Level
+  9: Sepectration
+  11: Speed
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0123':
+  1: Pre Filter
+  2: Cutoff Freq
+  3: Pre Delay
+  4: Rate
+  5: Depth
+  6: Feedback
+  7: Phase
+  16: Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0124':
+  1: Pre Delay
+  2: Rate
+  3: Depth
+  4: Feedback
+  5: Phase
+  6: Step Rate
+  16: Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0125':
+  1: Mod Wave
+  2: Mod Rate
+  3: Mod Depth
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0126':
+  1: Mod Wave
+  2: Mod Rate
+  3: Mod Depth
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0130':
+  1: Sustain
+  2: Attack
+  3: Post Gain
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  19: Pan
+  20: Level
+'0131':
+  1: Threshold
+  2: Ratio
+  3: Release
+  4: Post Gain
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  19: Pan
+  20: Level
+'0140':
+  1: Pre Delay
+  2: Rate
+  3: Depth
+  4: Pre Delay Dev
+  5: Depth Dev
+  6: Pan Dev
+  16: Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0141':
+  1: Pre Delay
+  2: Rate
+  3: Depth
+  4: Trem.Phase
+  5: Trem.Rate
+  6: Trem.Depth
+  16: Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0142':
+  1: Pre Filter
+  2: Cutoff Freq
+  3: Pre Delay
+  4: Rate
+  5: Depth
+  7: Phase
+  16: Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0143':
+  1: Pre Delay
+  2: Rate
+  3: Depth
+  4: Phase
+  16: Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0144':
+  1: Pre Delay
+  2: Cho Rate
+  3: Cho Depth
+  15: Output Mode
+  16: Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0150':
+  1: Delay Left
+  2: Delay Right
+  3: Feedback
+  4: Feedback Mode
+  5: Phase Left
+  6: Phase Right
+  8: HF Damp
+  16: Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0151':
+  1: Delay Left
+  2: Delay Right
+  3: Feedback
+  4: Feedback Mode
+  5: Mod Rate
+  6: Mod Depth
+  7: Mod Phase
+  8: HF Damp
+  16: Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0152':
+  1: Delay Center
+  2: Delay Left
+  3: Delay Right
+  4: Feedback
+  5: Center Level
+  6: Left Level
+  7: Right Level
+  8: HF Damp
+  16: Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0153':
+  1: Delay1
+  2: Delay2
+  3: Delay3
+  4: Delay4
+  5: Level1
+  6: Level2
+  7: Level3
+  8: Level4
+  9: Feedback
+  10: HF Damp
+  16: Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0154':
+  1: Delay
+  2: Acceleration
+  3: Feedback
+  4: HF Damp
+  5: Effect Pan
+  16: Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0155':
+  1: Type
+  2: Pre Delay
+  3: Time
+  4: HF Damp
+  16: Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0156':
+  1: Type
+  2: Pre Delay
+  3: Gate Time
+  16: Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0157':
+  1: Delay Time C
+  2: Delay Time L
+  3: Delay Time R
+  4: Feedback
+  5: Delay Level C
+  6: Delay Level L
+  7: Delay Level R
+  8: HF Damp
+  15: Output Mode
+  16: Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0160':
+  1: Pitch Coarse
+  2: Pitch Fine1
+  3: Pre Delay1
+  4: Effect Pan1
+  5: Pitch Coarse
+  6: Pitch Fine2
+  7: Pre Delay2
+  8: Effect Pan2
+  9: Mode
+  10: Level Balance
+  16: Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0161':
+  1: Pitch Coarse
+  2: PitchFine1
+  3: Feedback
+  4: Pre Delay
+  5: Mode
+  6: Effect Pan
+  16: Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0170':
+  1: Azimuth
+  2: Speed
+  3: Clockwise
+  4: Turn
+  15: Output Mode
+  20: Level
+'0171':
+  1: Azimuth
+  15: Output Mode
+  20: Level
+'0172':
+  1: Pre Filter
+  2: Lo-Fi Type
+  3: Post Filter
+  16: Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  19: Pan
+  20: Level
+'0173':
+  1: Lo-Fi Type
+  2: Filter Type
+  3: Cutoff
+  4: Radio Detune
+  5: RadioNz Level
+  6: W/P Noise Sel
+  7: W/P Noise Fil
+  8: W/P Noise Level
+  9: DiscNz Type
+  10: DiscNz Filter
+  11: DiscNz Level
+  12: Hum Type
+  13: Hum LP Filter
+  14: Hum Level
+  15: Mono/Stereo
+  16: Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  19: Pan(Mono)
+  20: Level
+'0200':
+  1: OD:Drive
+  2: OD:Pan
+  3: OD:Amp Type
+  4: OD:Amp Sw
+  6: Cho:Pre Delay
+  7: Cho:Rate
+  8: Cho:Depth
+  10: Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0201':
+  1: OD:Drive
+  2: OD:Pan
+  3: OD:Amp
+  4: OD:Amp Sw
+  6: Flg:Pre Delay
+  7: Flg:Rate
+  8: Flg:Depth
+  9: Flg:Feedback
+  10: Flg:Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0202':
+  1: OD:Drive
+  2: OD:Pan
+  3: OD:Amp
+  4: OD:Amp Sw
+  6: Delay
+  7: Dly:Feedback
+  8: Dly:HF Damp
+  10: Dly:Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0203':
+  1: DS:Drive
+  2: DS:Pan
+  3: DS:Amp Type
+  4: DS:Amp Sw
+  6: Cho:Pre Delay
+  7: Cho:Rate
+  8: Cho:Depth
+  10: Cho:Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0204':
+  1: DS:Drive
+  2: DS:Pan
+  3: DS:Amp Type
+  4: DS:Amp Sw
+  6: Flg:Delay
+  7: Flg:Rate
+  8: Flg:Depth
+  9: Flg:Feedback
+  10: Flg:Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0205':
+  1: DS:Drive
+  2: DS:Pan
+  3: DS:Amp Type
+  4: DS:Amp Sw
+  6: Dly:Delay
+  7: Dly:Feedback
+  8: Dly:HF Damp
+  10: Dly:Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0206':
+  1: Enh:Sens
+  2: Enh:Mix
+  6: Cho:Pre Delay
+  7: Cho:Rate
+  8: Cho:Depth
+  10: Cho:Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0207':
+  1: Enh:Sens
+  2: Enh:Mix
+  6: Flg:Pre Delay
+  7: Flg:Rate
+  8: Flg:Depth
+  9: Flg:Feedback
+  10: Flg:Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+0208:
+  1: Enh:Sens
+  2: Enh:Mix
+  6: Dly:Delay
+  7: Dly:Feedback
+  8: Dly:HF Damp
+  10: Flg:Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+0209:
+  1: Cho:Pre Delay
+  2: Cho:Rate
+  3: Cho:Depth
+  5: Cho:Balance
+  6: Dly:Delay
+  7: Dly:Feedback
+  8: Dly:HF Damp
+  10: Dly:Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+020A:
+  1: Flg:Pre Delay
+  2: Flg:Rate
+  3: Flg:Depth
+  4: Flg:Feedback
+  5: Flg:Balance
+  6: Dly:Delay
+  7: Dly:Feedback
+  8: Dly:HF Damp
+  10: Dly:Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+020B:
+  1: Cho:Pre Delay
+  2: Cho:Rate
+  3: Cho:Depth
+  5: Cho:Balance
+  6: Flg:Pre Delay
+  7: Flg:Rate
+  8: Flg:Depth
+  9: Flg:Feedback
+  10: Flg:Balance
+  17: EQ Low (200Hz) Gain
+  18: EQ High (4kHz) Gain
+  20: Level
+'0300':
+  1: OD:Drive
+  2: OD:Switch
+  3: EQ:Low Gain
+  4: EQ:Mid Freq
+  5: EQ:Mid Q
+  6: EQ:Mid Gain
+  7: EQ:High Gain
+  8: 'RT: LowSlowRate'
+  9: RT:LowFastRate
+  10: RT:LowAccl
+  11: RT:LowLevel
+  12: 'RT: HighSlowRate'
+  13: 'RT: HighFastRate'
+  14: RT:HighAccl
+  15: RT:HighLevel
+  16: RT:Separation
+  17: RT:Speed
+  20: Level
+'0400':
+  1: Cmp:Sustain
+  2: Cmp:Attack
+  3: Cmp:Level
+  4: Cmp:Switch
+  5: OD:ODrv/ DistSel
+  6: OD:Drive
+  7: OD:Amp Type
+  8: OD:Amp Switch
+  9: OD:Low Gain
+  10: OD:High Gain
+  11: OD:Switch
+  12: CF:Cho/Flg Sel
+  13: CF:Rate
+  14: CF:Depth
+  15: 'CF: Feedback(Flg)'
+  16: CF:Mix
+  17: Dly:Delay Time
+  18: Dly:Feedback
+  19: Dly:Mix
+  20: Level
+'0401':
+  1: Cmp:Sustain
+  2: Cmp:Attack
+  3: Cmp:Level
+  4: Cmp:Switch
+  5: OD:ODrv/DistSel
+  6: OD:Drive
+  7: OD:Amp Type
+  8: OD:Amp Switch
+  9: OD:Switch
+  10: EQ:Low Gain
+  11: EQ:Mid Freq
+  12: EQ:Mid Q
+  13: EQ:Mid Gain
+  14: EQ:High Gain
+  15: CF:Cho/Flg Sel
+  16: CF:Rate
+  17: CF:Depth
+  18: 'CF: Feedback(Flg)'
+  19: CF:Mix
+  20: Level
+'0402':
+  1: Wah:Filter Type
+  2: Wah:Manual
+  3: Wah:Peak
+  4: Wah:Switch
+  5: OD:ODrv/DistSel
+  6: OD:Drive
+  7: OD:Amp Type
+  8: OD:Amp Switch
+  9: OD:Low Gain
+  10: OD:High Gain
+  11: OD:Switch
+  12: CF:Cho/Flg Sel
+  13: CF:Rate
+  14: CF:Depth
+  15: 'CF: Feedback(Flg)'
+  16: CF:Mix
+  17: Dly:Delay Time
+  18: Dly:Feedback
+  19: Dly:Mix
+  20: Level
+'0403':
+  1: Cmp:Sustain
+  2: Cmp:Attack
+  3: Cmp:Level
+  4: Cmp:Switch
+  5: EQ:Low Gain
+  6: EQ:Mid Freq
+  7: EQ:Mid Q
+  8: EQ:Mid Gain
+  9: EQ:High Gain
+  10: CF:Cho/Flg Sel
+  11: CF:Rate
+  12: CF:Depth
+  13: 'CF: Feedback(Flg)'
+  14: CF:Mix
+  15: Dly:Delay Time
+  16: Dly:Feedback
+  17: Dly:HF Damp
+  18: Dly:Mix
+  20: Level
+'0404':
+  1: AW:Filter Type
+  2: AW:Manual
+  3: AW:Peak
+  4: AW:Rate
+  5: AW:Depth
+  6: AW:Switch
+  7: EQ:Low Gain
+  8: EQ:Mid Freq
+  9: EQ:Mid Q
+  10: EQ:Mid Gain
+  11: EQ:High Gain
+  12: CF:Cho/Flg Sel
+  13: CF:Rate
+  14: CF:Depth
+  15: 'CF: Feedback(Flg)'
+  16: CF:Mix
+  17: Dly:Delay Time
+  18: Dly:Feedback
+  19: Dly:Mix
+  20: Level
+'0405':
+  1: Cmp:Sustain
+  2: Cmp:Attack
+  3: Cmp:Level
+  4: Cmp:Switch
+  5: OD:ODrv/DistSel
+  6: OD:Drive
+  7: OD:Amp Type
+  8: OD:Amp Switch
+  9: OD:Switch
+  10: EQ:Low Gain
+  11: EQ:Mid Freq
+  12: EQ:Mid Q
+  13: EQ:Mid Gain
+  14: EQ:High Gain
+  15: CF:Cho/Flg Sel
+  16: CF:Rate
+  17: CF:Depth
+  18: 'CF: Feedback(Flg)'
+  19: CF:Mix
+  20: Level
+'0406':
+  1: EH:Sens
+  2: EH:Mix
+  3: PH:Manual
+  4: PH:Rate
+  5: PH:Depth
+  6: PH:Resonance
+  7: PH:Mix
+  8: CF:Cho/Flg Sel
+  9: CF:LPF
+  10: CF:Delay
+  11: CF:Rate
+  12: CF:Depth
+  13: 'CF: Feedback(Flg)'
+  14: CF:Mix
+  15: TP:Select
+  16: TP:Mod Wave
+  17: TP:Mod Rate
+  18: TP:Mod Depth
+  19: TP:Switch
+  20: Level
+'0500':
+  1: RM:Mod Freq
+  2: RM:Balance
+  3: EQ:Low Gain
+  4: EQ:Mid Freq
+  5: EQ:Mid Q
+  6: EQ:Mid Gain
+  7: EQ:High Gain
+  8: PS:Coarse
+  9: PS:Fine
+  10: PS:Mode
+  11: PS:Balance
+  12: PH:Manual
+  13: PH:Rate
+  14: PH:Depth
+  15: PH:Resonance
+  16: PH:Mix
+  17: Dly:Delay
+  18: Dly:Feedback
+  19: Dly:Mix
+  20: Level
+'1100':
+  1: Cho:Pre Delay
+  2: Cho:Rate
+  3: Cho:Depth
+  5: Cho:Balance
+  6: Dly:Delay Time
+  7: Dly:Feedback
+  8: Dly:HF Damp
+  10: Dly:Balance
+  16: Cho:Pan
+  17: Cho:Level
+  18: Dly:Pan
+  19: Dly:Level
+  20: Level
+'1101':
+  1: Flg:Delay
+  2: Flg:Rate
+  3: Flg:Depth
+  4: Flg:Feedback
+  5: Flg:Balance
+  6: Dly:Delay
+  7: Dly:Feedback
+  8: Dly:HF Damp
+  10: Dly:Balance
+  16: Flg:Pan
+  17: Flg:Level
+  18: Dly:Pan
+  19: Dly:Level
+  20: Level
+'1102':
+  1: Cho:Delay
+  2: Cho:Rate
+  3: Cho:Depth
+  5: Cho:Balance
+  6: Flg:Delay
+  7: Flg:Rate
+  8: Flg:Depth
+  9: Flg:Feedback
+  10: Flg:Balance
+  16: Cho:Pan
+  17: Cho:Level
+  18: Flg:Pan
+  19: Flg:Level
+  20: Level
+'1103':
+  1: OD1:Select
+  2: OD1:Drive
+  3: OD1:Amp Type
+  4: OD1:Amp Switch
+  6: OD2:Select
+  7: OD2:Drive
+  8: OD2:Amp Type
+  9: OD2:Amp Switch
+  16: OD1:Pan
+  17: OD1:Level
+  18: OD2:Pan
+  19: OD2:Level
+  20: Level
+'1104':
+  1: OD:Select
+  2: OD:Drive
+  3: OD:Amp Type
+  4: OD:Amp Switch
+  6: RT:LowSlowRate
+  7: RT:LowFastRate
+  8: RT:LowAccl
+  9: RT:LowLevel
+  10: 'RT: HighSlowRate'
+  11: RT:HighFastRate
+  12: RT:HighAccl
+  13: RT:HighLevel
+  14: RT:Separation
+  15: RT:Speed
+  16: OD:Pan
+  17: OD:Level
+  18: RT:Pan
+  19: RT:Level
+  20: Level
+'1105':
+  1: OD:Select
+  2: OD:Drive
+  3: OD:Amp Type
+  4: OD:Amp Switch
+  6: PH:Manual
+  7: PH:Rate
+  8: PH:Depth
+  9: PH:Resonance
+  10: PH:Mix
+  16: OD:Pan
+  17: OD:Level
+  18: PH:Pan
+  19: PH:Level
+  20: Level
+'1106':
+  1: OD:Select
+  2: OD:Drive
+  3: OD:Amp Type
+  4: OD:Amp Switch
+  6: AW:Filter Type
+  7: AW:Sens
+  8: AW:Manual
+  9: AW:Peak
+  10: AW:Rate
+  11: AW:Depth
+  12: AW:Polarity
+  16: OD:Pan
+  17: OD:Level
+  18: AW:Pan
+  19: AW:Level
+  20: Level
+'1107':
+  1: PH:Manual
+  2: PH:Rate
+  3: PH:Depth
+  4: PH:Resonance
+  5: PH:Mix
+  6: 'RT: LowSlowRate'
+  7: RT:LowFastRate
+  8: RT:LowAccl
+  9: RT:LowLevel
+  10: 'RT: HighSlowRate'
+  11: 'RT: HighFastRate'
+  12: RT:HighAccl
+  13: RT:HighLevel
+  14: RT:Separation
+  15: RT:Speed
+  16: OD:Pan
+  17: OD:Level
+  18: AW:Pan
+  19: AW:Level
+  20: Level
+'1108':
+  1: PH:Manual
+  2: PH:Rate
+  3: PH:Depth
+  4: PH:Resonance
+  5: PH:Mix
+  6: AW:Filter Type
+  7: AW:Sens
+  8: AW:Manual
+  9: AW:Peak
+  10: AW:Rate
+  11: AW:Depth
+  12: AW:Polarity
+  16: PH:Pan
+  17: PH:Level
+  18: AW:Pan
+  19: AW:Level
+  20: Level

@@ -4,6 +4,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from lib.ctl import colorize, writeYaml
+from genGm import buildGm
 from genGs import buildGs
 from genStandard import buildStandard
 from genXg import buildXg
@@ -19,5 +20,5 @@ def merge(parts):
 
 if __name__ == "__main__":
     writeYaml("controls.yaml", colorize(merge([buildStandard()])))
-    writeYaml("effects.yaml", colorize(merge([buildGs(), buildXg()])))
+    writeYaml("effects.yaml", colorize(merge([buildGm(), buildGs(), buildXg()])))
     writeDefaults()

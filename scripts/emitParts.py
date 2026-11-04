@@ -6,9 +6,14 @@ import sys
 
 import yaml
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+from lib import gsEfxParams  # noqa: E402
+
 repoDir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 partsDir = os.path.join(repoDir, "modules", "spessasynth", "generated", "effectParts")
 dataPath = os.path.join(partsDir, "core_data.yaml")
+manualNamesPath = os.path.join(repoDir, "scripts", "data", "gsEfxManualNames.yaml")
 
 outputPaths = {
     "tables": os.path.join(partsDir, "tables.yaml"),
@@ -53,6 +58,11 @@ TABLE_IDS = {
     "gsEfxType": 150,
     "gsControlSource": 151,
 }
+
+TABLE_IDS.update(gsEfxParams.TABLE_IDS)
+
+# Domino allows CCM ids 0..1300. The named GS EFX parameters take the free runs.
+GS_POOL_RANGES = [(573, 700), (952, 1013), (1021, 1300)]
 
 BLOCK_COLORS = {
     "reverb": "0080E0",
@@ -619,6 +629,7 @@ def buildTables(data):
     tables.append(
         (TABLE_IDS["gsEfxType"], "GS EFX types", efxTypes)
     )
+    tables.extend(gsEfxParams.buildTables(data["labels"]["gsConversion"]))
     return tables
 
 
@@ -691,6 +702,18 @@ def slotAddress(blockKey, slot, wide):
 
 def gateValue(minimum, maximum, offset, name):
     return val(None, minimum, maximum, offset, name=name)
+
+
+class RangeCounter:
+    def __init__(self, ranges):
+        self.values = [number for low, high in ranges for number in range(low, high + 1)]
+        self.position = 0
+
+    def take(self):
+        if self.position >= len(self.values):
+            raise SystemExit("GS EFX parameter ids exhausted")
+        self.position += 1
+        return self.values[self.position - 1]
 
 
 class Counter:
@@ -942,12 +965,19 @@ def gsAddress(slot):
     return "40H 03H %02XH" % slot if slot else "40H 03H 00H"
 
 
+def loadManualNames():
+    with open(manualNamesPath, encoding="utf-8") as handle:
+        return yaml.safe_load(handle)
+
+
 def buildGsEfx(data, counter):
     gsTypes = data["gs"]["types"]
+    manualNames = loadManualNames()
     maxWord = max(wordOf(g["code"]) for g in gsTypes if g["code"] is not None)
+    typeId = counter.take()
     items = [
         ccm(
-            counter.take(),
+            typeId,
             "EFX Type",
             value=val(0, 0, maxWord, tableId=TABLE_IDS["gsEfxType"]),
             sysex={"address": gsAddress(0), "payload": "#VH #VL"},
@@ -956,70 +986,91 @@ def buildGsEfx(data, counter):
             + "stay. Codes the synth lacks pass dry (Thru).",
         )
     ]
-    # One parameter CCM per distinct (slot, minimum, maximum) shape. The
-    # parameters' meaning depends on the type, so the names stay plain and
-    # every type folder supplies its own defaults through ccmLinks.
-    # The parameter limits and minimums use the synth's zero based indices.
+    controlId = 1013
+    for byte, specDefault, minimum, maximum, name in FX_CONTROL:
+        controlId += 1
+        items.append(
+            ccm(
+                controlId,
+                name,
+                value=val(
+                    specDefault,
+                    minimum,
+                    maximum,
+                    tableId=TABLE_IDS.get(FX_TABLES.get(byte)),
+                ),
+                sysex={"address": gsAddress(byte), "payload": "#VL"},
+                memo=FX_MEMOS[byte],
+            )
+        )
+    # One CCM per distinct (slot, name, table, range), like the XG blocks.
+    # Names come from the SC-VA manual file; core decides where it differs.
+    poolIds = RangeCounter(GS_POOL_RANGES)
+    rowsByType = {}
     shapes = {}
     for spec in gsTypes:
-        for index in range(GS_PARAM_COUNT):
+        if spec["code"] is None:
+            continue
+        rows = gsEfxParams.TYPES.get(spec["name"])
+        if rows is None:
+            raise SystemExit("gsEfxParams has no entry for GS type %r" % spec["name"])
+        manual = manualNames.get("%04X" % spec["code"], {})
+        seen = set()
+        resolved = []
+        for slot, name, tableKey, memo in rows:
+            index = slot - 1
+            if not 0 <= index < GS_PARAM_COUNT or index in seen:
+                raise SystemExit("bad slot %d in %s" % (slot, spec["name"]))
+            seen.add(index)
             low = spec["minimums"].get(index, 0)
             high = spec["limits"].get(index, 127)
-            key = (index, low, high)
-            if key not in shapes:
-                shapes[key] = [True, spec["defaults"][index]]
+            default = spec["defaults"][index]
+            if not low <= default <= high:
+                raise SystemExit(
+                    "%s slot %d default %d outside %d-%d" % (spec["name"], slot, default, low, high)
+                )
+            if slot not in manual:
+                raise SystemExit("no manual name for %s slot %d" % (spec["name"], slot))
+            key = (index, manual[slot], tableKey, low, high)
+            shapes.setdefault(key, {"default": default, "memo": memo})
+            resolved.append(key)
+        unnamed = [i + 1 for i in range(GS_PARAM_COUNT) if i not in seen and spec["defaults"][i]]
+        if unnamed:
+            print("gsEfx: %s unnamed slots with a non-zero default: %s" % (spec["name"], unnamed))
+        rowsByType[spec["name"]] = resolved
     shapeIds = {}
-    for key in sorted(shapes):
-        index, low, high = key
-        identifier = counter.take()
+    for key in sorted(shapes, key=lambda k: (k[0], k[1], str(k[2]), k[3], k[4])):
+        index, name, tableKey, low, high = key
+        identifier = poolIds.take()
         shapeIds[key] = identifier
         items.append(
             ccm(
                 identifier,
-                "EFX Parameter %d" % (index + 1),
-                value=val(shapes[key][1], low, high),
+                name,
+                value=val(
+                    shapes[key]["default"],
+                    low,
+                    high,
+                    tableId=TABLE_IDS.get(tableKey) if tableKey else None,
+                ),
                 sysex={"address": gsAddress(index + 3), "payload": "#VL"},
-                memo="Meaning depends on the EFX type; the type folder "
-                + "under Types lists the defaults of every type.",
+                memo=shapes[key]["memo"],
             )
         )
-    items.extend(
-        ccm(
-            counter.take(),
-            name,
-            value=val(
-                specDefault,
-                minimum,
-                maximum,
-                tableId=TABLE_IDS.get(FX_TABLES.get(byte)),
-            ),
-            sysex={"address": gsAddress(byte), "payload": "#VL"},
-            memo=FX_MEMOS[byte],
-        )
-        for byte, specDefault, minimum, maximum, name in FX_CONTROL
-    )
     typeFolders = []
     for spec in gsTypes:
         if spec["code"] is None:
             continue
-        typeLinks = [
-            {
-                "type": "ccmLink",
-                "id": items[0]["id"],
-                "value": wordOf(spec["code"]),
-            }
-        ]
-        for index in range(GS_PARAM_COUNT):
-            low = spec["minimums"].get(index, 0)
-            high = spec["limits"].get(index, 127)
-            typeLinks.append(
+        links = [{"type": "ccmLink", "id": typeId, "value": wordOf(spec["code"])}]
+        for key in rowsByType[spec["name"]]:
+            links.append(
                 {
                     "type": "ccmLink",
-                    "id": shapeIds[(index, low, high)],
-                    "value": spec["defaults"][index],
+                    "id": shapeIds[key],
+                    "value": spec["defaults"][key[0]],
                 }
             )
-        typeFolders.append(folder(spec["name"], typeLinks))
+        typeFolders.append(folder(spec["name"], links))
     items.append(folder("Types", typeFolders))
     return folder("GS Insertion Effect (EFX)", items)
 

@@ -386,6 +386,9 @@ def systemMessages():
         (2, "Large Room"),
         (3, "Medium Hall"),
         (4, "Large Hall"),
+        (5, "Plate (GS)"),
+        (6, "Delay (GS)"),
+        (7, "Panning Delay (GS)"),
         (8, "Plate"),
     ]
     gm2Chorus = [
@@ -395,6 +398,8 @@ def systemMessages():
         (3, "Chorus 4"),
         (4, "Feedback Chorus"),
         (5, "Flanger"),
+        (6, "Short Delay (GS)"),
+        (7, "Short Delay FB (GS)"),
     ]
     gpc = (
         lambda slot, param: "@SYSEX F0H 7FH 7FH 04H 05H 01H 01H 01H 01H %02XH %02XH #VL F7H"
@@ -483,7 +488,7 @@ def systemMessages():
             [
                 ccm(210, "GM2 Reverb Type", gpc(1, 0), val(4, 0, 8, entries=gm2Reverb)),
                 ccm(211, "GM2 Reverb Time", gpc(1, 1), val(64), memo="Reverb time."),
-                ccm(212, "GM2 Chorus Type", gpc(2, 0), val(2, 0, 5, entries=gm2Chorus)),
+                ccm(212, "GM2 Chorus Type", gpc(2, 0), val(2, 0, 7, entries=gm2Chorus)),
                 ccm(213, "GM2 Chorus Mod Rate", gpc(2, 1), val(3)),
                 ccm(214, "GM2 Chorus Mod Depth", gpc(2, 2), val(19)),
                 ccm(215, "GM2 Chorus Feedback", gpc(2, 3), val(8)),
