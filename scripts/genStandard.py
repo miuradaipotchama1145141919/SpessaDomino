@@ -491,7 +491,7 @@ def systemMessages():
                     "Master Balance",
                     "@SYSEX F0H 7FH 7FH 04H 02H #VL #VH F7H",
                     val(8192, 0, 16383, name="14 bit"),
-                    memo="8192 is center.",
+                    memo="8192 is center. From the MIDI 1.0 specification, not part of GM2, GS or XG.",
                 ),
                 ccm(
                     172,

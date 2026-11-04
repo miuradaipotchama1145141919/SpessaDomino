@@ -76,6 +76,8 @@ setupSpacing = 21
 channelSpacing = 41
 
 gm1Global = [(170, 16383)]
+# GM2 defines master volume, fine tuning and coarse tuning. Master balance (171) is MIDI 1.0 only.
+gm2Global = gm1Global + [(172, 0), (173, 0)]
 universalGlobal = gm1Global + [(171, 8192), (172, 0), (173, 0)]
 gsGlobal = [(301, 127), (300, 0), (302, 0), (303, 64)]
 xgGlobal = [(500, 0), (501, 127), (502, 0), (503, 0)]
@@ -137,7 +139,7 @@ gsBody = [
 plainSections = {
     "GM1": [("Global", gm1Global)],
     "GM2": [
-        ("Global", universalGlobal),
+        ("Global", gm2Global),
         ("Reverb (Hall 2)", [(210, 4), (211, 64)]),
         ("Chorus (Chorus 3)", [(212, 2), (213, 3), (214, 19), (215, 8), (216, 0)]),
     ],
@@ -375,8 +377,7 @@ def buildTracks(variant):
                     "Text": "---- Drum Parameter %s" % ("-" * 44),
                 },
             },
-            {"tag": "PC", "attrs": {"PC": 1, "Mode": "Drumset", "Step": 1}},
-            cc(152, Gate=36, Value=120, Step=3),
+            cc(152, Gate=36, Value=120, Step=1),
             divider("End of Drum Parameter"),
         ],
     }
