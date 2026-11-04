@@ -47,14 +47,16 @@ divider = lambda text: {
 cc = lambda ident, **attrs: {"tag": "CC", "attrs": dict({"ID": ident}, **attrs)}
 autoPc = lambda: {"tag": "PC", "attrs": {"PC": 1, "Mode": "Auto"}}
 
-resetIds = {"GS": 203, "GM1": 200, "GM2": 202, "XG": 205}
-sendsByMode = {"GM1": [], "GM2": [91, 93], "GS": [91, 93, 94], "XG": [91, 93, 94]}
+resetIds = {"SpessaSynth": 203, "GS": 203, "GM1": 200, "GM2": 202, "XG": 205}
+sendsByMode = {"GM1": [], "GM2": [91, 93], "SpessaSynth": [91, 93, 94], "GS": [91, 93, 94], "XG": [91, 93, 94]}
+gsFamily = ("GS", "SpessaSynth")
 vibratoIds = [76, 77, 78]
 toneIds = [74, 71, 73, 75, 72]
 setupSpacing = 21
 channelSpacing = 41
 
-universalGlobal = [(170, 16383), (171, 8192), (172, 0), (173, 0)]
+gm1Global = [(170, 16383)]
+universalGlobal = gm1Global + [(171, 8192), (172, 0), (173, 0)]
 gsGlobal = [(301, 127), (300, 0), (302, 0), (303, 64)]
 xgGlobal = [(500, 0), (501, 127), (502, 0), (503, 0)]
 
@@ -65,61 +67,63 @@ def fx(kind, name):
     return effects[kind][name]
 
 
+gsBody = [
+    (
+        "Reverb (Hall 2)",
+        [(310, 4), (311, 4), (312, 0), (313, 64), (314, 64), (315, 0), (316, 0)],
+    ),
+    (
+        "Chorus (Chorus 3)",
+        [
+            (320, 2),
+            (321, 0),
+            (322, 64),
+            (323, 8),
+            (324, 80),
+            (325, 3),
+            (326, 19),
+            (327, 0),
+            (328, 0),
+        ],
+    ),
+    (
+        "EFX (Thru)",
+        [
+            (fx("gs/efx", "EFX Type"), 0),
+            (fx("gs/efx", "Send Level to Reverb"), 40),
+            (fx("gs/efx", "Send Level to Chorus"), 0),
+            (fx("gs/efx", "Send Level to Delay"), 0),
+        ],
+    ),
+    (
+        "Delay (Delay 1)",
+        [
+            (330, 0),
+            (331, 0),
+            (332, 97),
+            (333, 1),
+            (334, 1),
+            (335, 127),
+            (336, 0),
+            (337, 0),
+            (338, 64),
+            (339, 80),
+            (340, 0),
+        ],
+    ),
+]
+
 systemSections = {
-    "GM1": [("Global", universalGlobal)],
+    "GM1": [("Global", gm1Global)],
     "GM2": [
         ("Global", universalGlobal),
         ("Reverb (Hall 2)", [(210, 4), (211, 64)]),
         ("Chorus (Chorus 3)", [(212, 2), (213, 3), (214, 19), (215, 8), (216, 0)]),
     ],
-    "GS": [
-        ("Global", universalGlobal + gsGlobal),
-        (
-            "Reverb (Hall 2)",
-            [(310, 4), (311, 4), (312, 0), (313, 64), (314, 64), (315, 0), (316, 0)],
-        ),
-        (
-            "Chorus (Chorus 3)",
-            [
-                (320, 2),
-                (321, 0),
-                (322, 64),
-                (323, 8),
-                (324, 80),
-                (325, 3),
-                (326, 19),
-                (327, 0),
-                (328, 0),
-            ],
-        ),
-        (
-            "EFX (Thru)",
-            [
-                (fx("gs/efx", "EFX Type"), 0),
-                (fx("gs/efx", "Send Level to Reverb"), 40),
-                (fx("gs/efx", "Send Level to Chorus"), 0),
-                (fx("gs/efx", "Send Level to Delay"), 0),
-            ],
-        ),
-        (
-            "Delay (Delay 1)",
-            [
-                (330, 0),
-                (331, 0),
-                (332, 97),
-                (333, 1),
-                (334, 1),
-                (335, 127),
-                (336, 0),
-                (337, 0),
-                (338, 64),
-                (339, 80),
-                (340, 0),
-            ],
-        ),
-    ],
+    "SpessaSynth": [("Global", universalGlobal)] + gsBody,
+    "GS": [("Global", gsGlobal)] + gsBody,
     "XG": [
-        ("Global", universalGlobal + xgGlobal),
+        ("Global", xgGlobal),
         ("Reverb (Hall 1)", [
             (fx("xg/reverb", "XG Reverb Type"), 128),
             (fx("xg/reverb", "Reverb Return"), 64),
@@ -156,7 +160,8 @@ systemSections = {
 systemMemos = {
     "GM1": "Bank select is ignored in GM1 mode.",
     "GM2": "Default melodic bank MSB becomes 121 and drum bank MSB 120.",
-    "GS": "Default mode. Native SpessaSynth system.",
+    "SpessaSynth": "Default. GS mode with 14 bit master and channel volume, pan and expression, which SpessaSynth reads in any mode.",
+    "GS": "Strict Roland GS. Master settings use GS sysex only, nothing 14 bit.",
     "XG": "Bank MSB 127 selects drums.",
 }
 
@@ -188,18 +193,23 @@ def systemTemplate(ident, mode):
 
 def channelEvents(mode):
     sends = [cc(ident, Value=0) for ident in sendsByMode[mode]]
-    head = [cc(121, Value=0), cc(7, Value=100), cc(10, Value=0), autoPc()]
-    expression = [cc(11, Value=127)]
+    if mode == "SpessaSynth":
+        # 14 bit channel volume, pan and expression, which SpessaSynth stores at full resolution
+        head = [cc(121, Value=0), cc(160, Value=12800), cc(161, Value=0), autoPc()]
+        expression = [cc(162, Value=16383)]
+    else:
+        head = [cc(121, Value=0), cc(7, Value=100), cc(10, Value=0), autoPc()]
+        expression = [cc(11, Value=127)]
     bendAndMod = [cc(112, Value=0), cc(130, Value=2), cc(1, Value=0)]
-    if mode == "GS":
+    if mode in gsFamily:
         head = head + [cc(352, Value=1)]
     if mode == "GM1":
         return head + bendAndMod + expression
-    efxAssign = [cc(374, Value=0)] if mode == "GS" else []
+    efxAssign = [cc(374, Value=0)] if mode in gsFamily else []
     vibrato = [cc(ident, Value=64) for ident in vibratoIds]
     tone = [cc(ident, Value=64) for ident in toneIds]
     if mode != "XG":
-        gsPortamento = [cc(5, Value=0), cc(65, Value=0)] if mode == "GS" else []
+        gsPortamento = [cc(5, Value=0), cc(65, Value=0)] if mode in gsFamily else []
         return head + sends + bendAndMod + expression + vibrato + tone + efxAssign + gsPortamento
     extras = [
         cc(5, Value=0),
@@ -227,7 +237,8 @@ def folderOf(name, items):
 
 def buildTemplates():
     return [
-        folderOf("GS (default)", [systemTemplate(10, "GS"), channelTemplate(0, "GS")]),
+        folderOf("SpessaSynth (default)", [systemTemplate(12, "SpessaSynth"), channelTemplate(0, "SpessaSynth")]),
+        folderOf("GS", [systemTemplate(10, "GS"), channelTemplate(13, "GS")]),
         folderOf("GM1", [systemTemplate(2, "GM1"), channelTemplate(11, "GM1")]),
         folderOf("GM2", [systemTemplate(3, "GM2"), channelTemplate(4, "GM2")]),
         folderOf("XG", [systemTemplate(6, "XG"), channelTemplate(7, "XG")]),
@@ -248,7 +259,7 @@ def channelTrack(channel, initTick):
                 Tick=initTick + index * channelSpacing,
             ),
         )
-        for index, event in enumerate(channelEvents("GS"))
+        for index, event in enumerate(channelEvents("SpessaSynth"))
     ]
     track["events"] = [
         {
@@ -270,7 +281,7 @@ def buildTracks():
             },
             cc(203, Step=1),
         ]
-        + sectionEvents("GS")
+        + sectionEvents("SpessaSynth")
         + [divider("End of System Setup")],
     }
     system["events"] = [

@@ -90,8 +90,10 @@ def gsCcm(ident, name, address, payload, value, gate=None, memo=None, sync="Last
 
 def master():
     return folder(
-        "GS Master",
+        "GS System",
         [
+            {"type": "ccmLink", "id": 203},
+            {"type": "ccmLink", "id": 204},
             gsCcm(
                 300,
                 "Master Tune",

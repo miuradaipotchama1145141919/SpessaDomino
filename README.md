@@ -35,7 +35,7 @@ The definition is written to dist/spessasynth.xml. Copy it into the Domino Modul
 
 ## Starter project
 
-New projects open in GS mode. A System Setup track sends GS Reset, and channels 1 to 16 are initialized from the GS Channel Init template, with channel 10 as the rhythm track. The template list also has System Setup and Channel Init templates for GM1, GM2 and XG.
+New projects open in GS mode. A System Setup track sends GS Reset, and channels 1 to 16 are initialized from the SpessaSynth Channel Init template, with channel 10 as the rhythm track. The template list also has System Setup and Channel Init templates for GM1, GM2 and XG.
 
 ## Effect coverage
 

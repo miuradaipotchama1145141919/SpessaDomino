@@ -86,6 +86,8 @@ def system(take):
     return folder(
         "XG System",
         [
+            {"type": "ccmLink", "id": 205},
+            {"type": "ccmLink", "id": 206},
             xgCcm(
                 take(),
                 "Master Tune",

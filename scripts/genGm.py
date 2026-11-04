@@ -10,19 +10,21 @@ def links(idents):
 
 
 def buildGm():
-    deviceControl = [170, 171, 172, 173]
-    gm2Effects = [210, 211, 212, 213, 214, 215, 216]
+    """GM1 and GM2 share one folder. Their controls are defined once under Controls,
+    this only gathers them the way the GS and XG folders do: system, then effects."""
     return {
         "tables": [],
         "items": [
-            folder("General MIDI 1", links([200]) + [folder("Device Control", links(deviceControl))]),
             folder(
-                "General MIDI 2",
-                links([202])
-                + [
-                    folder("Device Control", links(deviceControl)),
-                    folder("GM2 Effects", links(gm2Effects)),
+                "General MIDI",
+                [
+                    folder(
+                        "GM System",
+                        links([200, 201, 202])
+                        + [folder("Device Control (14 bit)", links([170, 171, 172, 173]))],
+                    ),
+                    folder("GM2 Effects", links([210, 211, 212, 213, 214, 215, 216])),
                 ],
-            ),
+            )
         ],
     }
