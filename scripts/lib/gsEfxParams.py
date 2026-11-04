@@ -135,71 +135,70 @@ def buildTables(conv):
     ]
 
 
-# Kinds: key -> (display name, table key, memo)
+# Kinds: key -> (table key, memo)
 
-def K(name, table=None, memo=None):
-    return (name, table, memo)
+def K(table=None, memo=None):
+    return (table, memo)
 
 
 KINDS = {
-    "level": K("Level", None, "Output level of the effect."),
-    "plain": K("Value"),
-    "pan": K("Pan", "gsPan"),
-    "balance": K("Effect Balance", None, "0 is dry only, 127 is effect only."),
-    "lowGain": K("Low Gain", "gsGain", "Low shelf gain. 64 is flat."),
-    "highGain": K("High Gain", "gsGain", "High shelf gain. 64 is flat."),
-    "preDelay": K("Pre Delay", "gsPreDelay"),
-    "rate1": K("Rate", "gsRate1"),
-    "rate2": K("Rate", "gsRate2"),
-    "depth": K("Depth"),
-    "feedback": K("Feedback", "gsFeedback", "64 is no feedback."),
-    "hfDamp": K("HF Damp", "gsHfDamp", "Lowers the repeats' high end. 120 and above is bypass."),
-    "delay1": K("Delay Time", "gsDelay1"),
-    "delay2": K("Delay Time", "gsDelay2"),
-    "delay3": K("Delay Time", "gsDelay3"),
-    "delay4": K("Delay Time", "gsDelay4"),
-    "phase": K("Phase", "gsPhase"),
-    "wave": K("Wave", "gsWave"),
-    "amp": K("Amp Type", "gsAmp"),
-    "ampSwitch": K("Amp Switch", "gsOnOff"),
-    "driveType": K("Drive Type", "gsDriveType"),
-    "drive": K("Drive"),
-    "driveSwitch": K("Drive Switch", "gsOnOff"),
-    "eqFreq": K("Mid Frequency", "gsEqFreq"),
-    "eqQ": K("Mid Q", "gsEqQ"),
-    "eqGain": K("Mid Gain", "gsGain"),
-    "modType": K("Chorus / Flanger", "gsModType"),
-    "output": K("Output", "gsOutput"),
-    "monoStereo": K("Mono / Stereo", "gsMonoStereo"),
-    "coarse": K("Pitch Coarse", "gsPitchCoarse"),
-    "fine": K("Pitch Fine", "gsPitchFine"),
-    "pitchMode": K("Pitch Mode", "gsPitchMode", "Larger modes use a shorter window."),
-    "cutoff": K("Cutoff", "gsCutoff"),
-    "manual": K("Manual", "gsManual"),
-    "filter3": K("Filter Type", "gsFilter3"),
-    "filter2": K("Filter Type", "gsFilter2"),
-    "compSustain": K("Comp Sustain"),
-    "compAttack": K("Comp Attack"),
-    "compLevel": K("Comp Level"),
-    "compSwitch": K("Comp Switch", "gsOnOff"),
-    "rotSlow": K("Slow Rate", "gsRate1"),
-    "rotFast": K("Fast Rate", "gsRate1"),
-    "rotAccel": K("Acceleration"),
-    "rotLevel": K("Rotor Level"),
-    "separation": K("Separation"),
-    "speed": K("Speed", "gsSpeed", "0-63 slow, 64-127 fast."),
-    "azimuth": K("Azimuth", "gsAzimuth"),
+    "level": K(None, "Output level of the effect."),
+    "plain": K(),
+    "pan": K("gsPan"),
+    "balance": K(None, "0 is dry only, 127 is effect only."),
+    "lowGain": K("gsGain", "Low shelf gain. 64 is flat."),
+    "highGain": K("gsGain", "High shelf gain. 64 is flat."),
+    "preDelay": K("gsPreDelay"),
+    "rate1": K("gsRate1"),
+    "rate2": K("gsRate2"),
+    "depth": K(),
+    "feedback": K("gsFeedback", "64 is no feedback."),
+    "hfDamp": K("gsHfDamp", "Lowers the repeats' high end. 120 and above is bypass."),
+    "delay1": K("gsDelay1"),
+    "delay2": K("gsDelay2"),
+    "delay3": K("gsDelay3"),
+    "delay4": K("gsDelay4"),
+    "phase": K("gsPhase"),
+    "wave": K("gsWave"),
+    "amp": K("gsAmp"),
+    "ampSwitch": K("gsOnOff"),
+    "driveType": K("gsDriveType"),
+    "drive": K(),
+    "driveSwitch": K("gsOnOff"),
+    "eqFreq": K("gsEqFreq"),
+    "eqQ": K("gsEqQ"),
+    "eqGain": K("gsGain"),
+    "modType": K("gsModType"),
+    "output": K("gsOutput"),
+    "monoStereo": K("gsMonoStereo"),
+    "coarse": K("gsPitchCoarse"),
+    "fine": K("gsPitchFine"),
+    "pitchMode": K("gsPitchMode", "Larger modes use a shorter window."),
+    "cutoff": K("gsCutoff"),
+    "manual": K("gsManual"),
+    "filter3": K("gsFilter3"),
+    "filter2": K("gsFilter2"),
+    "compSustain": K(),
+    "compAttack": K(),
+    "compLevel": K(),
+    "compSwitch": K("gsOnOff"),
+    "rotSlow": K("gsRate1"),
+    "rotFast": K("gsRate1"),
+    "rotAccel": K(),
+    "rotLevel": K(),
+    "separation": K(),
+    "speed": K("gsSpeed", "0-63 slow, 64-127 fast."),
+    "azimuth": K("gsAzimuth"),
 }
 
 
-def P(slot, kind, name=None, table=None, memo=None):
+def P(slot, kind, table=None, memo=None):
     """One parameter: slot (1 based), kind key, optional overrides."""
     base = KINDS[kind] if isinstance(kind, str) else kind
     return (
         slot,
-        name or base[0],
-        table if table is not None else base[1],
-        memo if memo is not None else base[2],
+        table if table is not None else base[0],
+        memo if memo is not None else base[1],
     )
 
 
@@ -217,7 +216,7 @@ def common(gains=True, pan=False, balance=True, level=True):
     return rows
 
 
-def twoStage(first, second, balanceSlot=10, gains=True):
+def twoStage(first, second, gains=True):
     """Series combinations: first stage 1-5, second stage 6-10."""
     rows = list(first) + list(second)
     if gains:
@@ -228,56 +227,56 @@ def twoStage(first, second, balanceSlot=10, gains=True):
 
 def chorusStage(base=1):
     return [
-        P(base, "preDelay", "Chorus Pre Delay"),
-        P(base + 1, "rate1", "Chorus Rate"),
-        P(base + 2, "depth", "Chorus Depth"),
-        P(base + 4, "balance", "Chorus Balance"),
+        P(base, "preDelay"),
+        P(base + 1, "rate1"),
+        P(base + 2, "depth"),
+        P(base + 4, "balance"),
     ]
 
 
 def flangerStage(base=1):
     return [
-        P(base, "preDelay", "Flanger Pre Delay"),
-        P(base + 1, "rate1", "Flanger Rate"),
-        P(base + 2, "depth", "Flanger Depth"),
-        P(base + 3, "feedback", "Flanger Feedback"),
-        P(base + 4, "balance", "Flanger Balance"),
+        P(base, "preDelay"),
+        P(base + 1, "rate1"),
+        P(base + 2, "depth"),
+        P(base + 3, "feedback"),
+        P(base + 4, "balance"),
     ]
 
 
 def delayStage(base=6, balanceSlot=10):
     return [
-        P(base, "delay3", "Delay Time"),
-        P(base + 1, "feedback", "Delay Feedback"),
-        P(base + 2, "hfDamp", "Delay HF Damp"),
-        P(balanceSlot, "balance", "Delay Balance"),
+        P(base, "delay3"),
+        P(base + 1, "feedback"),
+        P(base + 2, "hfDamp"),
+        P(balanceSlot, "balance"),
     ]
 
 
 def chorusSecond():
     return [
-        P(6, "preDelay", "Chorus Pre Delay"),
-        P(7, "rate1", "Chorus Rate"),
-        P(8, "depth", "Chorus Depth"),
-        P(10, "balance", "Chorus Balance"),
+        P(6, "preDelay"),
+        P(7, "rate1"),
+        P(8, "depth"),
+        P(10, "balance"),
     ]
 
 
 def flangerSecond():
     return [
-        P(6, "preDelay", "Flanger Pre Delay"),
-        P(7, "rate1", "Flanger Rate"),
-        P(8, "depth", "Flanger Depth"),
-        P(9, "feedback", "Flanger Feedback"),
-        P(10, "balance", "Flanger Balance"),
+        P(6, "preDelay"),
+        P(7, "rate1"),
+        P(8, "depth"),
+        P(9, "feedback"),
+        P(10, "balance"),
     ]
 
 
-def driveBlock(prefix=""):
+def driveBlock():
     """OD / DS -> X: slots 1-4 (drive, drive pan, amp type, amp switch)."""
     return [
-        P(1, "drive", prefix + "Drive"),
-        P(2, "pan", prefix + "Drive Pan"),
+        P(1, "drive"),
+        P(2, "pan"),
         P(3, "amp"),
         P(4, "ampSwitch"),
     ]
@@ -285,8 +284,8 @@ def driveBlock(prefix=""):
 
 def enhancerBlock():
     return [
-        P(1, "plain", "Enhancer Sensitivity", memo="How strongly high frequencies are enhanced."),
-        P(2, "plain", "Enhancer Mix Level"),
+        P(1, "plain", memo="How strongly high frequencies are enhanced."),
+        P(2, "plain"),
     ]
 
 
@@ -294,53 +293,52 @@ def driveTail(second):
     return list(second) + [P(17, "lowGain"), P(18, "highGain"), P(20, "level")]
 
 
-def parallelPans(first, second):
+def parallelPans():
     return [
-        P(16, "pan", first + " Pan"),
-        P(17, "plain", first + " Level"),
-        P(18, "pan", second + " Pan"),
-        P(19, "plain", second + " Level"),
+        P(16, "pan"),
+        P(17, "plain"),
+        P(18, "pan"),
+        P(19, "plain"),
         P(20, "level"),
     ]
 
 
-def odBlock(offset=0, prefix=""):
+def odBlock(offset=0):
     return [
-        P(1 + offset, "driveType", prefix + "Drive Type"),
-        P(2 + offset, "drive", prefix + "Drive"),
-        P(3 + offset, "amp", prefix + "Amp Type"),
-        P(4 + offset, "ampSwitch", prefix + "Amp Switch"),
+        P(1 + offset, "driveType"),
+        P(2 + offset, "drive"),
+        P(3 + offset, "amp"),
+        P(4 + offset, "ampSwitch"),
     ]
 
 
-def rotaryBlock(first, speedSlot, accelWord="Acceleration"):
-    names = ["Low Slow", "Low Fast", "Low Accel", "Low Level", "High Slow", "High Fast", "High Accel", "High Level"]
+def rotaryBlock(first, speedSlot):
     kinds = ["rotSlow", "rotFast", "rotAccel", "rotLevel"] * 2
-    rows = [P(first + i, kinds[i], names[i]) for i in range(8)]
+    rows = [P(first + i, kinds[i]) for i in range(8)]
     rows.append(P(first + 8, "separation"))
     rows.append(P(speedSlot, "speed"))
     return rows
 
 
-def phaserBlock(first, rate="rate1", mixName="Phaser Mix"):
+def phaserBlock(first, rate="rate1"):
     return [
-        P(first, "manual", "Phaser Manual"),
-        P(first + 1, rate, "Phaser Rate"),
-        P(first + 2, "depth", "Phaser Depth"),
-        P(first + 3, "depth", "Phaser Resonance"),
-        P(first + 4, "depth", mixName),
+        P(first, "manual"),
+        P(first + 1, rate),
+        P(first + 2, "depth"),
+        P(first + 3, "depth"),
+        P(first + 4, "depth"),
     ]
 
 
 def wahBlock(first):
     return [
-        P(first, "filter2", "Wah Filter Type"),
-        P(first + 1, "depth", "Wah Sensitivity"),
-        P(first + 2, "manual", "Wah Manual"),
-        P(first + 3, "depth", "Wah Peak"),
-        P(first + 4, "rate1", "Wah Rate"),
-        P(first + 5, "depth", "Wah Depth"),
-        P(first + 6, "plain", "Wah Polarity", table="gsPolarity"),
+        P(first, "filter2"),
+        P(first + 1, "depth"),
+        P(first + 2, "manual"),
+        P(first + 3, "depth"),
+        P(first + 4, "rate1"),
+        P(first + 5, "depth"),
+        P(first + 6, "plain", table="gsPolarity"),
     ]
 
 
@@ -362,42 +360,42 @@ def modulationBlock(first, rate="rate2"):
         P(first, "modType"),
         P(first + 1, rate),
         P(first + 2, "depth"),
-        P(first + 3, "feedback", "Flanger Feedback"),
-        P(first + 4, "plain", "Chorus Level"),
+        P(first + 3, "feedback"),
+        P(first + 4, "plain"),
     ]
 
 
 TYPES = {
     "Thru": [],
     "Equalizer": [
-        P(1, "plain", "Low Frequency", table="gsEqLowFreq"),
+        P(1, "plain", table="gsEqLowFreq"),
         P(2, "lowGain"),
-        P(3, "plain", "High Frequency", table="gsEqHighFreq"),
+        P(3, "plain", table="gsEqHighFreq"),
         P(4, "highGain"),
-        P(5, "eqFreq", "Mid 1 Frequency"),
-        P(6, "eqQ", "Mid 1 Q"),
-        P(7, "eqGain", "Mid 1 Gain"),
-        P(8, "eqFreq", "Mid 2 Frequency"),
-        P(9, "eqQ", "Mid 2 Q"),
-        P(10, "eqGain", "Mid 2 Gain"),
+        P(5, "eqFreq"),
+        P(6, "eqQ"),
+        P(7, "eqGain"),
+        P(8, "eqFreq"),
+        P(9, "eqQ"),
+        P(10, "eqGain"),
         P(20, "level"),
     ],
     "Spectrum": [
-        P(1, "eqGain", "250 Hz Gain"),
-        P(2, "eqGain", "500 Hz Gain"),
-        P(3, "eqGain", "1 kHz Gain"),
-        P(4, "eqGain", "1.25 kHz Gain"),
-        P(5, "eqGain", "2 kHz Gain"),
-        P(6, "eqGain", "3.15 kHz Gain"),
-        P(7, "eqGain", "4 kHz Gain"),
-        P(8, "eqGain", "8 kHz Gain"),
-        P(9, "eqQ", "Band Q"),
+        P(1, "eqGain"),
+        P(2, "eqGain"),
+        P(3, "eqGain"),
+        P(4, "eqGain"),
+        P(5, "eqGain"),
+        P(6, "eqGain"),
+        P(7, "eqGain"),
+        P(8, "eqGain"),
+        P(9, "eqQ"),
         P(19, "pan"),
         P(20, "level"),
     ],
     "Enhancer": [
-        P(1, "plain", "Sensitivity"),
-        P(2, "plain", "Mix Level"),
+        P(1, "plain"),
+        P(2, "plain"),
         P(17, "lowGain"),
         P(18, "highGain"),
         P(20, "level"),
@@ -405,8 +403,8 @@ TYPES = {
     "Humanizer": [
         P(1, "drive"),
         P(2, "driveSwitch"),
-        P(3, "plain", "Vowel", table="gsVowel"),
-        P(4, "plain", "Accel", memo="How fast the vowel changes."),
+        P(3, "plain", table="gsVowel"),
+        P(4, "plain", memo="How fast the vowel changes."),
         P(17, "lowGain"),
         P(18, "highGain"),
         P(19, "pan"),
@@ -447,19 +445,19 @@ TYPES = {
         P(20, "level"),
     ],
     "Compressor": [
-        P(1, "plain", "Sustain", memo="How fast the gain comes back."),
-        P(2, "plain", "Attack"),
-        P(3, "plain", "Post Gain", table="gsPostGain"),
+        P(1, "plain", memo="How fast the gain comes back."),
+        P(2, "plain"),
+        P(3, "plain", table="gsPostGain"),
         P(17, "lowGain"),
         P(18, "highGain"),
         P(19, "pan"),
         P(20, "level"),
     ],
     "Limiter": [
-        P(1, "plain", "Threshold"),
-        P(2, "plain", "Ratio", table="gsLimiterRatio"),
-        P(3, "plain", "Release"),
-        P(4, "plain", "Post Gain", table="gsPostGain"),
+        P(1, "plain"),
+        P(2, "plain", table="gsLimiterRatio"),
+        P(3, "plain"),
+        P(4, "plain", table="gsPostGain"),
         P(17, "lowGain"),
         P(18, "highGain"),
         P(19, "pan"),
@@ -467,7 +465,7 @@ TYPES = {
     ],
     "St. Chorus": [
         P(1, "filter3"),
-        P(2, "cutoff", "Filter Cutoff"),
+        P(2, "cutoff"),
         P(3, "preDelay"),
         P(4, "rate1"),
         P(5, "depth"),
@@ -476,7 +474,7 @@ TYPES = {
     + common(),
     "St. Flanger": [
         P(1, "filter3"),
-        P(2, "cutoff", "Filter Cutoff"),
+        P(2, "cutoff"),
         P(3, "preDelay"),
         P(4, "rate1"),
         P(5, "depth"),
@@ -490,7 +488,7 @@ TYPES = {
         P(3, "depth"),
         P(4, "feedback"),
         P(5, "phase"),
-        P(6, "rate1", "Step Rate"),
+        P(6, "rate1"),
     ]
     + common(),
     "Space D": [
@@ -504,35 +502,35 @@ TYPES = {
         P(1, "preDelay"),
         P(2, "rate1"),
         P(3, "depth"),
-        P(4, "plain", "Pre Delay Deviation", memo="0 to 20 ms spread over the six taps."),
-        P(5, "plain", "Depth Deviation", table="gsSigned"),
-        P(6, "plain", "Pan Deviation", memo="0 to 20."),
+        P(4, "plain", memo="0 to 20 ms spread over the six taps."),
+        P(5, "plain", table="gsSigned"),
+        P(6, "plain", memo="0 to 20."),
     ]
     + common(),
     "Tremolo Chorus": [
         P(1, "preDelay"),
-        P(2, "rate1", "Chorus Rate"),
-        P(3, "depth", "Chorus Depth"),
-        P(4, "phase", "Tremolo Phase"),
-        P(5, "rate1", "Tremolo Rate"),
-        P(6, "depth", "Tremolo Depth"),
+        P(2, "rate1"),
+        P(3, "depth"),
+        P(4, "phase"),
+        P(5, "rate1"),
+        P(6, "depth"),
     ]
     + common(),
     "Stereo Delay": [
-        P(1, "delay3", "Delay Left"),
-        P(2, "delay3", "Delay Right"),
+        P(1, "delay3"),
+        P(2, "delay3"),
         P(3, "feedback"),
-        P(4, "plain", "Feedback Mode", table="gsFbMode"),
-        P(5, "plain", "Phase Left", table="gsPhaseInv"),
-        P(6, "plain", "Phase Right", table="gsPhaseInv"),
+        P(4, "plain", table="gsFbMode"),
+        P(5, "plain", table="gsPhaseInv"),
+        P(6, "plain", table="gsPhaseInv"),
         P(8, "hfDamp"),
     ]
     + common(),
     "Mod Delay": [
-        P(1, "delay3", "Delay Left"),
-        P(2, "delay3", "Delay Right"),
+        P(1, "delay3"),
+        P(2, "delay3"),
         P(3, "feedback"),
-        P(4, "plain", "Feedback Mode", table="gsFbMode"),
+        P(4, "plain", table="gsFbMode"),
         P(5, "rate1"),
         P(6, "depth"),
         P(7, "phase"),
@@ -540,48 +538,48 @@ TYPES = {
     ]
     + common(),
     "Triple Tap": [
-        P(1, "delay1", "Delay Center"),
-        P(2, "delay1", "Delay Left"),
-        P(3, "delay1", "Delay Right"),
+        P(1, "delay1"),
+        P(2, "delay1"),
+        P(3, "delay1"),
         P(4, "feedback"),
-        P(5, "plain", "Level Center"),
-        P(6, "plain", "Level Left"),
-        P(7, "plain", "Level Right"),
+        P(5, "plain"),
+        P(6, "plain"),
+        P(7, "plain"),
         P(8, "hfDamp"),
     ]
     + common(),
     "Quad Tap": [
-        P(1, "delay1", "Delay 1"),
-        P(2, "delay1", "Delay 2"),
-        P(3, "delay1", "Delay 3"),
-        P(4, "delay1", "Delay 4"),
-        P(5, "plain", "Level 1"),
-        P(6, "plain", "Level 2"),
-        P(7, "plain", "Level 3"),
-        P(8, "plain", "Level 4"),
+        P(1, "delay1"),
+        P(2, "delay1"),
+        P(3, "delay1"),
+        P(4, "delay1"),
+        P(5, "plain"),
+        P(6, "plain"),
+        P(7, "plain"),
+        P(8, "plain"),
         P(9, "feedback"),
         P(10, "hfDamp"),
     ]
     + common(),
     "Time Ctrl Delay": [
         P(1, "delay2"),
-        P(2, "plain", "Acceleration", table="gsAccel", memo="Slew speed of the delay time. Changing the time bends the pitch."),
+        P(2, "plain", table="gsAccel", memo="Slew speed of the delay time. Changing the time bends the pitch."),
         P(3, "feedback"),
         P(4, "hfDamp"),
         P(5, "pan"),
     ]
     + common(),
     "2Voice Pitch Shifter": [
-        P(1, "coarse", "Coarse A"),
-        P(2, "fine", "Fine A"),
-        P(3, "preDelay", "Pre Delay A"),
-        P(4, "pan", "Pan A"),
-        P(5, "coarse", "Coarse B"),
-        P(6, "fine", "Fine B"),
-        P(7, "preDelay", "Pre Delay B"),
-        P(8, "pan", "Pan B"),
+        P(1, "coarse"),
+        P(2, "fine"),
+        P(3, "preDelay"),
+        P(4, "pan"),
+        P(5, "coarse"),
+        P(6, "fine"),
+        P(7, "preDelay"),
+        P(8, "pan"),
         P(9, "pitchMode"),
-        P(10, "plain", "Level Balance A/B", memo="0 is voice A only, 127 is voice B only."),
+        P(10, "plain", memo="0 is voice A only, 127 is voice B only."),
     ]
     + common(),
     "Fb P.Shifter": [
@@ -593,30 +591,30 @@ TYPES = {
         P(6, "pan"),
     ]
     + common(),
-    "Phaser": phaserBlock(1, "rate1", "Mix")
+    "Phaser": phaserBlock(1, "rate1")
     + [P(17, "lowGain"), P(18, "highGain"), P(20, "level")],
     "Auto Wah": [
         P(1, "filter2"),
-        P(2, "depth", "Sensitivity"),
+        P(2, "depth"),
         P(3, "manual"),
-        P(4, "depth", "Peak"),
+        P(4, "depth"),
         P(5, "rate1"),
         P(6, "depth"),
-        P(7, "plain", "Polarity", table="gsPolarity"),
+        P(7, "plain", table="gsPolarity"),
         P(17, "lowGain"),
         P(18, "highGain"),
         P(19, "pan"),
         P(20, "level"),
     ],
     "Rotary": [
-        P(1, "rotSlow", "Low Slow"),
-        P(2, "rotFast", "Low Fast"),
-        P(3, "rotAccel", "Low Accel"),
-        P(4, "rotLevel", "Low Level"),
-        P(5, "rotSlow", "High Slow"),
-        P(6, "rotFast", "High Fast"),
-        P(7, "rotAccel", "High Accel"),
-        P(8, "rotLevel", "High Level"),
+        P(1, "rotSlow"),
+        P(2, "rotFast"),
+        P(3, "rotAccel"),
+        P(4, "rotLevel"),
+        P(5, "rotSlow"),
+        P(6, "rotFast"),
+        P(7, "rotAccel"),
+        P(8, "rotLevel"),
         P(9, "separation"),
         P(11, "speed"),
         P(17, "lowGain"),
@@ -624,22 +622,22 @@ TYPES = {
         P(20, "level"),
     ],
     "Reverb": [
-        P(1, "plain", "Reverb Type", table="gsReverbType"),
+        P(1, "plain", table="gsReverbType"),
         P(2, "preDelay"),
-        P(3, "plain", "Reverb Time"),
+        P(3, "plain"),
         P(4, "hfDamp"),
     ]
     + common(),
     "Gate Reverb": [
-        P(1, "plain", "Gate Type", table="gsGateType"),
+        P(1, "plain", table="gsGateType"),
         P(2, "preDelay"),
-        P(3, "plain", "Gate Time", table="gsGateTime"),
+        P(3, "plain", table="gsGateTime"),
     ]
     + common(),
     "Lo-Fi 1": [
-        P(1, "plain", "Pre Filter", table="gsOneBased", memo="1 is dry, 2 to 6 add the compressor."),
-        P(2, "plain", "Lo-Fi Type", table="gsOneBased"),
-        P(3, "plain", "Post Filter", table="gsOneBased"),
+        P(1, "plain", table="gsOneBased", memo="1 is dry, 2 to 6 add the compressor."),
+        P(2, "plain", table="gsOneBased"),
+        P(3, "plain", table="gsOneBased"),
         P(16, "balance"),
         P(17, "lowGain"),
         P(18, "highGain"),
@@ -647,20 +645,20 @@ TYPES = {
         P(20, "level"),
     ],
     "Lo-Fi 2": [
-        P(1, "plain", "Lo-Fi Type", table="gsOneBased"),
+        P(1, "plain", table="gsOneBased"),
         P(2, "filter3"),
-        P(3, "cutoff", "Filter Cutoff"),
-        P(4, "plain", "Radio Detune"),
-        P(5, "plain", "Radio Noise Level"),
-        P(6, "plain", "Noise Type", table="gsNoise"),
-        P(7, "plain", "Noise Low Pass", table="gsLpf"),
-        P(8, "plain", "Noise Level"),
-        P(9, "plain", "Disc Type", table="gsDisc"),
-        P(10, "plain", "Disc Low Pass", table="gsLpf"),
-        P(11, "plain", "Disc Level"),
-        P(12, "plain", "Hum Type", table="gsHum"),
-        P(13, "plain", "Hum Low Pass", table="gsLpf"),
-        P(14, "plain", "Hum Level"),
+        P(3, "cutoff"),
+        P(4, "plain"),
+        P(5, "plain"),
+        P(6, "plain", table="gsNoise"),
+        P(7, "plain", table="gsLpf"),
+        P(8, "plain"),
+        P(9, "plain", table="gsDisc"),
+        P(10, "plain", table="gsLpf"),
+        P(11, "plain"),
+        P(12, "plain", table="gsHum"),
+        P(13, "plain", table="gsLpf"),
+        P(14, "plain"),
         P(15, "monoStereo"),
         P(16, "balance"),
         P(17, "lowGain"),
@@ -669,10 +667,10 @@ TYPES = {
         P(20, "level"),
     ],
     "3D Auto": [
-        P(1, "azimuth", "Stop Azimuth"),
-        P(2, "rate1", "Speed"),
-        P(3, "plain", "Direction", table="gsCwDirection"),
-        P(4, "plain", "Turn", table="gsOnOff"),
+        P(1, "azimuth"),
+        P(2, "rate1"),
+        P(3, "plain", table="gsCwDirection"),
+        P(4, "plain", table="gsOnOff"),
         P(15, "output"),
         P(20, "level"),
     ],
@@ -689,13 +687,13 @@ TYPES = {
     ]
     + common(),
     "3D Delay": [
-        P(1, "delay3", "Delay Center"),
-        P(2, "delay3", "Delay Left"),
-        P(3, "delay3", "Delay Right"),
-        P(4, "feedback", "Feedback", memo="Feeds back from the center tap. 64 is no feedback."),
-        P(5, "plain", "Level Center"),
-        P(6, "plain", "Level Left"),
-        P(7, "plain", "Level Right"),
+        P(1, "delay3"),
+        P(2, "delay3"),
+        P(3, "delay3"),
+        P(4, "feedback", memo="Feeds back from the center tap. 64 is no feedback."),
+        P(5, "plain"),
+        P(6, "plain"),
+        P(7, "plain"),
         P(8, "hfDamp"),
         P(15, "output"),
     ]
@@ -707,31 +705,31 @@ TYPES = {
     # Parallel combinations
     "Chorus / Delay": chorusStage(1)
     + delayStage(6, 10)
-    + parallelPans("Chorus", "Delay"),
+    + parallelPans(),
     "Flanger / Delay": flangerStage(1)
     + delayStage(6, 10)
-    + parallelPans("Flanger", "Delay"),
+    + parallelPans(),
     "Chorus / Flanger": chorusStage(1)
     + flangerSecond()
-    + parallelPans("Chorus", "Flanger"),
-    "OD1 / OD2": odBlock(0, "OD1 ")
-    + odBlock(5, "OD2 ")
-    + parallelPans("OD1", "OD2"),
-    "OD / Rotary": odBlock(0, "OD ")
+    + parallelPans(),
+    "OD1 / OD2": odBlock(0)
+    + odBlock(5)
+    + parallelPans(),
+    "OD / Rotary": odBlock(0)
     + rotaryBlock(6, 15)
-    + parallelPans("Drive", "Rotary"),
-    "OD / Phaser": odBlock(0, "OD ")
-    + phaserBlock(6, "rate1", "Phaser Mix")
-    + parallelPans("Drive", "Phaser"),
-    "OD / AutoWah": odBlock(0, "OD ")
+    + parallelPans(),
+    "OD / Phaser": odBlock(0)
+    + phaserBlock(6, "rate1")
+    + parallelPans(),
+    "OD / AutoWah": odBlock(0)
     + wahBlock(6)
-    + parallelPans("Drive", "Wah"),
-    "PH / Rotary": phaserBlock(1, "rate1", "Phaser Mix")
+    + parallelPans(),
+    "PH / Rotary": phaserBlock(1, "rate1")
     + rotaryBlock(6, 15)
-    + parallelPans("Phaser", "Rotary"),
-    "PH / AutoWah": phaserBlock(1, "rate1", "Phaser Mix")
+    + parallelPans(),
+    "PH / AutoWah": phaserBlock(1, "rate1")
     + wahBlock(6)
-    + parallelPans("Phaser", "Wah"),
+    + parallelPans(),
     # Overdrive / Distortion -> modulation / delay
     "Overdrive -> Chorus": driveBlock() + driveTail(chorusSecond()),
     "Overdrive -> Flanger": driveBlock() + driveTail(flangerSecond()),
@@ -744,30 +742,30 @@ TYPES = {
     "Enhancer -> Delay": enhancerBlock() + driveTail(delayStage(6, 10)),
     # Multi effects
     "Rhodes Multi": [
-        P(1, "plain", "Enhancer Sensitivity"),
-        P(2, "plain", "Enhancer Mix Level"),
-        P(3, "manual", "Phaser Manual"),
-        P(4, "rate2", "Phaser Rate"),
-        P(5, "depth", "Phaser Depth"),
-        P(6, "depth", "Phaser Resonance"),
-        P(7, "depth", "Phaser Mix"),
+        P(1, "plain"),
+        P(2, "plain"),
+        P(3, "manual"),
+        P(4, "rate2"),
+        P(5, "depth"),
+        P(6, "depth"),
+        P(7, "depth"),
         P(8, "modType"),
-        P(9, "cutoff", "Chorus Low Pass", memo="120 and above is off."),
-        P(10, "preDelay", "Chorus Pre Delay"),
-        P(11, "rate2", "Chorus Rate"),
-        P(12, "depth", "Chorus Depth"),
-        P(13, "feedback", "Flanger Feedback"),
-        P(14, "plain", "Chorus Level"),
-        P(15, "plain", "Tremolo / Auto Pan", table="gsTremoloType"),
-        P(16, "wave", "Tremolo Wave"),
-        P(17, "rate2", "Tremolo Rate"),
-        P(18, "depth", "Tremolo Depth"),
-        P(19, "plain", "Tremolo Switch", table="gsOnOff"),
+        P(9, "cutoff", memo="120 and above is off."),
+        P(10, "preDelay"),
+        P(11, "rate2"),
+        P(12, "depth"),
+        P(13, "feedback"),
+        P(14, "plain"),
+        P(15, "plain", table="gsTremoloType"),
+        P(16, "wave"),
+        P(17, "rate2"),
+        P(18, "depth"),
+        P(19, "plain", table="gsOnOff"),
         P(20, "level"),
     ],
     "Keyboard Multi": [
-        P(1, "plain", "Ring Mod Frequency", memo="One semitone per step, 69 is 440 Hz."),
-        P(2, "plain", "Ring Mod Balance"),
+        P(1, "plain", memo="One semitone per step, 69 is 440 Hz."),
+        P(2, "plain"),
         P(3, "lowGain"),
     ]
     + midEq(4)
@@ -776,15 +774,15 @@ TYPES = {
         P(8, "coarse"),
         P(9, "fine"),
         P(10, "pitchMode"),
-        P(11, "plain", "Pitch Balance"),
-        P(12, "manual", "Phaser Manual"),
-        P(13, "rate2", "Phaser Rate"),
-        P(14, "depth", "Phaser Depth"),
-        P(15, "depth", "Phaser Resonance"),
-        P(16, "depth", "Phaser Mix"),
+        P(11, "plain"),
+        P(12, "manual"),
+        P(13, "rate2"),
+        P(14, "depth"),
+        P(15, "depth"),
+        P(16, "depth"),
         P(17, "delay4"),
         P(18, "feedback"),
-        P(19, "plain", "Delay Level"),
+        P(19, "plain"),
         P(20, "level"),
     ],
     "Rotary Multi": [
@@ -810,7 +808,7 @@ TYPES = {
     + [
         P(17, "delay4"),
         P(18, "feedback"),
-        P(19, "plain", "Delay Level"),
+        P(19, "plain"),
         P(20, "level"),
     ],
     "GTR Multi 2": compBlock()
@@ -827,10 +825,10 @@ TYPES = {
     + modulationBlock(15)
     + [P(20, "level")],
     "GTR Multi 3": [
-        P(1, "filter2", "Wah Filter Type"),
-        P(2, "manual", "Wah Manual"),
-        P(3, "depth", "Wah Peak"),
-        P(4, "plain", "Wah Switch", table="gsOnOff"),
+        P(1, "filter2"),
+        P(2, "manual"),
+        P(3, "depth"),
+        P(4, "plain", table="gsOnOff"),
         P(5, "driveType"),
         P(6, "drive"),
         P(7, "amp"),
@@ -843,7 +841,7 @@ TYPES = {
     + [
         P(17, "delay4"),
         P(18, "feedback"),
-        P(19, "plain", "Delay Level"),
+        P(19, "plain"),
         P(20, "level"),
     ],
     "Clean GTR Multi 1": compBlock()
@@ -855,16 +853,16 @@ TYPES = {
         P(15, "delay4"),
         P(16, "feedback"),
         P(17, "hfDamp"),
-        P(18, "plain", "Delay Level"),
+        P(18, "plain"),
         P(20, "level"),
     ],
     "Clean GTR Multi 2": [
-        P(1, "filter2", "Wah Filter Type"),
-        P(2, "manual", "Wah Manual"),
-        P(3, "depth", "Wah Peak"),
-        P(4, "rate1", "Wah Rate"),
-        P(5, "depth", "Wah Depth"),
-        P(6, "plain", "Wah Switch", table="gsOnOff"),
+        P(1, "filter2"),
+        P(2, "manual"),
+        P(3, "depth"),
+        P(4, "rate1"),
+        P(5, "depth"),
+        P(6, "plain", table="gsOnOff"),
         P(7, "lowGain"),
     ]
     + midEq(8)
@@ -873,14 +871,14 @@ TYPES = {
     + [
         P(17, "delay4"),
         P(18, "feedback"),
-        P(19, "plain", "Delay Level"),
+        P(19, "plain"),
         P(20, "level"),
     ],
     "Bass Multi": compBlock()
     + [
         P(5, "driveType"),
         P(6, "drive"),
-        P(7, "plain", "Amp Type", memo="0 to 2."),
+        P(7, "plain", memo="0 to 2."),
         P(8, "ampSwitch"),
         P(9, "driveSwitch"),
         P(10, "lowGain"),

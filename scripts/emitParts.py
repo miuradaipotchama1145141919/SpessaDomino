@@ -1017,7 +1017,7 @@ def buildGsEfx(data, counter):
         manual = manualNames.get("%04X" % spec["code"], {})
         seen = set()
         resolved = []
-        for slot, name, tableKey, memo in rows:
+        for slot, tableKey, memo in rows:
             index = slot - 1
             if not 0 <= index < GS_PARAM_COUNT or index in seen:
                 raise SystemExit("bad slot %d in %s" % (slot, spec["name"]))

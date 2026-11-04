@@ -288,11 +288,11 @@
   18: EQ High (4kHz) Gain
   20: Level
 '0160':
-  1: Pitch Coarse
+  1: Pitch Coarse1
   2: Pitch Fine1
   3: Pre Delay1
   4: Effect Pan1
-  5: Pitch Coarse
+  5: Pitch Coarse2
   6: Pitch Fine2
   7: Pre Delay2
   8: Effect Pan2
@@ -455,7 +455,7 @@
   6: Dly:Delay
   7: Dly:Feedback
   8: Dly:HF Damp
-  10: Flg:Balance
+  10: Dly:Balance
   17: EQ Low (200Hz) Gain
   18: EQ High (4kHz) Gain
   20: Level
@@ -809,10 +809,10 @@
   13: RT:HighLevel
   14: RT:Separation
   15: RT:Speed
-  16: OD:Pan
-  17: OD:Level
-  18: AW:Pan
-  19: AW:Level
+  16: PH:Pan
+  17: PH:Level
+  18: RT:Pan
+  19: RT:Level
   20: Level
 '1108':
   1: PH:Manual
