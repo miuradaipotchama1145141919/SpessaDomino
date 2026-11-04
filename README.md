@@ -44,7 +44,7 @@ The default data is the starter project a new Domino file opens with: a System S
 
 Only the starter project and the module name differ. Every variant contains all voices, drums, controls, effects and the same template list, which holds a System Setup and a Channel Init template for each of the eight variants.
 
-Standard 14 bit data stays in every variant, including the strict ones: pitch bend, the RPN data pairs (fine tuning, modulation depth range) and the universal master volume sysex (GM1), plus master fine and coarse tuning (GM2). Master balance (MIDI 1.0 only) is left out of strict GM2. Only the 14 bit channel volume, pan and expression (CC 7, 10, 11 with LSB CC 39, 42, 43) are not part of GM1, GM2, GS or XG, so they appear only in the SS variants.
+The strict variants keep only the 14 bit data their standard defines. The 14 bit channel volume, pan and expression controls (CC 7, 10, 11 with LSB CC 39, 42, 43) are optional and appear only in the SS variants.
 
 These hybrid variants and templates are purely meant for SpessaSynth. Other synthesizers will likely read the 14 bit LSB controllers as extra, unrelated, or completely ignore the MIDI messages.
 
