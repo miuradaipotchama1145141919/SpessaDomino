@@ -24,6 +24,8 @@ monoPoly = [(0, "Mono"), (1, "Poly")]
 assignModes = [(0, "Single"), (1, "Limited Multi"), (2, "Full Multi")]
 rhythmModes = [(0, "Off (melodic)"), (1, "Drum Map 1"), (2, "Drum Map 2")]
 offOn = [(0, "Off"), (1, "On")]
+eqLowFrequencies = [(0, "200 Hz"), (1, "400 Hz")]
+eqHighFrequencies = [(0, "3 kHz"), (1, "6 kHz")]
 rxChannels = [(index, "Ch %d" % (index + 1)) for index in range(16)] + [(16, "Off")]
 signed64 = dict(minimum=-64, maximum=63, offset=64)
 keyGate = val(36, 0, 127, name="Drum Note", kind="Key")
@@ -36,7 +38,9 @@ tableIds = {
     "rhythm": 14,
     "rxChannel": 15,
     "offOn": 16,
+    "eqLowFrequency": 17,
     "controller": 18,
+    "eqHighFrequency": 19,
 }
 
 controllerNames = ["MOD", "BEND", "CAT", "PAF", "CC1", "CC2"]
@@ -72,6 +76,8 @@ def buildTables():
         {"id": tableIds["rhythm"], "entries": toEntries(rhythmModes)},
         {"id": tableIds["rxChannel"], "entries": toEntries(rxChannels)},
         {"id": tableIds["offOn"], "entries": toEntries(offOn)},
+        {"id": tableIds["eqLowFrequency"], "entries": toEntries(eqLowFrequencies)},
+        {"id": tableIds["eqHighFrequency"], "entries": toEntries(eqHighFrequencies)},
         {"id": tableIds["controller"], "entries": controller},
     ]
 
@@ -186,6 +192,43 @@ def effects():
                 plain(340, "Delay Send Level to Reverb", "40H 01H 5AH", 0),
             ],
         ),
+        folder(
+            "GS Equalizer",
+            [
+                gsCcm(
+                    341,
+                    "EQ Low Frequency",
+                    "40H 02H 00H",
+                    "#VL",
+                    val(0, 0, 1, tableId=tableIds["eqLowFrequency"]),
+                    memo="Low shelf corner. The synth measures it on the SC-88Pro.",
+                ),
+                gsCcm(
+                    342,
+                    "EQ Low Gain",
+                    "40H 02H 01H",
+                    "#VL",
+                    val(0, -12, 12, 64, name="dB"),
+                    memo="Wire value is 64 plus the dB, so 52 to 76.",
+                ),
+                gsCcm(
+                    343,
+                    "EQ High Frequency",
+                    "40H 02H 02H",
+                    "#VL",
+                    val(0, 0, 1, tableId=tableIds["eqHighFrequency"]),
+                    memo="High shelf corner.",
+                ),
+                gsCcm(
+                    344,
+                    "EQ High Gain",
+                    "40H 02H 03H",
+                    "#VL",
+                    val(0, -12, 12, 64, name="dB"),
+                    memo="Wire value is 64 plus the dB, so 52 to 76.",
+                ),
+            ],
+        ),
     ]
 
 
@@ -260,6 +303,14 @@ def part():
                 memo="14 bit, range of +/-100 cents.",
             ),
             partCcm(365, "Delay Send Level", "2CH", val(0), memo="Alias of CC94."),
+            gsCcm(
+                376,
+                "EQ Switch",
+                "40H #2RCH 20H",
+                "#VL",
+                val(1, 0, 1, tableId=tableIds["offOn"]),
+                memo="Passes this part through the GS equalizer. On is the reset state. Parts with EFX Assign on follow the EFX Send EQ Switch instead.",
+            ),
             gsCcm(
                 374,
                 "EFX Assign",

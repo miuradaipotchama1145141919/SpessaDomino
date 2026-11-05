@@ -18,7 +18,7 @@ Regenerate, validate and build everything with one command.
 python scripts/genAll.py
 ```
 
-This writes every default data variant to dist (see below). Copy the one you want into the Domino Module folder. Domino lists them by name, so installing several at once works, for example "SpessaSynth" and "SpessaSynth (SSGM1)".
+This writes every default data variant to dist (see below). Copy the one you want into the Domino Module folder. Domino lists them by name, so installing several at once works, for example "SpessaSynth 4.4.7" and "SpessaSynth 4.4.7 (SSGM1)".
 
 Build a single variant, or set the version:
 
@@ -71,7 +71,7 @@ In the default SS variant, new projects open in GS mode. A System Setup track se
 
 ## Effect coverage
 
-Effect definitions come straight from spessasynth_core. XG reverb, chorus, variation and insertion effects expose every type the synth implements with per-type parameter defaults, and the GS insertion effect (EFX) has all 65 types with their parameters, send levels and EFX control sources.
+Effect definitions come straight from spessasynth_core. XG reverb, chorus, variation and insertion effects expose every type the synth implements with per-type parameter defaults, and the GS insertion effect (EFX) has all 65 types with their parameters, send levels, send EQ switch and EFX control sources.
 
 ## spessasynth_core
 
@@ -87,7 +87,7 @@ If you cloned without it: `git submodule update --init`.
 
 ```
 git -C vendor/spessasynth_core fetch --tags
-git -C vendor/spessasynth_core checkout v4.5.0
+git -C vendor/spessasynth_core checkout v4.4.7
 python scripts/genAll.py
 git add vendor/spessasynth_core
 ```
@@ -104,9 +104,9 @@ Everything that `genAll.py` produces is git-ignored: `modules/spessasynth/genera
 
 ## Releases
 
-Push a tag such as `v0.9`. The `release` workflow rebuilds with the tag (without the `v`) as the module version and attaches every variant XML (`spessasynth.xml`, `spessasynth_ssgm1.xml` and so on), `manifest.json` and `generated.zip` to a GitHub Release.
+Push a tag such as `v1.0`. The `release` workflow rebuilds with the tag (without the `v`) as the module version and attaches every variant XML (`spessasynth.xml`, `spessasynth_ssgm1.xml` and so on), `manifest.json` and `generated.zip` to a GitHub Release.
 
 ```
-git tag v0.9
-git push origin v0.9
+git tag v1.0
+git push origin v1.0
 ```

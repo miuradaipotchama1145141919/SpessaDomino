@@ -9,6 +9,7 @@ import yaml
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from lib import gsEfxParams  # noqa: E402
+from lib.ctl import colorizeEffects  # noqa: E402
 
 repoDir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 partsDir = os.path.join(repoDir, "modules", "spessasynth", "generated", "effectParts")
@@ -63,14 +64,6 @@ TABLE_IDS.update(gsEfxParams.TABLE_IDS)
 
 # Domino allows CCM ids 0..1300. The named GS EFX parameters take the free runs.
 GS_POOL_RANGES = [(573, 700), (952, 1013), (1021, 1300)]
-
-BLOCK_COLORS = {
-    "reverb": "0080E0",
-    "chorus": "00B060",
-    "variation": "D05090",
-    "insertion": "B00060",
-    "gs": "B00060",
-}
 
 
 def drop(spec):
@@ -929,6 +922,10 @@ def buildXg(data, counter):
 
 GS_PARAM_COUNT = 20
 
+# The Off/On table is defined with the GS controls in genGs.py (id 16).
+GS_OFF_ON_TABLE = 16
+GS_EQ_SWITCH_ID = 949
+
 # (address byte, default, minimum, maximum, name). Addresses past the EFX
 # parameters: send levels and the two control source/depth pairs.
 FX_CONTROL = [
@@ -1003,6 +1000,16 @@ def buildGsEfx(data, counter):
                 memo=FX_MEMOS[byte],
             )
         )
+    items.append(
+        ccm(
+            GS_EQ_SWITCH_ID,
+            "Send EQ Switch",
+            value=val(1, 0, 1, tableId=GS_OFF_ON_TABLE),
+            sysex={"address": gsAddress(0x1F), "payload": "#VL"},
+            memo="Routes the EFX output through the GS equalizer. A type change "
+            + "resets it to On.",
+        )
+    )
     # One CCM per distinct (slot, name, table, range), like the XG blocks.
     # Names come from the SC-VA manual file; core decides where it differs.
     poolIds = RangeCounter(GS_POOL_RANGES)
@@ -1096,6 +1103,19 @@ def checkSlotCoverage(data):
         )
 
 
+def addProfile(node, profile):
+    # The sysex header and footer come from the module profile, so every
+    # effect control has to name it.
+    if isinstance(node, dict):
+        if node.get("type") == "ccm" and "sysex" in node:
+            node["sysex"] = dict(node["sysex"], profile=profile)
+        for value in node.values():
+            addProfile(value, profile)
+    elif isinstance(node, list):
+        for value in node:
+            addProfile(value, profile)
+
+
 def build():
     with open(dataPath, encoding="utf-8") as stream:
         data = yaml.safe_load(stream)
@@ -1109,6 +1129,10 @@ def build():
     ]
     documents.update(buildXg(data, Counter(XG_ID_START)))
     documents["gs/efx"] = buildGsEfx(data, Counter(GS_ID_START))
+    for name, document in documents.items():
+        if name != "tables":
+            colorizeEffects(document, name)
+            addProfile(document, "gs" if name.startswith("gs/") else "xg")
     return documents
 
 

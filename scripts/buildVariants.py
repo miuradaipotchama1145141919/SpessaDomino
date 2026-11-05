@@ -23,7 +23,22 @@ def variantId(variant):
     return moduleId if variant == genDefaults.defaultVariant else "%s_%s" % (moduleId, variant.lower())
 
 
+def coreVersion():
+    """The spessasynth_core release the submodule is checked out at."""
+    path = os.path.join(rootDir, "vendor", "spessasynth_core", "package.json")
+    try:
+        with open(path, encoding="utf-8") as handle:
+            return json.load(handle)["version"]
+    except (OSError, KeyError, ValueError):
+        raise SystemExit(
+            "Cannot read the spessasynth_core version from %s. "
+            "Run: git submodule update --init" % path
+        )
+
+
 def variantName(name, variant):
+    # The module name carries the spessasynth_core version it is based on.
+    name = "%s %s" % (name, coreVersion())
     if variant == genDefaults.defaultVariant:
         return name
     return "%s (%s)" % (name, variant)
