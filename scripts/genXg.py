@@ -162,6 +162,9 @@ def partSetup(take):
             ),
             part("Chorus Send", 0x12, val(0), alias(93)),
             part("Reverb Send", 0x13, val(0), alias(91)),
+            # Added with spessasynth_core 4.4.8. The XG ids 500 to 572 are full and 573 starts the GS EFX pool,
+            # so this one takes the free id below the XG block and no existing id moves.
+            xgCcm(499, "Variation Send", "08H #GL 14H", "#VL", val(0), gate=partGate(), memo=alias(94)),
             part("Vibrato Rate", 0x15, val(64), alias(76)),
             part("Vibrato Depth", 0x16, val(64), alias(77)),
             part("Vibrato Delay", 0x17, val(64), alias(78)),

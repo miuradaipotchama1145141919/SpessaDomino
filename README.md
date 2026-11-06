@@ -18,7 +18,7 @@ Regenerate, validate and build everything with one command.
 python scripts/genAll.py
 ```
 
-This writes every default data variant to dist (see below). Copy the one you want into the Domino Module folder. Domino lists them by name, so installing several at once works, for example "SpessaSynth 4.4.7" and "SpessaSynth 4.4.7 (SSGM1)".
+This writes every default data variant to dist (see below). Copy the one you want into the Domino Module folder. Domino lists them by name, so installing several at once works, for example "SpessaSynth 4.4.8" and "SpessaSynth 4.4.8 (SSGM1)".
 
 Build a single variant, or set the version:
 
@@ -87,7 +87,7 @@ If you cloned without it: `git submodule update --init`.
 
 ```
 git -C vendor/spessasynth_core fetch --tags
-git -C vendor/spessasynth_core checkout v4.4.7
+git -C vendor/spessasynth_core checkout v4.4.8
 python scripts/genAll.py
 git add vendor/spessasynth_core
 ```
